@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://memory6181.coding.me/</id>
     <title>Gridea</title>
-    <updated>2019-12-27T16:14:45.088Z</updated>
+    <updated>2019-12-27T16:15:29.427Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://memory6181.coding.me/"/>
     <link rel="self" href="http://memory6181.coding.me//atom.xml"/>
@@ -25,49 +25,6 @@ Git有什么特点？简单来说就是：高端大气上档次！</p>
 <p>Git是什么？<br>
 Git是目前世界上最先进的分布式版本控制系统（没有之一）。<br>
 Git有什么特点？简单来说就是：高端大气上档次！</p>
-<!-- more -->
-<h4 id="创建远程仓库获取远程仓库路径">创建远程仓库获取远程仓库路径</h4>
-<p>。。。</p>
-<h4 id="提交">提交</h4>
-<p>1、初始化本地仓库</p>
-<pre><code class="language-bash">git init
-</code></pre>
-<p>2、克隆远程仓库代码</p>
-<pre><code class="language-bash">git clone https://gitee.com/zyzp/QT-SerialPort.git
-</code></pre>
-<p>3、添加代码到仓库</p>
-<pre><code class="language-bash">cd //
-git add .
-</code></pre>
-<p>4、提交代码</p>
-<pre><code class="language-bash">$ git commit -m &quot;提交代码&quot;
-</code></pre>
-<p>应答</p>
-<pre><code class="language-bash">[master 8d9b521] 提交代码
- 6 files changed, 982 insertions(+)
- create mode 100644 QT-SerialPort/MyApp.pro
- create mode 100644 QT-SerialPort/MyApp.pro.user
- create mode 100644 QT-SerialPort/main.cpp
- create mode 100644 QT-SerialPort/mainwindow.cpp
- create mode 100644 QT-SerialPort/mainwindow.h
- create mode 100644 QT-SerialPort/mainwindow.ui
-</code></pre>
-<p>5、推送代码<br>
-注意，此处需要输入账号密码</p>
-<pre><code class="language-bash">git push
-</code></pre>
-<p>应答</p>
-<pre><code class="language-bash">Username for 'https://gitee.com': 2584532475@qq.com
-Enumerating objects: 10, done.
-Counting objects: 100% (10/10), done.
-Delta compression using up to 4 threads
-Compressing objects: 100% (9/9), done.
-Writing objects: 100% (9/9), 6.39 KiB | 1.28 MiB/s, done.
-Total 9 (delta 0), reused 0 (delta 0)
-remote: Powered By Gitee.com
-To https://gitee.com/zyzp/QT-SerialPort.git
-   dc07cde..8d9b521  master -&gt; master
-</code></pre>
 ]]></content>
     </entry>
     <entry>
@@ -79,15 +36,6 @@ To https://gitee.com/zyzp/QT-SerialPort.git
         <summary type="html"><![CDATA[<p>想了好久好久，我想写这样的一些话，留给自己看看，也许今天的觉悟是错误的，也是年轻导致的浮躁，总之谁也说不清楚到底为什么，就这样一天一天的过着，2019年年底了，给自己一个简单的总结，标题太过夸张，却也没有说不出来的道理，标题的来源来自公司老板在酒桌上的一句话&quot;等他们把产品都做出来了，都得给我出去买表&quot;，如果没有之前很多的故事，也许只是一句玩笑话。</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>想了好久好久，我想写这样的一些话，留给自己看看，也许今天的觉悟是错误的，也是年轻导致的浮躁，总之谁也说不清楚到底为什么，就这样一天一天的过着，2019年年底了，给自己一个简单的总结，标题太过夸张，却也没有说不出来的道理，标题的来源来自公司老板在酒桌上的一句话&quot;等他们把产品都做出来了，都得给我出去买表&quot;，如果没有之前很多的故事，也许只是一句玩笑话。</p>
-<!-- more -->
-<h2 id="2019年听过无数的笑话">2019年听过无数的笑话</h2>
-<p>No1.员工无故不来上班，还不到两个小时，公司群里发了公告，结局竟然是员工压力太大，想出去放松。</p>
-<p>某年某月同事心情不好，想出去走走，可能没来得及请假，也不知道什么原因，但是我看到的就是员工消失2个小时，公司做出的红头文件，该员工客户所有责任与公司无关，没有人关心员工究竟为何没有上班。</p>
-<p>No2.员工离职被无故克扣两个月工资，究其原因，领导互相推卸责任，一边说是他的直接领导说工作没有交接清楚，一边说我都签过字了，我再去问问，这一问便没有了下文。</p>
-<p>我刚来上班没几天，公司发年终奖，却还要分期下发，也许是公司规章制度，也许是公司</p>
-<p>No3.工厂干活，卫生却被查，无缘无故被克扣工资，问员工如何心甘情愿的用心工作。当然这是发生在我身上的事情。</p>
-<p>No4.被逼无奈，公司大闹离职，不知道是世界太疯狂还是人心太浮躁。</p>
-<p>No5.红头文件却在大会上不敢承认，</p>
 ]]></content>
     </entry>
     <entry>
@@ -101,25 +49,6 @@ To https://gitee.com/zyzp/QT-SerialPort.git
 ]]></summary>
         <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
 ✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-<!-- more -->
-<p><a href="https://github.com/getgridea/gridea">Github</a><br>
-<a href="https://gridea.dev/">Gridea 主页</a><br>
-<a href="http://fehey.com/">示例网站</a></p>
-<h2 id="特性">特性👇</h2>
-<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
-<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
-<p>🏷️  你可以对文章进行标签分组</p>
-<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
-<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
-<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
-<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
-<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
-<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
-<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
-<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
-<p>未来，它一定会成为你离不开的伙伴</p>
-<p>尽情发挥你的才华吧！</p>
-<p>😘 Enjoy~</p>
 ]]></content>
     </entry>
 </feed>
