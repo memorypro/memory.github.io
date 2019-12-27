@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://memory6181.coding.me/</id>
     <title>Gridea</title>
-    <updated>2019-12-27T15:02:26.615Z</updated>
+    <updated>2019-12-27T15:07:36.051Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://memory6181.coding.me/"/>
     <link rel="self" href="http://memory6181.coding.me//atom.xml"/>
@@ -10,6 +10,23 @@
     <logo>http://memory6181.coding.me//images/avatar.png</logo>
     <icon>http://memory6181.coding.me//favicon.ico</icon>
     <rights>All rights reserved 2019, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[老板要我离职，我凭什么要坚持]]></title>
+        <id>http://memory6181.coding.me//post/lao-ban-yao-wo-chi-zhi-wo-ping-shi-me-yao-jian-chi</id>
+        <link href="http://memory6181.coding.me//post/lao-ban-yao-wo-chi-zhi-wo-ping-shi-me-yao-jian-chi">
+        </link>
+        <updated>2019-12-27T15:04:44.000Z</updated>
+        <content type="html"><![CDATA[<p>想了好久好久，我想写这样的一些话，留给自己看看，也许今天的觉悟是错误的，也是年轻导致的浮躁，总之谁也说不清楚到底为什么，就这样一天一天的过着，2019年年底了，给自己一个简单的总结，标题太过夸张，却也没有说不出来的道理，标题的来源来自公司老板在酒桌上的一句话&quot;等他们把产品都做出来了，都得给我出去买表&quot;，如果没有之前很多的故事，也许只是一句玩笑话。</p>
+<h2 id="2019年听过无数的笑话">2019年听过无数的笑话</h2>
+<p>No1.员工无故不来上班，还不到两个小时，公司群里发了公告，结局竟然是员工压力太大，想出去放松。</p>
+<p>某年某月同事心情不好，想出去走走，可能没来得及请假，也不知道什么原因，但是我看到的就是员工消失2个小时，公司做出的红头文件，该员工客户所有责任与公司无关，没有人关心员工究竟为何没有上班。</p>
+<p>No2.员工离职被无故克扣两个月工资，究其原因，领导互相推卸责任，一边说是他的直接领导说工作没有交接清楚，一边说我都签过字了，我再去问问，这一问便没有了下文。</p>
+<p>我刚来上班没几天，公司发年终奖，却还要分期下发，也许是公司规章制度，也许是公司</p>
+<p>No3.工厂干活，卫生却被查，无缘无故被克扣工资，问员工如何心甘情愿的用心工作。当然这是发生在我身上的事情。</p>
+<p>No4.被逼无奈，公司大闹离职，不知道是世界太疯狂还是人心太浮躁。</p>
+<p>No5.红头文件却在大会上不敢承认，</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>http://memory6181.coding.me//post/hello-gridea</id>
