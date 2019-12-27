@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>关于 | Gridea</title>
+<title>GIT 提交代码到远程仓库 | Gridea</title>
 <meta name="description" content="温故而知新">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -98,20 +98,69 @@
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">关于</h2>
-            <div class="post-date">2019-01-25</div>
+            <h2 class="post-title">GIT 提交代码到远程仓库</h2>
+            <div class="post-date">2019-12-27</div>
             
             <div class="post-content">
-              <blockquote>
-<p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
-</blockquote>
-<h2 id="关于本站">🏠 关于本站</h2>
-<h2 id="博主是谁">👨‍💻 博主是谁</h2>
-<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
-<h2 id="联系我呀">📬 联系我呀</h2>
+              <h4 id="概述">概述</h4>
+<p>Git是什么？<br>
+Git是目前世界上最先进的分布式版本控制系统（没有之一）。<br>
+Git有什么特点？简单来说就是：高端大气上档次！</p>
+<!-- more -->
+<h4 id="创建远程仓库获取远程仓库路径">创建远程仓库获取远程仓库路径</h4>
+<p>。。。</p>
+<h4 id="提交">提交</h4>
+<p>1、初始化本地仓库</p>
+<pre><code class="language-bash">git init
+</code></pre>
+<p>2、克隆远程仓库代码</p>
+<pre><code class="language-bash">git clone https://gitee.com/zyzp/QT-SerialPort.git
+</code></pre>
+<p>3、添加代码到仓库</p>
+<pre><code class="language-bash">cd //
+git add .
+</code></pre>
+<p>4、提交代码</p>
+<pre><code class="language-bash">$ git commit -m &quot;提交代码&quot;
+</code></pre>
+<p>应答</p>
+<pre><code class="language-bash">[master 8d9b521] 提交代码
+ 6 files changed, 982 insertions(+)
+ create mode 100644 QT-SerialPort/MyApp.pro
+ create mode 100644 QT-SerialPort/MyApp.pro.user
+ create mode 100644 QT-SerialPort/main.cpp
+ create mode 100644 QT-SerialPort/mainwindow.cpp
+ create mode 100644 QT-SerialPort/mainwindow.h
+ create mode 100644 QT-SerialPort/mainwindow.ui
+</code></pre>
+<p>5、推送代码<br>
+注意，此处需要输入账号密码</p>
+<pre><code class="language-bash">git push
+</code></pre>
+<p>应答</p>
+<pre><code class="language-bash">Username for 'https://gitee.com': 2584532475@qq.com
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 6.39 KiB | 1.28 MiB/s, done.
+Total 9 (delta 0), reused 0 (delta 0)
+remote: Powered By Gitee.com
+To https://gitee.com/zyzp/QT-SerialPort.git
+   dc07cde..8d9b521  master -&gt; master
+</code></pre>
 
             </div>
             
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="http://memory6181.coding.me//post/lao-ban-yao-wo-chi-zhi-wo-ping-shi-me-yao-jian-chi">
+                  <h3 class="post-title">
+                    老板要我离职，我凭什么要坚持
+                  </h3>
+                </a>
+              </div>
             
 
             

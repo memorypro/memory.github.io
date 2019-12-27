@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://memory6181.coding.me/</id>
     <title>Gridea</title>
-    <updated>2019-12-27T15:42:33.097Z</updated>
+    <updated>2019-12-27T15:53:03.240Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://memory6181.coding.me/"/>
     <link rel="self" href="http://memory6181.coding.me//atom.xml"/>
@@ -11,12 +11,75 @@
     <icon>http://memory6181.coding.me//favicon.ico</icon>
     <rights>All rights reserved 2019, Gridea</rights>
     <entry>
+        <title type="html"><![CDATA[GIT 提交代码到远程仓库]]></title>
+        <id>http://memory6181.coding.me//post/git-ti-jiao-dai-ma-dao-yuan-cheng-cang-ku</id>
+        <link href="http://memory6181.coding.me//post/git-ti-jiao-dai-ma-dao-yuan-cheng-cang-ku">
+        </link>
+        <updated>2019-12-27T15:46:09.000Z</updated>
+        <summary type="html"><![CDATA[<h4 id="概述">概述</h4>
+<p>Git是什么？<br>
+Git是目前世界上最先进的分布式版本控制系统（没有之一）。<br>
+Git有什么特点？简单来说就是：高端大气上档次！</p>
+]]></summary>
+        <content type="html"><![CDATA[<h4 id="概述">概述</h4>
+<p>Git是什么？<br>
+Git是目前世界上最先进的分布式版本控制系统（没有之一）。<br>
+Git有什么特点？简单来说就是：高端大气上档次！</p>
+<!-- more -->
+<h4 id="创建远程仓库获取远程仓库路径">创建远程仓库获取远程仓库路径</h4>
+<p>。。。</p>
+<h4 id="提交">提交</h4>
+<p>1、初始化本地仓库</p>
+<pre><code class="language-bash">git init
+</code></pre>
+<p>2、克隆远程仓库代码</p>
+<pre><code class="language-bash">git clone https://gitee.com/zyzp/QT-SerialPort.git
+</code></pre>
+<p>3、添加代码到仓库</p>
+<pre><code class="language-bash">cd //
+git add .
+</code></pre>
+<p>4、提交代码</p>
+<pre><code class="language-bash">$ git commit -m &quot;提交代码&quot;
+</code></pre>
+<p>应答</p>
+<pre><code class="language-bash">[master 8d9b521] 提交代码
+ 6 files changed, 982 insertions(+)
+ create mode 100644 QT-SerialPort/MyApp.pro
+ create mode 100644 QT-SerialPort/MyApp.pro.user
+ create mode 100644 QT-SerialPort/main.cpp
+ create mode 100644 QT-SerialPort/mainwindow.cpp
+ create mode 100644 QT-SerialPort/mainwindow.h
+ create mode 100644 QT-SerialPort/mainwindow.ui
+</code></pre>
+<p>5、推送代码<br>
+注意，此处需要输入账号密码</p>
+<pre><code class="language-bash">git push
+</code></pre>
+<p>应答</p>
+<pre><code class="language-bash">Username for 'https://gitee.com': 2584532475@qq.com
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 6.39 KiB | 1.28 MiB/s, done.
+Total 9 (delta 0), reused 0 (delta 0)
+remote: Powered By Gitee.com
+To https://gitee.com/zyzp/QT-SerialPort.git
+   dc07cde..8d9b521  master -&gt; master
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[老板要我离职，我凭什么要坚持]]></title>
         <id>http://memory6181.coding.me//post/lao-ban-yao-wo-chi-zhi-wo-ping-shi-me-yao-jian-chi</id>
         <link href="http://memory6181.coding.me//post/lao-ban-yao-wo-chi-zhi-wo-ping-shi-me-yao-jian-chi">
         </link>
         <updated>2019-12-27T15:04:44.000Z</updated>
+        <summary type="html"><![CDATA[<p>想了好久好久，我想写这样的一些话，留给自己看看，也许今天的觉悟是错误的，也是年轻导致的浮躁，总之谁也说不清楚到底为什么，就这样一天一天的过着，2019年年底了，给自己一个简单的总结，标题太过夸张，却也没有说不出来的道理，标题的来源来自公司老板在酒桌上的一句话&quot;等他们把产品都做出来了，都得给我出去买表&quot;，如果没有之前很多的故事，也许只是一句玩笑话。</p>
+]]></summary>
         <content type="html"><![CDATA[<p>想了好久好久，我想写这样的一些话，留给自己看看，也许今天的觉悟是错误的，也是年轻导致的浮躁，总之谁也说不清楚到底为什么，就这样一天一天的过着，2019年年底了，给自己一个简单的总结，标题太过夸张，却也没有说不出来的道理，标题的来源来自公司老板在酒桌上的一句话&quot;等他们把产品都做出来了，都得给我出去买表&quot;，如果没有之前很多的故事，也许只是一句玩笑话。</p>
+<!-- more -->
 <h2 id="2019年听过无数的笑话">2019年听过无数的笑话</h2>
 <p>No1.员工无故不来上班，还不到两个小时，公司群里发了公告，结局竟然是员工压力太大，想出去放松。</p>
 <p>某年某月同事心情不好，想出去走走，可能没来得及请假，也不知道什么原因，但是我看到的就是员工消失2个小时，公司做出的红头文件，该员工客户所有责任与公司无关，没有人关心员工究竟为何没有上班。</p>
