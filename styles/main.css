@@ -380,7 +380,7 @@ a {
   padding: 48px 32px;
 }
 .post-item {
-  font-family: 'Courier New', "华文细黑";
+  font-family: 'Times New Roman', "华文细黑";
   margin: 32px;
   background: #fff;
   overflow: hidden;
@@ -445,7 +445,7 @@ a {
   border: 1px solid #dee2e6;
 }
 .post-detail {
-  font-family: 'Courier New', "华文细黑";
+  font-family: 'Times New Roman', "华文细黑";
   margin: 32px;
   background: #fff;
   border-radius: 2px;
@@ -606,15 +606,15 @@ a {
 .archives-title,
 .tag-list-title,
 .current-tag {
-  font-family: 'Courier New', "华文细黑";
+  font-family: 'Times New Roman', "华文细黑";
   margin-left: 32px;
   color: #495057;
   padding-bottom: 10px;
-  font-size: 32px;
+  font-size: 28px;
   border-bottom: 1px dashed #dee2e6;
 }
 .archives-container {
-  font-family: 'Courier New', "华文细黑";
+  font-family: 'Times New Roman', "华文细黑";
   margin: 32px;
   background: #fff;
   overflow: hidden;
