@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://memory6181.coding.me/</id>
+    <id>http://blog.memory6181.com/</id>
     <title>Gridea</title>
-    <updated>2019-12-27T16:18:17.905Z</updated>
+    <updated>2019-12-28T09:20:21.367Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="http://memory6181.coding.me/"/>
-    <link rel="self" href="http://memory6181.coding.me//atom.xml"/>
+    <link rel="alternate" href="http://blog.memory6181.com/"/>
+    <link rel="self" href="http://blog.memory6181.com//atom.xml"/>
     <subtitle>温故而知新</subtitle>
-    <logo>http://memory6181.coding.me//images/avatar.png</logo>
-    <icon>http://memory6181.coding.me//favicon.ico</icon>
+    <logo>http://blog.memory6181.com//images/avatar.png</logo>
+    <icon>http://blog.memory6181.com//favicon.ico</icon>
     <rights>All rights reserved 2019, Gridea</rights>
     <entry>
         <title type="html"><![CDATA[GIT 提交代码到远程仓库]]></title>
-        <id>http://memory6181.coding.me//post/git-ti-jiao-dai-ma-dao-yuan-cheng-cang-ku</id>
-        <link href="http://memory6181.coding.me//post/git-ti-jiao-dai-ma-dao-yuan-cheng-cang-ku">
+        <id>http://blog.memory6181.com//post/git-ti-jiao-dai-ma-dao-yuan-cheng-cang-ku</id>
+        <link href="http://blog.memory6181.com//post/git-ti-jiao-dai-ma-dao-yuan-cheng-cang-ku">
         </link>
         <updated>2019-12-27T15:46:09.000Z</updated>
         <summary type="html"><![CDATA[<h4 id="概述">概述</h4>
@@ -29,8 +29,8 @@ Git有什么特点？简单来说就是：高端大气上档次！</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[老板要我离职，我凭什么要坚持]]></title>
-        <id>http://memory6181.coding.me//post/lao-ban-yao-wo-chi-zhi-wo-ping-shi-me-yao-jian-chi</id>
-        <link href="http://memory6181.coding.me//post/lao-ban-yao-wo-chi-zhi-wo-ping-shi-me-yao-jian-chi">
+        <id>http://blog.memory6181.com//post/lao-ban-yao-wo-chi-zhi-wo-ping-shi-me-yao-jian-chi</id>
+        <link href="http://blog.memory6181.com//post/lao-ban-yao-wo-chi-zhi-wo-ping-shi-me-yao-jian-chi">
         </link>
         <updated>2019-12-27T15:04:44.000Z</updated>
         <summary type="html"><![CDATA[<p>想了好久好久，我想写这样的一些话，留给自己看看，也许今天的觉悟是错误的，也是年轻导致的浮躁，总之谁也说不清楚到底为什么，就这样一天一天的过着，2019年年底了，给自己一个简单的总结，标题太过夸张，却也没有说不出来的道理，标题的来源来自公司老板在酒桌上的一句话&quot;等他们把产品都做出来了，都得给我出去买表&quot;，如果没有之前很多的故事，也许只是一句玩笑话。</p>
@@ -40,8 +40,8 @@ Git有什么特点？简单来说就是：高端大气上档次！</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>http://memory6181.coding.me//post/hello-gridea</id>
-        <link href="http://memory6181.coding.me//post/hello-gridea">
+        <id>http://blog.memory6181.com//post/hello-gridea</id>
+        <link href="http://blog.memory6181.com//post/hello-gridea">
         </link>
         <updated>2018-12-11T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
