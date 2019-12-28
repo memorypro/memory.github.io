@@ -346,8 +346,8 @@ a {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 }
 .sidebar .top-container .site-title {
-  font-size: 24px;
-  padding: 32px 0;
+  font-size: 20px;
+  padding: 10px 0;
   color: #dee2e6;
 }
 .sidebar .top-container .site-nav {
@@ -375,15 +375,19 @@ a {
   margin-left: 320px;
 }
 .content-container {
-  max-width: 1064px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 48px 32px;
 }
 .post-item {
+  font-family: "华文细黑";
+  margin: 32px;
+  background: #fff;
+  overflow: hidden;
+  border-radius: 2px;
+  box-sizing: border-box;
   display: flex;
-  padding-bottom: 32px;
-  margin-bottom: 32px;
-  border-bottom: 1px solid #ced4da;
+  padding: 32px;
 }
 .post-item:last-of-type {
   border-bottom: none;
@@ -392,7 +396,9 @@ a {
   flex: 1;
 }
 .post-item .left .post-title {
-  font-size: 24px;
+  font-size: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #dee2e6;
   transition: all 0.3s;
 }
 .post-item .left .post-title:hover {
@@ -439,8 +445,13 @@ a {
   border: 1px solid #dee2e6;
 }
 .post-detail {
-  max-width: 720px;
-  margin: 0 auto;
+  font-family: "华文细黑";
+  margin: 32px;
+  background: #fff;
+  border-radius: 2px;
+  box-sizing: border-box;
+  padding: 32px;
+  max-width: 1024px;
 }
 .post-detail .feature-container {
   padding-top: 56.25%;
@@ -451,7 +462,9 @@ a {
   margin-bottom: 24px;
 }
 .post-detail .post-title {
-  font-size: 40px;
+  font-size: 24px;
+  border-bottom: 1px dashed #dee2e6;
+  padding-bottom: 10px;
 }
 .post-detail .post-date {
   font-size: 18px;
@@ -593,11 +606,13 @@ a {
 .archives-title,
 .tag-list-title,
 .current-tag {
+  font-family: "华文细黑";
   color: #495057;
   padding-bottom: 48px;
   font-size: 32px;
 }
 .archives-container {
+  font-family: "华文细黑";
   padding-bottom: 32px;
 }
 .archives-container .year {
@@ -715,6 +730,9 @@ a {
   .pagination-container .prev:hover,
   .pagination-container .next:hover {
     transform: translateY(0px);
+  }
+  .post-detail {
+    font-family: "华文细黑";
   }
   .post-detail .post-title {
     font-size: 28px;
