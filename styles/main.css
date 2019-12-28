@@ -380,7 +380,7 @@ a {
   padding: 48px 32px;
 }
 .post-item {
-  font-family: "华文细黑";
+  font-family: 'Courier New', "华文细黑";
   margin: 32px;
   background: #fff;
   overflow: hidden;
@@ -445,7 +445,7 @@ a {
   border: 1px solid #dee2e6;
 }
 .post-detail {
-  font-family: "华文细黑";
+  font-family: 'Courier New', "华文细黑";
   margin: 32px;
   background: #fff;
   border-radius: 2px;
@@ -528,13 +528,13 @@ a {
   margin-bottom: 16px;
 }
 .post-detail .post-content pre code {
-  font-size: 14px;
-  font-family: 'Source Code Pro', Consolas, Menlo, Monaco, 'Courier New', monospace;
+  font-size: 16px;
+  font-family: 'Courier New', 'Source Code Pro', Consolas, Menlo, Monaco, monospace;
   padding: 2em 1em 1em;
-  border-radius: 5px;
+  border-radius: 3px;
   line-height: 1.375;
   position: relative;
-  background: #343a40;
+  background: #868e96;
   color: #f1f3f5;
   display: block;
 }
@@ -606,13 +606,21 @@ a {
 .archives-title,
 .tag-list-title,
 .current-tag {
-  font-family: "华文细黑";
+  font-family: 'Courier New', "华文细黑";
+  margin-left: 32px;
   color: #495057;
-  padding-bottom: 48px;
+  padding-bottom: 10px;
   font-size: 32px;
+  border-bottom: 1px dashed #dee2e6;
 }
 .archives-container {
-  font-family: "华文细黑";
+  font-family: 'Courier New', "华文细黑";
+  margin: 32px;
+  background: #fff;
+  overflow: hidden;
+  border-radius: 2px;
+  box-sizing: border-box;
+  padding: 32px;
   padding-bottom: 32px;
 }
 .archives-container .year {
@@ -732,7 +740,7 @@ a {
     transform: translateY(0px);
   }
   .post-detail {
-    font-family: "华文细黑";
+    font-family: 'Courier New', "华文细黑";
   }
   .post-detail .post-title {
     font-size: 28px;
