@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>C语言 十六进制字符串和十六进制之间互转（嵌入式编程） | Memory</title>
+<title>QT 十六进制字符串和十六进制之间互转（ByteArray和HexString） | Memory</title>
 <meta name="description" content="温故而知新">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -98,118 +98,135 @@
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">C语言 十六进制字符串和十六进制之间互转（嵌入式编程）</h2>
-            <div class="post-date">2019-08-08</div>
+            <h2 class="post-title">QT 十六进制字符串和十六进制之间互转（ByteArray和HexString）</h2>
+            <div class="post-date">2019-08-07</div>
             
             <div class="post-content">
-              <p>type.c</p>
-<pre><code class="language-cpp">/*
- * Module Name:  type.c
- * Module Date:  2019-7-20
- * Module Auth:  zhangpeng
- * Description:  存放一些通用的函数
- * Others:
- * Revision History:
- * Date Rel Ver Notes
- * 2019-7-20 11:30:12  新建文件
- */
-#include &quot;board.h&quot;
-#include &lt;ctype.h&gt;
-// -----------------------------------------------------------------
-// 函数功能: 判断字符串s是否包含c
-// 函数名称: str_is_include
-// 参数1   : s 源字符串
-// 参数2   : c 目标字符串
-// 返回值  : [1] 包含 [其他值] 不包含
-// -----------------------------------------------------------------
-int str_is_include (char *s, char *c)
-{
-	int i = 0, j = 0, flag = -1;
-	while (i &lt; strlen (s) &amp;&amp; j &lt; strlen (c))
-	{
-		if (s[i] == c[j]) //如果字符相同则两个字符都增加
-		{
-			i++;
-			j++;
-		}
-		else
-		{
-			i = i - j + 1; //主串字符回到比较最开始比较的后一个字符
-			j = 0;   //字串字符重新开始
-		}
-		if (j == strlen (c)) //如果匹配成功
-		{
-			flag = 1; //字串出现
-			break;
-		}
-	}
-	return flag;
-}
-// -----------------------------------------------------------------
-// 函数功能: 字节数组转字符串类型
-// 函数名称: hexbyte_to_hex_str
-// 参数1   : src 源字符串
-// 参数2   : obj 目标字节数组
-// 说明    : {0x01,0x03,0x03,x04} --&gt; &quot;01020304&quot;
-// 返回值  : 1 成功
-// -----------------------------------------------------------------
-static int hexbyte_to_hex_str (char *src, char *obj, uint16_t length)
-{
-	for (int i = 0; i &lt; length; i++)
-	{
-		sprintf (obj, &quot;%02X&quot;, src[i]);
-		obj += 2;
-	}
-	return 1;
-}
-// -----------------------------------------------------------------
-// 函数功能: hex字符串转byte数组
-// 函数名称: hexbyte_to_hex_str
-// 参数1   : src 源字符串
-// 参数2   : obj 目标字节数组
-// 说明    : &quot;01020304&quot; --&gt; {0x01,0x03,0x03,x04} 或 &quot;01 02 03 04&quot;-&gt;{0x01,0x03,0x03,x04}
-// 返回值  : 1 成功
-// -----------------------------------------------------------------
-static int hexstr_to_hexbyte (char *src, char *obj, uint16_t length)
-{
-	char h1, h2;
-	uint8_t  s1, s2;
-	int i;
-
-	for (i = 0; i &lt; length; i++)
-	{
-		h1 = src[2 * i];
-		h2 = src[2 * i + 1];
-
-		s1 = toupper (h1) - 0x30;
-		if (s1 &gt; 9)
-			s1 -= 7;
-		s2 = toupper (h2) - 0x30;
-		if (s2 &gt; 9)
-			s2 -= 7;
-		obj[i] = s1 * 16 + s2;
-	}
-	return 1;
-}
-
-// 函数封装
-TypeFunc_t TypeFunc =
-{
-	hexbyte_to_hex_str, //HexToStr
-	hexstr_to_hexbyte,  //StrToHex
-};
+              <h5 id="举例说明">举例说明</h5>
+<pre><code class="language-cpp">ByteArray {0x01,0x02,0x03,0x04,0x05,0x06}; 
+HexString &quot;01 02 03 04 05 06&quot;
 </code></pre>
-<p>type.h</p>
-<pre><code class="language-cpp">#ifndef _TYPE_H
-#define _TYPE_H
-#include &lt;stdint.h&gt;
-typedef struct TypeFunc_t
+<h5 id="代码">代码</h5>
+<p>Convert.cpp</p>
+<pre><code class="language-cpp">#include &quot;convert.h&quot;
+#include &lt;QString&gt;
+#include &lt;QMessageBox&gt;
+#include &lt;QDebug&gt;
+
+Convert::Convert()
 {
-	int (*HexToStr)(char *,char *,uint16_t);
-	int (*StrToHex)(char *,char *,uint16_t);
-}TypeFunc_t;
-extern TypeFunc_t TypeFunc;
-#endif 
+
+}
+
+QString Convert::ByteArrayToHexString(QByteArray data)
+{
+    QString ret(data.toHex().toUpper());
+    int len = ret.length()/2;
+    for(int i=1;i&lt;=len;i++)
+    {
+        ret.insert(2*i+i-1,&quot; &quot;);
+    }
+    return ret;
+}
+
+QByteArray Convert::HexStringToByteArray(QString HexString)
+{
+    bool ok;
+    QByteArray ret;
+    HexString = HexString.trimmed();
+    HexString = HexString.simplified();
+    QStringList sl = HexString.split(&quot; &quot;);
+
+    foreach (QString s, sl) {
+        if(!s.isEmpty())
+        {
+            char c = s.toInt(&amp;ok,16)&amp;0xFF;
+            if(ok){
+                ret.append(c);
+            }else{
+                ret.clear();
+                //ret = NULL;
+                qDebug()&lt;&lt;&quot;非法的16进制字符：&quot;&lt;&lt;s;
+                return ret;
+
+               // QMessageBox::warning(0,tr(&quot;错误：&quot;),QString(&quot;非法的16进制字符: \&quot;%1\&quot;&quot;).arg(s));
+            }
+        }
+    }
+   // qDebug()&lt;&lt;ret;
+    return ret;
+}
+
+</code></pre>
+<p>Convert.h</p>
+<pre><code class="language-cpp">#ifndef CONVERT_H
+#define CONVERT_H
+#include &lt;QString&gt;
+
+
+class Convert
+{
+
+public:
+    Convert();
+    static QString ByteArrayToHexString(QByteArray data);
+    static QByteArray HexStringToByteArray(QString HexString);
+
+};
+
+#endif // CONVERT_H
+
+</code></pre>
+<p>调用</p>
+<pre><code class="language-cpp">void MainWindow::ReadData()
+{
+    static int reNum = 0;
+    QByteArray buf;
+    QString myStrTemp;
+    buf = serialPort-&gt;readAll();
+
+    if (!buf.isEmpty())
+    {
+        if (ui-&gt;radio_recv_hex-&gt;isChecked())
+        {
+           myStrTemp =  Convert::ByteArrayToHexString(buf);
+        }
+        else
+        {
+            myStrTemp=QString::fromLocal8Bit(buf); //支持中文显示
+        }
+        reNum += buf.size();
+        QString str = ui-&gt;tex_recv_text-&gt;toPlainText();
+        str +=myStrTemp;
+        ui-&gt;tex_recv_text-&gt;clear();
+        ui-&gt;tex_recv_text-&gt;appendPlainText(str);
+    }
+    buf.clear();
+}
+
+void MainWindow::on_btn_send_message_clicked()
+{
+    QByteArray buff;
+    if (!serialPort-&gt;isOpen())
+    {
+        QMessageBox::critical(this, tr(&quot;Error&quot;), u8&quot;串口未打开&quot;);
+        return ;
+    }
+    if (ui-&gt;radio_send_hex-&gt;isChecked())
+    {
+        buff = Convert::HexStringToByteArray(ui-&gt;tex_send_text-&gt;toPlainText());
+        if (buff.isNull())
+        {
+             QMessageBox::critical(this, tr(&quot;Error&quot;), u8&quot;输入格式有误&quot;);
+             return;
+        }
+        serialPort-&gt;write(buff);
+    }
+    else {
+        serialPort-&gt;write(ui-&gt;tex_send_text-&gt;toPlainText().toLocal8Bit());
+    }
+
+}
 </code></pre>
 
             </div>
@@ -225,9 +242,9 @@ extern TypeFunc_t TypeFunc;
             
               <div class="next-post">
                 <div class="next">下一篇</div>
-                <a href="https://blog.memory6181.com/post/9VjGHAnlG">
+                <a href="https://blog.memory6181.com/post/hello-gridea">
                   <h3 class="post-title">
-                    QT 十六进制字符串和十六进制之间互转（ByteArray和HexString）
+                    Hello Gridea
                   </h3>
                 </a>
               </div>
