@@ -425,8 +425,9 @@ section_1 {
   position: relative;
 }
 .section-box {
-  width: auto;
+  width: 80%;
   margin-top: 40px;
+  padding-top: 0;
 }
 .section {
   width: 940px;
@@ -435,6 +436,8 @@ section_1 {
   border-radius: initial;
   padding: 0px 40px 40px 40px;
   box-sizing: border-box;
+  background: #fff;
+  margin-left: 20px;
 }
 .section-items {
   box-sizing: border-box;
@@ -444,7 +447,7 @@ section_1 {
   background: #fff;
   overflow: hidden;
   border-radius: 2px;
-  padding: 10px 60px 10px 60px;
+  padding: 0px 60px 10px 60px;
   margin: 0px 0px 10px 0px;
 }
 .posts-expand {
@@ -453,6 +456,8 @@ section_1 {
 @media (max-width: 961px) and (min-width: 768px) {
   .section {
     width: auto;
+    padding: 20px 0 0 0;
+    margin-left: 0px;
   }
   .section-items {
     width: auto;
@@ -472,6 +477,8 @@ section_1 {
 @media (max-width: 767px) {
   .section {
     width: auto;
+    padding: 20px 0 0 0;
+    margin-left: 0px;
   }
   .section-items {
     width: auto;
