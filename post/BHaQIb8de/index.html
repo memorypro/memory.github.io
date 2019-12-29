@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>C语言 十六进制字符串和十六进制之间互转（嵌入式编程） | Memory</title>
+<meta name="description" content="温故而知新">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://blog.memory6181.com//favicon.ico?v=1577609033453">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://blog.memory6181.com//styles/main.css">
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://blog.memory6181.com/">
+        <img src="https://blog.memory6181.com//images/avatar.png?v=1577609033453" class="site-logo">
+        <h1 class="site-title">Memory</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="http://blog.memory6181.com//post/guan-yu-wo/" class="site-nav">
+            简历
+          </a>
+        
+      
+        
+          <a href="http://memory6181.coding.me//post/about/" class="site-nav">
+            故事
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      温故而知新
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://blog.memory6181.com//atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">C语言 十六进制字符串和十六进制之间互转（嵌入式编程）</h2>
+            <div class="post-date">2019-12-29</div>
+            
+            <div class="post-content">
+              <p>type.c</p>
+<pre><code class="language-cpp">/*
+ * Module Name:  type.c
+ * Module Date:  2019-7-20
+ * Module Auth:  zhangpeng
+ * Description:  存放一些通用的函数
+ * Others:
+ * Revision History:
+ * Date Rel Ver Notes
+ * 2019-7-20 11:30:12  新建文件
+ */
+#include &quot;board.h&quot;
+#include &lt;ctype.h&gt;
+// -----------------------------------------------------------------
+// 函数功能: 判断字符串s是否包含c
+// 函数名称: str_is_include
+// 参数1   : s 源字符串
+// 参数2   : c 目标字符串
+// 返回值  : [1] 包含 [其他值] 不包含
+// -----------------------------------------------------------------
+int str_is_include (char *s, char *c)
+{
+	int i = 0, j = 0, flag = -1;
+	while (i &lt; strlen (s) &amp;&amp; j &lt; strlen (c))
+	{
+		if (s[i] == c[j]) //如果字符相同则两个字符都增加
+		{
+			i++;
+			j++;
+		}
+		else
+		{
+			i = i - j + 1; //主串字符回到比较最开始比较的后一个字符
+			j = 0;   //字串字符重新开始
+		}
+		if (j == strlen (c)) //如果匹配成功
+		{
+			flag = 1; //字串出现
+			break;
+		}
+	}
+	return flag;
+}
+// -----------------------------------------------------------------
+// 函数功能: 字节数组转字符串类型
+// 函数名称: hexbyte_to_hex_str
+// 参数1   : src 源字符串
+// 参数2   : obj 目标字节数组
+// 说明    : {0x01,0x03,0x03,x04} --&gt; &quot;01020304&quot;
+// 返回值  : 1 成功
+// -----------------------------------------------------------------
+static int hexbyte_to_hex_str (char *src, char *obj, uint16_t length)
+{
+	for (int i = 0; i &lt; length; i++)
+	{
+		sprintf (obj, &quot;%02X&quot;, src[i]);
+		obj += 2;
+	}
+	return 1;
+}
+// -----------------------------------------------------------------
+// 函数功能: hex字符串转byte数组
+// 函数名称: hexbyte_to_hex_str
+// 参数1   : src 源字符串
+// 参数2   : obj 目标字节数组
+// 说明    : &quot;01020304&quot; --&gt; {0x01,0x03,0x03,x04} 或 &quot;01 02 03 04&quot;-&gt;{0x01,0x03,0x03,x04}
+// 返回值  : 1 成功
+// -----------------------------------------------------------------
+static int hexstr_to_hexbyte (char *src, char *obj, uint16_t length)
+{
+	char h1, h2;
+	uint8_t  s1, s2;
+	int i;
+
+	for (i = 0; i &lt; length; i++)
+	{
+		h1 = src[2 * i];
+		h2 = src[2 * i + 1];
+
+		s1 = toupper (h1) - 0x30;
+		if (s1 &gt; 9)
+			s1 -= 7;
+		s2 = toupper (h2) - 0x30;
+		if (s2 &gt; 9)
+			s2 -= 7;
+		obj[i] = s1 * 16 + s2;
+	}
+	return 1;
+}
+
+// 函数封装
+TypeFunc_t TypeFunc =
+{
+	hexbyte_to_hex_str, //HexToStr
+	hexstr_to_hexbyte,  //StrToHex
+};
+</code></pre>
+<p>type.h</p>
+<pre><code class="language-cpp">#ifndef _TYPE_H
+#define _TYPE_H
+#include &lt;stdint.h&gt;
+typedef struct TypeFunc_t
+{
+	int (*HexToStr)(char *,char *,uint16_t);
+	int (*StrToHex)(char *,char *,uint16_t);
+}TypeFunc_t;
+extern TypeFunc_t TypeFunc;
+#endif 
+</code></pre>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://blog.memory6181.com/tag/4eOic9FHK" class="tag">
+                    技术
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://blog.memory6181.com/post/git-ti-jiao-dai-ma-dao-yuan-cheng-cang-ku">
+                  <h3 class="post-title">
+                    GIT 提交代码到远程仓库
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+  </body>
+</html>
