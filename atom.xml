@@ -2,18 +2,18 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://blog.memory6181.com/</id>
     <title>Memory</title>
-    <updated>2019-12-28T14:54:19.121Z</updated>
+    <updated>2019-12-29T06:00:57.368Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://blog.memory6181.com/"/>
-    <link rel="self" href="http://blog.memory6181.com//atom.xml"/>
+    <link rel="self" href="http://blog.memory6181.com/atom.xml"/>
     <subtitle>温故而知新</subtitle>
-    <logo>http://blog.memory6181.com//images/avatar.png</logo>
-    <icon>http://blog.memory6181.com//favicon.ico</icon>
+    <logo>http://blog.memory6181.com/images/avatar.png</logo>
+    <icon>http://blog.memory6181.com/favicon.ico</icon>
     <rights>All rights reserved 2019, Memory</rights>
     <entry>
         <title type="html"><![CDATA[GIT 提交代码到远程仓库]]></title>
-        <id>http://blog.memory6181.com//post/git-ti-jiao-dai-ma-dao-yuan-cheng-cang-ku</id>
-        <link href="http://blog.memory6181.com//post/git-ti-jiao-dai-ma-dao-yuan-cheng-cang-ku">
+        <id>http://blog.memory6181.com/post/git-ti-jiao-dai-ma-dao-yuan-cheng-cang-ku</id>
+        <link href="http://blog.memory6181.com/post/git-ti-jiao-dai-ma-dao-yuan-cheng-cang-ku">
         </link>
         <updated>2019-12-27T15:46:09.000Z</updated>
         <summary type="html"><![CDATA[<h4 id="概述">概述</h4>
@@ -29,8 +29,8 @@ Git有什么特点？简单来说就是：高端大气上档次！</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>http://blog.memory6181.com//post/hello-gridea</id>
-        <link href="http://blog.memory6181.com//post/hello-gridea">
+        <id>http://blog.memory6181.com/post/hello-gridea</id>
+        <link href="http://blog.memory6181.com/post/hello-gridea">
         </link>
         <updated>2018-12-11T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
