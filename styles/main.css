@@ -130,6 +130,13 @@ body {
   background-image: url("../images/back.jpg");
   background-repeat: repeat-x;
 }
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
 sub,
 sup {
   font-size: 75%;
@@ -155,8 +162,16 @@ section_1 {
   box-sizing: border-box;
 }
 .head-top-line {
-  height: 60px;
+  height: 0px;
   background: #fff;
+}
+.head-top-title {
+  display: inline-block;
+  margin-right: 1rem;
+  line-height: inherit;
+  white-space: nowrap;
+  font-size: 1.8em;
+  color: #1abc9c;
 }
 .header-box {
   position: relative;
@@ -165,7 +180,7 @@ section_1 {
   position: relative;
 }
 .sidebar {
-  margin-top: 420px;
+  margin-top: 110px;
   box-shadow: none;
   width: 240px;
 }
@@ -241,10 +256,10 @@ section_1 {
 }
 .blog-header {
   position: absolute;
-  top: 40px;
+  top: 0px;
   overflow: hidden;
   padding: 0;
-  width: 240px;
+  width: 100%;
   background: #fff;
   box-shadow: initial;
   border-radius: initial;
@@ -260,9 +275,10 @@ section_1 {
 }
 .site-meta {
   position: relative;
-  padding: 20px 0 0 0;
+  padding: 0px 0 0 0;
   color: #fff;
-  text-align: center;
+  display: flex;
+  text-align: left;
   margin: 20px;
 }
 .site-title {
@@ -302,7 +318,8 @@ section_1 {
   color: #ddd;
 }
 .site-nav {
-  margin: 20px 0;
+  display: flex;
+  margin: 0px 0;
   transition: all 0.3s linear;
 }
 .nav-item {
@@ -438,6 +455,7 @@ section_1 {
   box-sizing: border-box;
   background: #fff;
   margin-left: 20px;
+  margin-top: 70px;
 }
 .section-items {
   box-sizing: border-box;
@@ -479,6 +497,7 @@ section_1 {
     width: auto;
     padding: 20px 0 0 0;
     margin-left: 0px;
+    margin-top: 20px;
   }
   .section-items {
     width: auto;
@@ -732,7 +751,7 @@ section_1 {
   word-break: break-word;
   font-weight: 400;
   margin-top: 0;
-  padding-top: 45px;
+  padding-top: 20px;
 }
 .post-title-link {
   display: inline-block;
