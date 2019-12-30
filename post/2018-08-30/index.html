@@ -1,0 +1,692 @@
+<html>
+  <head>
+      <meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Memory</title>
+<link rel="shortcut icon" href="https://blog.memory6181.com//favicon.ico?v=1577709624044">
+<link rel="stylesheet" href="https://blog.memory6181.com//styles/main.css">
+<meta name="description" content="温故而知新" />
+
+<link rel="stylesheet" href="/media/fonts/iconfont.css">
+<link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script>
+  </head>
+  <body>
+    <div class="head-top-line"></div>
+    <div class="header-box">
+      <header class="header">
+  <div class="blog-header" id="header">
+    <div class="site-meta">
+      <div class="nav-toggle" id="nav_toggle">
+        <div class="toggle-box">
+          <div class="line line-top"></div>
+          <div class="line line-center"></div>
+          <div class="line line-bottom"></div>
+        </div>
+      </div>
+      <div class="site-title">
+        <a href="/" class="brand">
+          <span>Memory</span>
+        </a>
+      </div>
+      <p class="subtitle">Quick notes</p>
+    </div>
+    <nav class="site-nav" id="site_nav">
+      <ul>
+        <!-- <li class="nav-item "> -->
+          
+            <li class="nav-item ">
+              <a href="/">
+                <i class="iconfont icon-home"></i>首页
+              </a>
+            </li>
+            <!-- <li class="nav-item "></li> -->
+            <!--  -->
+              <!-- 
+                <a href="/">
+                  <i class="iconfont icon-home"></i> 首页
+                </a>
+               -->
+            <!-- </li> -->
+            <!--  -->
+          
+            <li class="nav-item ">
+              <a href="/archives">
+                <i class="iconfont icon-home"></i>归档
+              </a>
+            </li>
+            <!-- <li class="nav-item "></li> -->
+            <!--  -->
+          
+            <li class="nav-item ">
+              <a href="/tags">
+                <i class="iconfont icon-home"></i>标签
+              </a>
+            </li>
+            <!-- <li class="nav-item "></li> -->
+            <!--  -->
+          
+            <li class="nav-item ">
+              <a href="http://blog.memory6181.com//post/guan-yu-wo/">
+                <i class="iconfont icon-home"></i>简历
+              </a>
+            </li>
+            <!-- <li class="nav-item "></li> -->
+            <!--  -->
+          
+            <li class="nav-item ">
+              <a href="http://memory6181.coding.me//post/about/">
+                <i class="iconfont icon-home"></i>故事
+              </a>
+            </li>
+            <!-- <li class="nav-item "></li> -->
+            <!--  -->
+          
+        <!-- </li> -->
+        <!-- <li class="nav-item ">
+          
+            
+          
+            
+              
+                <a href="/archives">
+                  <i class="iconfont icon-archive"></i> 归档
+                </a>
+              
+            
+          
+            
+          
+            
+          
+            
+          
+        </li>
+        <li class="nav-item ">
+          
+            
+          
+            
+          
+            
+              
+                <a href="/tags">
+                  <i class="iconfont icon-tags"></i> 标签
+                </a>
+              
+            
+          
+            
+          
+            
+          
+        </li>
+        <li class="nav-item">
+          <a>
+            <i class="iconfont icon-search"></i> 搜索
+          </a>
+        </li> -->
+      </ul>
+    </nav>
+  </div>
+</header>
+<script type="text/javascript"> 
+ 
+  let showNav = true;
+
+  let navToggle = document.querySelector('#nav_toggle'),
+  siteNav = document.querySelector('#site_nav');
+  
+  function navClick() {
+    navToggle.classList.toggle('nav-toggle-active');
+    siteNav.classList.toggle('nav-menu-active');
+  }
+
+  navToggle.addEventListener('click',navClick);  
+</script>
+    </div>
+    <div class="main-continer">
+      <div class="section-layout">
+        <div class="section-layout-wrapper">
+          
+<div class="sidebar">
+    <div class="sidebar-wrapper" id="sidebar">
+      
+        <div class="post-list-sidebar">
+          <div class="sidebar-title">
+            <span id="tocSideBar" class="sidebar-title-item sidebar-title-active">文章目录</span>
+            <span id="metaSideBar" class="sidebar-title-item">站点概览</span>
+          </div>
+        </div>
+      
+      <div class="sidebar-body" id="sidebar_body">
+        
+          <div class="post-side-meta" id="post_side_meta">
+            <div class="sidebar-wrapper">
+  <div class="sidebar-item">
+    <img class="site-author-image" src="https://blog.memory6181.com//images/avatar.png"/>
+    <p class="site-author-name">Memory</p>
+    <p class="site-description">温故而知新</p>
+  </div>
+  <div class="sidebar-item side-item-stat">
+    <div class="sidebar-item-box">
+      <a href="/archives/">
+        <span class="site-item-stat-count">45</span>
+        <span class="site-item-stat-name">日志</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="">
+        <span class="site-item-stat-count">6</span>
+        <span class="site-item-stat-name">分类</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="/tags/">
+        <span class="site-item-stat-count">6</span>
+        <span class="site-item-stat-name">标签</span>
+      </a>
+    </div>
+  </div>
+  <div class="sidebar-item">
+    <span class="site-item-rss">
+        <i class="iconfont icon-rss"></i>
+        <a href="https://blog.memory6181.com//atom.xml" target="_blank">RSS</a>
+    </span>
+  </div>
+  <div class="sidebar-item sidebar-item-social">
+    <div class="social-item">
+      <a href="https://www.github.com/hsxyhao">
+        <i class="iconfont icon-github"></i> GitHub
+      </a>
+      <a href="">
+        <i class="iconfont icon-twitter"></i> Twitter
+      </a>
+    </div>
+    <div class="social-item">
+      <a href="">
+        <i class="iconfont icon-globe"></i> 豆瓣
+      </a>
+      <a href="">
+        <i class="iconfont icon-globe"></i> 知乎
+      </a>
+    </div>
+  </div>
+</div>
+          </div>
+          <div class="post-toc sidebar-body-active" id="post_toc" style="opacity: 1;">
+            <div class="toc-box">
+  <div class="toc-wrapper" id="toc_wrapper">
+    <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#%E7%9B%AE%E7%9A%84">目的</a></li>
+<li><a href="#%E5%B8%B8%E7%94%A8%E7%9A%84%E7%AC%AC%E4%B8%89%E6%96%B9%E7%BC%96%E8%BE%91%E5%99%A8%E4%BB%8B%E7%BB%8D">常用的第三方编辑器介绍</a></li>
+<li><a href="#keil-%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%BC%96%E8%AF%91%E4%B8%8B%E8%BD%BD">Keil 命令行编译下载</a></li>
+<li><a href="#iar-%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%BC%96%E8%AF%91%E4%B8%8B%E8%BD%BD">IAR 命令行编译下载</a></li>
+<li><a href="#%E4%BD%BF%E7%94%A8">使用</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+</div>
+
+<script>
+
+let lastTop = 0, lList = [], hList = [], postBody, lastIndex = -1; 
+let active = 'active-show', activeClass = 'active-current';
+let tocWrapper = document.querySelector('#toc_wrapper');
+let tocContent = tocWrapper.children[0];
+
+function addTocNumber(elem, deep) {
+  if (!elem) {
+    return;
+  }
+  let prop = elem.__proto__;
+
+  if (prop === HTMLUListElement.prototype) {
+    for (let i = 0; i < elem.children.length; i++) {
+      addTocNumber(elem.children[i], deep + (i + 1) + '.');
+    }
+  } else if (prop === HTMLLIElement.prototype) {
+    // 保存li元素
+    lList.push(elem);
+    for (let i = 0; i < elem.children.length; i++) {
+      let cur = elem.children[i];
+      if (cur.__proto__ === HTMLAnchorElement.prototype) {
+        cur.text =  deep + ' ' + cur.text;
+      } else if (cur.__proto__ === HTMLUListElement.prototype) {
+        addTocNumber(cur, deep);
+      }
+    }
+  }
+}
+
+
+document.addEventListener('scroll', function(e) {
+  if (lList.length <= 0) {
+    return;
+  }
+  let scrollTop = document.body.scrollTop;
+  let dir;
+
+  if (lastTop - scrollTop > 0) {
+    dir = 'up';
+  } else {
+    dir = 'down';
+  }
+
+  lastTop = scrollTop;
+  if (scrollTop <= 0) {
+    if (lastIndex >= 0 && lastIndex < hList.length) {
+      lList[lastIndex].classList.remove(activeClass);
+    }
+    return;
+  }
+
+  let current = 0, hasFind = false;
+  for (let i = 0; i < hList.length; i++) {
+    if (hList[i].offsetTop > scrollTop) {
+      current = i;
+      hasFind = true;
+      break;
+    }
+  }
+  if (!hasFind && scrollTop > lList[lList.length - 1].offsetTop) {
+    current = hList.length - 1;
+  } else {
+    current--;
+  }
+  if (dir === 'down') {
+    if (current > lastIndex) {
+      addActiveClass(current);
+      removeActiveClass(lastIndex) 
+      lastIndex = current;
+      removeParentActiveClass();
+      lList[current] && addActiveLiElemment(lList[current].parentElement,tocContent);
+    }
+  } else {
+    if (current < lastIndex) {
+      addActiveClass(current);
+      removeActiveClass(lastIndex);
+      lastIndex = current;
+      removeParentActiveClass();
+      lList[current] && addActiveLiElemment(lList[current].parentElement,tocContent);
+    }
+  }
+});
+
+function removeParentActiveClass() {
+  let parents = tocContent.querySelectorAll('.'+active)
+  parents.forEach(function(elem) {
+    elem.classList.remove(active);
+  });
+}
+
+function addActiveClass(index) {
+  if (index >= 0 && index < hList.length) {
+    lList[index].classList.add(activeClass);
+  }
+}
+
+function removeActiveClass(index) {
+  if (index >= 0 && index < hList.length) {
+    lList[index].classList.remove(activeClass);
+  }
+}
+
+function addActiveLiElemment(elem, parent) {
+  if (!elem || elem === parent) {
+    return;
+  } else {
+    if (elem.__proto__ === HTMLLIElement.prototype) {
+      elem.classList.add(active);
+    }
+    addActiveLiElemment(elem.parentElement, parent);
+  }
+}
+
+function showToc() {
+  if (tocWrapper) {
+    postBody = document.querySelector('#post_body');
+    for (let i = 0; i < postBody.children.length; i++) {
+      if (postBody.children[i].__proto__ === HTMLHeadingElement.prototype) {
+        hList.push(postBody.children[i]);
+      }
+    }
+
+    if (hList.length > 10) {
+      active = 'active-hidden'
+      tocContent.classList.add('closed');
+    } else {
+      tocContent.classList.add('expanded');
+    }
+  }
+}
+addTocNumber(tocContent, '');
+
+window.addEventListener('load', function() {
+  showToc();
+  document.querySelector('#sidebar').style='display: block;';
+  tocWrapper.classList.add('toc-active');
+  setTimeout(function() {
+    if ("createEvent" in document) {
+      let evt = document.createEvent("HTMLEvents");
+      evt.initEvent("scroll", false, true);
+      document.dispatchEvent(evt);
+    }
+    else {
+      document.fireEvent("scroll");
+    }
+  }, 500)
+})
+
+</script>
+          </div>
+        
+      </div>
+    </div>
+</div>
+<script>
+  const SIDEBAR_TITLE_ACTIVE = 'sidebar-title-active';
+  const SIDEBAR_BODY_ACTIVE = 'sidebar-body-active';
+  const SLIDE_UP_IN = 'slide-up-in';
+
+  let sidebar = document.querySelector('#sidebar'),
+  tocSideBar = document.querySelector('#tocSideBar'),
+  metaSideBar = document.querySelector('#metaSideBar'),
+  postToc = document.querySelector('#post_toc'),
+  postSiteMeta = document.querySelector('#post_side_meta'),
+  sidebarTitle = document.querySelector('.sidebar-title'),
+  sidebarBody = document.querySelector('#sidebar_body');
+
+  tocSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  metaSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  function toggleSidebar(e) {
+    let currentTitle = document.querySelector("."+SIDEBAR_TITLE_ACTIVE);
+    if (currentTitle == e.srcElement) {
+      return ;
+    }
+    let current, showElement, hideElement;
+    if (e.srcElement == metaSideBar) {
+      showElement = postSiteMeta;
+      hideElement = postToc;
+    } else if (e.srcElement == tocSideBar){
+      showElement = postToc;
+      hideElement = postSiteMeta;
+    }
+    currentTitle.classList.remove(SIDEBAR_TITLE_ACTIVE);
+    e.srcElement.classList.add(SIDEBAR_TITLE_ACTIVE);
+
+    window.Velocity(hideElement, 'stop');
+    window.Velocity(hideElement, 'transition.slideUpOut', {
+      display: 'none',
+      duration: 200,
+      complete: function () {
+        window.Velocity(showElement, 'transition.slideDownIn', {
+          duration: 200
+        });
+      }
+    })
+    hideElement.classList.remove(SIDEBAR_BODY_ACTIVE);
+    showElement.classList.add(SIDEBAR_BODY_ACTIVE);
+
+  }
+
+  postToc.addEventListener('transitionend', function() {
+    this.classList.remove(SLIDE_UP_IN);
+  });
+
+  let limitTop = sidebar.offsetTop;
+  let hasFix = false;
+  window.addEventListener('scroll', function(e) {
+    if (document.body.scrollTop >= limitTop) {
+      if (!hasFix) {
+        sidebar.classList.add('sidebar-fixed');
+        hasFix = true;
+      }
+    } else {
+      if (hasFix) {
+        sidebar.classList.remove('sidebar-fixed');
+        hasFix = false;
+      }
+    }
+  });
+</script>
+          <div class="section-box">
+            <div class="section post">
+              <div class="article-box">
+    <header class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://blog.memory6181.com/post/2018-08-30">
+      ARM 编译工具keil 和 IAR  命令行编译和下载
+    </a>
+  </h1>
+  <div class="post-meta">
+    <span class="meta-item">
+      <i class="iconfont icon-calendar_empty"></i>
+      <span class="pc-show">发布于</span>
+      <span>2018-08-30</span>
+    </span>
+    
+      <span class="meta-item">
+        <span class="post-meta-divider">|</span>
+        <i class="iconfont icon-folder_open_alt"></i>
+        <span class="pc-show">分类于</span>
+        
+          
+            <a href="https://blog.memory6181.com/tag/4eOic9FHK">
+              <span>技术</span>
+            </a>
+          
+        
+      </span>
+    
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="iconfont icon-time"></i>
+      <span>4分钟</span>
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="iconfont icon-keyboard"></i>
+      <span class="pc-show">816字数</span>
+    </span>
+  </div>
+</header>
+</div>
+              <div class="post-body next-md-body" id="post_body">
+                <hr>
+<h4 id="目的">目的</h4>
+<hr>
+<p>不管是Keil还是IAR对代码补全，高亮等编辑功能支持的不是很好，虽然现在的Keil 5.25对界面的支持好了很多，但是很多人还是青睐于第三方的编辑器，命令行的编译方式可以让我们在使用第三方编辑器编辑的时候进行代码编译和下载，通常我们比较喜欢的编辑器有下面一些，不是很全。</p>
+<hr>
+<h4 id="常用的第三方编辑器介绍">常用的第三方编辑器介绍</h4>
+<hr>
+<ul>
+<li>
+<p>Visual Studio 2010 - 2017<br>
+Windows 下面的VS工具配上番茄助手写代码爽的不得了，并且现在有一些现成难过的工具可以直接通过Keil 或者IAR的工具生成Visual Studio的工程，可以直接打开，笔者对这两种工具都有收藏，如果有需要的可以直接联系我，都是别人的东西，只要你开口肯定给你，但是Visual Studio最新的2017安装完成需要35G的空间，如果不是有其他的用处，不免有点太浪费了。</p>
+</li>
+<li>
+<p>Atom<br>
+Atom 编辑器在Windows下面可以和Vi编辑器相媲美的编辑器，拥有丰富的插件，良好的代码高亮支持，遗憾的是不能进行定义跳转。</p>
+</li>
+<li>
+<p>Source insight<br>
+Source insight可以直接条装，现在最新的4.0版本也有很多个主题，同样的对代码自动补全支持的也很好，并且代码高亮也可以自定义，但是配置一个工程有点搞不懂，移动位置之后好像文件路径变了，就需要重新配置。</p>
+</li>
+<li>
+<p>Sublime text<br>
+和Atom一样，拥有丰富的插件，可是这个软件是收费的。没有过多的体验，就不多说了。</p>
+</li>
+<li>
+<p>Visual Studio Code<br>
+同样的也是微软的东西，但是和Visual Studio相比就轻量了很多，使用体验也还不错，字体，代码高亮，补全都可以通过插件来实现，也是笔者比较喜欢的一个工具了。、</p>
+</li>
+</ul>
+<hr>
+<h4 id="keil-命令行编译下载">Keil 命令行编译下载</h4>
+<hr>
+<blockquote>
+<p>参考资料:http://www.keil.com/support/man/docs/uv4/uv4_commandline.htm</p>
+</blockquote>
+<p>编译：</p>
+<pre><code>UV4 〚command〛 〚projectfile〛 〚options〛
+UV4.exe -r Blinky.uvproj -o Build_Output.txt
+
+UV4.exe : 前面需要补全路径
+-r Blinky.uvproj :Keil 工程名
+-o Build_Output.txt:输出文档
+
+</code></pre>
+<p>下载：</p>
+<pre><code>UV4.exe -f Programming.UVPROJ -o Prg_Output.txt\
+</code></pre>
+<p>注意：keil 编译会自动打开Keil，也有可能打印在控制台，我没研究过。</p>
+<hr>
+<h4 id="iar-命令行编译下载">IAR 命令行编译下载</h4>
+<hr>
+<blockquote>
+<p>参考资料：IAR帮助文档里面可以看到</p>
+</blockquote>
+<p>编译：</p>
+<pre><code>IarBuild.exe test.ewp -build Debug -log all
+
+IarBuild.exe :前面需要补全路径
+test.ewp ：工程名，注意是.ewp结尾的。
+-build Debug ：表示build
+-log all ：打印所有，可以设置 -log info
+</code></pre>
+<p>下载: 在Setting 文件夹下面有一个.cspy的bat文件，在后面加上参数 &quot;--download_only&quot;,前提是在IAR下面都配置好了，并且成功下载过一次的工程。</p>
+<pre><code> --download_only
+</code></pre>
+<h4 id="使用">使用</h4>
+<p>我们可以在工程所在的路径下面编写<code>bat</code>文件，通过直接运行bat就可以编译和下载了，第三方编辑器通常都可以配置编译选项和调试选项，也可以配置在Tool里面进行编译下载，我比较喜欢使用powershell进行编译和下载。</p>
+
+              </div>
+              <div class="post-footer">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      Memory
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://blog.memory6181.com/post/2018-08-30" title="ARM 编译工具keil 和 IAR  命令行编译和下载">https://blog.memory6181.com/post/2018-08-30</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外,转载请注明出处！
+    </li>
+  </ul>
+  <div class="tags">
+    
+      <a href="https://blog.memory6181.com/tag/4eOic9FHK"># 技术</a>
+    
+  </div>
+  <div class="nav">
+    <div class="nav-prev">
+      
+        <i class="iconfont icon-angle_left"></i>
+        <a class="nav-pc-next" href="https://blog.memory6181.com/post/hello-gridea">Hello Gridea</a class="nav-pc-next">
+        <a class="nav-mobile-prev" href="https://blog.memory6181.com/post/hello-gridea">上一篇</a>
+      
+    </div>
+    <div class="nav-next">
+      
+        <a class="nav-pc-next" href="https://blog.memory6181.com/post/2018-08-25">给pugo博客添加后台管理</a>
+        <a class="nav-mobile-next" href="https://blog.memory6181.com/post/2018-08-25">下一篇</a>
+        <i class="iconfont icon-angle_right"></i>
+      
+    </div>
+  </div>
+</div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-box">
+  <footer class="footer">
+    <div class="copyright">
+      © 2019-2020 <i class="iconfont icon-heart"></i> HsxyHao
+    </div>
+    <div class="poweredby">
+      <div class="power-left">Power By<a href="https://github.com/hsxyhao"> HsxyHao</a></div>
+      <div>Copy<a href="https://github.com/iissnan/hexo-theme-next"> Hexo Next Theme</a></div>
+    </div>
+  </footer>
+  <div class="back-to-top" id="back_to_top">
+    <i class="iconfont icon-arrow_up"></i>
+    <span class="scrollpercent">
+      <span id="back_to_top_text">100</span>%
+    </span>
+  </div>
+</div>
+
+<script>
+
+  let body = document.body;
+
+  let back2Top = document.querySelector('#back_to_top'),
+  back2TopText = document.querySelector('#back_to_top_text');
+
+  function scrollAnimation(currentY, targetY) {
+   
+    let needScrollTop = targetY - currentY
+    let _currentY = currentY
+    setTimeout(() => {
+      const dist = Math.ceil(needScrollTop / 10)
+      _currentY += dist
+      window.scrollTo(_currentY, currentY)
+      if (needScrollTop > 10 || needScrollTop < -10) {
+        scrollAnimation(_currentY, targetY)
+      } else {
+        window.scrollTo(_currentY, targetY)
+      }
+    }, 1)
+  }
+
+  back2Top.addEventListener("click", function(e) {
+    scrollAnimation(body.scrollTop, 0);
+    e.stopPropagation();
+    return false;
+  });
+  
+  window.addEventListener('scroll', function(e) {
+    let percent = body.scrollTop / (body.scrollHeight - body.clientHeight) * 100;
+    if (percent > 1 && !back2Top.classList.contains('back-top-active')) {
+      back2Top.classList.add('back-top-active');
+    }
+    if (percent == 0) {
+      back2Top.classList.remove('back-top-active');
+    }
+    back2TopText.textContent = Math.floor(percent);
+  });
+
+  // 代码高亮
+  hljs.initHighlightingOnLoad();
+</script>
+    </div>
+  </body>
+  <script src="/media/js/motion.js"></script>
+</html>

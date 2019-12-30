@@ -1,0 +1,731 @@
+<html>
+  <head>
+      <meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Memory</title>
+<link rel="shortcut icon" href="https://blog.memory6181.com//favicon.ico?v=1577709624044">
+<link rel="stylesheet" href="https://blog.memory6181.com//styles/main.css">
+<meta name="description" content="温故而知新" />
+
+<link rel="stylesheet" href="/media/fonts/iconfont.css">
+<link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script>
+  </head>
+  <body>
+    <div class="head-top-line"></div>
+    <div class="header-box">
+      <header class="header">
+  <div class="blog-header" id="header">
+    <div class="site-meta">
+      <div class="nav-toggle" id="nav_toggle">
+        <div class="toggle-box">
+          <div class="line line-top"></div>
+          <div class="line line-center"></div>
+          <div class="line line-bottom"></div>
+        </div>
+      </div>
+      <div class="site-title">
+        <a href="/" class="brand">
+          <span>Memory</span>
+        </a>
+      </div>
+      <p class="subtitle">Quick notes</p>
+    </div>
+    <nav class="site-nav" id="site_nav">
+      <ul>
+        <!-- <li class="nav-item "> -->
+          
+            <li class="nav-item ">
+              <a href="/">
+                <i class="iconfont icon-home"></i>首页
+              </a>
+            </li>
+            <!-- <li class="nav-item "></li> -->
+            <!--  -->
+              <!-- 
+                <a href="/">
+                  <i class="iconfont icon-home"></i> 首页
+                </a>
+               -->
+            <!-- </li> -->
+            <!--  -->
+          
+            <li class="nav-item ">
+              <a href="/archives">
+                <i class="iconfont icon-home"></i>归档
+              </a>
+            </li>
+            <!-- <li class="nav-item "></li> -->
+            <!--  -->
+          
+            <li class="nav-item ">
+              <a href="/tags">
+                <i class="iconfont icon-home"></i>标签
+              </a>
+            </li>
+            <!-- <li class="nav-item "></li> -->
+            <!--  -->
+          
+            <li class="nav-item ">
+              <a href="http://blog.memory6181.com//post/guan-yu-wo/">
+                <i class="iconfont icon-home"></i>简历
+              </a>
+            </li>
+            <!-- <li class="nav-item "></li> -->
+            <!--  -->
+          
+            <li class="nav-item ">
+              <a href="http://memory6181.coding.me//post/about/">
+                <i class="iconfont icon-home"></i>故事
+              </a>
+            </li>
+            <!-- <li class="nav-item "></li> -->
+            <!--  -->
+          
+        <!-- </li> -->
+        <!-- <li class="nav-item ">
+          
+            
+          
+            
+              
+                <a href="/archives">
+                  <i class="iconfont icon-archive"></i> 归档
+                </a>
+              
+            
+          
+            
+          
+            
+          
+            
+          
+        </li>
+        <li class="nav-item ">
+          
+            
+          
+            
+          
+            
+              
+                <a href="/tags">
+                  <i class="iconfont icon-tags"></i> 标签
+                </a>
+              
+            
+          
+            
+          
+            
+          
+        </li>
+        <li class="nav-item">
+          <a>
+            <i class="iconfont icon-search"></i> 搜索
+          </a>
+        </li> -->
+      </ul>
+    </nav>
+  </div>
+</header>
+<script type="text/javascript"> 
+ 
+  let showNav = true;
+
+  let navToggle = document.querySelector('#nav_toggle'),
+  siteNav = document.querySelector('#site_nav');
+  
+  function navClick() {
+    navToggle.classList.toggle('nav-toggle-active');
+    siteNav.classList.toggle('nav-menu-active');
+  }
+
+  navToggle.addEventListener('click',navClick);  
+</script>
+    </div>
+    <div class="main-continer">
+      <div class="section-layout">
+        <div class="section-layout-wrapper">
+          
+<div class="sidebar">
+    <div class="sidebar-wrapper" id="sidebar">
+      
+        <div class="post-list-sidebar">
+          <div class="sidebar-title">
+            <span id="tocSideBar" class="sidebar-title-item sidebar-title-active">文章目录</span>
+            <span id="metaSideBar" class="sidebar-title-item">站点概览</span>
+          </div>
+        </div>
+      
+      <div class="sidebar-body" id="sidebar_body">
+        
+          <div class="post-side-meta" id="post_side_meta">
+            <div class="sidebar-wrapper">
+  <div class="sidebar-item">
+    <img class="site-author-image" src="https://blog.memory6181.com//images/avatar.png"/>
+    <p class="site-author-name">Memory</p>
+    <p class="site-description">温故而知新</p>
+  </div>
+  <div class="sidebar-item side-item-stat">
+    <div class="sidebar-item-box">
+      <a href="/archives/">
+        <span class="site-item-stat-count">45</span>
+        <span class="site-item-stat-name">日志</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="">
+        <span class="site-item-stat-count">6</span>
+        <span class="site-item-stat-name">分类</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="/tags/">
+        <span class="site-item-stat-count">6</span>
+        <span class="site-item-stat-name">标签</span>
+      </a>
+    </div>
+  </div>
+  <div class="sidebar-item">
+    <span class="site-item-rss">
+        <i class="iconfont icon-rss"></i>
+        <a href="https://blog.memory6181.com//atom.xml" target="_blank">RSS</a>
+    </span>
+  </div>
+  <div class="sidebar-item sidebar-item-social">
+    <div class="social-item">
+      <a href="https://www.github.com/hsxyhao">
+        <i class="iconfont icon-github"></i> GitHub
+      </a>
+      <a href="">
+        <i class="iconfont icon-twitter"></i> Twitter
+      </a>
+    </div>
+    <div class="social-item">
+      <a href="">
+        <i class="iconfont icon-globe"></i> 豆瓣
+      </a>
+      <a href="">
+        <i class="iconfont icon-globe"></i> 知乎
+      </a>
+    </div>
+  </div>
+</div>
+          </div>
+          <div class="post-toc sidebar-body-active" id="post_toc" style="opacity: 1;">
+            <div class="toc-box">
+  <div class="toc-wrapper" id="toc_wrapper">
+    <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#%E6%A6%82%E8%BF%B0">概述</a></li>
+<li><a href="#%E6%9C%80%E5%8E%9F%E5%A7%8B%E7%9A%84%E8%BD%AF%E4%BB%B6%E5%AE%9A%E6%97%B6%E5%99%A8">最原始的软件定时器</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+</div>
+
+<script>
+
+let lastTop = 0, lList = [], hList = [], postBody, lastIndex = -1; 
+let active = 'active-show', activeClass = 'active-current';
+let tocWrapper = document.querySelector('#toc_wrapper');
+let tocContent = tocWrapper.children[0];
+
+function addTocNumber(elem, deep) {
+  if (!elem) {
+    return;
+  }
+  let prop = elem.__proto__;
+
+  if (prop === HTMLUListElement.prototype) {
+    for (let i = 0; i < elem.children.length; i++) {
+      addTocNumber(elem.children[i], deep + (i + 1) + '.');
+    }
+  } else if (prop === HTMLLIElement.prototype) {
+    // 保存li元素
+    lList.push(elem);
+    for (let i = 0; i < elem.children.length; i++) {
+      let cur = elem.children[i];
+      if (cur.__proto__ === HTMLAnchorElement.prototype) {
+        cur.text =  deep + ' ' + cur.text;
+      } else if (cur.__proto__ === HTMLUListElement.prototype) {
+        addTocNumber(cur, deep);
+      }
+    }
+  }
+}
+
+
+document.addEventListener('scroll', function(e) {
+  if (lList.length <= 0) {
+    return;
+  }
+  let scrollTop = document.body.scrollTop;
+  let dir;
+
+  if (lastTop - scrollTop > 0) {
+    dir = 'up';
+  } else {
+    dir = 'down';
+  }
+
+  lastTop = scrollTop;
+  if (scrollTop <= 0) {
+    if (lastIndex >= 0 && lastIndex < hList.length) {
+      lList[lastIndex].classList.remove(activeClass);
+    }
+    return;
+  }
+
+  let current = 0, hasFind = false;
+  for (let i = 0; i < hList.length; i++) {
+    if (hList[i].offsetTop > scrollTop) {
+      current = i;
+      hasFind = true;
+      break;
+    }
+  }
+  if (!hasFind && scrollTop > lList[lList.length - 1].offsetTop) {
+    current = hList.length - 1;
+  } else {
+    current--;
+  }
+  if (dir === 'down') {
+    if (current > lastIndex) {
+      addActiveClass(current);
+      removeActiveClass(lastIndex) 
+      lastIndex = current;
+      removeParentActiveClass();
+      lList[current] && addActiveLiElemment(lList[current].parentElement,tocContent);
+    }
+  } else {
+    if (current < lastIndex) {
+      addActiveClass(current);
+      removeActiveClass(lastIndex);
+      lastIndex = current;
+      removeParentActiveClass();
+      lList[current] && addActiveLiElemment(lList[current].parentElement,tocContent);
+    }
+  }
+});
+
+function removeParentActiveClass() {
+  let parents = tocContent.querySelectorAll('.'+active)
+  parents.forEach(function(elem) {
+    elem.classList.remove(active);
+  });
+}
+
+function addActiveClass(index) {
+  if (index >= 0 && index < hList.length) {
+    lList[index].classList.add(activeClass);
+  }
+}
+
+function removeActiveClass(index) {
+  if (index >= 0 && index < hList.length) {
+    lList[index].classList.remove(activeClass);
+  }
+}
+
+function addActiveLiElemment(elem, parent) {
+  if (!elem || elem === parent) {
+    return;
+  } else {
+    if (elem.__proto__ === HTMLLIElement.prototype) {
+      elem.classList.add(active);
+    }
+    addActiveLiElemment(elem.parentElement, parent);
+  }
+}
+
+function showToc() {
+  if (tocWrapper) {
+    postBody = document.querySelector('#post_body');
+    for (let i = 0; i < postBody.children.length; i++) {
+      if (postBody.children[i].__proto__ === HTMLHeadingElement.prototype) {
+        hList.push(postBody.children[i]);
+      }
+    }
+
+    if (hList.length > 10) {
+      active = 'active-hidden'
+      tocContent.classList.add('closed');
+    } else {
+      tocContent.classList.add('expanded');
+    }
+  }
+}
+addTocNumber(tocContent, '');
+
+window.addEventListener('load', function() {
+  showToc();
+  document.querySelector('#sidebar').style='display: block;';
+  tocWrapper.classList.add('toc-active');
+  setTimeout(function() {
+    if ("createEvent" in document) {
+      let evt = document.createEvent("HTMLEvents");
+      evt.initEvent("scroll", false, true);
+      document.dispatchEvent(evt);
+    }
+    else {
+      document.fireEvent("scroll");
+    }
+  }, 500)
+})
+
+</script>
+          </div>
+        
+      </div>
+    </div>
+</div>
+<script>
+  const SIDEBAR_TITLE_ACTIVE = 'sidebar-title-active';
+  const SIDEBAR_BODY_ACTIVE = 'sidebar-body-active';
+  const SLIDE_UP_IN = 'slide-up-in';
+
+  let sidebar = document.querySelector('#sidebar'),
+  tocSideBar = document.querySelector('#tocSideBar'),
+  metaSideBar = document.querySelector('#metaSideBar'),
+  postToc = document.querySelector('#post_toc'),
+  postSiteMeta = document.querySelector('#post_side_meta'),
+  sidebarTitle = document.querySelector('.sidebar-title'),
+  sidebarBody = document.querySelector('#sidebar_body');
+
+  tocSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  metaSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  function toggleSidebar(e) {
+    let currentTitle = document.querySelector("."+SIDEBAR_TITLE_ACTIVE);
+    if (currentTitle == e.srcElement) {
+      return ;
+    }
+    let current, showElement, hideElement;
+    if (e.srcElement == metaSideBar) {
+      showElement = postSiteMeta;
+      hideElement = postToc;
+    } else if (e.srcElement == tocSideBar){
+      showElement = postToc;
+      hideElement = postSiteMeta;
+    }
+    currentTitle.classList.remove(SIDEBAR_TITLE_ACTIVE);
+    e.srcElement.classList.add(SIDEBAR_TITLE_ACTIVE);
+
+    window.Velocity(hideElement, 'stop');
+    window.Velocity(hideElement, 'transition.slideUpOut', {
+      display: 'none',
+      duration: 200,
+      complete: function () {
+        window.Velocity(showElement, 'transition.slideDownIn', {
+          duration: 200
+        });
+      }
+    })
+    hideElement.classList.remove(SIDEBAR_BODY_ACTIVE);
+    showElement.classList.add(SIDEBAR_BODY_ACTIVE);
+
+  }
+
+  postToc.addEventListener('transitionend', function() {
+    this.classList.remove(SLIDE_UP_IN);
+  });
+
+  let limitTop = sidebar.offsetTop;
+  let hasFix = false;
+  window.addEventListener('scroll', function(e) {
+    if (document.body.scrollTop >= limitTop) {
+      if (!hasFix) {
+        sidebar.classList.add('sidebar-fixed');
+        hasFix = true;
+      }
+    } else {
+      if (hasFix) {
+        sidebar.classList.remove('sidebar-fixed');
+        hasFix = false;
+      }
+    }
+  });
+</script>
+          <div class="section-box">
+            <div class="section post">
+              <div class="article-box">
+    <header class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://blog.memory6181.com/post/0grcL9M4Q">
+      一个嵌入式软件定时器的设计
+    </a>
+  </h1>
+  <div class="post-meta">
+    <span class="meta-item">
+      <i class="iconfont icon-calendar_empty"></i>
+      <span class="pc-show">发布于</span>
+      <span>2018-05-28</span>
+    </span>
+    
+      <span class="meta-item">
+        <span class="post-meta-divider">|</span>
+        <i class="iconfont icon-folder_open_alt"></i>
+        <span class="pc-show">分类于</span>
+        
+          
+            <a href="https://blog.memory6181.com/tag/4eOic9FHK">
+              <span>技术</span>
+            </a>
+          
+        
+      </span>
+    
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="iconfont icon-time"></i>
+      <span>4分钟</span>
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="iconfont icon-keyboard"></i>
+      <span class="pc-show">900字数</span>
+    </span>
+  </div>
+</header>
+</div>
+              <div class="post-body next-md-body" id="post_body">
+                <h4 id="概述">概述</h4>
+<p>在嵌入式系统里面，相对来说定时器的资源是比较紧缺的，并且定时器是比较精确的，有些时候可能我们需要大量的定时任务，并且并不一定要非常精确的定时器，比如ms级别的定时，s级别的定时器，这个时候我们就需要设计一些软件定时器来做这些需求。</p>
+<h4 id="最原始的软件定时器">最原始的软件定时器</h4>
+<p>如果我们现在有一个us定时器，我们还需要一个ms定时器，我们想到最简单的办法就是定义一个变量在中断里面累加，如下代码所示：</p>
+<pre><code class="language-cpp">uint32_t Timer = 0;;
+//main 函数
+int main()
+{
+	//初始化，启动us定时器，
+	while(1)
+	{}
+}
+//中断函数
+void TIM_IRQ interrupt 0
+{
+	Timer++; 
+	if (Timer == 1000)
+	{
+		Timer = 0;
+		//执行定时任务
+	}
+}
+</code></pre>
+<p>看上面的一个定时器，这是软件定时器的雏形，就是在中断函数里面不断的累加一个变量到达定时时间之后开始执行中断函数。这也是软件定时器最核心的东西，但是如果大量的定时器都像上面那样写，我们的中断函数里面要写很多的东西，显得很乱，我们希望更多的业务逻辑尽量不要写在中断函数里面，我们对上面的代码改版，出现了下面的代码：</p>
+<pre><code class="language-cpp">
+uint32_t Timer = 0;;
+//main 函数
+int main()
+{
+	//初始化，启动us定时器，
+	Timer = 1000;
+	while(1)
+	{
+		if (Timer &lt;= 0)
+		{
+			//执行定时任务
+		}
+	}
+}
+//中断函数
+void TIM_IRQ interrupt 0
+{
+	if (Timer&gt;0)
+	{
+		Timer--;	
+	}
+}
+</code></pre>
+<p>上面的代码看上去稍微好看了一点点，我们把中断处理逻辑移动到了main函数里面处理，现在还是有问题的，我们每启动一个定时器，需要定义一个变量，中断函数里面添加一段逻辑，有时候可能我们的代码是分层写的，驱动和应用是分层写的，于是就出现了一边在写应用层逻辑，一遍还要去中断里面添加定时器，我们设计思路是定义一些定时器，先用着，怎么定义呢，先定义一个定时器数组，看下面代码：</p>
+<pre><code class="language-cpp">
+//定义定时器
+#define TIME_COUNT  12
+int32_t timer[TIME_COUNT] ={-1}; 
+
+//申请一个定时器
+int apply_timer(uint32_t time)
+{
+	//遍历所有定时器，查找未使用定时器
+	for(int i = 0;i &lt;TIME_COUNT i++)
+	{
+		if (timer[i] == -1)//有空闲定时器
+		{
+			timer[i] = time;
+			return i;
+		}
+	}
+	return -1;
+}
+int read_timer(int id)
+{
+	return timer[id];
+}
+//main 函数
+int main()
+{
+	//初始化，启动us定时器，
+	int id1 = apply_timer(1000)
+	if (id1 == -1)
+		printf(&quot;apply faild\r\n&quot;);
+	int id2 = apply_timer(1000)
+	if (id2 == -1)
+		printf(&quot;apply faild\r\n&quot;);
+	while(1)
+	{
+		if (read_timer(id1) &lt;= 0)
+		{
+			//执行定时任务1
+		}
+		if (read_timer(id2) &lt;= 0)
+		{
+			//执行定时任务2
+		}
+	}
+}
+//中断函数
+void TIM_IRQ interrupt 0
+{
+	for(int i = 0;i &lt;TIME_COUNT i++)
+	{
+		if (timer[i]&gt;0)
+			timer[i]--;
+	}
+}
+</code></pre>
+<p>上面的代码实现了一个静态的软件定时器，基本分离了驱动层代码和应用层的业务逻辑，但是静态的定时器，静态的定时器我们就不能在程序运行中动态的申请定时器，或者我们预留足够的定时器留给程序中动态申请，但是，资源是紧缺的，我们预留的定时器在一段时间内是不用的，但是同样的还会占用系统资源，我们继续改造定时器，用链表和指针，构造终极定时器，代码见码云：</p>
+<blockquote>
+<p>https://gitee.com/zyzp/codes/ut39rhm61q4vk2yd5bsog46</p>
+</blockquote>
+<p>下次解释代码设计的思路</p>
+
+              </div>
+              <div class="post-footer">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      Memory
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://blog.memory6181.com/post/0grcL9M4Q" title="一个嵌入式软件定时器的设计">https://blog.memory6181.com/post/0grcL9M4Q</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外,转载请注明出处！
+    </li>
+  </ul>
+  <div class="tags">
+    
+      <a href="https://blog.memory6181.com/tag/4eOic9FHK"># 技术</a>
+    
+  </div>
+  <div class="nav">
+    <div class="nav-prev">
+      
+        <i class="iconfont icon-angle_left"></i>
+        <a class="nav-pc-next" href="https://blog.memory6181.com/post/__XhzOP-y">AT指令框架的实现</a class="nav-pc-next">
+        <a class="nav-mobile-prev" href="https://blog.memory6181.com/post/__XhzOP-y">上一篇</a>
+      
+    </div>
+    <div class="nav-next">
+      
+        <a class="nav-pc-next" href="https://blog.memory6181.com/post/pU7hkV2AQ">Linux 下面screen命令的用法</a>
+        <a class="nav-mobile-next" href="https://blog.memory6181.com/post/pU7hkV2AQ">下一篇</a>
+        <i class="iconfont icon-angle_right"></i>
+      
+    </div>
+  </div>
+</div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-box">
+  <footer class="footer">
+    <div class="copyright">
+      © 2019-2020 <i class="iconfont icon-heart"></i> HsxyHao
+    </div>
+    <div class="poweredby">
+      <div class="power-left">Power By<a href="https://github.com/hsxyhao"> HsxyHao</a></div>
+      <div>Copy<a href="https://github.com/iissnan/hexo-theme-next"> Hexo Next Theme</a></div>
+    </div>
+  </footer>
+  <div class="back-to-top" id="back_to_top">
+    <i class="iconfont icon-arrow_up"></i>
+    <span class="scrollpercent">
+      <span id="back_to_top_text">100</span>%
+    </span>
+  </div>
+</div>
+
+<script>
+
+  let body = document.body;
+
+  let back2Top = document.querySelector('#back_to_top'),
+  back2TopText = document.querySelector('#back_to_top_text');
+
+  function scrollAnimation(currentY, targetY) {
+   
+    let needScrollTop = targetY - currentY
+    let _currentY = currentY
+    setTimeout(() => {
+      const dist = Math.ceil(needScrollTop / 10)
+      _currentY += dist
+      window.scrollTo(_currentY, currentY)
+      if (needScrollTop > 10 || needScrollTop < -10) {
+        scrollAnimation(_currentY, targetY)
+      } else {
+        window.scrollTo(_currentY, targetY)
+      }
+    }, 1)
+  }
+
+  back2Top.addEventListener("click", function(e) {
+    scrollAnimation(body.scrollTop, 0);
+    e.stopPropagation();
+    return false;
+  });
+  
+  window.addEventListener('scroll', function(e) {
+    let percent = body.scrollTop / (body.scrollHeight - body.clientHeight) * 100;
+    if (percent > 1 && !back2Top.classList.contains('back-top-active')) {
+      back2Top.classList.add('back-top-active');
+    }
+    if (percent == 0) {
+      back2Top.classList.remove('back-top-active');
+    }
+    back2TopText.textContent = Math.floor(percent);
+  });
+
+  // 代码高亮
+  hljs.initHighlightingOnLoad();
+</script>
+    </div>
+  </body>
+  <script src="/media/js/motion.js"></script>
+</html>

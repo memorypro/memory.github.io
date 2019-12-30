@@ -1,0 +1,719 @@
+<html>
+  <head>
+      <meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Memory</title>
+<link rel="shortcut icon" href="https://blog.memory6181.com//favicon.ico?v=1577709624044">
+<link rel="stylesheet" href="https://blog.memory6181.com//styles/main.css">
+<meta name="description" content="温故而知新" />
+
+<link rel="stylesheet" href="/media/fonts/iconfont.css">
+<link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script>
+  </head>
+  <body>
+    <div class="head-top-line"></div>
+    <div class="header-box">
+      <header class="header">
+  <div class="blog-header" id="header">
+    <div class="site-meta">
+      <div class="nav-toggle" id="nav_toggle">
+        <div class="toggle-box">
+          <div class="line line-top"></div>
+          <div class="line line-center"></div>
+          <div class="line line-bottom"></div>
+        </div>
+      </div>
+      <div class="site-title">
+        <a href="/" class="brand">
+          <span>Memory</span>
+        </a>
+      </div>
+      <p class="subtitle">Quick notes</p>
+    </div>
+    <nav class="site-nav" id="site_nav">
+      <ul>
+        <!-- <li class="nav-item "> -->
+          
+            <li class="nav-item ">
+              <a href="/">
+                <i class="iconfont icon-home"></i>首页
+              </a>
+            </li>
+            <!-- <li class="nav-item "></li> -->
+            <!--  -->
+              <!-- 
+                <a href="/">
+                  <i class="iconfont icon-home"></i> 首页
+                </a>
+               -->
+            <!-- </li> -->
+            <!--  -->
+          
+            <li class="nav-item ">
+              <a href="/archives">
+                <i class="iconfont icon-home"></i>归档
+              </a>
+            </li>
+            <!-- <li class="nav-item "></li> -->
+            <!--  -->
+          
+            <li class="nav-item ">
+              <a href="/tags">
+                <i class="iconfont icon-home"></i>标签
+              </a>
+            </li>
+            <!-- <li class="nav-item "></li> -->
+            <!--  -->
+          
+            <li class="nav-item ">
+              <a href="http://blog.memory6181.com//post/guan-yu-wo/">
+                <i class="iconfont icon-home"></i>简历
+              </a>
+            </li>
+            <!-- <li class="nav-item "></li> -->
+            <!--  -->
+          
+            <li class="nav-item ">
+              <a href="http://memory6181.coding.me//post/about/">
+                <i class="iconfont icon-home"></i>故事
+              </a>
+            </li>
+            <!-- <li class="nav-item "></li> -->
+            <!--  -->
+          
+        <!-- </li> -->
+        <!-- <li class="nav-item ">
+          
+            
+          
+            
+              
+                <a href="/archives">
+                  <i class="iconfont icon-archive"></i> 归档
+                </a>
+              
+            
+          
+            
+          
+            
+          
+            
+          
+        </li>
+        <li class="nav-item ">
+          
+            
+          
+            
+          
+            
+              
+                <a href="/tags">
+                  <i class="iconfont icon-tags"></i> 标签
+                </a>
+              
+            
+          
+            
+          
+            
+          
+        </li>
+        <li class="nav-item">
+          <a>
+            <i class="iconfont icon-search"></i> 搜索
+          </a>
+        </li> -->
+      </ul>
+    </nav>
+  </div>
+</header>
+<script type="text/javascript"> 
+ 
+  let showNav = true;
+
+  let navToggle = document.querySelector('#nav_toggle'),
+  siteNav = document.querySelector('#site_nav');
+  
+  function navClick() {
+    navToggle.classList.toggle('nav-toggle-active');
+    siteNav.classList.toggle('nav-menu-active');
+  }
+
+  navToggle.addEventListener('click',navClick);  
+</script>
+    </div>
+    <div class="main-continer">
+      <div class="section-layout">
+        <div class="section-layout-wrapper">
+          
+<div class="sidebar">
+    <div class="sidebar-wrapper" id="sidebar">
+      
+        <div class="post-list-sidebar">
+          <div class="sidebar-title">
+            <span id="tocSideBar" class="sidebar-title-item sidebar-title-active">文章目录</span>
+            <span id="metaSideBar" class="sidebar-title-item">站点概览</span>
+          </div>
+        </div>
+      
+      <div class="sidebar-body" id="sidebar_body">
+        
+          <div class="post-side-meta" id="post_side_meta">
+            <div class="sidebar-wrapper">
+  <div class="sidebar-item">
+    <img class="site-author-image" src="https://blog.memory6181.com//images/avatar.png"/>
+    <p class="site-author-name">Memory</p>
+    <p class="site-description">温故而知新</p>
+  </div>
+  <div class="sidebar-item side-item-stat">
+    <div class="sidebar-item-box">
+      <a href="/archives/">
+        <span class="site-item-stat-count">45</span>
+        <span class="site-item-stat-name">日志</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="">
+        <span class="site-item-stat-count">6</span>
+        <span class="site-item-stat-name">分类</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="/tags/">
+        <span class="site-item-stat-count">6</span>
+        <span class="site-item-stat-name">标签</span>
+      </a>
+    </div>
+  </div>
+  <div class="sidebar-item">
+    <span class="site-item-rss">
+        <i class="iconfont icon-rss"></i>
+        <a href="https://blog.memory6181.com//atom.xml" target="_blank">RSS</a>
+    </span>
+  </div>
+  <div class="sidebar-item sidebar-item-social">
+    <div class="social-item">
+      <a href="https://www.github.com/hsxyhao">
+        <i class="iconfont icon-github"></i> GitHub
+      </a>
+      <a href="">
+        <i class="iconfont icon-twitter"></i> Twitter
+      </a>
+    </div>
+    <div class="social-item">
+      <a href="">
+        <i class="iconfont icon-globe"></i> 豆瓣
+      </a>
+      <a href="">
+        <i class="iconfont icon-globe"></i> 知乎
+      </a>
+    </div>
+  </div>
+</div>
+          </div>
+          <div class="post-toc sidebar-body-active" id="post_toc" style="opacity: 1;">
+            <div class="toc-box">
+  <div class="toc-wrapper" id="toc_wrapper">
+    <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#1-%E5%87%86%E5%A4%87%E5%B7%A5%E5%85%B7">1、准备工具</a></li>
+<li><a href="#2-%E6%90%AD%E5%BB%BApugo%E5%8D%9A%E5%AE%A2">2、搭建Pugo博客</a></li>
+<li><a href="#3-%E7%BB%99pugo%E5%8A%A0%E4%B8%8A%E5%90%8E%E5%8F%B0-file-browser">3、给Pugo加上后台---<code>File Browser</code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+</div>
+
+<script>
+
+let lastTop = 0, lList = [], hList = [], postBody, lastIndex = -1; 
+let active = 'active-show', activeClass = 'active-current';
+let tocWrapper = document.querySelector('#toc_wrapper');
+let tocContent = tocWrapper.children[0];
+
+function addTocNumber(elem, deep) {
+  if (!elem) {
+    return;
+  }
+  let prop = elem.__proto__;
+
+  if (prop === HTMLUListElement.prototype) {
+    for (let i = 0; i < elem.children.length; i++) {
+      addTocNumber(elem.children[i], deep + (i + 1) + '.');
+    }
+  } else if (prop === HTMLLIElement.prototype) {
+    // 保存li元素
+    lList.push(elem);
+    for (let i = 0; i < elem.children.length; i++) {
+      let cur = elem.children[i];
+      if (cur.__proto__ === HTMLAnchorElement.prototype) {
+        cur.text =  deep + ' ' + cur.text;
+      } else if (cur.__proto__ === HTMLUListElement.prototype) {
+        addTocNumber(cur, deep);
+      }
+    }
+  }
+}
+
+
+document.addEventListener('scroll', function(e) {
+  if (lList.length <= 0) {
+    return;
+  }
+  let scrollTop = document.body.scrollTop;
+  let dir;
+
+  if (lastTop - scrollTop > 0) {
+    dir = 'up';
+  } else {
+    dir = 'down';
+  }
+
+  lastTop = scrollTop;
+  if (scrollTop <= 0) {
+    if (lastIndex >= 0 && lastIndex < hList.length) {
+      lList[lastIndex].classList.remove(activeClass);
+    }
+    return;
+  }
+
+  let current = 0, hasFind = false;
+  for (let i = 0; i < hList.length; i++) {
+    if (hList[i].offsetTop > scrollTop) {
+      current = i;
+      hasFind = true;
+      break;
+    }
+  }
+  if (!hasFind && scrollTop > lList[lList.length - 1].offsetTop) {
+    current = hList.length - 1;
+  } else {
+    current--;
+  }
+  if (dir === 'down') {
+    if (current > lastIndex) {
+      addActiveClass(current);
+      removeActiveClass(lastIndex) 
+      lastIndex = current;
+      removeParentActiveClass();
+      lList[current] && addActiveLiElemment(lList[current].parentElement,tocContent);
+    }
+  } else {
+    if (current < lastIndex) {
+      addActiveClass(current);
+      removeActiveClass(lastIndex);
+      lastIndex = current;
+      removeParentActiveClass();
+      lList[current] && addActiveLiElemment(lList[current].parentElement,tocContent);
+    }
+  }
+});
+
+function removeParentActiveClass() {
+  let parents = tocContent.querySelectorAll('.'+active)
+  parents.forEach(function(elem) {
+    elem.classList.remove(active);
+  });
+}
+
+function addActiveClass(index) {
+  if (index >= 0 && index < hList.length) {
+    lList[index].classList.add(activeClass);
+  }
+}
+
+function removeActiveClass(index) {
+  if (index >= 0 && index < hList.length) {
+    lList[index].classList.remove(activeClass);
+  }
+}
+
+function addActiveLiElemment(elem, parent) {
+  if (!elem || elem === parent) {
+    return;
+  } else {
+    if (elem.__proto__ === HTMLLIElement.prototype) {
+      elem.classList.add(active);
+    }
+    addActiveLiElemment(elem.parentElement, parent);
+  }
+}
+
+function showToc() {
+  if (tocWrapper) {
+    postBody = document.querySelector('#post_body');
+    for (let i = 0; i < postBody.children.length; i++) {
+      if (postBody.children[i].__proto__ === HTMLHeadingElement.prototype) {
+        hList.push(postBody.children[i]);
+      }
+    }
+
+    if (hList.length > 10) {
+      active = 'active-hidden'
+      tocContent.classList.add('closed');
+    } else {
+      tocContent.classList.add('expanded');
+    }
+  }
+}
+addTocNumber(tocContent, '');
+
+window.addEventListener('load', function() {
+  showToc();
+  document.querySelector('#sidebar').style='display: block;';
+  tocWrapper.classList.add('toc-active');
+  setTimeout(function() {
+    if ("createEvent" in document) {
+      let evt = document.createEvent("HTMLEvents");
+      evt.initEvent("scroll", false, true);
+      document.dispatchEvent(evt);
+    }
+    else {
+      document.fireEvent("scroll");
+    }
+  }, 500)
+})
+
+</script>
+          </div>
+        
+      </div>
+    </div>
+</div>
+<script>
+  const SIDEBAR_TITLE_ACTIVE = 'sidebar-title-active';
+  const SIDEBAR_BODY_ACTIVE = 'sidebar-body-active';
+  const SLIDE_UP_IN = 'slide-up-in';
+
+  let sidebar = document.querySelector('#sidebar'),
+  tocSideBar = document.querySelector('#tocSideBar'),
+  metaSideBar = document.querySelector('#metaSideBar'),
+  postToc = document.querySelector('#post_toc'),
+  postSiteMeta = document.querySelector('#post_side_meta'),
+  sidebarTitle = document.querySelector('.sidebar-title'),
+  sidebarBody = document.querySelector('#sidebar_body');
+
+  tocSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  metaSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  function toggleSidebar(e) {
+    let currentTitle = document.querySelector("."+SIDEBAR_TITLE_ACTIVE);
+    if (currentTitle == e.srcElement) {
+      return ;
+    }
+    let current, showElement, hideElement;
+    if (e.srcElement == metaSideBar) {
+      showElement = postSiteMeta;
+      hideElement = postToc;
+    } else if (e.srcElement == tocSideBar){
+      showElement = postToc;
+      hideElement = postSiteMeta;
+    }
+    currentTitle.classList.remove(SIDEBAR_TITLE_ACTIVE);
+    e.srcElement.classList.add(SIDEBAR_TITLE_ACTIVE);
+
+    window.Velocity(hideElement, 'stop');
+    window.Velocity(hideElement, 'transition.slideUpOut', {
+      display: 'none',
+      duration: 200,
+      complete: function () {
+        window.Velocity(showElement, 'transition.slideDownIn', {
+          duration: 200
+        });
+      }
+    })
+    hideElement.classList.remove(SIDEBAR_BODY_ACTIVE);
+    showElement.classList.add(SIDEBAR_BODY_ACTIVE);
+
+  }
+
+  postToc.addEventListener('transitionend', function() {
+    this.classList.remove(SLIDE_UP_IN);
+  });
+
+  let limitTop = sidebar.offsetTop;
+  let hasFix = false;
+  window.addEventListener('scroll', function(e) {
+    if (document.body.scrollTop >= limitTop) {
+      if (!hasFix) {
+        sidebar.classList.add('sidebar-fixed');
+        hasFix = true;
+      }
+    } else {
+      if (hasFix) {
+        sidebar.classList.remove('sidebar-fixed');
+        hasFix = false;
+      }
+    }
+  });
+</script>
+          <div class="section-box">
+            <div class="section post">
+              <div class="article-box">
+    <header class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://blog.memory6181.com/post/2018-08-25">
+      给pugo博客添加后台管理
+    </a>
+  </h1>
+  <div class="post-meta">
+    <span class="meta-item">
+      <i class="iconfont icon-calendar_empty"></i>
+      <span class="pc-show">发布于</span>
+      <span>2018-08-25</span>
+    </span>
+    
+      <span class="meta-item">
+        <span class="post-meta-divider">|</span>
+        <i class="iconfont icon-folder_open_alt"></i>
+        <span class="pc-show">分类于</span>
+        
+          
+            <a href="https://blog.memory6181.com/tag/4eOic9FHK">
+              <span>技术</span>
+            </a>
+          
+        
+      </span>
+    
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="iconfont icon-time"></i>
+      <span>5分钟</span>
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="iconfont icon-keyboard"></i>
+      <span class="pc-show">998字数</span>
+    </span>
+  </div>
+</header>
+</div>
+              <div class="post-body next-md-body" id="post_body">
+                <p>Pugo博客已经搭建了好几个月了吧，给我感受到非常方便的就是，我换了好多VPS，迁移显得非常的方便，但是也有不足的地方，比如发布一篇新的博客，我每次都需要重新进入后台进行新的Post，还需要重新build我的博客，这样才能将博客发布出去，和那些经典的带有后台管理的博客相比就有点不太舒服，后来找了一些资料，查了一些开源项目。在github里面发现了一个叫做<code>filemanage</code>的工具，现在已经改名叫<code>File Browser</code>了，现在用这个工具做博客的后台，感觉还不错，下面记录下我是如何从头开始搭建我的博客系统的。</p>
+<hr>
+<h5 id="1-准备工具">1、准备工具</h5>
+<hr>
+<ol>
+<li>
+<p>Pugo 软件包：	<br>
+<a href="https://github.com/go-xiaohei/pugo">https://github.com/go-xiaohei/pugo</a></p>
+</li>
+<li>
+<p>FileBrowser：<br>
+<a href="https://github.com/filebrowser/filebrowser">https://github.com/filebrowser/filebrowser</a></p>
+</li>
+<li>
+<p>Winscp<br>
+http://www.memory6181.top/2018/4/27/blog.html</p>
+</li>
+</ol>
+<hr>
+<h5 id="2-搭建pugo博客">2、搭建Pugo博客</h5>
+<hr>
+<p>从gitHub下面下载软件包之后，我们解压，将软件包上传VPS，或者可以在本地先搭建试试看也可以。</p>
+<p>PS：注意不同的平台，文件不一样。</p>
+<p>下载解压之后，进入文件所在目录运行下面指令</p>
+<pre><code class="language-shell">pugo.exe new site # Windows
+./pugo new site   # Linux
+</code></pre>
+<p>此时在pugo的目录下面生成了好多个文件夹，下面我们运行下面的命令。</p>
+<pre><code class="language-shell">pugo server --addr &quot;0.0.0.0:8080&quot;
+</code></pre>
+<p>运行完成之后可以看到下面的一些消息：</p>
+<pre><code class="language-shell">C:\Users\zhang\Desktop\windows_amd64&gt;pugo_windows_amd64.exe server --addr &quot;0.0.0.0:8080&quot;
+[32mINFO[0m|08-25 18:00:32.4916|Build|Start
+[32mINFO[0m|08-25 18:00:32.5255|Build|Source|source
+[32mINFO[0m|08-25 18:00:32.6123|Build|Theme|theme/default
+[32mINFO[0m|08-25 18:00:33.2057|Build|40 Pages
+[32mINFO[0m|08-25 18:00:33.2057|Build|Done|1|714.1ms
+[32mINFO[0m|08-25 18:00:33.2067|Watch|Start
+[32mINFO[0m|08-25 18:00:33.2067|Server|Start|0.0.0.0:8080
+</code></pre>
+<p>此时我们的博客已经运行起来了，通过浏览器访问<code>localhost:8080</code>就可以看到博客的运行界面。</p>
+<p>我们想要Post一篇文章只要如下所示就好了</p>
+<pre><code class="language-shell">pogo new post [name]
+</code></pre>
+<p>此时在我们的<code>Source</code>-&gt; <code>Post</code>-&gt;<code>2018</code>下面会生成一个<code>.md</code>结尾的文本，使用Winscp或者其他的Sftp工具可以登录ssh在Linux服务器上面编写遵循<code>markdown</code>语法的文章就好了。</p>
+<hr>
+<h5 id="3-给pugo加上后台-file-browser">3、给Pugo加上后台---<code>File Browser</code></h5>
+<hr>
+<p>通过Winscp将我们下载好的File Browser 上传到我们的VPS，在File Browser 下面新建一个<code>config.json</code>文本文档，内容如下所示：</p>
+<pre><code class="language-json">{
+  &quot;port&quot;: 8000,
+  &quot;noAuth&quot;: false,
+  &quot;baseURL&quot;: &quot;/admin&quot;,
+  &quot;address&quot;: &quot;0.0.0.0&quot;,
+  &quot;reCaptchaKey&quot;: &quot;&quot;,
+  &quot;reCaptchaSecret&quot;: &quot;&quot;,
+  &quot;database&quot;:&quot;/myserver/blog/filemanager/filebrowser.db&quot;,
+  &quot;log&quot;: &quot;stdout&quot;,
+  &quot;plugin&quot;: &quot;http.filemanager&quot;,
+  &quot;scope&quot;:&quot;/myserver/blog/filemanager/myblog&quot;,
+  &quot;allowCommands&quot;: true,
+  &quot;allowEdit&quot;: true,
+  &quot;allowNew&quot;: true,
+  &quot;commands&quot;: [
+    &quot;git&quot;,
+    &quot;svn&quot;,
+    &quot;./myblog/flush.sh&quot;,
+    &quot;./myblog/new.sh&quot;
+  ]
+}
+</code></pre>
+<pre><code>Port :访问的端口号
+baseURL：要访问的地址，如上面所写，就访问&quot;http://127.0.0.1:8000/admin&quot;
+address:监听的地址，四个0表示监听所有网卡。
+datebase:数据库所在目录，通常设置和fileBrowser一个目录
+command：允许执行的shell命令。
+&quot;scope&quot;:管理的目录
+</code></pre>
+<p>主要修改的如上所示，其他的默认就好,将pugo整个拷贝到<code>scope</code> 管理的目录下面。</p>
+<p>运行如下:</p>
+<pre><code>./fileBrowser -c &quot;config.json&quot;
+</code></pre>
+<p>浏览器打开&quot;localhost:8000/admin&quot;输入<code>admin</code>,<code>admin</code>登录系统，分配账号在pugo所在的目录新建一个shell脚本，内容如下：</p>
+<pre><code class="language-shell">#!/bin/bash
+cd /myserver/blog/filemanager/myblog/
+./pugo_linux_amd64 build --source &quot;source&quot;
+cd /
+</code></pre>
+<p>保存取名&quot;flush.sh&quot;,然后在设置-&gt;全局设置-&gt;命令（Linux 代码）-&gt;After Save 下面输入运行flush.sh的命令，如下所示：</p>
+<pre><code class="language-shell">./myblog/flush.sh
+</code></pre>
+<p>此时我们在上传完成我们的博客，或者修改完成之后，保存就可以自动刷新了，再也不用的登录ssh去修改博客了。</p>
+
+              </div>
+              <div class="post-footer">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      Memory
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://blog.memory6181.com/post/2018-08-25" title="给pugo博客添加后台管理">https://blog.memory6181.com/post/2018-08-25</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外,转载请注明出处！
+    </li>
+  </ul>
+  <div class="tags">
+    
+      <a href="https://blog.memory6181.com/tag/4eOic9FHK"># 技术</a>
+    
+  </div>
+  <div class="nav">
+    <div class="nav-prev">
+      
+        <i class="iconfont icon-angle_left"></i>
+        <a class="nav-pc-next" href="https://blog.memory6181.com/post/2018-08-30">ARM 编译工具keil 和 IAR  命令行编译和下载</a class="nav-pc-next">
+        <a class="nav-mobile-prev" href="https://blog.memory6181.com/post/2018-08-30">上一篇</a>
+      
+    </div>
+    <div class="nav-next">
+      
+        <a class="nav-pc-next" href="https://blog.memory6181.com/post/2018-08-17">Ubuntu 安装java 1.8 教程</a>
+        <a class="nav-mobile-next" href="https://blog.memory6181.com/post/2018-08-17">下一篇</a>
+        <i class="iconfont icon-angle_right"></i>
+      
+    </div>
+  </div>
+</div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-box">
+  <footer class="footer">
+    <div class="copyright">
+      © 2019-2020 <i class="iconfont icon-heart"></i> HsxyHao
+    </div>
+    <div class="poweredby">
+      <div class="power-left">Power By<a href="https://github.com/hsxyhao"> HsxyHao</a></div>
+      <div>Copy<a href="https://github.com/iissnan/hexo-theme-next"> Hexo Next Theme</a></div>
+    </div>
+  </footer>
+  <div class="back-to-top" id="back_to_top">
+    <i class="iconfont icon-arrow_up"></i>
+    <span class="scrollpercent">
+      <span id="back_to_top_text">100</span>%
+    </span>
+  </div>
+</div>
+
+<script>
+
+  let body = document.body;
+
+  let back2Top = document.querySelector('#back_to_top'),
+  back2TopText = document.querySelector('#back_to_top_text');
+
+  function scrollAnimation(currentY, targetY) {
+   
+    let needScrollTop = targetY - currentY
+    let _currentY = currentY
+    setTimeout(() => {
+      const dist = Math.ceil(needScrollTop / 10)
+      _currentY += dist
+      window.scrollTo(_currentY, currentY)
+      if (needScrollTop > 10 || needScrollTop < -10) {
+        scrollAnimation(_currentY, targetY)
+      } else {
+        window.scrollTo(_currentY, targetY)
+      }
+    }, 1)
+  }
+
+  back2Top.addEventListener("click", function(e) {
+    scrollAnimation(body.scrollTop, 0);
+    e.stopPropagation();
+    return false;
+  });
+  
+  window.addEventListener('scroll', function(e) {
+    let percent = body.scrollTop / (body.scrollHeight - body.clientHeight) * 100;
+    if (percent > 1 && !back2Top.classList.contains('back-top-active')) {
+      back2Top.classList.add('back-top-active');
+    }
+    if (percent == 0) {
+      back2Top.classList.remove('back-top-active');
+    }
+    back2TopText.textContent = Math.floor(percent);
+  });
+
+  // 代码高亮
+  hljs.initHighlightingOnLoad();
+</script>
+    </div>
+  </body>
+  <script src="/media/js/motion.js"></script>
+</html>
