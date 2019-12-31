@@ -3,7 +3,7 @@
       <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>Memory的个人博客</title>
-<link rel="shortcut icon" href="https://blog.memory6181.com//favicon.ico?v=1577751239376">
+<link rel="shortcut icon" href="https://blog.memory6181.com//favicon.ico?v=1577755847709">
 <link rel="stylesheet" href="https://blog.memory6181.com//styles/main.css">
 <meta name="description" content="温故而知新" />
 
@@ -18,58 +18,62 @@
     <div class="head-top-line"></div>
     <div class="header-box">
       <header class="header">
-  <div class="blog-header" id="header">
-    <div class="site-meta">
-      <div class="nav-toggle" id="nav_toggle">
-        <div class="toggle-box">
-          <div class="line line-top"></div>
-          <div class="line line-center"></div>
-          <div class="line line-bottom"></div>
+ 
+    <div class="blog-header" id="header">
+      <div class="section-layout-wrapper">
+      <div class="site-meta">
+        <div class="nav-toggle" id="nav_toggle">
+          <div class="toggle-box">
+            <div class="line line-top"></div>
+            <div class="line line-center"></div>
+            <div class="line line-bottom"></div>
+          </div>
         </div>
-      </div>
-      <div class="site-title">
-        <a href="/" class="brand">
-          <span>Memory的个人博客</span>
-        </a>
-      </div>
-      <p class="subtitle"></p>
-      <nav class="site-nav" id="site_nav">
-            
-              <li class="nav-item ">
-                <a href="/">
-                  <i class="iconfont icon-home"></i>首页
-                </a>
-              </li>
-            
-              <li class="nav-item ">
-                <a href="/archives">
-                  <i class="iconfont icon-home"></i>归档
-                </a>
-              </li>
-            
-              <li class="nav-item ">
-                <a href="/tags">
-                  <i class="iconfont icon-home"></i>标签
-                </a>
-              </li>
-            
-              <li class="nav-item ">
-                <a href="http://blog.memory6181.com//post/guan-yu-wo/">
-                  <i class="iconfont icon-home"></i>简历
-                </a>
-              </li>
-            
-              <li class="nav-item ">
-                <a href="http://memory6181.coding.me//post/about/">
-                  <i class="iconfont icon-home"></i>故事
-                </a>
-              </li>
-            
-      </nav>
-
-    </div>
+        <div class="site-title">
+          <a href="/" class="brand">
+            <span>Memory的个人博客</span>
+          </a>
+        </div>
+        <p class="subtitle"></p>
+        <nav class="site-nav" id="site_nav">
+              
+                <li class="nav-item ">
+                  <a href="/">
+                    <i class="iconfont icon-home"></i>首页
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a href="/archives">
+                    <i class="iconfont icon-home"></i>归档
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a href="/tags">
+                    <i class="iconfont icon-home"></i>标签
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a href="http://blog.memory6181.com//post/guan-yu-wo/">
+                    <i class="iconfont icon-home"></i>简历
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a href="http://memory6181.coding.me//post/about/">
+                    <i class="iconfont icon-home"></i>故事
+                  </a>
+                </li>
+              
+        </nav>
   
+      </div>
+    
+    </div>
   </div>
+ 
 </header>
 <script type="text/javascript"> 
  
@@ -89,7 +93,158 @@
     <div class="main-continer">
       <div class="section-layout">
         <div class="section-layout-wrapper">
+         
+          <!-- <div class="section-box"> -->
+            <div class="section post">
+              <div class="article-box">
+    <header class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://blog.memory6181.com/post/frp_da_jian_nei_wang_chuan_tou">
+      frp 搭建内网穿透
+    </a>
+  </h1>
+  <div class="post-meta">
+    <span class="meta-item">
+      <i class="iconfont icon-calendar_empty"></i>
+      <span class="pc-show">发布于</span>
+      <span>2018-08-12</span>
+    </span>
+    
+      <span class="meta-item">
+        <span class="post-meta-divider">|</span>
+        <i class="iconfont icon-folder_open_alt"></i>
+        <span class="pc-show">分类于</span>
+        
           
+            <a href="https://blog.memory6181.com/tag/ACGfM-PHj">
+              <span>计数</span>
+            </a>
+          
+        
+      </span>
+    
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="iconfont icon-time"></i>
+      <span>2分钟</span>
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="iconfont icon-keyboard"></i>
+      <span class="pc-show">461字数</span>
+    </span>
+  </div>
+</header>
+</div>
+              <div class="post-body next-md-body" id="post_body">
+                <h5 id="1-准备工作">1、准备工作</h5>
+<hr>
+<ol>
+<li>一个有公网Ip的VPS或者服务器。</li>
+<li>一个可以正常解析的域名。</li>
+<li>内网服务器，可以直接访问的web服务。</li>
+<li>frp软件包，下载地址：<br>
+https://github.com/fatedier/frp/releases</li>
+</ol>
+<p>注意：要根据不同的平台下载不同的版本。</p>
+<hr>
+<h5 id="2-frp服务器搭建">2、frp服务器搭建</h5>
+<hr>
+<p>frp 分为客户端和服务器，服务器就是具有公网ip的服务器，客户端是需要穿透的内网服务器。<br>
+1、 我们将下载到的软件包解压，里面有几个文件，我们提取“frps”和“frps.ini”到我们的服务器。<br>
+2、 打开 &quot;frps.ini&quot; 修改里面的参数如下所示：</p>
+<pre><code class="language-ini">		[common]
+		# frp server 绑定的端口
+		bind_port = 7000
+		# 设置 http 访问端口为 8080
+		vhost_http_port = 8080
+		# 设置域名（保证此域名可用）
+		subdomain_host = good-memory.top
+
+		# 配置 dashboard（可选）
+		dashboard_port = 7500
+		# dashboard 用户名密码，默认都为 admin
+		dashboard_user = admin
+		dashboard_pwd = admin
+</code></pre>
+<p>3、 启动服务</p>
+<ul>
+<li>linux 运行下面的指令启动服务<br>
+<code>sudo ./frps -c frps.ini</code></li>
+<li>windows 指令如下：<br>
+<code>frps.exe -c frps.ini</code><br>
+注意：一定要在frps的目录下面运行，出现错误检查平台是否正确，配置信息是否正确。</li>
+</ul>
+<hr>
+<h5 id="3-frp客户端安装">3、frp客户端安装</h5>
+<hr>
+<p>1、 同样的我们将下载到的文件里面 &quot;fprc&quot;,&quot;frpc.ini&quot; 文件放到我们的内网服务器里面。<br>
+2、 打开 “frpc.ini”，修改如下配置所示:</p>
+<pre><code class="language-ini">  [common]
+  # 上面的公网服务器ip
+  server_addr = 144.48.125.137
+  # frp server 绑定的端口，和上面服务端端口相同
+  server_port = 7000
+
+  [test]
+  type = http
+  # 本地 web server 端口
+  local_port = 8080
+  # 二级域名名称
+  subdomain = test
+</code></pre>
+<p>3、启动客户端<br>
+linux 运行下面的指令启动服务<br>
+<code>sudo ./frpc -c frpc.ini</code><br>
+windows 指令如下：<br>
+<code>frpc.exe -c frpc.ini</code></p>
+<hr>
+<h5 id="4-外网访问">4、外网访问</h5>
+<hr>
+<p>用外网浏览器访问内网地址<br>
+http://test.good-memory.top:8080</p>
+
+              </div>
+              <div class="post-footer">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      Memory的个人博客
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://blog.memory6181.com/post/frp_da_jian_nei_wang_chuan_tou" title="frp 搭建内网穿透">https://blog.memory6181.com/post/frp_da_jian_nei_wang_chuan_tou</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外,转载请注明出处！
+    </li>
+  </ul>
+  <div class="tags">
+    
+      <a href="https://blog.memory6181.com/tag/ACGfM-PHj"># 计数</a>
+    
+  </div>
+  <div class="nav">
+    <div class="nav-prev">
+      
+        <i class="iconfont icon-angle_left"></i>
+        <a class="nav-pc-next" href="https://blog.memory6181.com/post/2018-08-12">Pi 实现VLC网络视频监控</a class="nav-pc-next">
+        <a class="nav-mobile-prev" href="https://blog.memory6181.com/post/2018-08-12">上一篇</a>
+      
+    </div>
+    <div class="nav-next">
+      
+        <a class="nav-pc-next" href="https://blog.memory6181.com/post/9f5C0FaPD">MicroPython （一）点亮我的Led</a>
+        <a class="nav-mobile-next" href="https://blog.memory6181.com/post/9f5C0FaPD">下一篇</a>
+        <i class="iconfont icon-angle_right"></i>
+      
+    </div>
+  </div>
+</div>
+              
+            </div>
+            
 <div class="sidebar">
     <div class="sidebar-wrapper" id="sidebar">
       
@@ -412,157 +567,7 @@ window.addEventListener('load', function() {
     }
   });
 </script>
-          <div class="section-box">
-            <div class="section post">
-              <div class="article-box">
-    <header class="post-header">
-  <h1 class="post-title">
-    <a class="post-title-link" href="https://blog.memory6181.com/post/frp_da_jian_nei_wang_chuan_tou">
-      frp 搭建内网穿透
-    </a>
-  </h1>
-  <div class="post-meta">
-    <span class="meta-item">
-      <i class="iconfont icon-calendar_empty"></i>
-      <span class="pc-show">发布于</span>
-      <span>2018-08-12</span>
-    </span>
-    
-      <span class="meta-item">
-        <span class="post-meta-divider">|</span>
-        <i class="iconfont icon-folder_open_alt"></i>
-        <span class="pc-show">分类于</span>
-        
-          
-            <a href="https://blog.memory6181.com/tag/ACGfM-PHj">
-              <span>计数</span>
-            </a>
-          
-        
-      </span>
-    
-    <span class="meta-item">
-      <span class="post-meta-divider">|</span>
-      <i class="iconfont icon-time"></i>
-      <span>2分钟</span>
-    </span>
-    <span class="meta-item">
-      <span class="post-meta-divider">|</span>
-      <i class="iconfont icon-keyboard"></i>
-      <span class="pc-show">461字数</span>
-    </span>
-  </div>
-</header>
-</div>
-              <div class="post-body next-md-body" id="post_body">
-                <h5 id="1-准备工作">1、准备工作</h5>
-<hr>
-<ol>
-<li>一个有公网Ip的VPS或者服务器。</li>
-<li>一个可以正常解析的域名。</li>
-<li>内网服务器，可以直接访问的web服务。</li>
-<li>frp软件包，下载地址：<br>
-https://github.com/fatedier/frp/releases</li>
-</ol>
-<p>注意：要根据不同的平台下载不同的版本。</p>
-<hr>
-<h5 id="2-frp服务器搭建">2、frp服务器搭建</h5>
-<hr>
-<p>frp 分为客户端和服务器，服务器就是具有公网ip的服务器，客户端是需要穿透的内网服务器。<br>
-1、 我们将下载到的软件包解压，里面有几个文件，我们提取“frps”和“frps.ini”到我们的服务器。<br>
-2、 打开 &quot;frps.ini&quot; 修改里面的参数如下所示：</p>
-<pre><code class="language-ini">		[common]
-		# frp server 绑定的端口
-		bind_port = 7000
-		# 设置 http 访问端口为 8080
-		vhost_http_port = 8080
-		# 设置域名（保证此域名可用）
-		subdomain_host = good-memory.top
-
-		# 配置 dashboard（可选）
-		dashboard_port = 7500
-		# dashboard 用户名密码，默认都为 admin
-		dashboard_user = admin
-		dashboard_pwd = admin
-</code></pre>
-<p>3、 启动服务</p>
-<ul>
-<li>linux 运行下面的指令启动服务<br>
-<code>sudo ./frps -c frps.ini</code></li>
-<li>windows 指令如下：<br>
-<code>frps.exe -c frps.ini</code><br>
-注意：一定要在frps的目录下面运行，出现错误检查平台是否正确，配置信息是否正确。</li>
-</ul>
-<hr>
-<h5 id="3-frp客户端安装">3、frp客户端安装</h5>
-<hr>
-<p>1、 同样的我们将下载到的文件里面 &quot;fprc&quot;,&quot;frpc.ini&quot; 文件放到我们的内网服务器里面。<br>
-2、 打开 “frpc.ini”，修改如下配置所示:</p>
-<pre><code class="language-ini">  [common]
-  # 上面的公网服务器ip
-  server_addr = 144.48.125.137
-  # frp server 绑定的端口，和上面服务端端口相同
-  server_port = 7000
-
-  [test]
-  type = http
-  # 本地 web server 端口
-  local_port = 8080
-  # 二级域名名称
-  subdomain = test
-</code></pre>
-<p>3、启动客户端<br>
-linux 运行下面的指令启动服务<br>
-<code>sudo ./frpc -c frpc.ini</code><br>
-windows 指令如下：<br>
-<code>frpc.exe -c frpc.ini</code></p>
-<hr>
-<h5 id="4-外网访问">4、外网访问</h5>
-<hr>
-<p>用外网浏览器访问内网地址<br>
-http://test.good-memory.top:8080</p>
-
-              </div>
-              <div class="post-footer">
-  <ul class="post-copyright">
-    <li class="post-copyright-author">
-      <strong>本文作者：</strong>
-      Memory的个人博客
-    </li>
-    <li class="post-copyright-link">
-      <strong>本文链接：</strong>
-      <a href="https://blog.memory6181.com/post/frp_da_jian_nei_wang_chuan_tou" title="frp 搭建内网穿透">https://blog.memory6181.com/post/frp_da_jian_nei_wang_chuan_tou</a>
-    </li>
-    <li class="post-copyright-license">
-      <strong>版权声明： </strong>
-      本博客所有文章除特别声明外,转载请注明出处！
-    </li>
-  </ul>
-  <div class="tags">
-    
-      <a href="https://blog.memory6181.com/tag/ACGfM-PHj"># 计数</a>
-    
-  </div>
-  <div class="nav">
-    <div class="nav-prev">
-      
-        <i class="iconfont icon-angle_left"></i>
-        <a class="nav-pc-next" href="https://blog.memory6181.com/post/2018-08-12">Pi 实现VLC网络视频监控</a class="nav-pc-next">
-        <a class="nav-mobile-prev" href="https://blog.memory6181.com/post/2018-08-12">上一篇</a>
-      
-    </div>
-    <div class="nav-next">
-      
-        <a class="nav-pc-next" href="https://blog.memory6181.com/post/9f5C0FaPD">MicroPython （一）点亮我的Led</a>
-        <a class="nav-mobile-next" href="https://blog.memory6181.com/post/9f5C0FaPD">下一篇</a>
-        <i class="iconfont icon-angle_right"></i>
-      
-    </div>
-  </div>
-</div>
-              
-            </div>
-          </div>
+          <!-- </div> -->
         </div>
       </div>
       <div class="footer-box">

@@ -3,7 +3,7 @@
       <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>Memory的个人博客</title>
-<link rel="shortcut icon" href="https://blog.memory6181.com//favicon.ico?v=1577751239376">
+<link rel="shortcut icon" href="https://blog.memory6181.com//favicon.ico?v=1577755847709">
 <link rel="stylesheet" href="https://blog.memory6181.com//styles/main.css">
 <meta name="description" content="温故而知新" />
 
@@ -18,58 +18,62 @@
     <div class="head-top-line"></div>
     <div class="header-box">
       <header class="header">
-  <div class="blog-header" id="header">
-    <div class="site-meta">
-      <div class="nav-toggle" id="nav_toggle">
-        <div class="toggle-box">
-          <div class="line line-top"></div>
-          <div class="line line-center"></div>
-          <div class="line line-bottom"></div>
+ 
+    <div class="blog-header" id="header">
+      <div class="section-layout-wrapper">
+      <div class="site-meta">
+        <div class="nav-toggle" id="nav_toggle">
+          <div class="toggle-box">
+            <div class="line line-top"></div>
+            <div class="line line-center"></div>
+            <div class="line line-bottom"></div>
+          </div>
         </div>
-      </div>
-      <div class="site-title">
-        <a href="/" class="brand">
-          <span>Memory的个人博客</span>
-        </a>
-      </div>
-      <p class="subtitle"></p>
-      <nav class="site-nav" id="site_nav">
-            
-              <li class="nav-item ">
-                <a href="/">
-                  <i class="iconfont icon-home"></i>首页
-                </a>
-              </li>
-            
-              <li class="nav-item ">
-                <a href="/archives">
-                  <i class="iconfont icon-home"></i>归档
-                </a>
-              </li>
-            
-              <li class="nav-item ">
-                <a href="/tags">
-                  <i class="iconfont icon-home"></i>标签
-                </a>
-              </li>
-            
-              <li class="nav-item ">
-                <a href="http://blog.memory6181.com//post/guan-yu-wo/">
-                  <i class="iconfont icon-home"></i>简历
-                </a>
-              </li>
-            
-              <li class="nav-item ">
-                <a href="http://memory6181.coding.me//post/about/">
-                  <i class="iconfont icon-home"></i>故事
-                </a>
-              </li>
-            
-      </nav>
-
-    </div>
+        <div class="site-title">
+          <a href="/" class="brand">
+            <span>Memory的个人博客</span>
+          </a>
+        </div>
+        <p class="subtitle"></p>
+        <nav class="site-nav" id="site_nav">
+              
+                <li class="nav-item ">
+                  <a href="/">
+                    <i class="iconfont icon-home"></i>首页
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a href="/archives">
+                    <i class="iconfont icon-home"></i>归档
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a href="/tags">
+                    <i class="iconfont icon-home"></i>标签
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a href="http://blog.memory6181.com//post/guan-yu-wo/">
+                    <i class="iconfont icon-home"></i>简历
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a href="http://memory6181.coding.me//post/about/">
+                    <i class="iconfont icon-home"></i>故事
+                  </a>
+                </li>
+              
+        </nav>
   
+      </div>
+    
+    </div>
   </div>
+ 
 </header>
 <script type="text/javascript"> 
  
@@ -89,7 +93,111 @@
     <div class="main-continer">
       <div class="section-layout">
         <div class="section-layout-wrapper">
+         
+          <!-- <div class="section-box"> -->
+            <div class="section post">
+              <div class="article-box">
+    <header class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://blog.memory6181.com/post/NQqZqG0sm">
+       Ubuntu 12.04 Openssh 安装过程
+    </a>
+  </h1>
+  <div class="post-meta">
+    <span class="meta-item">
+      <i class="iconfont icon-calendar_empty"></i>
+      <span class="pc-show">发布于</span>
+      <span>2018-08-08</span>
+    </span>
+    
+      <span class="meta-item">
+        <span class="post-meta-divider">|</span>
+        <i class="iconfont icon-folder_open_alt"></i>
+        <span class="pc-show">分类于</span>
+        
           
+            <a href="https://blog.memory6181.com/tag/4eOic9FHK">
+              <span>技术</span>
+            </a>
+          
+        
+      </span>
+    
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="iconfont icon-time"></i>
+      <span>1分钟</span>
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="iconfont icon-keyboard"></i>
+      <span class="pc-show">196字数</span>
+    </span>
+  </div>
+</header>
+</div>
+              <div class="post-body next-md-body" id="post_body">
+                <h4 id="ubuntu-1204-openssh-安装过程">Ubuntu 12.04 Openssh 安装过程</h4>
+<p>1、输入 <code>apt-get install openssh-server</code></p>
+<p>注意</p>
+<ul>
+<li>
+<p>出现依赖 需要使用 查看依赖是否需要，如果不需要可以直接删除，<code>sudo apt-get remove XXXX</code> 或者<code>sudo apt-get autoremove XXXX</code>，前者是删除但是保留配置文件，后者是直接删除。</p>
+</li>
+<li>
+<p>如果报错误404，文件不存在，在Openssh后面添加版本号，eg:<code>apt-get install openssh-client=1:5.9p1-5ubuntu1</code>,注意要暗装服务器必须要先安装客户端。</p>
+<blockquote>
+<p>客户端：<code>apt-get install openssh-client=1:5.9p1-5ubuntu1</code></p>
+<p>服务器：<code>apt-get install openssh-server=1:5.9p1-5ubuntu1</code></p>
+</blockquote>
+</li>
+</ul>
+<p>2、安装完成会自动启动服务，查看服务是否启动</p>
+<p>​	<code>ps -s | grep ssh</code></p>
+<p>3、如果没有启动，使用下面命令启动服务</p>
+<p>​	<code>service ssh start</code>或者<code>service ssh start</code></p>
+
+              </div>
+              <div class="post-footer">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      Memory的个人博客
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://blog.memory6181.com/post/NQqZqG0sm" title=" Ubuntu 12.04 Openssh 安装过程">https://blog.memory6181.com/post/NQqZqG0sm</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外,转载请注明出处！
+    </li>
+  </ul>
+  <div class="tags">
+    
+      <a href="https://blog.memory6181.com/tag/4eOic9FHK"># 技术</a>
+    
+  </div>
+  <div class="nav">
+    <div class="nav-prev">
+      
+        <i class="iconfont icon-angle_left"></i>
+        <a class="nav-pc-next" href="https://blog.memory6181.com/post/OI6LBcsU3">Pi 在Windows下面使用远程桌面登录</a class="nav-pc-next">
+        <a class="nav-mobile-prev" href="https://blog.memory6181.com/post/OI6LBcsU3">上一篇</a>
+      
+    </div>
+    <div class="nav-next">
+      
+        <a class="nav-pc-next" href="https://blog.memory6181.com/post/__XhzOP-y">AT指令框架的实现</a>
+        <a class="nav-mobile-next" href="https://blog.memory6181.com/post/__XhzOP-y">下一篇</a>
+        <i class="iconfont icon-angle_right"></i>
+      
+    </div>
+  </div>
+</div>
+              
+            </div>
+            
 <div class="sidebar">
     <div class="sidebar-wrapper" id="sidebar">
       
@@ -405,110 +513,7 @@ window.addEventListener('load', function() {
     }
   });
 </script>
-          <div class="section-box">
-            <div class="section post">
-              <div class="article-box">
-    <header class="post-header">
-  <h1 class="post-title">
-    <a class="post-title-link" href="https://blog.memory6181.com/post/NQqZqG0sm">
-       Ubuntu 12.04 Openssh 安装过程
-    </a>
-  </h1>
-  <div class="post-meta">
-    <span class="meta-item">
-      <i class="iconfont icon-calendar_empty"></i>
-      <span class="pc-show">发布于</span>
-      <span>2018-08-08</span>
-    </span>
-    
-      <span class="meta-item">
-        <span class="post-meta-divider">|</span>
-        <i class="iconfont icon-folder_open_alt"></i>
-        <span class="pc-show">分类于</span>
-        
-          
-            <a href="https://blog.memory6181.com/tag/4eOic9FHK">
-              <span>技术</span>
-            </a>
-          
-        
-      </span>
-    
-    <span class="meta-item">
-      <span class="post-meta-divider">|</span>
-      <i class="iconfont icon-time"></i>
-      <span>1分钟</span>
-    </span>
-    <span class="meta-item">
-      <span class="post-meta-divider">|</span>
-      <i class="iconfont icon-keyboard"></i>
-      <span class="pc-show">196字数</span>
-    </span>
-  </div>
-</header>
-</div>
-              <div class="post-body next-md-body" id="post_body">
-                <h4 id="ubuntu-1204-openssh-安装过程">Ubuntu 12.04 Openssh 安装过程</h4>
-<p>1、输入 <code>apt-get install openssh-server</code></p>
-<p>注意</p>
-<ul>
-<li>
-<p>出现依赖 需要使用 查看依赖是否需要，如果不需要可以直接删除，<code>sudo apt-get remove XXXX</code> 或者<code>sudo apt-get autoremove XXXX</code>，前者是删除但是保留配置文件，后者是直接删除。</p>
-</li>
-<li>
-<p>如果报错误404，文件不存在，在Openssh后面添加版本号，eg:<code>apt-get install openssh-client=1:5.9p1-5ubuntu1</code>,注意要暗装服务器必须要先安装客户端。</p>
-<blockquote>
-<p>客户端：<code>apt-get install openssh-client=1:5.9p1-5ubuntu1</code></p>
-<p>服务器：<code>apt-get install openssh-server=1:5.9p1-5ubuntu1</code></p>
-</blockquote>
-</li>
-</ul>
-<p>2、安装完成会自动启动服务，查看服务是否启动</p>
-<p>​	<code>ps -s | grep ssh</code></p>
-<p>3、如果没有启动，使用下面命令启动服务</p>
-<p>​	<code>service ssh start</code>或者<code>service ssh start</code></p>
-
-              </div>
-              <div class="post-footer">
-  <ul class="post-copyright">
-    <li class="post-copyright-author">
-      <strong>本文作者：</strong>
-      Memory的个人博客
-    </li>
-    <li class="post-copyright-link">
-      <strong>本文链接：</strong>
-      <a href="https://blog.memory6181.com/post/NQqZqG0sm" title=" Ubuntu 12.04 Openssh 安装过程">https://blog.memory6181.com/post/NQqZqG0sm</a>
-    </li>
-    <li class="post-copyright-license">
-      <strong>版权声明： </strong>
-      本博客所有文章除特别声明外,转载请注明出处！
-    </li>
-  </ul>
-  <div class="tags">
-    
-      <a href="https://blog.memory6181.com/tag/4eOic9FHK"># 技术</a>
-    
-  </div>
-  <div class="nav">
-    <div class="nav-prev">
-      
-        <i class="iconfont icon-angle_left"></i>
-        <a class="nav-pc-next" href="https://blog.memory6181.com/post/OI6LBcsU3">Pi 在Windows下面使用远程桌面登录</a class="nav-pc-next">
-        <a class="nav-mobile-prev" href="https://blog.memory6181.com/post/OI6LBcsU3">上一篇</a>
-      
-    </div>
-    <div class="nav-next">
-      
-        <a class="nav-pc-next" href="https://blog.memory6181.com/post/__XhzOP-y">AT指令框架的实现</a>
-        <a class="nav-mobile-next" href="https://blog.memory6181.com/post/__XhzOP-y">下一篇</a>
-        <i class="iconfont icon-angle_right"></i>
-      
-    </div>
-  </div>
-</div>
-              
-            </div>
-          </div>
+          <!-- </div> -->
         </div>
       </div>
       <div class="footer-box">

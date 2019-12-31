@@ -3,7 +3,7 @@
       <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>Memory的个人博客</title>
-<link rel="shortcut icon" href="https://blog.memory6181.com//favicon.ico?v=1577751239376">
+<link rel="shortcut icon" href="https://blog.memory6181.com//favicon.ico?v=1577755847709">
 <link rel="stylesheet" href="https://blog.memory6181.com//styles/main.css">
 <meta name="description" content="温故而知新" />
 
@@ -18,58 +18,62 @@
     <div class="head-top-line"></div>
     <div class="header-box">
       <header class="header">
-  <div class="blog-header" id="header">
-    <div class="site-meta">
-      <div class="nav-toggle" id="nav_toggle">
-        <div class="toggle-box">
-          <div class="line line-top"></div>
-          <div class="line line-center"></div>
-          <div class="line line-bottom"></div>
+ 
+    <div class="blog-header" id="header">
+      <div class="section-layout-wrapper">
+      <div class="site-meta">
+        <div class="nav-toggle" id="nav_toggle">
+          <div class="toggle-box">
+            <div class="line line-top"></div>
+            <div class="line line-center"></div>
+            <div class="line line-bottom"></div>
+          </div>
         </div>
-      </div>
-      <div class="site-title">
-        <a href="/" class="brand">
-          <span>Memory的个人博客</span>
-        </a>
-      </div>
-      <p class="subtitle"></p>
-      <nav class="site-nav" id="site_nav">
-            
-              <li class="nav-item ">
-                <a href="/">
-                  <i class="iconfont icon-home"></i>首页
-                </a>
-              </li>
-            
-              <li class="nav-item ">
-                <a href="/archives">
-                  <i class="iconfont icon-home"></i>归档
-                </a>
-              </li>
-            
-              <li class="nav-item ">
-                <a href="/tags">
-                  <i class="iconfont icon-home"></i>标签
-                </a>
-              </li>
-            
-              <li class="nav-item ">
-                <a href="http://blog.memory6181.com//post/guan-yu-wo/">
-                  <i class="iconfont icon-home"></i>简历
-                </a>
-              </li>
-            
-              <li class="nav-item ">
-                <a href="http://memory6181.coding.me//post/about/">
-                  <i class="iconfont icon-home"></i>故事
-                </a>
-              </li>
-            
-      </nav>
-
-    </div>
+        <div class="site-title">
+          <a href="/" class="brand">
+            <span>Memory的个人博客</span>
+          </a>
+        </div>
+        <p class="subtitle"></p>
+        <nav class="site-nav" id="site_nav">
+              
+                <li class="nav-item ">
+                  <a href="/">
+                    <i class="iconfont icon-home"></i>首页
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a href="/archives">
+                    <i class="iconfont icon-home"></i>归档
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a href="/tags">
+                    <i class="iconfont icon-home"></i>标签
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a href="http://blog.memory6181.com//post/guan-yu-wo/">
+                    <i class="iconfont icon-home"></i>简历
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a href="http://memory6181.coding.me//post/about/">
+                    <i class="iconfont icon-home"></i>故事
+                  </a>
+                </li>
+              
+        </nav>
   
+      </div>
+    
+    </div>
   </div>
+ 
 </header>
 <script type="text/javascript"> 
  
@@ -89,7 +93,107 @@
     <div class="main-continer">
       <div class="section-layout">
         <div class="section-layout-wrapper">
+         
+          <!-- <div class="section-box"> -->
+            <div class="section post">
+              <div class="article-box">
+    <header class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://blog.memory6181.com/post/pU7hkV2AQ">
+      Linux 下面screen命令的用法
+    </a>
+  </h1>
+  <div class="post-meta">
+    <span class="meta-item">
+      <i class="iconfont icon-calendar_empty"></i>
+      <span class="pc-show">发布于</span>
+      <span>2018-05-18</span>
+    </span>
+    
+      <span class="meta-item">
+        <span class="post-meta-divider">|</span>
+        <i class="iconfont icon-folder_open_alt"></i>
+        <span class="pc-show">分类于</span>
+        
           
+            <a href="https://blog.memory6181.com/tag/4eOic9FHK">
+              <span>技术</span>
+            </a>
+          
+        
+      </span>
+    
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="iconfont icon-time"></i>
+      <span>1分钟</span>
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="iconfont icon-keyboard"></i>
+      <span class="pc-show">178字数</span>
+    </span>
+  </div>
+</header>
+</div>
+              <div class="post-body next-md-body" id="post_body">
+                <p>最近在使用阿里云的Linux 云服务做毕业设计遇到一些问题，我把java的jar运行程序上传之后，使用<code>java -jar server</code>命令之后程序开始正常运行，但是当我关闭终端的时候程序也随着关闭了，这怎么可以，随后我就百度了一番。发现有一个叫做<code>screen</code>的东西，下面把关于这些内容简单做了个小节，记下来，后面用的到</p>
+<!-- more -->
+<h5 id="打开一个screen对话">打开一个screen对话</h5>
+<pre><code class="language-shell">	screen 
+</code></pre>
+<h5 id="浏览当前的screen对话">浏览当前的screen对话</h5>
+<pre><code class="language-shell">	screen -ls
+</code></pre>
+<h5 id="关闭screen对话">关闭screen对话</h5>
+<pre><code class="language-shell">	screen  -X -S name quit
+</code></pre>
+<h5 id="恢复上次的screen对话">恢复上次的screen对话</h5>
+<pre><code class="language-shell">	screen -r
+</code></pre>
+<p>基本使用了上面的几条指令我的目前够用了</p>
+
+              </div>
+              <div class="post-footer">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      Memory的个人博客
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://blog.memory6181.com/post/pU7hkV2AQ" title="Linux 下面screen命令的用法">https://blog.memory6181.com/post/pU7hkV2AQ</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外,转载请注明出处！
+    </li>
+  </ul>
+  <div class="tags">
+    
+      <a href="https://blog.memory6181.com/tag/4eOic9FHK"># 技术</a>
+    
+  </div>
+  <div class="nav">
+    <div class="nav-prev">
+      
+        <i class="iconfont icon-angle_left"></i>
+        <a class="nav-pc-next" href="https://blog.memory6181.com/post/0grcL9M4Q">一个嵌入式软件定时器的设计</a class="nav-pc-next">
+        <a class="nav-mobile-prev" href="https://blog.memory6181.com/post/0grcL9M4Q">上一篇</a>
+      
+    </div>
+    <div class="nav-next">
+      
+        <a class="nav-pc-next" href="https://blog.memory6181.com/post/xcBRy3M2-">JAVA 环境变量配置</a>
+        <a class="nav-mobile-next" href="https://blog.memory6181.com/post/xcBRy3M2-">下一篇</a>
+        <i class="iconfont icon-angle_right"></i>
+      
+    </div>
+  </div>
+</div>
+              
+            </div>
+            
 <div class="sidebar">
     <div class="sidebar-wrapper" id="sidebar">
       
@@ -412,106 +516,7 @@ window.addEventListener('load', function() {
     }
   });
 </script>
-          <div class="section-box">
-            <div class="section post">
-              <div class="article-box">
-    <header class="post-header">
-  <h1 class="post-title">
-    <a class="post-title-link" href="https://blog.memory6181.com/post/pU7hkV2AQ">
-      Linux 下面screen命令的用法
-    </a>
-  </h1>
-  <div class="post-meta">
-    <span class="meta-item">
-      <i class="iconfont icon-calendar_empty"></i>
-      <span class="pc-show">发布于</span>
-      <span>2018-05-18</span>
-    </span>
-    
-      <span class="meta-item">
-        <span class="post-meta-divider">|</span>
-        <i class="iconfont icon-folder_open_alt"></i>
-        <span class="pc-show">分类于</span>
-        
-          
-            <a href="https://blog.memory6181.com/tag/4eOic9FHK">
-              <span>技术</span>
-            </a>
-          
-        
-      </span>
-    
-    <span class="meta-item">
-      <span class="post-meta-divider">|</span>
-      <i class="iconfont icon-time"></i>
-      <span>1分钟</span>
-    </span>
-    <span class="meta-item">
-      <span class="post-meta-divider">|</span>
-      <i class="iconfont icon-keyboard"></i>
-      <span class="pc-show">178字数</span>
-    </span>
-  </div>
-</header>
-</div>
-              <div class="post-body next-md-body" id="post_body">
-                <p>最近在使用阿里云的Linux 云服务做毕业设计遇到一些问题，我把java的jar运行程序上传之后，使用<code>java -jar server</code>命令之后程序开始正常运行，但是当我关闭终端的时候程序也随着关闭了，这怎么可以，随后我就百度了一番。发现有一个叫做<code>screen</code>的东西，下面把关于这些内容简单做了个小节，记下来，后面用的到</p>
-<!-- more -->
-<h5 id="打开一个screen对话">打开一个screen对话</h5>
-<pre><code class="language-shell">	screen 
-</code></pre>
-<h5 id="浏览当前的screen对话">浏览当前的screen对话</h5>
-<pre><code class="language-shell">	screen -ls
-</code></pre>
-<h5 id="关闭screen对话">关闭screen对话</h5>
-<pre><code class="language-shell">	screen  -X -S name quit
-</code></pre>
-<h5 id="恢复上次的screen对话">恢复上次的screen对话</h5>
-<pre><code class="language-shell">	screen -r
-</code></pre>
-<p>基本使用了上面的几条指令我的目前够用了</p>
-
-              </div>
-              <div class="post-footer">
-  <ul class="post-copyright">
-    <li class="post-copyright-author">
-      <strong>本文作者：</strong>
-      Memory的个人博客
-    </li>
-    <li class="post-copyright-link">
-      <strong>本文链接：</strong>
-      <a href="https://blog.memory6181.com/post/pU7hkV2AQ" title="Linux 下面screen命令的用法">https://blog.memory6181.com/post/pU7hkV2AQ</a>
-    </li>
-    <li class="post-copyright-license">
-      <strong>版权声明： </strong>
-      本博客所有文章除特别声明外,转载请注明出处！
-    </li>
-  </ul>
-  <div class="tags">
-    
-      <a href="https://blog.memory6181.com/tag/4eOic9FHK"># 技术</a>
-    
-  </div>
-  <div class="nav">
-    <div class="nav-prev">
-      
-        <i class="iconfont icon-angle_left"></i>
-        <a class="nav-pc-next" href="https://blog.memory6181.com/post/0grcL9M4Q">一个嵌入式软件定时器的设计</a class="nav-pc-next">
-        <a class="nav-mobile-prev" href="https://blog.memory6181.com/post/0grcL9M4Q">上一篇</a>
-      
-    </div>
-    <div class="nav-next">
-      
-        <a class="nav-pc-next" href="https://blog.memory6181.com/post/xcBRy3M2-">JAVA 环境变量配置</a>
-        <a class="nav-mobile-next" href="https://blog.memory6181.com/post/xcBRy3M2-">下一篇</a>
-        <i class="iconfont icon-angle_right"></i>
-      
-    </div>
-  </div>
-</div>
-              
-            </div>
-          </div>
+          <!-- </div> -->
         </div>
       </div>
       <div class="footer-box">

@@ -3,7 +3,7 @@
       <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>Memory的个人博客</title>
-<link rel="shortcut icon" href="https://blog.memory6181.com//favicon.ico?v=1577751239376">
+<link rel="shortcut icon" href="https://blog.memory6181.com//favicon.ico?v=1577755847709">
 <link rel="stylesheet" href="https://blog.memory6181.com//styles/main.css">
 <meta name="description" content="温故而知新" />
 
@@ -18,58 +18,62 @@
     <div class="head-top-line"></div>
     <div class="header-box">
       <header class="header">
-  <div class="blog-header" id="header">
-    <div class="site-meta">
-      <div class="nav-toggle" id="nav_toggle">
-        <div class="toggle-box">
-          <div class="line line-top"></div>
-          <div class="line line-center"></div>
-          <div class="line line-bottom"></div>
+ 
+    <div class="blog-header" id="header">
+      <div class="section-layout-wrapper">
+      <div class="site-meta">
+        <div class="nav-toggle" id="nav_toggle">
+          <div class="toggle-box">
+            <div class="line line-top"></div>
+            <div class="line line-center"></div>
+            <div class="line line-bottom"></div>
+          </div>
         </div>
-      </div>
-      <div class="site-title">
-        <a href="/" class="brand">
-          <span>Memory的个人博客</span>
-        </a>
-      </div>
-      <p class="subtitle"></p>
-      <nav class="site-nav" id="site_nav">
-            
-              <li class="nav-item ">
-                <a href="/">
-                  <i class="iconfont icon-home"></i>首页
-                </a>
-              </li>
-            
-              <li class="nav-item ">
-                <a href="/archives">
-                  <i class="iconfont icon-home"></i>归档
-                </a>
-              </li>
-            
-              <li class="nav-item ">
-                <a href="/tags">
-                  <i class="iconfont icon-home"></i>标签
-                </a>
-              </li>
-            
-              <li class="nav-item ">
-                <a href="http://blog.memory6181.com//post/guan-yu-wo/">
-                  <i class="iconfont icon-home"></i>简历
-                </a>
-              </li>
-            
-              <li class="nav-item ">
-                <a href="http://memory6181.coding.me//post/about/">
-                  <i class="iconfont icon-home"></i>故事
-                </a>
-              </li>
-            
-      </nav>
-
-    </div>
+        <div class="site-title">
+          <a href="/" class="brand">
+            <span>Memory的个人博客</span>
+          </a>
+        </div>
+        <p class="subtitle"></p>
+        <nav class="site-nav" id="site_nav">
+              
+                <li class="nav-item ">
+                  <a href="/">
+                    <i class="iconfont icon-home"></i>首页
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a href="/archives">
+                    <i class="iconfont icon-home"></i>归档
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a href="/tags">
+                    <i class="iconfont icon-home"></i>标签
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a href="http://blog.memory6181.com//post/guan-yu-wo/">
+                    <i class="iconfont icon-home"></i>简历
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a href="http://memory6181.coding.me//post/about/">
+                    <i class="iconfont icon-home"></i>故事
+                  </a>
+                </li>
+              
+        </nav>
   
+      </div>
+    
+    </div>
   </div>
+ 
 </header>
 <script type="text/javascript"> 
  
@@ -89,7 +93,169 @@
     <div class="main-continer">
       <div class="section-layout">
         <div class="section-layout-wrapper">
+         
+          <!-- <div class="section-box"> -->
+            <div class="section post">
+              <div class="article-box">
+    <header class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://blog.memory6181.com/post/9f5C0FaPD">
+      MicroPython （一）点亮我的Led
+    </a>
+  </h1>
+  <div class="post-meta">
+    <span class="meta-item">
+      <i class="iconfont icon-calendar_empty"></i>
+      <span class="pc-show">发布于</span>
+      <span>2018-08-11</span>
+    </span>
+    
+      <span class="meta-item">
+        <span class="post-meta-divider">|</span>
+        <i class="iconfont icon-folder_open_alt"></i>
+        <span class="pc-show">分类于</span>
+        
           
+            <a href="https://blog.memory6181.com/tag/4eOic9FHK">
+              <span>技术</span>
+            </a>
+          
+        
+      </span>
+    
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="iconfont icon-time"></i>
+      <span>4分钟</span>
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="iconfont icon-keyboard"></i>
+      <span class="pc-show">559字数</span>
+    </span>
+  </div>
+</header>
+</div>
+              <div class="post-body next-md-body" id="post_body">
+                <h5 id="工具">工具 ：</h5>
+<hr>
+<ul>
+<li>putty</li>
+<li>F429Discovery 开发板</li>
+<li>Notepad++</li>
+</ul>
+<p>注意：不知道为什么 其他的终端工具有问题，推荐 putty 基本没有发现问题</p>
+<h5 id="putty-实时调试">putty 实时调试</h5>
+<hr>
+<ol>
+<li>使用putty 打开USB 虚拟串口，我们打开可以使用<code>help()</code>方法寻求帮助</li>
+</ol>
+<p>输入<code>help()</code>如下所示</p>
+<pre><code class="language-Python">&gt;&gt;&gt; help()
+Welcome to MicroPython!
+
+For online help please visit http://micropython.org/help/.
+
+Quick overview of commands for the board:
+pyb.info()    -- print some general information
+pyb.delay(n)  -- wait for n milliseconds
+pyb.millis()  -- get number of milliseconds since hard reset
+pyb.Switch()  -- create a switch object
+                 Switch methods: (), callback(f)
+pyb.LED(n)    -- create an LED object for LED n (n=1,2,3,4)
+                 LED methods: on(), off(), toggle(), intensity(&lt;n&gt;)
+pyb.Pin(pin)  -- get a pin, eg pyb.Pin('X1')
+pyb.Pin(pin, m, [p]) -- get a pin and configure it for IO mode m, pull mode p
+                 Pin methods: init(..), value([v]), high(), low()
+pyb.ExtInt(pin, m, p, callback) -- create an external interrupt object
+pyb.ADC(pin)  -- make an analog object from a pin
+                 ADC methods: read(), read_timed(buf, freq)
+pyb.DAC(port) -- make a DAC object
+                 DAC methods: triangle(freq), write(n), write_timed(buf, freq)
+pyb.RTC()     -- make an RTC object; methods: datetime([val])
+pyb.rng()     -- get a 30-bit hardware random number
+pyb.Servo(n)  -- create Servo object for servo n (n=1,2,3,4)
+                 Servo methods: calibration(..), angle([x, [t]]), speed([x, [t]])
+pyb.Accel()   -- create an Accelerometer object
+                 Accelerometer methods: x(), y(), z(), tilt(), filtered_xyz()
+
+Pins are numbered X1-X12, X17-X22, Y1-Y12, or by their MCU name
+Pin IO modes are: pyb.Pin.IN, pyb.Pin.OUT_PP, pyb.Pin.OUT_OD
+Pin pull modes are: pyb.Pin.PULL_NONE, pyb.Pin.PULL_UP, pyb.Pin.PULL_DOWN
+Additional serial bus objects: pyb.I2C(n), pyb.SPI(n), pyb.UART(n)
+
+Control commands:
+CTRL-A        -- on a blank line, enter raw REPL mode
+CTRL-B        -- on a blank line, enter normal REPL mode
+CTRL-C        -- interrupt a running program
+CTRL-D        -- on a blank line, do a soft reset of the board
+CTRL-E        -- on a blank line, enter paste mode
+
+For further help on a specific object, type help(obj)
+For a list of available modules, type help('modules')
+&gt;&gt;&gt;
+</code></pre>
+<p>上面就是所有的Micro Python 帮助文档。<br>
+输入下面的指令打开一个Led。</p>
+<pre><code class="language-Python">&gt;&gt;&gt; import pyb
+&gt;&gt;&gt; led = pyb.LED(1)
+&gt;&gt;&gt; led.on()
+&gt;&gt;&gt; led.off()
+</code></pre>
+<h5 id="micropython-脱机运行">MicroPython 脱机运行</h5>
+<hr>
+<p>脱机运行指离开电脑独立运行，在插入USB的时候，电脑多了一个磁盘（不是Stlink V2.1），我们打开这个磁盘，里面有一个“main.py”文件。<br>
+打开这个文件，可以在里面输入如下代码</p>
+<pre><code class="language-Python">import pyb
+while true：
+    pyb.LED(1).on()
+    pyb.delay(500)
+    pyb.LED(1).off()
+    pyb.delay(500)
+</code></pre>
+<p>保存“main.py”文件，完成复位即可。</p>
+
+              </div>
+              <div class="post-footer">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      Memory的个人博客
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://blog.memory6181.com/post/9f5C0FaPD" title="MicroPython （一）点亮我的Led">https://blog.memory6181.com/post/9f5C0FaPD</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外,转载请注明出处！
+    </li>
+  </ul>
+  <div class="tags">
+    
+      <a href="https://blog.memory6181.com/tag/4eOic9FHK"># 技术</a>
+    
+  </div>
+  <div class="nav">
+    <div class="nav-prev">
+      
+        <i class="iconfont icon-angle_left"></i>
+        <a class="nav-pc-next" href="https://blog.memory6181.com/post/frp_da_jian_nei_wang_chuan_tou">frp 搭建内网穿透</a class="nav-pc-next">
+        <a class="nav-mobile-prev" href="https://blog.memory6181.com/post/frp_da_jian_nei_wang_chuan_tou">上一篇</a>
+      
+    </div>
+    <div class="nav-next">
+      
+        <a class="nav-pc-next" href="https://blog.memory6181.com/post/B7I0E9vXn">Atom打造优雅的MarkDown 编辑器</a>
+        <a class="nav-mobile-next" href="https://blog.memory6181.com/post/B7I0E9vXn">下一篇</a>
+        <i class="iconfont icon-angle_right"></i>
+      
+    </div>
+  </div>
+</div>
+              
+            </div>
+            
 <div class="sidebar">
     <div class="sidebar-wrapper" id="sidebar">
       
@@ -411,168 +577,7 @@ window.addEventListener('load', function() {
     }
   });
 </script>
-          <div class="section-box">
-            <div class="section post">
-              <div class="article-box">
-    <header class="post-header">
-  <h1 class="post-title">
-    <a class="post-title-link" href="https://blog.memory6181.com/post/9f5C0FaPD">
-      MicroPython （一）点亮我的Led
-    </a>
-  </h1>
-  <div class="post-meta">
-    <span class="meta-item">
-      <i class="iconfont icon-calendar_empty"></i>
-      <span class="pc-show">发布于</span>
-      <span>2018-08-11</span>
-    </span>
-    
-      <span class="meta-item">
-        <span class="post-meta-divider">|</span>
-        <i class="iconfont icon-folder_open_alt"></i>
-        <span class="pc-show">分类于</span>
-        
-          
-            <a href="https://blog.memory6181.com/tag/4eOic9FHK">
-              <span>技术</span>
-            </a>
-          
-        
-      </span>
-    
-    <span class="meta-item">
-      <span class="post-meta-divider">|</span>
-      <i class="iconfont icon-time"></i>
-      <span>4分钟</span>
-    </span>
-    <span class="meta-item">
-      <span class="post-meta-divider">|</span>
-      <i class="iconfont icon-keyboard"></i>
-      <span class="pc-show">559字数</span>
-    </span>
-  </div>
-</header>
-</div>
-              <div class="post-body next-md-body" id="post_body">
-                <h5 id="工具">工具 ：</h5>
-<hr>
-<ul>
-<li>putty</li>
-<li>F429Discovery 开发板</li>
-<li>Notepad++</li>
-</ul>
-<p>注意：不知道为什么 其他的终端工具有问题，推荐 putty 基本没有发现问题</p>
-<h5 id="putty-实时调试">putty 实时调试</h5>
-<hr>
-<ol>
-<li>使用putty 打开USB 虚拟串口，我们打开可以使用<code>help()</code>方法寻求帮助</li>
-</ol>
-<p>输入<code>help()</code>如下所示</p>
-<pre><code class="language-Python">&gt;&gt;&gt; help()
-Welcome to MicroPython!
-
-For online help please visit http://micropython.org/help/.
-
-Quick overview of commands for the board:
-pyb.info()    -- print some general information
-pyb.delay(n)  -- wait for n milliseconds
-pyb.millis()  -- get number of milliseconds since hard reset
-pyb.Switch()  -- create a switch object
-                 Switch methods: (), callback(f)
-pyb.LED(n)    -- create an LED object for LED n (n=1,2,3,4)
-                 LED methods: on(), off(), toggle(), intensity(&lt;n&gt;)
-pyb.Pin(pin)  -- get a pin, eg pyb.Pin('X1')
-pyb.Pin(pin, m, [p]) -- get a pin and configure it for IO mode m, pull mode p
-                 Pin methods: init(..), value([v]), high(), low()
-pyb.ExtInt(pin, m, p, callback) -- create an external interrupt object
-pyb.ADC(pin)  -- make an analog object from a pin
-                 ADC methods: read(), read_timed(buf, freq)
-pyb.DAC(port) -- make a DAC object
-                 DAC methods: triangle(freq), write(n), write_timed(buf, freq)
-pyb.RTC()     -- make an RTC object; methods: datetime([val])
-pyb.rng()     -- get a 30-bit hardware random number
-pyb.Servo(n)  -- create Servo object for servo n (n=1,2,3,4)
-                 Servo methods: calibration(..), angle([x, [t]]), speed([x, [t]])
-pyb.Accel()   -- create an Accelerometer object
-                 Accelerometer methods: x(), y(), z(), tilt(), filtered_xyz()
-
-Pins are numbered X1-X12, X17-X22, Y1-Y12, or by their MCU name
-Pin IO modes are: pyb.Pin.IN, pyb.Pin.OUT_PP, pyb.Pin.OUT_OD
-Pin pull modes are: pyb.Pin.PULL_NONE, pyb.Pin.PULL_UP, pyb.Pin.PULL_DOWN
-Additional serial bus objects: pyb.I2C(n), pyb.SPI(n), pyb.UART(n)
-
-Control commands:
-CTRL-A        -- on a blank line, enter raw REPL mode
-CTRL-B        -- on a blank line, enter normal REPL mode
-CTRL-C        -- interrupt a running program
-CTRL-D        -- on a blank line, do a soft reset of the board
-CTRL-E        -- on a blank line, enter paste mode
-
-For further help on a specific object, type help(obj)
-For a list of available modules, type help('modules')
-&gt;&gt;&gt;
-</code></pre>
-<p>上面就是所有的Micro Python 帮助文档。<br>
-输入下面的指令打开一个Led。</p>
-<pre><code class="language-Python">&gt;&gt;&gt; import pyb
-&gt;&gt;&gt; led = pyb.LED(1)
-&gt;&gt;&gt; led.on()
-&gt;&gt;&gt; led.off()
-</code></pre>
-<h5 id="micropython-脱机运行">MicroPython 脱机运行</h5>
-<hr>
-<p>脱机运行指离开电脑独立运行，在插入USB的时候，电脑多了一个磁盘（不是Stlink V2.1），我们打开这个磁盘，里面有一个“main.py”文件。<br>
-打开这个文件，可以在里面输入如下代码</p>
-<pre><code class="language-Python">import pyb
-while true：
-    pyb.LED(1).on()
-    pyb.delay(500)
-    pyb.LED(1).off()
-    pyb.delay(500)
-</code></pre>
-<p>保存“main.py”文件，完成复位即可。</p>
-
-              </div>
-              <div class="post-footer">
-  <ul class="post-copyright">
-    <li class="post-copyright-author">
-      <strong>本文作者：</strong>
-      Memory的个人博客
-    </li>
-    <li class="post-copyright-link">
-      <strong>本文链接：</strong>
-      <a href="https://blog.memory6181.com/post/9f5C0FaPD" title="MicroPython （一）点亮我的Led">https://blog.memory6181.com/post/9f5C0FaPD</a>
-    </li>
-    <li class="post-copyright-license">
-      <strong>版权声明： </strong>
-      本博客所有文章除特别声明外,转载请注明出处！
-    </li>
-  </ul>
-  <div class="tags">
-    
-      <a href="https://blog.memory6181.com/tag/4eOic9FHK"># 技术</a>
-    
-  </div>
-  <div class="nav">
-    <div class="nav-prev">
-      
-        <i class="iconfont icon-angle_left"></i>
-        <a class="nav-pc-next" href="https://blog.memory6181.com/post/frp_da_jian_nei_wang_chuan_tou">frp 搭建内网穿透</a class="nav-pc-next">
-        <a class="nav-mobile-prev" href="https://blog.memory6181.com/post/frp_da_jian_nei_wang_chuan_tou">上一篇</a>
-      
-    </div>
-    <div class="nav-next">
-      
-        <a class="nav-pc-next" href="https://blog.memory6181.com/post/B7I0E9vXn">Atom打造优雅的MarkDown 编辑器</a>
-        <a class="nav-mobile-next" href="https://blog.memory6181.com/post/B7I0E9vXn">下一篇</a>
-        <i class="iconfont icon-angle_right"></i>
-      
-    </div>
-  </div>
-</div>
-              
-            </div>
-          </div>
+          <!-- </div> -->
         </div>
       </div>
       <div class="footer-box">

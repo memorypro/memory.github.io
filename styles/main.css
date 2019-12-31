@@ -180,9 +180,9 @@ section_1 {
   position: relative;
 }
 .sidebar {
-  margin-top: 110px;
+  margin: 110px 0px 0px 40px;
   box-shadow: none;
-  width: 240px;
+  width: 320px;
 }
 .sidebar a {
   border: none;
@@ -251,8 +251,8 @@ section_1 {
 }
 .header {
   position: relative;
-  margin: 0 auto;
-  width: 1200px;
+  width: 100%;
+  background: #fff;
 }
 .blog-header {
   position: absolute;
@@ -279,7 +279,7 @@ section_1 {
   color: #fff;
   display: flex;
   text-align: left;
-  margin: 20px;
+  margin: 20px 0px;
 }
 .site-title {
   display: inline-block;
@@ -294,7 +294,7 @@ section_1 {
 }
 .brand {
   display: inline-block;
-  padding: 0 40px;
+  padding: 0 20px;
   color: #555;
   background: #fff;
   border-bottom: none;
@@ -319,11 +319,12 @@ section_1 {
 }
 .site-nav {
   display: flex;
-  margin: 0px 0;
+  margin-left: 40px;
   transition: all 0.3s linear;
 }
 .nav-item {
   opacity: 0;
+  font-size: medium;
 }
 .nav-item-active a:after {
   content: " ";
@@ -442,7 +443,7 @@ section_1 {
   position: relative;
 }
 .section-box {
-  width: 80%;
+  width: 70%;
   margin-top: 40px;
   padding-top: 0;
 }
@@ -455,7 +456,7 @@ section_1 {
   box-sizing: border-box;
   background: #fff;
   margin-left: 20px;
-  margin-top: 70px;
+  margin-top: 110px;
 }
 .section-items {
   box-sizing: border-box;

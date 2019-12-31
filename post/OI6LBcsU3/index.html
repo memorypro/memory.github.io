@@ -3,7 +3,7 @@
       <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>Memory的个人博客</title>
-<link rel="shortcut icon" href="https://blog.memory6181.com//favicon.ico?v=1577751239376">
+<link rel="shortcut icon" href="https://blog.memory6181.com//favicon.ico?v=1577755847709">
 <link rel="stylesheet" href="https://blog.memory6181.com//styles/main.css">
 <meta name="description" content="温故而知新" />
 
@@ -18,58 +18,62 @@
     <div class="head-top-line"></div>
     <div class="header-box">
       <header class="header">
-  <div class="blog-header" id="header">
-    <div class="site-meta">
-      <div class="nav-toggle" id="nav_toggle">
-        <div class="toggle-box">
-          <div class="line line-top"></div>
-          <div class="line line-center"></div>
-          <div class="line line-bottom"></div>
+ 
+    <div class="blog-header" id="header">
+      <div class="section-layout-wrapper">
+      <div class="site-meta">
+        <div class="nav-toggle" id="nav_toggle">
+          <div class="toggle-box">
+            <div class="line line-top"></div>
+            <div class="line line-center"></div>
+            <div class="line line-bottom"></div>
+          </div>
         </div>
-      </div>
-      <div class="site-title">
-        <a href="/" class="brand">
-          <span>Memory的个人博客</span>
-        </a>
-      </div>
-      <p class="subtitle"></p>
-      <nav class="site-nav" id="site_nav">
-            
-              <li class="nav-item ">
-                <a href="/">
-                  <i class="iconfont icon-home"></i>首页
-                </a>
-              </li>
-            
-              <li class="nav-item ">
-                <a href="/archives">
-                  <i class="iconfont icon-home"></i>归档
-                </a>
-              </li>
-            
-              <li class="nav-item ">
-                <a href="/tags">
-                  <i class="iconfont icon-home"></i>标签
-                </a>
-              </li>
-            
-              <li class="nav-item ">
-                <a href="http://blog.memory6181.com//post/guan-yu-wo/">
-                  <i class="iconfont icon-home"></i>简历
-                </a>
-              </li>
-            
-              <li class="nav-item ">
-                <a href="http://memory6181.coding.me//post/about/">
-                  <i class="iconfont icon-home"></i>故事
-                </a>
-              </li>
-            
-      </nav>
-
-    </div>
+        <div class="site-title">
+          <a href="/" class="brand">
+            <span>Memory的个人博客</span>
+          </a>
+        </div>
+        <p class="subtitle"></p>
+        <nav class="site-nav" id="site_nav">
+              
+                <li class="nav-item ">
+                  <a href="/">
+                    <i class="iconfont icon-home"></i>首页
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a href="/archives">
+                    <i class="iconfont icon-home"></i>归档
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a href="/tags">
+                    <i class="iconfont icon-home"></i>标签
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a href="http://blog.memory6181.com//post/guan-yu-wo/">
+                    <i class="iconfont icon-home"></i>简历
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a href="http://memory6181.coding.me//post/about/">
+                    <i class="iconfont icon-home"></i>故事
+                  </a>
+                </li>
+              
+        </nav>
   
+      </div>
+    
+    </div>
   </div>
+ 
 </header>
 <script type="text/javascript"> 
  
@@ -89,7 +93,200 @@
     <div class="main-continer">
       <div class="section-layout">
         <div class="section-layout-wrapper">
+         
+          <!-- <div class="section-box"> -->
+            <div class="section post">
+              <div class="article-box">
+    <header class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://blog.memory6181.com/post/OI6LBcsU3">
+      Pi 在Windows下面使用远程桌面登录
+    </a>
+  </h1>
+  <div class="post-meta">
+    <span class="meta-item">
+      <i class="iconfont icon-calendar_empty"></i>
+      <span class="pc-show">发布于</span>
+      <span>2018-08-08</span>
+    </span>
+    
+      <span class="meta-item">
+        <span class="post-meta-divider">|</span>
+        <i class="iconfont icon-folder_open_alt"></i>
+        <span class="pc-show">分类于</span>
+        
           
+            <a href="https://blog.memory6181.com/tag/4eOic9FHK">
+              <span>技术</span>
+            </a>
+          
+        
+      </span>
+    
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="iconfont icon-time"></i>
+      <span>7分钟</span>
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="iconfont icon-keyboard"></i>
+      <span class="pc-show">1309字数</span>
+    </span>
+  </div>
+</header>
+</div>
+              <div class="post-body next-md-body" id="post_body">
+                <h4 id="pi-在windows下面使用远程桌面登录">Pi 在Windows下面使用远程桌面登录</h4>
+<h5 id="1-删除系统自带的xrdp">1、删除系统自带的xrdp</h5>
+<p>输入命令<code>sudo apt-get purge xrdp</code></p>
+<pre><code class="language-shell">pi@raspberrypi:~ $ sudo apt-get purge xrdp
+正在读取软件包列表... 完成
+正在分析软件包的依赖关系树       
+正在读取状态信息... 完成       
+软件包 xrdp 未安装，所以不会被卸载
+升级了 0 个软件包，新安装了 0 个软件包，要卸载 0 个软件包，有 0 个软件包未被升级。
+</code></pre>
+<h5 id="2-重新安装xrdp">2、重新安装xrdp</h5>
+<p>输入命令 <code>sudo apt-get install xrdp</code></p>
+<pre><code class="language-shell">pi@raspberrypi:~ $ sudo apt-get install xrdp
+正在读取软件包列表... 完成
+正在分析软件包的依赖关系树       
+正在读取状态信息... 完成       
+将会同时安装下列软件：
+  ssl-cert x11-apps x11-session-utils xbitmaps xfonts-75dpi xfonts-base xfonts-scalable xorg xorg-docs-core xorgxrdp
+建议安装：
+  openssl-blacklist xorg-docs x11-xfs-utils guacamole
+下列【新】软件包将被安装：
+  ssl-cert x11-apps x11-session-utils xbitmaps xfonts-75dpi xfonts-base xfonts-scalable xorg xorg-docs-core xorgxrdp xrdp
+升级了 0 个软件包，新安装了 11 个软件包，要卸载 0 个软件包，有 109 个软件包未被升级。
+需要下载 476 kB/10.8 MB 的归档。
+解压缩后会消耗 17.1 MB 的额外空间。
+您希望继续执行吗？ [Y/n] y
+获取:1 http://mirrors.shu.edu.cn/raspbian/raspbian stretch/main armhf xorgxrdp armhf 0.9.1-9+deb9u3 [73.3 kB]
+获取:2 http://mirrors.shu.edu.cn/raspbian/raspbian stretch/main armhf xrdp armhf 0.9.1-9+deb9u3 [402 kB]
+已下载 476 kB，耗时 3秒 (151 kB/s)
+正在预设定软件包 ...
+正在选中未选择的软件包 ssl-cert。
+(正在读取数据库 ... 系统当前共安装有 125035 个文件和目录。)
+正准备解包 .../00-ssl-cert_1.0.39_all.deb  ...
+正在解包 ssl-cert (1.0.39) ...
+正在选中未选择的软件包 x11-apps。
+正准备解包 .../01-x11-apps_7.7+6_armhf.deb  ...
+正在解包 x11-apps (7.7+6) ...
+正在选中未选择的软件包 x11-session-utils。
+正准备解包 .../02-x11-session-utils_7.7+2_armhf.deb  ...
+正在解包 x11-session-utils (7.7+2) ...
+正在选中未选择的软件包 xbitmaps。
+正准备解包 .../03-xbitmaps_1.1.1-2_all.deb  ...
+正在解包 xbitmaps (1.1.1-2) ...
+正在选中未选择的软件包 xfonts-75dpi。
+正准备解包 .../04-xfonts-75dpi_1%3a1.0.4+nmu1_all.deb  ...
+正在解包 xfonts-75dpi (1:1.0.4+nmu1) ...
+正在选中未选择的软件包 xfonts-base。
+正准备解包 .../05-xfonts-base_1%3a1.0.4+nmu1_all.deb  ...
+正在解包 xfonts-base (1:1.0.4+nmu1) ...
+正在选中未选择的软件包 xfonts-scalable。
+正准备解包 .../06-xfonts-scalable_1%3a1.0.3-1.1_all.deb  ...
+正在解包 xfonts-scalable (1:1.0.3-1.1) ...
+正在选中未选择的软件包 xorg-docs-core。
+正准备解包 .../07-xorg-docs-core_1%3a1.7.1-1_all.deb  ...
+正在解包 xorg-docs-core (1:1.7.1-1) ...
+正在选中未选择的软件包 xorg。
+正准备解包 .../08-xorg_1%3a7.7+19_armhf.deb  ...
+正在解包 xorg (1:7.7+19) ...
+正在选中未选择的软件包 xorgxrdp。
+正准备解包 .../09-xorgxrdp_0.9.1-9+deb9u3_armhf.deb  ...
+正在解包 xorgxrdp (0.9.1-9+deb9u3) ...
+正在选中未选择的软件包 xrdp。
+正准备解包 .../10-xrdp_0.9.1-9+deb9u3_armhf.deb  ...
+正在解包 xrdp (0.9.1-9+deb9u3) ...
+正在设置 x11-session-utils (7.7+2) ...
+正在设置 xbitmaps (1.1.1-2) ...
+正在设置 ssl-cert (1.0.39) ...
+正在设置 xfonts-75dpi (1:1.0.4+nmu1) ...
+正在处理用于 libc-bin (2.24-11+deb9u3) 的触发器 ...
+正在设置 xrdp (0.9.1-9+deb9u3) ...
+
+Generating 2048 bit rsa key...
+
+ssl_gen_key_xrdp1 ok
+
+saving to /etc/xrdp/rsakeys.ini
+
+Created symlink /etc/systemd/system/multi-user.target.wants/xrdp-sesman.service → /lib/systemd/system/xrdp-sesman.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/xrdp.service → /lib/systemd/system/xrdp.service.
+正在处理用于 systemd (232-25+deb9u2) 的触发器 ...
+正在处理用于 man-db (2.7.6.1-2) 的触发器 ...
+正在设置 x11-apps (7.7+6) ...
+正在设置 xfonts-scalable (1:1.0.3-1.1) ...
+正在设置 xorgxrdp (0.9.1-9+deb9u3) ...
+正在设置 xorg-docs-core (1:1.7.1-1) ...
+正在设置 xfonts-base (1:1.0.4+nmu1) ...
+正在处理用于 fontconfig (2.11.0-6.7) 的触发器 ...
+正在设置 xorg (1:7.7+19) ...
+正在处理用于 libc-bin (2.24-11+deb9u3) 的触发器 ...
+</code></pre>
+<p>如果出现如下错误</p>
+<pre><code class="language-shell">E: 无法下载 http://raspbian.raspberrypi.org/raspbian/pool/main/x/xrdp/xorgxrdp_0.9.1-9+deb9u2_armhf.deb  404  Not Found [IP: 93.93.128.193 80]
+E: 无法下载 http://raspbian.raspberrypi.org/raspbian/pool/main/x/xrdp/xrdp_0.9.1-9+deb9u2_armhf.deb  404  Not Found [IP: 93.93.128.193 80]
+E: 有几个软件包无法下载，要不运行 apt-get update 或者加上 --fix-missing 的选项再试试？
+</code></pre>
+<p>输入命令<code>sudo apt-get update</code></p>
+<pre><code class="language-shell">获取:1 http://raspbian.raspberrypi.org/raspbian stretch InRelease [15.0 kB]                      
+获取:2 http://raspbian.raspberrypi.org/raspbian stretch/main armhf Packages [11.7 MB]
+获取:3 http://archive.raspberrypi.org/debian stretch InRelease [25.3 kB] 
+获取:4 http://archive.raspberrypi.org/debian stretch/main armhf Packages [172 kB]                                                                       
+获取:5 http://archive.raspberrypi.org/debian stretch/ui armhf Packages [34.0 kB]                                                                        
+获取:6 http://raspbian.raspberrypi.org/raspbian stretch/contrib armhf Packages [56.9 kB]                                                                
+已下载 12.0 MB，耗时 1分 40秒 (119 kB/s)                                                                                                                
+正在读取软件包列表... 完成
+</code></pre>
+<p>更新完成后重新安装xrdp插件</p>
+<h5 id="3-windows远程桌面连接">3、Windows远程桌面连接</h5>
+<p>打开远程桌面软件，通过路由器或者其他工具查找到pi的Ip地址，在输入Ip地址和账号<code>pi</code>密码<code>raspberry</code>登录即可。</p>
+
+              </div>
+              <div class="post-footer">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      Memory的个人博客
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://blog.memory6181.com/post/OI6LBcsU3" title="Pi 在Windows下面使用远程桌面登录">https://blog.memory6181.com/post/OI6LBcsU3</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外,转载请注明出处！
+    </li>
+  </ul>
+  <div class="tags">
+    
+      <a href="https://blog.memory6181.com/tag/4eOic9FHK"># 技术</a>
+    
+  </div>
+  <div class="nav">
+    <div class="nav-prev">
+      
+        <i class="iconfont icon-angle_left"></i>
+        <a class="nav-pc-next" href="https://blog.memory6181.com/post/B7I0E9vXn">Atom打造优雅的MarkDown 编辑器</a class="nav-pc-next">
+        <a class="nav-mobile-prev" href="https://blog.memory6181.com/post/B7I0E9vXn">上一篇</a>
+      
+    </div>
+    <div class="nav-next">
+      
+        <a class="nav-pc-next" href="https://blog.memory6181.com/post/NQqZqG0sm"> Ubuntu 12.04 Openssh 安装过程</a>
+        <a class="nav-mobile-next" href="https://blog.memory6181.com/post/NQqZqG0sm">下一篇</a>
+        <i class="iconfont icon-angle_right"></i>
+      
+    </div>
+  </div>
+</div>
+              
+            </div>
+            
 <div class="sidebar">
     <div class="sidebar-wrapper" id="sidebar">
       
@@ -411,199 +608,7 @@ window.addEventListener('load', function() {
     }
   });
 </script>
-          <div class="section-box">
-            <div class="section post">
-              <div class="article-box">
-    <header class="post-header">
-  <h1 class="post-title">
-    <a class="post-title-link" href="https://blog.memory6181.com/post/OI6LBcsU3">
-      Pi 在Windows下面使用远程桌面登录
-    </a>
-  </h1>
-  <div class="post-meta">
-    <span class="meta-item">
-      <i class="iconfont icon-calendar_empty"></i>
-      <span class="pc-show">发布于</span>
-      <span>2018-08-08</span>
-    </span>
-    
-      <span class="meta-item">
-        <span class="post-meta-divider">|</span>
-        <i class="iconfont icon-folder_open_alt"></i>
-        <span class="pc-show">分类于</span>
-        
-          
-            <a href="https://blog.memory6181.com/tag/4eOic9FHK">
-              <span>技术</span>
-            </a>
-          
-        
-      </span>
-    
-    <span class="meta-item">
-      <span class="post-meta-divider">|</span>
-      <i class="iconfont icon-time"></i>
-      <span>7分钟</span>
-    </span>
-    <span class="meta-item">
-      <span class="post-meta-divider">|</span>
-      <i class="iconfont icon-keyboard"></i>
-      <span class="pc-show">1309字数</span>
-    </span>
-  </div>
-</header>
-</div>
-              <div class="post-body next-md-body" id="post_body">
-                <h4 id="pi-在windows下面使用远程桌面登录">Pi 在Windows下面使用远程桌面登录</h4>
-<h5 id="1-删除系统自带的xrdp">1、删除系统自带的xrdp</h5>
-<p>输入命令<code>sudo apt-get purge xrdp</code></p>
-<pre><code class="language-shell">pi@raspberrypi:~ $ sudo apt-get purge xrdp
-正在读取软件包列表... 完成
-正在分析软件包的依赖关系树       
-正在读取状态信息... 完成       
-软件包 xrdp 未安装，所以不会被卸载
-升级了 0 个软件包，新安装了 0 个软件包，要卸载 0 个软件包，有 0 个软件包未被升级。
-</code></pre>
-<h5 id="2-重新安装xrdp">2、重新安装xrdp</h5>
-<p>输入命令 <code>sudo apt-get install xrdp</code></p>
-<pre><code class="language-shell">pi@raspberrypi:~ $ sudo apt-get install xrdp
-正在读取软件包列表... 完成
-正在分析软件包的依赖关系树       
-正在读取状态信息... 完成       
-将会同时安装下列软件：
-  ssl-cert x11-apps x11-session-utils xbitmaps xfonts-75dpi xfonts-base xfonts-scalable xorg xorg-docs-core xorgxrdp
-建议安装：
-  openssl-blacklist xorg-docs x11-xfs-utils guacamole
-下列【新】软件包将被安装：
-  ssl-cert x11-apps x11-session-utils xbitmaps xfonts-75dpi xfonts-base xfonts-scalable xorg xorg-docs-core xorgxrdp xrdp
-升级了 0 个软件包，新安装了 11 个软件包，要卸载 0 个软件包，有 109 个软件包未被升级。
-需要下载 476 kB/10.8 MB 的归档。
-解压缩后会消耗 17.1 MB 的额外空间。
-您希望继续执行吗？ [Y/n] y
-获取:1 http://mirrors.shu.edu.cn/raspbian/raspbian stretch/main armhf xorgxrdp armhf 0.9.1-9+deb9u3 [73.3 kB]
-获取:2 http://mirrors.shu.edu.cn/raspbian/raspbian stretch/main armhf xrdp armhf 0.9.1-9+deb9u3 [402 kB]
-已下载 476 kB，耗时 3秒 (151 kB/s)
-正在预设定软件包 ...
-正在选中未选择的软件包 ssl-cert。
-(正在读取数据库 ... 系统当前共安装有 125035 个文件和目录。)
-正准备解包 .../00-ssl-cert_1.0.39_all.deb  ...
-正在解包 ssl-cert (1.0.39) ...
-正在选中未选择的软件包 x11-apps。
-正准备解包 .../01-x11-apps_7.7+6_armhf.deb  ...
-正在解包 x11-apps (7.7+6) ...
-正在选中未选择的软件包 x11-session-utils。
-正准备解包 .../02-x11-session-utils_7.7+2_armhf.deb  ...
-正在解包 x11-session-utils (7.7+2) ...
-正在选中未选择的软件包 xbitmaps。
-正准备解包 .../03-xbitmaps_1.1.1-2_all.deb  ...
-正在解包 xbitmaps (1.1.1-2) ...
-正在选中未选择的软件包 xfonts-75dpi。
-正准备解包 .../04-xfonts-75dpi_1%3a1.0.4+nmu1_all.deb  ...
-正在解包 xfonts-75dpi (1:1.0.4+nmu1) ...
-正在选中未选择的软件包 xfonts-base。
-正准备解包 .../05-xfonts-base_1%3a1.0.4+nmu1_all.deb  ...
-正在解包 xfonts-base (1:1.0.4+nmu1) ...
-正在选中未选择的软件包 xfonts-scalable。
-正准备解包 .../06-xfonts-scalable_1%3a1.0.3-1.1_all.deb  ...
-正在解包 xfonts-scalable (1:1.0.3-1.1) ...
-正在选中未选择的软件包 xorg-docs-core。
-正准备解包 .../07-xorg-docs-core_1%3a1.7.1-1_all.deb  ...
-正在解包 xorg-docs-core (1:1.7.1-1) ...
-正在选中未选择的软件包 xorg。
-正准备解包 .../08-xorg_1%3a7.7+19_armhf.deb  ...
-正在解包 xorg (1:7.7+19) ...
-正在选中未选择的软件包 xorgxrdp。
-正准备解包 .../09-xorgxrdp_0.9.1-9+deb9u3_armhf.deb  ...
-正在解包 xorgxrdp (0.9.1-9+deb9u3) ...
-正在选中未选择的软件包 xrdp。
-正准备解包 .../10-xrdp_0.9.1-9+deb9u3_armhf.deb  ...
-正在解包 xrdp (0.9.1-9+deb9u3) ...
-正在设置 x11-session-utils (7.7+2) ...
-正在设置 xbitmaps (1.1.1-2) ...
-正在设置 ssl-cert (1.0.39) ...
-正在设置 xfonts-75dpi (1:1.0.4+nmu1) ...
-正在处理用于 libc-bin (2.24-11+deb9u3) 的触发器 ...
-正在设置 xrdp (0.9.1-9+deb9u3) ...
-
-Generating 2048 bit rsa key...
-
-ssl_gen_key_xrdp1 ok
-
-saving to /etc/xrdp/rsakeys.ini
-
-Created symlink /etc/systemd/system/multi-user.target.wants/xrdp-sesman.service → /lib/systemd/system/xrdp-sesman.service.
-Created symlink /etc/systemd/system/multi-user.target.wants/xrdp.service → /lib/systemd/system/xrdp.service.
-正在处理用于 systemd (232-25+deb9u2) 的触发器 ...
-正在处理用于 man-db (2.7.6.1-2) 的触发器 ...
-正在设置 x11-apps (7.7+6) ...
-正在设置 xfonts-scalable (1:1.0.3-1.1) ...
-正在设置 xorgxrdp (0.9.1-9+deb9u3) ...
-正在设置 xorg-docs-core (1:1.7.1-1) ...
-正在设置 xfonts-base (1:1.0.4+nmu1) ...
-正在处理用于 fontconfig (2.11.0-6.7) 的触发器 ...
-正在设置 xorg (1:7.7+19) ...
-正在处理用于 libc-bin (2.24-11+deb9u3) 的触发器 ...
-</code></pre>
-<p>如果出现如下错误</p>
-<pre><code class="language-shell">E: 无法下载 http://raspbian.raspberrypi.org/raspbian/pool/main/x/xrdp/xorgxrdp_0.9.1-9+deb9u2_armhf.deb  404  Not Found [IP: 93.93.128.193 80]
-E: 无法下载 http://raspbian.raspberrypi.org/raspbian/pool/main/x/xrdp/xrdp_0.9.1-9+deb9u2_armhf.deb  404  Not Found [IP: 93.93.128.193 80]
-E: 有几个软件包无法下载，要不运行 apt-get update 或者加上 --fix-missing 的选项再试试？
-</code></pre>
-<p>输入命令<code>sudo apt-get update</code></p>
-<pre><code class="language-shell">获取:1 http://raspbian.raspberrypi.org/raspbian stretch InRelease [15.0 kB]                      
-获取:2 http://raspbian.raspberrypi.org/raspbian stretch/main armhf Packages [11.7 MB]
-获取:3 http://archive.raspberrypi.org/debian stretch InRelease [25.3 kB] 
-获取:4 http://archive.raspberrypi.org/debian stretch/main armhf Packages [172 kB]                                                                       
-获取:5 http://archive.raspberrypi.org/debian stretch/ui armhf Packages [34.0 kB]                                                                        
-获取:6 http://raspbian.raspberrypi.org/raspbian stretch/contrib armhf Packages [56.9 kB]                                                                
-已下载 12.0 MB，耗时 1分 40秒 (119 kB/s)                                                                                                                
-正在读取软件包列表... 完成
-</code></pre>
-<p>更新完成后重新安装xrdp插件</p>
-<h5 id="3-windows远程桌面连接">3、Windows远程桌面连接</h5>
-<p>打开远程桌面软件，通过路由器或者其他工具查找到pi的Ip地址，在输入Ip地址和账号<code>pi</code>密码<code>raspberry</code>登录即可。</p>
-
-              </div>
-              <div class="post-footer">
-  <ul class="post-copyright">
-    <li class="post-copyright-author">
-      <strong>本文作者：</strong>
-      Memory的个人博客
-    </li>
-    <li class="post-copyright-link">
-      <strong>本文链接：</strong>
-      <a href="https://blog.memory6181.com/post/OI6LBcsU3" title="Pi 在Windows下面使用远程桌面登录">https://blog.memory6181.com/post/OI6LBcsU3</a>
-    </li>
-    <li class="post-copyright-license">
-      <strong>版权声明： </strong>
-      本博客所有文章除特别声明外,转载请注明出处！
-    </li>
-  </ul>
-  <div class="tags">
-    
-      <a href="https://blog.memory6181.com/tag/4eOic9FHK"># 技术</a>
-    
-  </div>
-  <div class="nav">
-    <div class="nav-prev">
-      
-        <i class="iconfont icon-angle_left"></i>
-        <a class="nav-pc-next" href="https://blog.memory6181.com/post/B7I0E9vXn">Atom打造优雅的MarkDown 编辑器</a class="nav-pc-next">
-        <a class="nav-mobile-prev" href="https://blog.memory6181.com/post/B7I0E9vXn">上一篇</a>
-      
-    </div>
-    <div class="nav-next">
-      
-        <a class="nav-pc-next" href="https://blog.memory6181.com/post/NQqZqG0sm"> Ubuntu 12.04 Openssh 安装过程</a>
-        <a class="nav-mobile-next" href="https://blog.memory6181.com/post/NQqZqG0sm">下一篇</a>
-        <i class="iconfont icon-angle_right"></i>
-      
-    </div>
-  </div>
-</div>
-              
-            </div>
-          </div>
+          <!-- </div> -->
         </div>
       </div>
       <div class="footer-box">

@@ -3,7 +3,7 @@
       <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>Memory的个人博客</title>
-<link rel="shortcut icon" href="https://blog.memory6181.com//favicon.ico?v=1577751239376">
+<link rel="shortcut icon" href="https://blog.memory6181.com//favicon.ico?v=1577755847709">
 <link rel="stylesheet" href="https://blog.memory6181.com//styles/main.css">
 <meta name="description" content="温故而知新" />
 
@@ -18,58 +18,62 @@
     <div class="head-top-line"></div>
     <div class="header-box">
       <header class="header">
-  <div class="blog-header" id="header">
-    <div class="site-meta">
-      <div class="nav-toggle" id="nav_toggle">
-        <div class="toggle-box">
-          <div class="line line-top"></div>
-          <div class="line line-center"></div>
-          <div class="line line-bottom"></div>
+ 
+    <div class="blog-header" id="header">
+      <div class="section-layout-wrapper">
+      <div class="site-meta">
+        <div class="nav-toggle" id="nav_toggle">
+          <div class="toggle-box">
+            <div class="line line-top"></div>
+            <div class="line line-center"></div>
+            <div class="line line-bottom"></div>
+          </div>
         </div>
-      </div>
-      <div class="site-title">
-        <a href="/" class="brand">
-          <span>Memory的个人博客</span>
-        </a>
-      </div>
-      <p class="subtitle"></p>
-      <nav class="site-nav" id="site_nav">
-            
-              <li class="nav-item ">
-                <a href="/">
-                  <i class="iconfont icon-home"></i>首页
-                </a>
-              </li>
-            
-              <li class="nav-item ">
-                <a href="/archives">
-                  <i class="iconfont icon-home"></i>归档
-                </a>
-              </li>
-            
-              <li class="nav-item ">
-                <a href="/tags">
-                  <i class="iconfont icon-home"></i>标签
-                </a>
-              </li>
-            
-              <li class="nav-item ">
-                <a href="http://blog.memory6181.com//post/guan-yu-wo/">
-                  <i class="iconfont icon-home"></i>简历
-                </a>
-              </li>
-            
-              <li class="nav-item ">
-                <a href="http://memory6181.coding.me//post/about/">
-                  <i class="iconfont icon-home"></i>故事
-                </a>
-              </li>
-            
-      </nav>
-
-    </div>
+        <div class="site-title">
+          <a href="/" class="brand">
+            <span>Memory的个人博客</span>
+          </a>
+        </div>
+        <p class="subtitle"></p>
+        <nav class="site-nav" id="site_nav">
+              
+                <li class="nav-item ">
+                  <a href="/">
+                    <i class="iconfont icon-home"></i>首页
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a href="/archives">
+                    <i class="iconfont icon-home"></i>归档
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a href="/tags">
+                    <i class="iconfont icon-home"></i>标签
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a href="http://blog.memory6181.com//post/guan-yu-wo/">
+                    <i class="iconfont icon-home"></i>简历
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a href="http://memory6181.coding.me//post/about/">
+                    <i class="iconfont icon-home"></i>故事
+                  </a>
+                </li>
+              
+        </nav>
   
+      </div>
+    
+    </div>
   </div>
+ 
 </header>
 <script type="text/javascript"> 
  
@@ -89,7 +93,165 @@
     <div class="main-continer">
       <div class="section-layout">
         <div class="section-layout-wrapper">
+         
+          <!-- <div class="section-box"> -->
+            <div class="section post">
+              <div class="article-box">
+    <header class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://blog.memory6181.com/post/2019-05-22">
+      Go-Webview 弃坑Sciter
+    </a>
+  </h1>
+  <div class="post-meta">
+    <span class="meta-item">
+      <i class="iconfont icon-calendar_empty"></i>
+      <span class="pc-show">发布于</span>
+      <span>2019-05-22</span>
+    </span>
+    
+      <span class="meta-item">
+        <span class="post-meta-divider">|</span>
+        <i class="iconfont icon-folder_open_alt"></i>
+        <span class="pc-show">分类于</span>
+        
           
+            <a href="https://blog.memory6181.com/tag/4eOic9FHK">
+              <span>技术</span>
+            </a>
+          
+        
+      </span>
+    
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="iconfont icon-time"></i>
+      <span>3分钟</span>
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="iconfont icon-keyboard"></i>
+      <span class="pc-show">406字数</span>
+    </span>
+  </div>
+</header>
+</div>
+              <div class="post-body next-md-body" id="post_body">
+                <h4 id="写在前面的话">写在前面的话</h4>
+<p>之前想要学习Sciter 做桌面软件，但是支持的css等级太低了，button的背景颜色都改不了，难过，后来翻遍网络发现两个比较有意思的东西<a href="https://github.com/zserge/lorca">Lorca</a><a href="https://github.com/zserge/webview">webview</a>。相比Sciter 来说对于html和css的支持更好。</p>
+<h4 id="环境搭建">环境搭建</h4>
+<pre><code class="language-bash">go get github.com/zserge/webview
+</code></pre>
+<p>出现需要C99 编译的错误打开GOPATH路径<code>GOPATH\src\github.com\zserge\webview\webview.h</code><br>
+修改1150-1159行代码如下所示，或者重新安装c99 编译器。</p>
+<pre><code class="language-cpp"> char *url = (char *)calloc(1, strlen(webview_url) + 1);
+    char *q = url;
+	char *p;
+    for (*p = webview_url + strlen(WEBVIEW_DATA_URL_PREFIX); *q = *p;
+         p++, q++) {
+      if (*q == '%' &amp;&amp; *(p + 1) &amp;&amp; *(p + 2)) {
+        sscanf(p + 1, &quot;%02x&quot;, q);
+        p = p + 2;
+      }
+    }
+</code></pre>
+<p>修改完成会提示两个警告，忽略即可。</p>
+<h4 id="样例代码">样例代码</h4>
+<p>go 代码如下</p>
+<pre><code class="language-go">package main
+
+import &quot;github.com/zserge/webview&quot;
+
+func main() {
+	// Open wikipedia in a 800x600 resizable window
+	webview.Open(&quot;Minimal webview example&quot;,
+		&quot;D:/GoCode/demo2/index.html&quot;, 800, 600, true)
+		
+}
+</code></pre>
+<p>HTML 代码如下</p>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;表单&lt;/title&gt;
+    &lt;style&gt;
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+ 
+        table td {
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+ 
+        table td:first-child {
+            white-space:nowrap;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;input type=&quot;button&quot; style=&quot;background-color: blue&quot;&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>建议使用<code>go build</code>代替<code>go run</code>，如下所示</p>
+<pre><code class="language-bash"># Linux
+$ go build -o webview-example &amp;&amp; ./webview-example
+
+# MacOS uses app bundles for GUI apps
+$ mkdir -p example.app/Contents/MacOS
+$ go build -o example.app/Contents/MacOS/example
+$ open example.app # Or click on the app in Finder
+
+# Windows requires special linker flags for GUI apps.
+# It's also recommended to use TDM-GCC-64 compiler for CGo.
+# http://tdm-gcc.tdragon.net/download
+$ go build -ldflags=&quot;-H windowsgui&quot; -o webview-example.exe
+</code></pre>
+
+              </div>
+              <div class="post-footer">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      Memory的个人博客
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://blog.memory6181.com/post/2019-05-22" title="Go-Webview 弃坑Sciter">https://blog.memory6181.com/post/2019-05-22</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外,转载请注明出处！
+    </li>
+  </ul>
+  <div class="tags">
+    
+      <a href="https://blog.memory6181.com/tag/4eOic9FHK"># 技术</a>
+    
+  </div>
+  <div class="nav">
+    <div class="nav-prev">
+      
+        <i class="iconfont icon-angle_left"></i>
+        <a class="nav-pc-next" href="https://blog.memory6181.com/post/LeO2klGZX">对上一家公司的一些总结</a class="nav-pc-next">
+        <a class="nav-mobile-prev" href="https://blog.memory6181.com/post/LeO2klGZX">上一篇</a>
+      
+    </div>
+    <div class="nav-next">
+      
+        <a class="nav-pc-next" href="https://blog.memory6181.com/post/2019-05-21">Go-Sciter 入门教程</a>
+        <a class="nav-mobile-next" href="https://blog.memory6181.com/post/2019-05-21">下一篇</a>
+        <i class="iconfont icon-angle_right"></i>
+      
+    </div>
+  </div>
+</div>
+              
+            </div>
+            
 <div class="sidebar">
     <div class="sidebar-wrapper" id="sidebar">
       
@@ -407,164 +569,7 @@ window.addEventListener('load', function() {
     }
   });
 </script>
-          <div class="section-box">
-            <div class="section post">
-              <div class="article-box">
-    <header class="post-header">
-  <h1 class="post-title">
-    <a class="post-title-link" href="https://blog.memory6181.com/post/2019-05-22">
-      Go-Webview 弃坑Sciter
-    </a>
-  </h1>
-  <div class="post-meta">
-    <span class="meta-item">
-      <i class="iconfont icon-calendar_empty"></i>
-      <span class="pc-show">发布于</span>
-      <span>2019-05-22</span>
-    </span>
-    
-      <span class="meta-item">
-        <span class="post-meta-divider">|</span>
-        <i class="iconfont icon-folder_open_alt"></i>
-        <span class="pc-show">分类于</span>
-        
-          
-            <a href="https://blog.memory6181.com/tag/4eOic9FHK">
-              <span>技术</span>
-            </a>
-          
-        
-      </span>
-    
-    <span class="meta-item">
-      <span class="post-meta-divider">|</span>
-      <i class="iconfont icon-time"></i>
-      <span>3分钟</span>
-    </span>
-    <span class="meta-item">
-      <span class="post-meta-divider">|</span>
-      <i class="iconfont icon-keyboard"></i>
-      <span class="pc-show">406字数</span>
-    </span>
-  </div>
-</header>
-</div>
-              <div class="post-body next-md-body" id="post_body">
-                <h4 id="写在前面的话">写在前面的话</h4>
-<p>之前想要学习Sciter 做桌面软件，但是支持的css等级太低了，button的背景颜色都改不了，难过，后来翻遍网络发现两个比较有意思的东西<a href="https://github.com/zserge/lorca">Lorca</a><a href="https://github.com/zserge/webview">webview</a>。相比Sciter 来说对于html和css的支持更好。</p>
-<h4 id="环境搭建">环境搭建</h4>
-<pre><code class="language-bash">go get github.com/zserge/webview
-</code></pre>
-<p>出现需要C99 编译的错误打开GOPATH路径<code>GOPATH\src\github.com\zserge\webview\webview.h</code><br>
-修改1150-1159行代码如下所示，或者重新安装c99 编译器。</p>
-<pre><code class="language-cpp"> char *url = (char *)calloc(1, strlen(webview_url) + 1);
-    char *q = url;
-	char *p;
-    for (*p = webview_url + strlen(WEBVIEW_DATA_URL_PREFIX); *q = *p;
-         p++, q++) {
-      if (*q == '%' &amp;&amp; *(p + 1) &amp;&amp; *(p + 2)) {
-        sscanf(p + 1, &quot;%02x&quot;, q);
-        p = p + 2;
-      }
-    }
-</code></pre>
-<p>修改完成会提示两个警告，忽略即可。</p>
-<h4 id="样例代码">样例代码</h4>
-<p>go 代码如下</p>
-<pre><code class="language-go">package main
-
-import &quot;github.com/zserge/webview&quot;
-
-func main() {
-	// Open wikipedia in a 800x600 resizable window
-	webview.Open(&quot;Minimal webview example&quot;,
-		&quot;D:/GoCode/demo2/index.html&quot;, 800, 600, true)
-		
-}
-</code></pre>
-<p>HTML 代码如下</p>
-<pre><code class="language-html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;title&gt;表单&lt;/title&gt;
-    &lt;style&gt;
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
- 
-        table td {
-            padding: 10px;
-            border: 1px solid #ccc;
-        }
- 
-        table td:first-child {
-            white-space:nowrap;
-        }
-    &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;input type=&quot;button&quot; style=&quot;background-color: blue&quot;&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-<p>建议使用<code>go build</code>代替<code>go run</code>，如下所示</p>
-<pre><code class="language-bash"># Linux
-$ go build -o webview-example &amp;&amp; ./webview-example
-
-# MacOS uses app bundles for GUI apps
-$ mkdir -p example.app/Contents/MacOS
-$ go build -o example.app/Contents/MacOS/example
-$ open example.app # Or click on the app in Finder
-
-# Windows requires special linker flags for GUI apps.
-# It's also recommended to use TDM-GCC-64 compiler for CGo.
-# http://tdm-gcc.tdragon.net/download
-$ go build -ldflags=&quot;-H windowsgui&quot; -o webview-example.exe
-</code></pre>
-
-              </div>
-              <div class="post-footer">
-  <ul class="post-copyright">
-    <li class="post-copyright-author">
-      <strong>本文作者：</strong>
-      Memory的个人博客
-    </li>
-    <li class="post-copyright-link">
-      <strong>本文链接：</strong>
-      <a href="https://blog.memory6181.com/post/2019-05-22" title="Go-Webview 弃坑Sciter">https://blog.memory6181.com/post/2019-05-22</a>
-    </li>
-    <li class="post-copyright-license">
-      <strong>版权声明： </strong>
-      本博客所有文章除特别声明外,转载请注明出处！
-    </li>
-  </ul>
-  <div class="tags">
-    
-      <a href="https://blog.memory6181.com/tag/4eOic9FHK"># 技术</a>
-    
-  </div>
-  <div class="nav">
-    <div class="nav-prev">
-      
-        <i class="iconfont icon-angle_left"></i>
-        <a class="nav-pc-next" href="https://blog.memory6181.com/post/LeO2klGZX">对上一家公司的一些总结</a class="nav-pc-next">
-        <a class="nav-mobile-prev" href="https://blog.memory6181.com/post/LeO2klGZX">上一篇</a>
-      
-    </div>
-    <div class="nav-next">
-      
-        <a class="nav-pc-next" href="https://blog.memory6181.com/post/2019-05-21">Go-Sciter 入门教程</a>
-        <a class="nav-mobile-next" href="https://blog.memory6181.com/post/2019-05-21">下一篇</a>
-        <i class="iconfont icon-angle_right"></i>
-      
-    </div>
-  </div>
-</div>
-              
-            </div>
-          </div>
+          <!-- </div> -->
         </div>
       </div>
       <div class="footer-box">

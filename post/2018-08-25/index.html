@@ -3,7 +3,7 @@
       <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>Memory的个人博客</title>
-<link rel="shortcut icon" href="https://blog.memory6181.com//favicon.ico?v=1577751239376">
+<link rel="shortcut icon" href="https://blog.memory6181.com//favicon.ico?v=1577755847709">
 <link rel="stylesheet" href="https://blog.memory6181.com//styles/main.css">
 <meta name="description" content="温故而知新" />
 
@@ -18,58 +18,62 @@
     <div class="head-top-line"></div>
     <div class="header-box">
       <header class="header">
-  <div class="blog-header" id="header">
-    <div class="site-meta">
-      <div class="nav-toggle" id="nav_toggle">
-        <div class="toggle-box">
-          <div class="line line-top"></div>
-          <div class="line line-center"></div>
-          <div class="line line-bottom"></div>
+ 
+    <div class="blog-header" id="header">
+      <div class="section-layout-wrapper">
+      <div class="site-meta">
+        <div class="nav-toggle" id="nav_toggle">
+          <div class="toggle-box">
+            <div class="line line-top"></div>
+            <div class="line line-center"></div>
+            <div class="line line-bottom"></div>
+          </div>
         </div>
-      </div>
-      <div class="site-title">
-        <a href="/" class="brand">
-          <span>Memory的个人博客</span>
-        </a>
-      </div>
-      <p class="subtitle"></p>
-      <nav class="site-nav" id="site_nav">
-            
-              <li class="nav-item ">
-                <a href="/">
-                  <i class="iconfont icon-home"></i>首页
-                </a>
-              </li>
-            
-              <li class="nav-item ">
-                <a href="/archives">
-                  <i class="iconfont icon-home"></i>归档
-                </a>
-              </li>
-            
-              <li class="nav-item ">
-                <a href="/tags">
-                  <i class="iconfont icon-home"></i>标签
-                </a>
-              </li>
-            
-              <li class="nav-item ">
-                <a href="http://blog.memory6181.com//post/guan-yu-wo/">
-                  <i class="iconfont icon-home"></i>简历
-                </a>
-              </li>
-            
-              <li class="nav-item ">
-                <a href="http://memory6181.coding.me//post/about/">
-                  <i class="iconfont icon-home"></i>故事
-                </a>
-              </li>
-            
-      </nav>
-
-    </div>
+        <div class="site-title">
+          <a href="/" class="brand">
+            <span>Memory的个人博客</span>
+          </a>
+        </div>
+        <p class="subtitle"></p>
+        <nav class="site-nav" id="site_nav">
+              
+                <li class="nav-item ">
+                  <a href="/">
+                    <i class="iconfont icon-home"></i>首页
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a href="/archives">
+                    <i class="iconfont icon-home"></i>归档
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a href="/tags">
+                    <i class="iconfont icon-home"></i>标签
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a href="http://blog.memory6181.com//post/guan-yu-wo/">
+                    <i class="iconfont icon-home"></i>简历
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a href="http://memory6181.coding.me//post/about/">
+                    <i class="iconfont icon-home"></i>故事
+                  </a>
+                </li>
+              
+        </nav>
   
+      </div>
+    
+    </div>
   </div>
+ 
 </header>
 <script type="text/javascript"> 
  
@@ -89,7 +93,184 @@
     <div class="main-continer">
       <div class="section-layout">
         <div class="section-layout-wrapper">
+         
+          <!-- <div class="section-box"> -->
+            <div class="section post">
+              <div class="article-box">
+    <header class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://blog.memory6181.com/post/2018-08-25">
+      给pugo博客添加后台管理
+    </a>
+  </h1>
+  <div class="post-meta">
+    <span class="meta-item">
+      <i class="iconfont icon-calendar_empty"></i>
+      <span class="pc-show">发布于</span>
+      <span>2018-08-25</span>
+    </span>
+    
+      <span class="meta-item">
+        <span class="post-meta-divider">|</span>
+        <i class="iconfont icon-folder_open_alt"></i>
+        <span class="pc-show">分类于</span>
+        
           
+            <a href="https://blog.memory6181.com/tag/4eOic9FHK">
+              <span>技术</span>
+            </a>
+          
+        
+      </span>
+    
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="iconfont icon-time"></i>
+      <span>5分钟</span>
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="iconfont icon-keyboard"></i>
+      <span class="pc-show">998字数</span>
+    </span>
+  </div>
+</header>
+</div>
+              <div class="post-body next-md-body" id="post_body">
+                <p>Pugo博客已经搭建了好几个月了吧，给我感受到非常方便的就是，我换了好多VPS，迁移显得非常的方便，但是也有不足的地方，比如发布一篇新的博客，我每次都需要重新进入后台进行新的Post，还需要重新build我的博客，这样才能将博客发布出去，和那些经典的带有后台管理的博客相比就有点不太舒服，后来找了一些资料，查了一些开源项目。在github里面发现了一个叫做<code>filemanage</code>的工具，现在已经改名叫<code>File Browser</code>了，现在用这个工具做博客的后台，感觉还不错，下面记录下我是如何从头开始搭建我的博客系统的。</p>
+<hr>
+<h5 id="1-准备工具">1、准备工具</h5>
+<hr>
+<ol>
+<li>
+<p>Pugo 软件包：	<br>
+<a href="https://github.com/go-xiaohei/pugo">https://github.com/go-xiaohei/pugo</a></p>
+</li>
+<li>
+<p>FileBrowser：<br>
+<a href="https://github.com/filebrowser/filebrowser">https://github.com/filebrowser/filebrowser</a></p>
+</li>
+<li>
+<p>Winscp<br>
+http://www.memory6181.top/2018/4/27/blog.html</p>
+</li>
+</ol>
+<hr>
+<h5 id="2-搭建pugo博客">2、搭建Pugo博客</h5>
+<hr>
+<p>从gitHub下面下载软件包之后，我们解压，将软件包上传VPS，或者可以在本地先搭建试试看也可以。</p>
+<p>PS：注意不同的平台，文件不一样。</p>
+<p>下载解压之后，进入文件所在目录运行下面指令</p>
+<pre><code class="language-shell">pugo.exe new site # Windows
+./pugo new site   # Linux
+</code></pre>
+<p>此时在pugo的目录下面生成了好多个文件夹，下面我们运行下面的命令。</p>
+<pre><code class="language-shell">pugo server --addr &quot;0.0.0.0:8080&quot;
+</code></pre>
+<p>运行完成之后可以看到下面的一些消息：</p>
+<pre><code class="language-shell">C:\Users\zhang\Desktop\windows_amd64&gt;pugo_windows_amd64.exe server --addr &quot;0.0.0.0:8080&quot;
+[32mINFO[0m|08-25 18:00:32.4916|Build|Start
+[32mINFO[0m|08-25 18:00:32.5255|Build|Source|source
+[32mINFO[0m|08-25 18:00:32.6123|Build|Theme|theme/default
+[32mINFO[0m|08-25 18:00:33.2057|Build|40 Pages
+[32mINFO[0m|08-25 18:00:33.2057|Build|Done|1|714.1ms
+[32mINFO[0m|08-25 18:00:33.2067|Watch|Start
+[32mINFO[0m|08-25 18:00:33.2067|Server|Start|0.0.0.0:8080
+</code></pre>
+<p>此时我们的博客已经运行起来了，通过浏览器访问<code>localhost:8080</code>就可以看到博客的运行界面。</p>
+<p>我们想要Post一篇文章只要如下所示就好了</p>
+<pre><code class="language-shell">pogo new post [name]
+</code></pre>
+<p>此时在我们的<code>Source</code>-&gt; <code>Post</code>-&gt;<code>2018</code>下面会生成一个<code>.md</code>结尾的文本，使用Winscp或者其他的Sftp工具可以登录ssh在Linux服务器上面编写遵循<code>markdown</code>语法的文章就好了。</p>
+<hr>
+<h5 id="3-给pugo加上后台-file-browser">3、给Pugo加上后台---<code>File Browser</code></h5>
+<hr>
+<p>通过Winscp将我们下载好的File Browser 上传到我们的VPS，在File Browser 下面新建一个<code>config.json</code>文本文档，内容如下所示：</p>
+<pre><code class="language-json">{
+  &quot;port&quot;: 8000,
+  &quot;noAuth&quot;: false,
+  &quot;baseURL&quot;: &quot;/admin&quot;,
+  &quot;address&quot;: &quot;0.0.0.0&quot;,
+  &quot;reCaptchaKey&quot;: &quot;&quot;,
+  &quot;reCaptchaSecret&quot;: &quot;&quot;,
+  &quot;database&quot;:&quot;/myserver/blog/filemanager/filebrowser.db&quot;,
+  &quot;log&quot;: &quot;stdout&quot;,
+  &quot;plugin&quot;: &quot;http.filemanager&quot;,
+  &quot;scope&quot;:&quot;/myserver/blog/filemanager/myblog&quot;,
+  &quot;allowCommands&quot;: true,
+  &quot;allowEdit&quot;: true,
+  &quot;allowNew&quot;: true,
+  &quot;commands&quot;: [
+    &quot;git&quot;,
+    &quot;svn&quot;,
+    &quot;./myblog/flush.sh&quot;,
+    &quot;./myblog/new.sh&quot;
+  ]
+}
+</code></pre>
+<pre><code>Port :访问的端口号
+baseURL：要访问的地址，如上面所写，就访问&quot;http://127.0.0.1:8000/admin&quot;
+address:监听的地址，四个0表示监听所有网卡。
+datebase:数据库所在目录，通常设置和fileBrowser一个目录
+command：允许执行的shell命令。
+&quot;scope&quot;:管理的目录
+</code></pre>
+<p>主要修改的如上所示，其他的默认就好,将pugo整个拷贝到<code>scope</code> 管理的目录下面。</p>
+<p>运行如下:</p>
+<pre><code>./fileBrowser -c &quot;config.json&quot;
+</code></pre>
+<p>浏览器打开&quot;localhost:8000/admin&quot;输入<code>admin</code>,<code>admin</code>登录系统，分配账号在pugo所在的目录新建一个shell脚本，内容如下：</p>
+<pre><code class="language-shell">#!/bin/bash
+cd /myserver/blog/filemanager/myblog/
+./pugo_linux_amd64 build --source &quot;source&quot;
+cd /
+</code></pre>
+<p>保存取名&quot;flush.sh&quot;,然后在设置-&gt;全局设置-&gt;命令（Linux 代码）-&gt;After Save 下面输入运行flush.sh的命令，如下所示：</p>
+<pre><code class="language-shell">./myblog/flush.sh
+</code></pre>
+<p>此时我们在上传完成我们的博客，或者修改完成之后，保存就可以自动刷新了，再也不用的登录ssh去修改博客了。</p>
+
+              </div>
+              <div class="post-footer">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      Memory的个人博客
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://blog.memory6181.com/post/2018-08-25" title="给pugo博客添加后台管理">https://blog.memory6181.com/post/2018-08-25</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外,转载请注明出处！
+    </li>
+  </ul>
+  <div class="tags">
+    
+      <a href="https://blog.memory6181.com/tag/4eOic9FHK"># 技术</a>
+    
+  </div>
+  <div class="nav">
+    <div class="nav-prev">
+      
+        <i class="iconfont icon-angle_left"></i>
+        <a class="nav-pc-next" href="https://blog.memory6181.com/post/2018-08-30">ARM 编译工具keil 和 IAR  命令行编译和下载</a class="nav-pc-next">
+        <a class="nav-mobile-prev" href="https://blog.memory6181.com/post/2018-08-30">上一篇</a>
+      
+    </div>
+    <div class="nav-next">
+      
+        <a class="nav-pc-next" href="https://blog.memory6181.com/post/2018-08-17">Ubuntu 安装java 1.8 教程</a>
+        <a class="nav-mobile-next" href="https://blog.memory6181.com/post/2018-08-17">下一篇</a>
+        <i class="iconfont icon-angle_right"></i>
+      
+    </div>
+  </div>
+</div>
+              
+            </div>
+            
 <div class="sidebar">
     <div class="sidebar-wrapper" id="sidebar">
       
@@ -411,183 +592,7 @@ window.addEventListener('load', function() {
     }
   });
 </script>
-          <div class="section-box">
-            <div class="section post">
-              <div class="article-box">
-    <header class="post-header">
-  <h1 class="post-title">
-    <a class="post-title-link" href="https://blog.memory6181.com/post/2018-08-25">
-      给pugo博客添加后台管理
-    </a>
-  </h1>
-  <div class="post-meta">
-    <span class="meta-item">
-      <i class="iconfont icon-calendar_empty"></i>
-      <span class="pc-show">发布于</span>
-      <span>2018-08-25</span>
-    </span>
-    
-      <span class="meta-item">
-        <span class="post-meta-divider">|</span>
-        <i class="iconfont icon-folder_open_alt"></i>
-        <span class="pc-show">分类于</span>
-        
-          
-            <a href="https://blog.memory6181.com/tag/4eOic9FHK">
-              <span>技术</span>
-            </a>
-          
-        
-      </span>
-    
-    <span class="meta-item">
-      <span class="post-meta-divider">|</span>
-      <i class="iconfont icon-time"></i>
-      <span>5分钟</span>
-    </span>
-    <span class="meta-item">
-      <span class="post-meta-divider">|</span>
-      <i class="iconfont icon-keyboard"></i>
-      <span class="pc-show">998字数</span>
-    </span>
-  </div>
-</header>
-</div>
-              <div class="post-body next-md-body" id="post_body">
-                <p>Pugo博客已经搭建了好几个月了吧，给我感受到非常方便的就是，我换了好多VPS，迁移显得非常的方便，但是也有不足的地方，比如发布一篇新的博客，我每次都需要重新进入后台进行新的Post，还需要重新build我的博客，这样才能将博客发布出去，和那些经典的带有后台管理的博客相比就有点不太舒服，后来找了一些资料，查了一些开源项目。在github里面发现了一个叫做<code>filemanage</code>的工具，现在已经改名叫<code>File Browser</code>了，现在用这个工具做博客的后台，感觉还不错，下面记录下我是如何从头开始搭建我的博客系统的。</p>
-<hr>
-<h5 id="1-准备工具">1、准备工具</h5>
-<hr>
-<ol>
-<li>
-<p>Pugo 软件包：	<br>
-<a href="https://github.com/go-xiaohei/pugo">https://github.com/go-xiaohei/pugo</a></p>
-</li>
-<li>
-<p>FileBrowser：<br>
-<a href="https://github.com/filebrowser/filebrowser">https://github.com/filebrowser/filebrowser</a></p>
-</li>
-<li>
-<p>Winscp<br>
-http://www.memory6181.top/2018/4/27/blog.html</p>
-</li>
-</ol>
-<hr>
-<h5 id="2-搭建pugo博客">2、搭建Pugo博客</h5>
-<hr>
-<p>从gitHub下面下载软件包之后，我们解压，将软件包上传VPS，或者可以在本地先搭建试试看也可以。</p>
-<p>PS：注意不同的平台，文件不一样。</p>
-<p>下载解压之后，进入文件所在目录运行下面指令</p>
-<pre><code class="language-shell">pugo.exe new site # Windows
-./pugo new site   # Linux
-</code></pre>
-<p>此时在pugo的目录下面生成了好多个文件夹，下面我们运行下面的命令。</p>
-<pre><code class="language-shell">pugo server --addr &quot;0.0.0.0:8080&quot;
-</code></pre>
-<p>运行完成之后可以看到下面的一些消息：</p>
-<pre><code class="language-shell">C:\Users\zhang\Desktop\windows_amd64&gt;pugo_windows_amd64.exe server --addr &quot;0.0.0.0:8080&quot;
-[32mINFO[0m|08-25 18:00:32.4916|Build|Start
-[32mINFO[0m|08-25 18:00:32.5255|Build|Source|source
-[32mINFO[0m|08-25 18:00:32.6123|Build|Theme|theme/default
-[32mINFO[0m|08-25 18:00:33.2057|Build|40 Pages
-[32mINFO[0m|08-25 18:00:33.2057|Build|Done|1|714.1ms
-[32mINFO[0m|08-25 18:00:33.2067|Watch|Start
-[32mINFO[0m|08-25 18:00:33.2067|Server|Start|0.0.0.0:8080
-</code></pre>
-<p>此时我们的博客已经运行起来了，通过浏览器访问<code>localhost:8080</code>就可以看到博客的运行界面。</p>
-<p>我们想要Post一篇文章只要如下所示就好了</p>
-<pre><code class="language-shell">pogo new post [name]
-</code></pre>
-<p>此时在我们的<code>Source</code>-&gt; <code>Post</code>-&gt;<code>2018</code>下面会生成一个<code>.md</code>结尾的文本，使用Winscp或者其他的Sftp工具可以登录ssh在Linux服务器上面编写遵循<code>markdown</code>语法的文章就好了。</p>
-<hr>
-<h5 id="3-给pugo加上后台-file-browser">3、给Pugo加上后台---<code>File Browser</code></h5>
-<hr>
-<p>通过Winscp将我们下载好的File Browser 上传到我们的VPS，在File Browser 下面新建一个<code>config.json</code>文本文档，内容如下所示：</p>
-<pre><code class="language-json">{
-  &quot;port&quot;: 8000,
-  &quot;noAuth&quot;: false,
-  &quot;baseURL&quot;: &quot;/admin&quot;,
-  &quot;address&quot;: &quot;0.0.0.0&quot;,
-  &quot;reCaptchaKey&quot;: &quot;&quot;,
-  &quot;reCaptchaSecret&quot;: &quot;&quot;,
-  &quot;database&quot;:&quot;/myserver/blog/filemanager/filebrowser.db&quot;,
-  &quot;log&quot;: &quot;stdout&quot;,
-  &quot;plugin&quot;: &quot;http.filemanager&quot;,
-  &quot;scope&quot;:&quot;/myserver/blog/filemanager/myblog&quot;,
-  &quot;allowCommands&quot;: true,
-  &quot;allowEdit&quot;: true,
-  &quot;allowNew&quot;: true,
-  &quot;commands&quot;: [
-    &quot;git&quot;,
-    &quot;svn&quot;,
-    &quot;./myblog/flush.sh&quot;,
-    &quot;./myblog/new.sh&quot;
-  ]
-}
-</code></pre>
-<pre><code>Port :访问的端口号
-baseURL：要访问的地址，如上面所写，就访问&quot;http://127.0.0.1:8000/admin&quot;
-address:监听的地址，四个0表示监听所有网卡。
-datebase:数据库所在目录，通常设置和fileBrowser一个目录
-command：允许执行的shell命令。
-&quot;scope&quot;:管理的目录
-</code></pre>
-<p>主要修改的如上所示，其他的默认就好,将pugo整个拷贝到<code>scope</code> 管理的目录下面。</p>
-<p>运行如下:</p>
-<pre><code>./fileBrowser -c &quot;config.json&quot;
-</code></pre>
-<p>浏览器打开&quot;localhost:8000/admin&quot;输入<code>admin</code>,<code>admin</code>登录系统，分配账号在pugo所在的目录新建一个shell脚本，内容如下：</p>
-<pre><code class="language-shell">#!/bin/bash
-cd /myserver/blog/filemanager/myblog/
-./pugo_linux_amd64 build --source &quot;source&quot;
-cd /
-</code></pre>
-<p>保存取名&quot;flush.sh&quot;,然后在设置-&gt;全局设置-&gt;命令（Linux 代码）-&gt;After Save 下面输入运行flush.sh的命令，如下所示：</p>
-<pre><code class="language-shell">./myblog/flush.sh
-</code></pre>
-<p>此时我们在上传完成我们的博客，或者修改完成之后，保存就可以自动刷新了，再也不用的登录ssh去修改博客了。</p>
-
-              </div>
-              <div class="post-footer">
-  <ul class="post-copyright">
-    <li class="post-copyright-author">
-      <strong>本文作者：</strong>
-      Memory的个人博客
-    </li>
-    <li class="post-copyright-link">
-      <strong>本文链接：</strong>
-      <a href="https://blog.memory6181.com/post/2018-08-25" title="给pugo博客添加后台管理">https://blog.memory6181.com/post/2018-08-25</a>
-    </li>
-    <li class="post-copyright-license">
-      <strong>版权声明： </strong>
-      本博客所有文章除特别声明外,转载请注明出处！
-    </li>
-  </ul>
-  <div class="tags">
-    
-      <a href="https://blog.memory6181.com/tag/4eOic9FHK"># 技术</a>
-    
-  </div>
-  <div class="nav">
-    <div class="nav-prev">
-      
-        <i class="iconfont icon-angle_left"></i>
-        <a class="nav-pc-next" href="https://blog.memory6181.com/post/2018-08-30">ARM 编译工具keil 和 IAR  命令行编译和下载</a class="nav-pc-next">
-        <a class="nav-mobile-prev" href="https://blog.memory6181.com/post/2018-08-30">上一篇</a>
-      
-    </div>
-    <div class="nav-next">
-      
-        <a class="nav-pc-next" href="https://blog.memory6181.com/post/2018-08-17">Ubuntu 安装java 1.8 教程</a>
-        <a class="nav-mobile-next" href="https://blog.memory6181.com/post/2018-08-17">下一篇</a>
-        <i class="iconfont icon-angle_right"></i>
-      
-    </div>
-  </div>
-</div>
-              
-            </div>
-          </div>
+          <!-- </div> -->
         </div>
       </div>
       <div class="footer-box">

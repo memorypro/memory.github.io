@@ -3,7 +3,7 @@
       <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>Memory的个人博客</title>
-<link rel="shortcut icon" href="https://blog.memory6181.com//favicon.ico?v=1577751239376">
+<link rel="shortcut icon" href="https://blog.memory6181.com//favicon.ico?v=1577755847709">
 <link rel="stylesheet" href="https://blog.memory6181.com//styles/main.css">
 <meta name="description" content="温故而知新" />
 
@@ -18,58 +18,62 @@
     <div class="head-top-line"></div>
     <div class="header-box">
       <header class="header">
-  <div class="blog-header" id="header">
-    <div class="site-meta">
-      <div class="nav-toggle" id="nav_toggle">
-        <div class="toggle-box">
-          <div class="line line-top"></div>
-          <div class="line line-center"></div>
-          <div class="line line-bottom"></div>
+ 
+    <div class="blog-header" id="header">
+      <div class="section-layout-wrapper">
+      <div class="site-meta">
+        <div class="nav-toggle" id="nav_toggle">
+          <div class="toggle-box">
+            <div class="line line-top"></div>
+            <div class="line line-center"></div>
+            <div class="line line-bottom"></div>
+          </div>
         </div>
-      </div>
-      <div class="site-title">
-        <a href="/" class="brand">
-          <span>Memory的个人博客</span>
-        </a>
-      </div>
-      <p class="subtitle"></p>
-      <nav class="site-nav" id="site_nav">
-            
-              <li class="nav-item ">
-                <a href="/">
-                  <i class="iconfont icon-home"></i>首页
-                </a>
-              </li>
-            
-              <li class="nav-item ">
-                <a href="/archives">
-                  <i class="iconfont icon-home"></i>归档
-                </a>
-              </li>
-            
-              <li class="nav-item ">
-                <a href="/tags">
-                  <i class="iconfont icon-home"></i>标签
-                </a>
-              </li>
-            
-              <li class="nav-item ">
-                <a href="http://blog.memory6181.com//post/guan-yu-wo/">
-                  <i class="iconfont icon-home"></i>简历
-                </a>
-              </li>
-            
-              <li class="nav-item ">
-                <a href="http://memory6181.coding.me//post/about/">
-                  <i class="iconfont icon-home"></i>故事
-                </a>
-              </li>
-            
-      </nav>
-
-    </div>
+        <div class="site-title">
+          <a href="/" class="brand">
+            <span>Memory的个人博客</span>
+          </a>
+        </div>
+        <p class="subtitle"></p>
+        <nav class="site-nav" id="site_nav">
+              
+                <li class="nav-item ">
+                  <a href="/">
+                    <i class="iconfont icon-home"></i>首页
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a href="/archives">
+                    <i class="iconfont icon-home"></i>归档
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a href="/tags">
+                    <i class="iconfont icon-home"></i>标签
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a href="http://blog.memory6181.com//post/guan-yu-wo/">
+                    <i class="iconfont icon-home"></i>简历
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a href="http://memory6181.coding.me//post/about/">
+                    <i class="iconfont icon-home"></i>故事
+                  </a>
+                </li>
+              
+        </nav>
   
+      </div>
+    
+    </div>
   </div>
+ 
 </header>
 <script type="text/javascript"> 
  
@@ -89,7 +93,218 @@
     <div class="main-continer">
       <div class="section-layout">
         <div class="section-layout-wrapper">
+         
+          <!-- <div class="section-box"> -->
+            <div class="section post">
+              <div class="article-box">
+    <header class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://blog.memory6181.com/post/9VjGHAnlG">
+      QT 十六进制字符串和十六进制之间互转（ByteArray和HexString）
+    </a>
+  </h1>
+  <div class="post-meta">
+    <span class="meta-item">
+      <i class="iconfont icon-calendar_empty"></i>
+      <span class="pc-show">发布于</span>
+      <span>2019-08-07</span>
+    </span>
+    
+      <span class="meta-item">
+        <span class="post-meta-divider">|</span>
+        <i class="iconfont icon-folder_open_alt"></i>
+        <span class="pc-show">分类于</span>
+        
           
+            <a href="https://blog.memory6181.com/tag/a0I4RKJMQ">
+              <span>代码片段</span>
+            </a>
+          
+        
+      </span>
+    
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="iconfont icon-time"></i>
+      <span>2分钟</span>
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="iconfont icon-keyboard"></i>
+      <span class="pc-show">336字数</span>
+    </span>
+  </div>
+</header>
+</div>
+              <div class="post-body next-md-body" id="post_body">
+                <h5 id="举例说明">举例说明</h5>
+<pre><code class="language-cpp">ByteArray {0x01,0x02,0x03,0x04,0x05,0x06}; 
+HexString &quot;01 02 03 04 05 06&quot;
+</code></pre>
+<h5 id="代码">代码</h5>
+<p>Convert.cpp</p>
+<pre><code class="language-cpp">#include &quot;convert.h&quot;
+#include &lt;QString&gt;
+#include &lt;QMessageBox&gt;
+#include &lt;QDebug&gt;
+
+Convert::Convert()
+{
+
+}
+
+QString Convert::ByteArrayToHexString(QByteArray data)
+{
+    QString ret(data.toHex().toUpper());
+    int len = ret.length()/2;
+    for(int i=1;i&lt;=len;i++)
+    {
+        ret.insert(2*i+i-1,&quot; &quot;);
+    }
+    return ret;
+}
+
+QByteArray Convert::HexStringToByteArray(QString HexString)
+{
+    bool ok;
+    QByteArray ret;
+    HexString = HexString.trimmed();
+    HexString = HexString.simplified();
+    QStringList sl = HexString.split(&quot; &quot;);
+
+    foreach (QString s, sl) {
+        if(!s.isEmpty())
+        {
+            char c = s.toInt(&amp;ok,16)&amp;0xFF;
+            if(ok){
+                ret.append(c);
+            }else{
+                ret.clear();
+                //ret = NULL;
+                qDebug()&lt;&lt;&quot;非法的16进制字符：&quot;&lt;&lt;s;
+                return ret;
+
+               // QMessageBox::warning(0,tr(&quot;错误：&quot;),QString(&quot;非法的16进制字符: \&quot;%1\&quot;&quot;).arg(s));
+            }
+        }
+    }
+   // qDebug()&lt;&lt;ret;
+    return ret;
+}
+
+</code></pre>
+<p>Convert.h</p>
+<pre><code class="language-cpp">#ifndef CONVERT_H
+#define CONVERT_H
+#include &lt;QString&gt;
+
+
+class Convert
+{
+
+public:
+    Convert();
+    static QString ByteArrayToHexString(QByteArray data);
+    static QByteArray HexStringToByteArray(QString HexString);
+
+};
+
+#endif // CONVERT_H
+
+</code></pre>
+<p>调用</p>
+<pre><code class="language-cpp">void MainWindow::ReadData()
+{
+    static int reNum = 0;
+    QByteArray buf;
+    QString myStrTemp;
+    buf = serialPort-&gt;readAll();
+
+    if (!buf.isEmpty())
+    {
+        if (ui-&gt;radio_recv_hex-&gt;isChecked())
+        {
+           myStrTemp =  Convert::ByteArrayToHexString(buf);
+        }
+        else
+        {
+            myStrTemp=QString::fromLocal8Bit(buf); //支持中文显示
+        }
+        reNum += buf.size();
+        QString str = ui-&gt;tex_recv_text-&gt;toPlainText();
+        str +=myStrTemp;
+        ui-&gt;tex_recv_text-&gt;clear();
+        ui-&gt;tex_recv_text-&gt;appendPlainText(str);
+    }
+    buf.clear();
+}
+
+void MainWindow::on_btn_send_message_clicked()
+{
+    QByteArray buff;
+    if (!serialPort-&gt;isOpen())
+    {
+        QMessageBox::critical(this, tr(&quot;Error&quot;), u8&quot;串口未打开&quot;);
+        return ;
+    }
+    if (ui-&gt;radio_send_hex-&gt;isChecked())
+    {
+        buff = Convert::HexStringToByteArray(ui-&gt;tex_send_text-&gt;toPlainText());
+        if (buff.isNull())
+        {
+             QMessageBox::critical(this, tr(&quot;Error&quot;), u8&quot;输入格式有误&quot;);
+             return;
+        }
+        serialPort-&gt;write(buff);
+    }
+    else {
+        serialPort-&gt;write(ui-&gt;tex_send_text-&gt;toPlainText().toLocal8Bit());
+    }
+
+}
+</code></pre>
+
+              </div>
+              <div class="post-footer">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      Memory的个人博客
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://blog.memory6181.com/post/9VjGHAnlG" title="QT 十六进制字符串和十六进制之间互转（ByteArray和HexString）">https://blog.memory6181.com/post/9VjGHAnlG</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外,转载请注明出处！
+    </li>
+  </ul>
+  <div class="tags">
+    
+      <a href="https://blog.memory6181.com/tag/a0I4RKJMQ"># 代码片段</a>
+    
+  </div>
+  <div class="nav">
+    <div class="nav-prev">
+      
+        <i class="iconfont icon-angle_left"></i>
+        <a class="nav-pc-next" href="https://blog.memory6181.com/post/BHaQIb8de">C语言 十六进制字符串和十六进制之间互转（嵌入式编程）</a class="nav-pc-next">
+        <a class="nav-mobile-prev" href="https://blog.memory6181.com/post/BHaQIb8de">上一篇</a>
+      
+    </div>
+    <div class="nav-next">
+      
+        <a class="nav-pc-next" href="https://blog.memory6181.com/post/pjXJAiI7q">C# 多线程操作</a>
+        <a class="nav-mobile-next" href="https://blog.memory6181.com/post/pjXJAiI7q">下一篇</a>
+        <i class="iconfont icon-angle_right"></i>
+      
+    </div>
+  </div>
+</div>
+              
+            </div>
+            
 <div class="sidebar">
     <div class="sidebar-wrapper" id="sidebar">
       
@@ -410,217 +625,7 @@ window.addEventListener('load', function() {
     }
   });
 </script>
-          <div class="section-box">
-            <div class="section post">
-              <div class="article-box">
-    <header class="post-header">
-  <h1 class="post-title">
-    <a class="post-title-link" href="https://blog.memory6181.com/post/9VjGHAnlG">
-      QT 十六进制字符串和十六进制之间互转（ByteArray和HexString）
-    </a>
-  </h1>
-  <div class="post-meta">
-    <span class="meta-item">
-      <i class="iconfont icon-calendar_empty"></i>
-      <span class="pc-show">发布于</span>
-      <span>2019-08-07</span>
-    </span>
-    
-      <span class="meta-item">
-        <span class="post-meta-divider">|</span>
-        <i class="iconfont icon-folder_open_alt"></i>
-        <span class="pc-show">分类于</span>
-        
-          
-            <a href="https://blog.memory6181.com/tag/a0I4RKJMQ">
-              <span>代码片段</span>
-            </a>
-          
-        
-      </span>
-    
-    <span class="meta-item">
-      <span class="post-meta-divider">|</span>
-      <i class="iconfont icon-time"></i>
-      <span>2分钟</span>
-    </span>
-    <span class="meta-item">
-      <span class="post-meta-divider">|</span>
-      <i class="iconfont icon-keyboard"></i>
-      <span class="pc-show">336字数</span>
-    </span>
-  </div>
-</header>
-</div>
-              <div class="post-body next-md-body" id="post_body">
-                <h5 id="举例说明">举例说明</h5>
-<pre><code class="language-cpp">ByteArray {0x01,0x02,0x03,0x04,0x05,0x06}; 
-HexString &quot;01 02 03 04 05 06&quot;
-</code></pre>
-<h5 id="代码">代码</h5>
-<p>Convert.cpp</p>
-<pre><code class="language-cpp">#include &quot;convert.h&quot;
-#include &lt;QString&gt;
-#include &lt;QMessageBox&gt;
-#include &lt;QDebug&gt;
-
-Convert::Convert()
-{
-
-}
-
-QString Convert::ByteArrayToHexString(QByteArray data)
-{
-    QString ret(data.toHex().toUpper());
-    int len = ret.length()/2;
-    for(int i=1;i&lt;=len;i++)
-    {
-        ret.insert(2*i+i-1,&quot; &quot;);
-    }
-    return ret;
-}
-
-QByteArray Convert::HexStringToByteArray(QString HexString)
-{
-    bool ok;
-    QByteArray ret;
-    HexString = HexString.trimmed();
-    HexString = HexString.simplified();
-    QStringList sl = HexString.split(&quot; &quot;);
-
-    foreach (QString s, sl) {
-        if(!s.isEmpty())
-        {
-            char c = s.toInt(&amp;ok,16)&amp;0xFF;
-            if(ok){
-                ret.append(c);
-            }else{
-                ret.clear();
-                //ret = NULL;
-                qDebug()&lt;&lt;&quot;非法的16进制字符：&quot;&lt;&lt;s;
-                return ret;
-
-               // QMessageBox::warning(0,tr(&quot;错误：&quot;),QString(&quot;非法的16进制字符: \&quot;%1\&quot;&quot;).arg(s));
-            }
-        }
-    }
-   // qDebug()&lt;&lt;ret;
-    return ret;
-}
-
-</code></pre>
-<p>Convert.h</p>
-<pre><code class="language-cpp">#ifndef CONVERT_H
-#define CONVERT_H
-#include &lt;QString&gt;
-
-
-class Convert
-{
-
-public:
-    Convert();
-    static QString ByteArrayToHexString(QByteArray data);
-    static QByteArray HexStringToByteArray(QString HexString);
-
-};
-
-#endif // CONVERT_H
-
-</code></pre>
-<p>调用</p>
-<pre><code class="language-cpp">void MainWindow::ReadData()
-{
-    static int reNum = 0;
-    QByteArray buf;
-    QString myStrTemp;
-    buf = serialPort-&gt;readAll();
-
-    if (!buf.isEmpty())
-    {
-        if (ui-&gt;radio_recv_hex-&gt;isChecked())
-        {
-           myStrTemp =  Convert::ByteArrayToHexString(buf);
-        }
-        else
-        {
-            myStrTemp=QString::fromLocal8Bit(buf); //支持中文显示
-        }
-        reNum += buf.size();
-        QString str = ui-&gt;tex_recv_text-&gt;toPlainText();
-        str +=myStrTemp;
-        ui-&gt;tex_recv_text-&gt;clear();
-        ui-&gt;tex_recv_text-&gt;appendPlainText(str);
-    }
-    buf.clear();
-}
-
-void MainWindow::on_btn_send_message_clicked()
-{
-    QByteArray buff;
-    if (!serialPort-&gt;isOpen())
-    {
-        QMessageBox::critical(this, tr(&quot;Error&quot;), u8&quot;串口未打开&quot;);
-        return ;
-    }
-    if (ui-&gt;radio_send_hex-&gt;isChecked())
-    {
-        buff = Convert::HexStringToByteArray(ui-&gt;tex_send_text-&gt;toPlainText());
-        if (buff.isNull())
-        {
-             QMessageBox::critical(this, tr(&quot;Error&quot;), u8&quot;输入格式有误&quot;);
-             return;
-        }
-        serialPort-&gt;write(buff);
-    }
-    else {
-        serialPort-&gt;write(ui-&gt;tex_send_text-&gt;toPlainText().toLocal8Bit());
-    }
-
-}
-</code></pre>
-
-              </div>
-              <div class="post-footer">
-  <ul class="post-copyright">
-    <li class="post-copyright-author">
-      <strong>本文作者：</strong>
-      Memory的个人博客
-    </li>
-    <li class="post-copyright-link">
-      <strong>本文链接：</strong>
-      <a href="https://blog.memory6181.com/post/9VjGHAnlG" title="QT 十六进制字符串和十六进制之间互转（ByteArray和HexString）">https://blog.memory6181.com/post/9VjGHAnlG</a>
-    </li>
-    <li class="post-copyright-license">
-      <strong>版权声明： </strong>
-      本博客所有文章除特别声明外,转载请注明出处！
-    </li>
-  </ul>
-  <div class="tags">
-    
-      <a href="https://blog.memory6181.com/tag/a0I4RKJMQ"># 代码片段</a>
-    
-  </div>
-  <div class="nav">
-    <div class="nav-prev">
-      
-        <i class="iconfont icon-angle_left"></i>
-        <a class="nav-pc-next" href="https://blog.memory6181.com/post/BHaQIb8de">C语言 十六进制字符串和十六进制之间互转（嵌入式编程）</a class="nav-pc-next">
-        <a class="nav-mobile-prev" href="https://blog.memory6181.com/post/BHaQIb8de">上一篇</a>
-      
-    </div>
-    <div class="nav-next">
-      
-        <a class="nav-pc-next" href="https://blog.memory6181.com/post/pjXJAiI7q">C# 多线程操作</a>
-        <a class="nav-mobile-next" href="https://blog.memory6181.com/post/pjXJAiI7q">下一篇</a>
-        <i class="iconfont icon-angle_right"></i>
-      
-    </div>
-  </div>
-</div>
-              
-            </div>
-          </div>
+          <!-- </div> -->
         </div>
       </div>
       <div class="footer-box">

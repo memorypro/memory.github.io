@@ -3,7 +3,7 @@
       <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>Memory的个人博客</title>
-<link rel="shortcut icon" href="https://blog.memory6181.com//favicon.ico?v=1577751239376">
+<link rel="shortcut icon" href="https://blog.memory6181.com//favicon.ico?v=1577755847709">
 <link rel="stylesheet" href="https://blog.memory6181.com//styles/main.css">
 <meta name="description" content="温故而知新" />
 
@@ -18,58 +18,62 @@
     <div class="head-top-line"></div>
     <div class="header-box">
       <header class="header">
-  <div class="blog-header" id="header">
-    <div class="site-meta">
-      <div class="nav-toggle" id="nav_toggle">
-        <div class="toggle-box">
-          <div class="line line-top"></div>
-          <div class="line line-center"></div>
-          <div class="line line-bottom"></div>
+ 
+    <div class="blog-header" id="header">
+      <div class="section-layout-wrapper">
+      <div class="site-meta">
+        <div class="nav-toggle" id="nav_toggle">
+          <div class="toggle-box">
+            <div class="line line-top"></div>
+            <div class="line line-center"></div>
+            <div class="line line-bottom"></div>
+          </div>
         </div>
-      </div>
-      <div class="site-title">
-        <a href="/" class="brand">
-          <span>Memory的个人博客</span>
-        </a>
-      </div>
-      <p class="subtitle"></p>
-      <nav class="site-nav" id="site_nav">
-            
-              <li class="nav-item ">
-                <a href="/">
-                  <i class="iconfont icon-home"></i>首页
-                </a>
-              </li>
-            
-              <li class="nav-item ">
-                <a href="/archives">
-                  <i class="iconfont icon-home"></i>归档
-                </a>
-              </li>
-            
-              <li class="nav-item ">
-                <a href="/tags">
-                  <i class="iconfont icon-home"></i>标签
-                </a>
-              </li>
-            
-              <li class="nav-item ">
-                <a href="http://blog.memory6181.com//post/guan-yu-wo/">
-                  <i class="iconfont icon-home"></i>简历
-                </a>
-              </li>
-            
-              <li class="nav-item ">
-                <a href="http://memory6181.coding.me//post/about/">
-                  <i class="iconfont icon-home"></i>故事
-                </a>
-              </li>
-            
-      </nav>
-
-    </div>
+        <div class="site-title">
+          <a href="/" class="brand">
+            <span>Memory的个人博客</span>
+          </a>
+        </div>
+        <p class="subtitle"></p>
+        <nav class="site-nav" id="site_nav">
+              
+                <li class="nav-item ">
+                  <a href="/">
+                    <i class="iconfont icon-home"></i>首页
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a href="/archives">
+                    <i class="iconfont icon-home"></i>归档
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a href="/tags">
+                    <i class="iconfont icon-home"></i>标签
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a href="http://blog.memory6181.com//post/guan-yu-wo/">
+                    <i class="iconfont icon-home"></i>简历
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a href="http://memory6181.coding.me//post/about/">
+                    <i class="iconfont icon-home"></i>故事
+                  </a>
+                </li>
+              
+        </nav>
   
+      </div>
+    
+    </div>
   </div>
+ 
 </header>
 <script type="text/javascript"> 
  
@@ -89,7 +93,140 @@
     <div class="main-continer">
       <div class="section-layout">
         <div class="section-layout-wrapper">
+         
+          <!-- <div class="section-box"> -->
+            <div class="section post">
+              <div class="article-box">
+    <header class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://blog.memory6181.com/post/2019-03-25-2">
+       CSharp  一些代码小结--串口操作
+    </a>
+  </h1>
+  <div class="post-meta">
+    <span class="meta-item">
+      <i class="iconfont icon-calendar_empty"></i>
+      <span class="pc-show">发布于</span>
+      <span>2019-03-25</span>
+    </span>
+    
+      <span class="meta-item">
+        <span class="post-meta-divider">|</span>
+        <i class="iconfont icon-folder_open_alt"></i>
+        <span class="pc-show">分类于</span>
+        
           
+            <a href="https://blog.memory6181.com/tag/4eOic9FHK">
+              <span>技术</span>
+            </a>
+          
+        
+      </span>
+    
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="iconfont icon-time"></i>
+      <span>1分钟</span>
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="iconfont icon-keyboard"></i>
+      <span class="pc-show">164字数</span>
+    </span>
+  </div>
+</header>
+</div>
+              <div class="post-body next-md-body" id="post_body">
+                <h5 id="串口解析显示中文">串口解析显示中文</h5>
+<pre><code class="language-csharp">private String SerialPortReadStr()
+{
+    try
+    {
+        String str = null;
+        int n = serialPort1.BytesToRead;//数据接收缓存区的字接数
+        byte[] buffer = new byte[n];//创建临时字节数组
+        serialPort1.Read(buffer, 0, n);//从缓存区读取数据
+        str = Encoding.GetEncoding(&quot;GB2312&quot;).GetString(buffer);
+        if(!IsStopReadComData)
+        {
+            UpDateLogTextBox(str);
+        }
+        if (保存串口日志ToolStripMenuItem.Checked)
+        {
+            log.FaceLog.AppendSerialLog(&quot;[&quot; + DateTime.Now.ToString() + &quot;]&quot;+str);
+        }
+        return str;
+    }
+    catch (Exception ex)
+    {
+        OutputMessage(&quot;Exception:&quot; + ex.Message);
+        return &quot;error&quot;;
+    }
+}
+</code></pre>
+<h5 id="搜索串口">搜索串口</h5>
+<pre><code class="language-csharp">private void User_SearchSerialPort()
+{
+    try
+    {
+        string[] ArryPort = SerialPort.GetPortNames();
+        cb_ComName.Items.Clear();
+        for (int i = 0; i &lt; ArryPort.Length; i++)
+        {
+            cb_ComName.Items.Add(ArryPort[i]);
+        }
+        cb_ComName.SelectedIndex = 0;
+        OutputMessage(&quot;搜索到串口：&quot;+string.Join(&quot;,&quot;, ArryPort));
+    }
+    catch (Exception)
+    {
+        MessageBox.Show(&quot;串口搜索失败\r\n&quot;);
+    }
+}
+</code></pre>
+<p>::aru:despise::</p>
+
+              </div>
+              <div class="post-footer">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      Memory的个人博客
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://blog.memory6181.com/post/2019-03-25-2" title=" CSharp  一些代码小结--串口操作">https://blog.memory6181.com/post/2019-03-25-2</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外,转载请注明出处！
+    </li>
+  </ul>
+  <div class="tags">
+    
+      <a href="https://blog.memory6181.com/tag/4eOic9FHK"># 技术</a>
+    
+  </div>
+  <div class="nav">
+    <div class="nav-prev">
+      
+        <i class="iconfont icon-angle_left"></i>
+        <a class="nav-pc-next" href="https://blog.memory6181.com/post/2019-03-25-3">C#  一些代码小结--使用文件记录日志</a class="nav-pc-next">
+        <a class="nav-mobile-prev" href="https://blog.memory6181.com/post/2019-03-25-3">上一篇</a>
+      
+    </div>
+    <div class="nav-next">
+      
+        <a class="nav-pc-next" href="https://blog.memory6181.com/post/2019-03-25-4">CSharp 一些代码小结--datGirdView保存到csv文件</a>
+        <a class="nav-mobile-next" href="https://blog.memory6181.com/post/2019-03-25-4">下一篇</a>
+        <i class="iconfont icon-angle_right"></i>
+      
+    </div>
+  </div>
+</div>
+              
+            </div>
+            
 <div class="sidebar">
     <div class="sidebar-wrapper" id="sidebar">
       
@@ -410,139 +547,7 @@ window.addEventListener('load', function() {
     }
   });
 </script>
-          <div class="section-box">
-            <div class="section post">
-              <div class="article-box">
-    <header class="post-header">
-  <h1 class="post-title">
-    <a class="post-title-link" href="https://blog.memory6181.com/post/2019-03-25-2">
-       CSharp  一些代码小结--串口操作
-    </a>
-  </h1>
-  <div class="post-meta">
-    <span class="meta-item">
-      <i class="iconfont icon-calendar_empty"></i>
-      <span class="pc-show">发布于</span>
-      <span>2019-03-25</span>
-    </span>
-    
-      <span class="meta-item">
-        <span class="post-meta-divider">|</span>
-        <i class="iconfont icon-folder_open_alt"></i>
-        <span class="pc-show">分类于</span>
-        
-          
-            <a href="https://blog.memory6181.com/tag/4eOic9FHK">
-              <span>技术</span>
-            </a>
-          
-        
-      </span>
-    
-    <span class="meta-item">
-      <span class="post-meta-divider">|</span>
-      <i class="iconfont icon-time"></i>
-      <span>1分钟</span>
-    </span>
-    <span class="meta-item">
-      <span class="post-meta-divider">|</span>
-      <i class="iconfont icon-keyboard"></i>
-      <span class="pc-show">164字数</span>
-    </span>
-  </div>
-</header>
-</div>
-              <div class="post-body next-md-body" id="post_body">
-                <h5 id="串口解析显示中文">串口解析显示中文</h5>
-<pre><code class="language-csharp">private String SerialPortReadStr()
-{
-    try
-    {
-        String str = null;
-        int n = serialPort1.BytesToRead;//数据接收缓存区的字接数
-        byte[] buffer = new byte[n];//创建临时字节数组
-        serialPort1.Read(buffer, 0, n);//从缓存区读取数据
-        str = Encoding.GetEncoding(&quot;GB2312&quot;).GetString(buffer);
-        if(!IsStopReadComData)
-        {
-            UpDateLogTextBox(str);
-        }
-        if (保存串口日志ToolStripMenuItem.Checked)
-        {
-            log.FaceLog.AppendSerialLog(&quot;[&quot; + DateTime.Now.ToString() + &quot;]&quot;+str);
-        }
-        return str;
-    }
-    catch (Exception ex)
-    {
-        OutputMessage(&quot;Exception:&quot; + ex.Message);
-        return &quot;error&quot;;
-    }
-}
-</code></pre>
-<h5 id="搜索串口">搜索串口</h5>
-<pre><code class="language-csharp">private void User_SearchSerialPort()
-{
-    try
-    {
-        string[] ArryPort = SerialPort.GetPortNames();
-        cb_ComName.Items.Clear();
-        for (int i = 0; i &lt; ArryPort.Length; i++)
-        {
-            cb_ComName.Items.Add(ArryPort[i]);
-        }
-        cb_ComName.SelectedIndex = 0;
-        OutputMessage(&quot;搜索到串口：&quot;+string.Join(&quot;,&quot;, ArryPort));
-    }
-    catch (Exception)
-    {
-        MessageBox.Show(&quot;串口搜索失败\r\n&quot;);
-    }
-}
-</code></pre>
-<p>::aru:despise::</p>
-
-              </div>
-              <div class="post-footer">
-  <ul class="post-copyright">
-    <li class="post-copyright-author">
-      <strong>本文作者：</strong>
-      Memory的个人博客
-    </li>
-    <li class="post-copyright-link">
-      <strong>本文链接：</strong>
-      <a href="https://blog.memory6181.com/post/2019-03-25-2" title=" CSharp  一些代码小结--串口操作">https://blog.memory6181.com/post/2019-03-25-2</a>
-    </li>
-    <li class="post-copyright-license">
-      <strong>版权声明： </strong>
-      本博客所有文章除特别声明外,转载请注明出处！
-    </li>
-  </ul>
-  <div class="tags">
-    
-      <a href="https://blog.memory6181.com/tag/4eOic9FHK"># 技术</a>
-    
-  </div>
-  <div class="nav">
-    <div class="nav-prev">
-      
-        <i class="iconfont icon-angle_left"></i>
-        <a class="nav-pc-next" href="https://blog.memory6181.com/post/2019-03-25-3">C#  一些代码小结--使用文件记录日志</a class="nav-pc-next">
-        <a class="nav-mobile-prev" href="https://blog.memory6181.com/post/2019-03-25-3">上一篇</a>
-      
-    </div>
-    <div class="nav-next">
-      
-        <a class="nav-pc-next" href="https://blog.memory6181.com/post/2019-03-25-4">CSharp 一些代码小结--datGirdView保存到csv文件</a>
-        <a class="nav-mobile-next" href="https://blog.memory6181.com/post/2019-03-25-4">下一篇</a>
-        <i class="iconfont icon-angle_right"></i>
-      
-    </div>
-  </div>
-</div>
-              
-            </div>
-          </div>
+          <!-- </div> -->
         </div>
       </div>
       <div class="footer-box">

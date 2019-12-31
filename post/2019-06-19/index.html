@@ -3,7 +3,7 @@
       <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>Memory的个人博客</title>
-<link rel="shortcut icon" href="https://blog.memory6181.com//favicon.ico?v=1577751239376">
+<link rel="shortcut icon" href="https://blog.memory6181.com//favicon.ico?v=1577755847709">
 <link rel="stylesheet" href="https://blog.memory6181.com//styles/main.css">
 <meta name="description" content="温故而知新" />
 
@@ -18,58 +18,62 @@
     <div class="head-top-line"></div>
     <div class="header-box">
       <header class="header">
-  <div class="blog-header" id="header">
-    <div class="site-meta">
-      <div class="nav-toggle" id="nav_toggle">
-        <div class="toggle-box">
-          <div class="line line-top"></div>
-          <div class="line line-center"></div>
-          <div class="line line-bottom"></div>
+ 
+    <div class="blog-header" id="header">
+      <div class="section-layout-wrapper">
+      <div class="site-meta">
+        <div class="nav-toggle" id="nav_toggle">
+          <div class="toggle-box">
+            <div class="line line-top"></div>
+            <div class="line line-center"></div>
+            <div class="line line-bottom"></div>
+          </div>
         </div>
-      </div>
-      <div class="site-title">
-        <a href="/" class="brand">
-          <span>Memory的个人博客</span>
-        </a>
-      </div>
-      <p class="subtitle"></p>
-      <nav class="site-nav" id="site_nav">
-            
-              <li class="nav-item ">
-                <a href="/">
-                  <i class="iconfont icon-home"></i>首页
-                </a>
-              </li>
-            
-              <li class="nav-item ">
-                <a href="/archives">
-                  <i class="iconfont icon-home"></i>归档
-                </a>
-              </li>
-            
-              <li class="nav-item ">
-                <a href="/tags">
-                  <i class="iconfont icon-home"></i>标签
-                </a>
-              </li>
-            
-              <li class="nav-item ">
-                <a href="http://blog.memory6181.com//post/guan-yu-wo/">
-                  <i class="iconfont icon-home"></i>简历
-                </a>
-              </li>
-            
-              <li class="nav-item ">
-                <a href="http://memory6181.coding.me//post/about/">
-                  <i class="iconfont icon-home"></i>故事
-                </a>
-              </li>
-            
-      </nav>
-
-    </div>
+        <div class="site-title">
+          <a href="/" class="brand">
+            <span>Memory的个人博客</span>
+          </a>
+        </div>
+        <p class="subtitle"></p>
+        <nav class="site-nav" id="site_nav">
+              
+                <li class="nav-item ">
+                  <a href="/">
+                    <i class="iconfont icon-home"></i>首页
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a href="/archives">
+                    <i class="iconfont icon-home"></i>归档
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a href="/tags">
+                    <i class="iconfont icon-home"></i>标签
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a href="http://blog.memory6181.com//post/guan-yu-wo/">
+                    <i class="iconfont icon-home"></i>简历
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a href="http://memory6181.coding.me//post/about/">
+                    <i class="iconfont icon-home"></i>故事
+                  </a>
+                </li>
+              
+        </nav>
   
+      </div>
+    
+    </div>
   </div>
+ 
 </header>
 <script type="text/javascript"> 
  
@@ -89,7 +93,238 @@
     <div class="main-continer">
       <div class="section-layout">
         <div class="section-layout-wrapper">
+         
+          <!-- <div class="section-box"> -->
+            <div class="section post">
+              <div class="article-box">
+    <header class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://blog.memory6181.com/post/2019-06-19">
+      QT-串口操作
+    </a>
+  </h1>
+  <div class="post-meta">
+    <span class="meta-item">
+      <i class="iconfont icon-calendar_empty"></i>
+      <span class="pc-show">发布于</span>
+      <span>2019-06-19</span>
+    </span>
+    
+      <span class="meta-item">
+        <span class="post-meta-divider">|</span>
+        <i class="iconfont icon-folder_open_alt"></i>
+        <span class="pc-show">分类于</span>
+        
           
+            <a href="https://blog.memory6181.com/tag/4eOic9FHK">
+              <span>技术</span>
+            </a>
+          
+        
+      </span>
+    
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="iconfont icon-time"></i>
+      <span>3分钟</span>
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="iconfont icon-keyboard"></i>
+      <span class="pc-show">516字数</span>
+    </span>
+  </div>
+</header>
+</div>
+              <div class="post-body next-md-body" id="post_body">
+                <h4 id="修改pro文件">修改.pro文件</h4>
+<p>添加如下所示代码</p>
+<pre><code class="language-pro">QT       += serialport
+</code></pre>
+<h4 id="编写h文件">编写.h文件</h4>
+<p>1、添加头文件</p>
+<pre><code class="language-cpp">#include &lt;QtSerialPort&gt;
+</code></pre>
+<p>2、添加串口定义</p>
+<pre><code class="language-cpp">QSerialPort *serialPort;
+</code></pre>
+<h4 id="源文件代码">源文件代码</h4>
+<p>1、 添加头文件</p>
+<pre><code class="language-cpp">#include  &lt;QSerialPort&gt;
+#include &lt;QSerialPortInfo&gt;
+</code></pre>
+<p>2、搜索串口</p>
+<pre><code class="language-cpp">void MainWindow::on_btn_find_seriaport_clicked()
+{
+    const auto infos = QSerialPortInfo::availablePorts();
+    ui-&gt;cbx_com_name-&gt;clear();
+    for(const QSerialPortInfo &amp;info : infos)
+    {
+        QSerialPort serial;
+        serial.setPort(info);
+        if(serial.open(QIODevice::ReadWrite))
+        {
+           ui-&gt;cbx_com_name-&gt;addItem(info.portName());
+           serial.close();
+        }
+    }
+}
+</code></pre>
+<p>3、 打开串口</p>
+<pre><code class="language-cpp">void MainWindow::on_btn_open_port_clicked()
+{
+    if (ui-&gt;btn_open_port-&gt;text() == tr(&quot;打开串口&quot;))
+      {
+          serialPort = new QSerialPort;
+          serialPort-&gt;setPortName(ui-&gt;cbx_com_name-&gt;currentText());
+          if(serialPort-&gt;open(QIODevice::ReadWrite))
+          {
+              serialPort-&gt;setBaudRate(ui-&gt;cbx_bandrate-&gt;currentText().toInt());
+              serialPort-&gt;setStopBits(to_convert_stopbit(ui-&gt;cbx_stopbit-&gt;currentText()));
+              serialPort-&gt;setDataBits(to_convert_databit(ui-&gt;cbx_databit-&gt;currentText()));
+              serialPort-&gt;setParity(to_convert_paritybit(ui-&gt;cbx_paritybit-&gt;currentText()));
+              ui-&gt;btn_open_port-&gt;setText(tr(&quot;关闭串口&quot;));
+              ui-&gt;cbx_bandrate-&gt;setEnabled(false);
+              ui-&gt;cbx_stopbit-&gt;setEnabled(false);
+              ui-&gt;cbx_databit-&gt;setEnabled(false);
+              ui-&gt;cbx_paritybit-&gt;setEnabled(false);
+              ui-&gt;cbx_com_name-&gt;setEnabled(false);
+              ui-&gt;btn_find_seriaport-&gt;setEnabled(false);
+              connect(serialPort, &amp;QSerialPort::readyRead, this, &amp;MainWindow::ReadData);
+          }
+          else
+          {
+              QMessageBox::critical(this, tr(&quot;Error&quot;), serialPort-&gt;errorString());
+          }
+      }
+      else
+      {
+          serialPort-&gt;clear();
+          serialPort-&gt;close();
+          serialPort-&gt;deleteLater();
+
+          ui-&gt;btn_open_port-&gt;setText(tr(&quot;打开串口&quot;));
+          ui-&gt;cbx_bandrate-&gt;setEnabled(true);
+          ui-&gt;cbx_stopbit-&gt;setEnabled(true);
+          ui-&gt;cbx_databit-&gt;setEnabled(true);
+          ui-&gt;cbx_paritybit-&gt;setEnabled(true);
+          ui-&gt;cbx_com_name-&gt;setEnabled(true);
+          ui-&gt;btn_find_seriaport-&gt;setEnabled(true);
+      }
+}
+</code></pre>
+<p>4、发送数据</p>
+<pre><code class="language-cpp">
+void MainWindow::on_btn_send_message_clicked()
+{
+    serialPort-&gt;write(ui-&gt;tex_send_text-&gt;toPlainText().toLocal8Bit());
+}
+
+</code></pre>
+<p>5、接收数据</p>
+<pre><code class="language-cpp">void MainWindow::ReadData()
+{
+    static int reNum = 0;
+    QByteArray buf;
+    buf = serialPort-&gt;readAll();
+
+    if (!buf.isEmpty())
+    {
+        reNum += buf.size();
+        QString myStrTemp = QString::fromLocal8Bit(buf); //支持中文显示
+        QString str = ui-&gt;tex_recv_text-&gt;toPlainText();
+        str +=myStrTemp;
+        ui-&gt;tex_recv_text-&gt;clear();
+        ui-&gt;tex_recv_text-&gt;append(str);
+    }
+    buf.clear();
+}
+
+</code></pre>
+<p>6、数据位，校验位，停止位转换代码</p>
+<pre><code class="language-cpp">QSerialPort::StopBits MainWindow::to_convert_stopbit(QString  bit)
+{
+   if(bit == tr(&quot;1&quot;))
+       return QSerialPort::OneStop;
+   else if (bit == tr(&quot;1.5&quot;))
+       return QSerialPort::OneAndHalfStop;
+   else if (bit == tr(&quot;2&quot;))
+       return QSerialPort::TwoStop;
+   return QSerialPort::OneStop;
+}
+
+QSerialPort::DataBits MainWindow::to_convert_databit(QString  bit)
+{
+   if(bit == tr(&quot;8&quot;))
+       return QSerialPort::Data8;
+
+   if(bit == tr(&quot;7&quot;))
+       return QSerialPort::Data7;
+
+   if(bit == tr(&quot;6&quot;))
+       return QSerialPort::Data6;
+
+   if(bit == tr(&quot;5&quot;))
+       return QSerialPort::Data5;
+   return QSerialPort::Data8;
+}
+
+QSerialPort::Parity MainWindow::to_convert_paritybit(QString  bit)
+{
+   if(bit == tr(&quot;None&quot;))
+       return QSerialPort::NoParity;
+   if(bit == tr(&quot;Odd&quot;))
+       return QSerialPort::OddParity;
+   if(bit == tr(&quot;Even&quot;))
+       return QSerialPort::EvenParity;
+    return QSerialPort::NoParity;
+}
+</code></pre>
+<blockquote>
+<p>DEMO：https://gitee.com/zyzp/QT-SerialPort</p>
+</blockquote>
+
+              </div>
+              <div class="post-footer">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      Memory的个人博客
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://blog.memory6181.com/post/2019-06-19" title="QT-串口操作">https://blog.memory6181.com/post/2019-06-19</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外,转载请注明出处！
+    </li>
+  </ul>
+  <div class="tags">
+    
+      <a href="https://blog.memory6181.com/tag/4eOic9FHK"># 技术</a>
+    
+  </div>
+  <div class="nav">
+    <div class="nav-prev">
+      
+        <i class="iconfont icon-angle_left"></i>
+        <a class="nav-pc-next" href="https://blog.memory6181.com/post/2019-07-08">STM32L073RZ -EEPROM 踩过的一些坑</a class="nav-pc-next">
+        <a class="nav-mobile-prev" href="https://blog.memory6181.com/post/2019-07-08">上一篇</a>
+      
+    </div>
+    <div class="nav-next">
+      
+        <a class="nav-pc-next" href="https://blog.memory6181.com/post/2019-06-15">Linux 安装CH340驱动</a>
+        <a class="nav-mobile-next" href="https://blog.memory6181.com/post/2019-06-15">下一篇</a>
+        <i class="iconfont icon-angle_right"></i>
+      
+    </div>
+  </div>
+</div>
+              
+            </div>
+            
 <div class="sidebar">
     <div class="sidebar-wrapper" id="sidebar">
       
@@ -407,237 +642,7 @@ window.addEventListener('load', function() {
     }
   });
 </script>
-          <div class="section-box">
-            <div class="section post">
-              <div class="article-box">
-    <header class="post-header">
-  <h1 class="post-title">
-    <a class="post-title-link" href="https://blog.memory6181.com/post/2019-06-19">
-      QT-串口操作
-    </a>
-  </h1>
-  <div class="post-meta">
-    <span class="meta-item">
-      <i class="iconfont icon-calendar_empty"></i>
-      <span class="pc-show">发布于</span>
-      <span>2019-06-19</span>
-    </span>
-    
-      <span class="meta-item">
-        <span class="post-meta-divider">|</span>
-        <i class="iconfont icon-folder_open_alt"></i>
-        <span class="pc-show">分类于</span>
-        
-          
-            <a href="https://blog.memory6181.com/tag/4eOic9FHK">
-              <span>技术</span>
-            </a>
-          
-        
-      </span>
-    
-    <span class="meta-item">
-      <span class="post-meta-divider">|</span>
-      <i class="iconfont icon-time"></i>
-      <span>3分钟</span>
-    </span>
-    <span class="meta-item">
-      <span class="post-meta-divider">|</span>
-      <i class="iconfont icon-keyboard"></i>
-      <span class="pc-show">516字数</span>
-    </span>
-  </div>
-</header>
-</div>
-              <div class="post-body next-md-body" id="post_body">
-                <h4 id="修改pro文件">修改.pro文件</h4>
-<p>添加如下所示代码</p>
-<pre><code class="language-pro">QT       += serialport
-</code></pre>
-<h4 id="编写h文件">编写.h文件</h4>
-<p>1、添加头文件</p>
-<pre><code class="language-cpp">#include &lt;QtSerialPort&gt;
-</code></pre>
-<p>2、添加串口定义</p>
-<pre><code class="language-cpp">QSerialPort *serialPort;
-</code></pre>
-<h4 id="源文件代码">源文件代码</h4>
-<p>1、 添加头文件</p>
-<pre><code class="language-cpp">#include  &lt;QSerialPort&gt;
-#include &lt;QSerialPortInfo&gt;
-</code></pre>
-<p>2、搜索串口</p>
-<pre><code class="language-cpp">void MainWindow::on_btn_find_seriaport_clicked()
-{
-    const auto infos = QSerialPortInfo::availablePorts();
-    ui-&gt;cbx_com_name-&gt;clear();
-    for(const QSerialPortInfo &amp;info : infos)
-    {
-        QSerialPort serial;
-        serial.setPort(info);
-        if(serial.open(QIODevice::ReadWrite))
-        {
-           ui-&gt;cbx_com_name-&gt;addItem(info.portName());
-           serial.close();
-        }
-    }
-}
-</code></pre>
-<p>3、 打开串口</p>
-<pre><code class="language-cpp">void MainWindow::on_btn_open_port_clicked()
-{
-    if (ui-&gt;btn_open_port-&gt;text() == tr(&quot;打开串口&quot;))
-      {
-          serialPort = new QSerialPort;
-          serialPort-&gt;setPortName(ui-&gt;cbx_com_name-&gt;currentText());
-          if(serialPort-&gt;open(QIODevice::ReadWrite))
-          {
-              serialPort-&gt;setBaudRate(ui-&gt;cbx_bandrate-&gt;currentText().toInt());
-              serialPort-&gt;setStopBits(to_convert_stopbit(ui-&gt;cbx_stopbit-&gt;currentText()));
-              serialPort-&gt;setDataBits(to_convert_databit(ui-&gt;cbx_databit-&gt;currentText()));
-              serialPort-&gt;setParity(to_convert_paritybit(ui-&gt;cbx_paritybit-&gt;currentText()));
-              ui-&gt;btn_open_port-&gt;setText(tr(&quot;关闭串口&quot;));
-              ui-&gt;cbx_bandrate-&gt;setEnabled(false);
-              ui-&gt;cbx_stopbit-&gt;setEnabled(false);
-              ui-&gt;cbx_databit-&gt;setEnabled(false);
-              ui-&gt;cbx_paritybit-&gt;setEnabled(false);
-              ui-&gt;cbx_com_name-&gt;setEnabled(false);
-              ui-&gt;btn_find_seriaport-&gt;setEnabled(false);
-              connect(serialPort, &amp;QSerialPort::readyRead, this, &amp;MainWindow::ReadData);
-          }
-          else
-          {
-              QMessageBox::critical(this, tr(&quot;Error&quot;), serialPort-&gt;errorString());
-          }
-      }
-      else
-      {
-          serialPort-&gt;clear();
-          serialPort-&gt;close();
-          serialPort-&gt;deleteLater();
-
-          ui-&gt;btn_open_port-&gt;setText(tr(&quot;打开串口&quot;));
-          ui-&gt;cbx_bandrate-&gt;setEnabled(true);
-          ui-&gt;cbx_stopbit-&gt;setEnabled(true);
-          ui-&gt;cbx_databit-&gt;setEnabled(true);
-          ui-&gt;cbx_paritybit-&gt;setEnabled(true);
-          ui-&gt;cbx_com_name-&gt;setEnabled(true);
-          ui-&gt;btn_find_seriaport-&gt;setEnabled(true);
-      }
-}
-</code></pre>
-<p>4、发送数据</p>
-<pre><code class="language-cpp">
-void MainWindow::on_btn_send_message_clicked()
-{
-    serialPort-&gt;write(ui-&gt;tex_send_text-&gt;toPlainText().toLocal8Bit());
-}
-
-</code></pre>
-<p>5、接收数据</p>
-<pre><code class="language-cpp">void MainWindow::ReadData()
-{
-    static int reNum = 0;
-    QByteArray buf;
-    buf = serialPort-&gt;readAll();
-
-    if (!buf.isEmpty())
-    {
-        reNum += buf.size();
-        QString myStrTemp = QString::fromLocal8Bit(buf); //支持中文显示
-        QString str = ui-&gt;tex_recv_text-&gt;toPlainText();
-        str +=myStrTemp;
-        ui-&gt;tex_recv_text-&gt;clear();
-        ui-&gt;tex_recv_text-&gt;append(str);
-    }
-    buf.clear();
-}
-
-</code></pre>
-<p>6、数据位，校验位，停止位转换代码</p>
-<pre><code class="language-cpp">QSerialPort::StopBits MainWindow::to_convert_stopbit(QString  bit)
-{
-   if(bit == tr(&quot;1&quot;))
-       return QSerialPort::OneStop;
-   else if (bit == tr(&quot;1.5&quot;))
-       return QSerialPort::OneAndHalfStop;
-   else if (bit == tr(&quot;2&quot;))
-       return QSerialPort::TwoStop;
-   return QSerialPort::OneStop;
-}
-
-QSerialPort::DataBits MainWindow::to_convert_databit(QString  bit)
-{
-   if(bit == tr(&quot;8&quot;))
-       return QSerialPort::Data8;
-
-   if(bit == tr(&quot;7&quot;))
-       return QSerialPort::Data7;
-
-   if(bit == tr(&quot;6&quot;))
-       return QSerialPort::Data6;
-
-   if(bit == tr(&quot;5&quot;))
-       return QSerialPort::Data5;
-   return QSerialPort::Data8;
-}
-
-QSerialPort::Parity MainWindow::to_convert_paritybit(QString  bit)
-{
-   if(bit == tr(&quot;None&quot;))
-       return QSerialPort::NoParity;
-   if(bit == tr(&quot;Odd&quot;))
-       return QSerialPort::OddParity;
-   if(bit == tr(&quot;Even&quot;))
-       return QSerialPort::EvenParity;
-    return QSerialPort::NoParity;
-}
-</code></pre>
-<blockquote>
-<p>DEMO：https://gitee.com/zyzp/QT-SerialPort</p>
-</blockquote>
-
-              </div>
-              <div class="post-footer">
-  <ul class="post-copyright">
-    <li class="post-copyright-author">
-      <strong>本文作者：</strong>
-      Memory的个人博客
-    </li>
-    <li class="post-copyright-link">
-      <strong>本文链接：</strong>
-      <a href="https://blog.memory6181.com/post/2019-06-19" title="QT-串口操作">https://blog.memory6181.com/post/2019-06-19</a>
-    </li>
-    <li class="post-copyright-license">
-      <strong>版权声明： </strong>
-      本博客所有文章除特别声明外,转载请注明出处！
-    </li>
-  </ul>
-  <div class="tags">
-    
-      <a href="https://blog.memory6181.com/tag/4eOic9FHK"># 技术</a>
-    
-  </div>
-  <div class="nav">
-    <div class="nav-prev">
-      
-        <i class="iconfont icon-angle_left"></i>
-        <a class="nav-pc-next" href="https://blog.memory6181.com/post/2019-07-08">STM32L073RZ -EEPROM 踩过的一些坑</a class="nav-pc-next">
-        <a class="nav-mobile-prev" href="https://blog.memory6181.com/post/2019-07-08">上一篇</a>
-      
-    </div>
-    <div class="nav-next">
-      
-        <a class="nav-pc-next" href="https://blog.memory6181.com/post/2019-06-15">Linux 安装CH340驱动</a>
-        <a class="nav-mobile-next" href="https://blog.memory6181.com/post/2019-06-15">下一篇</a>
-        <i class="iconfont icon-angle_right"></i>
-      
-    </div>
-  </div>
-</div>
-              
-            </div>
-          </div>
+          <!-- </div> -->
         </div>
       </div>
       <div class="footer-box">

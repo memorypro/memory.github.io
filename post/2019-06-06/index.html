@@ -3,7 +3,7 @@
       <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>Memory的个人博客</title>
-<link rel="shortcut icon" href="https://blog.memory6181.com//favicon.ico?v=1577751239376">
+<link rel="shortcut icon" href="https://blog.memory6181.com//favicon.ico?v=1577755847709">
 <link rel="stylesheet" href="https://blog.memory6181.com//styles/main.css">
 <meta name="description" content="温故而知新" />
 
@@ -18,58 +18,62 @@
     <div class="head-top-line"></div>
     <div class="header-box">
       <header class="header">
-  <div class="blog-header" id="header">
-    <div class="site-meta">
-      <div class="nav-toggle" id="nav_toggle">
-        <div class="toggle-box">
-          <div class="line line-top"></div>
-          <div class="line line-center"></div>
-          <div class="line line-bottom"></div>
+ 
+    <div class="blog-header" id="header">
+      <div class="section-layout-wrapper">
+      <div class="site-meta">
+        <div class="nav-toggle" id="nav_toggle">
+          <div class="toggle-box">
+            <div class="line line-top"></div>
+            <div class="line line-center"></div>
+            <div class="line line-bottom"></div>
+          </div>
         </div>
-      </div>
-      <div class="site-title">
-        <a href="/" class="brand">
-          <span>Memory的个人博客</span>
-        </a>
-      </div>
-      <p class="subtitle"></p>
-      <nav class="site-nav" id="site_nav">
-            
-              <li class="nav-item ">
-                <a href="/">
-                  <i class="iconfont icon-home"></i>首页
-                </a>
-              </li>
-            
-              <li class="nav-item ">
-                <a href="/archives">
-                  <i class="iconfont icon-home"></i>归档
-                </a>
-              </li>
-            
-              <li class="nav-item ">
-                <a href="/tags">
-                  <i class="iconfont icon-home"></i>标签
-                </a>
-              </li>
-            
-              <li class="nav-item ">
-                <a href="http://blog.memory6181.com//post/guan-yu-wo/">
-                  <i class="iconfont icon-home"></i>简历
-                </a>
-              </li>
-            
-              <li class="nav-item ">
-                <a href="http://memory6181.coding.me//post/about/">
-                  <i class="iconfont icon-home"></i>故事
-                </a>
-              </li>
-            
-      </nav>
-
-    </div>
+        <div class="site-title">
+          <a href="/" class="brand">
+            <span>Memory的个人博客</span>
+          </a>
+        </div>
+        <p class="subtitle"></p>
+        <nav class="site-nav" id="site_nav">
+              
+                <li class="nav-item ">
+                  <a href="/">
+                    <i class="iconfont icon-home"></i>首页
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a href="/archives">
+                    <i class="iconfont icon-home"></i>归档
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a href="/tags">
+                    <i class="iconfont icon-home"></i>标签
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a href="http://blog.memory6181.com//post/guan-yu-wo/">
+                    <i class="iconfont icon-home"></i>简历
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a href="http://memory6181.coding.me//post/about/">
+                    <i class="iconfont icon-home"></i>故事
+                  </a>
+                </li>
+              
+        </nav>
   
+      </div>
+    
+    </div>
   </div>
+ 
 </header>
 <script type="text/javascript"> 
  
@@ -89,7 +93,215 @@
     <div class="main-continer">
       <div class="section-layout">
         <div class="section-layout-wrapper">
+         
+          <!-- <div class="section-box"> -->
+            <div class="section post">
+              <div class="article-box">
+    <header class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://blog.memory6181.com/post/2019-06-06">
+      关于LCD的一些经验
+    </a>
+  </h1>
+  <div class="post-meta">
+    <span class="meta-item">
+      <i class="iconfont icon-calendar_empty"></i>
+      <span class="pc-show">发布于</span>
+      <span>2019-06-06</span>
+    </span>
+    
+      <span class="meta-item">
+        <span class="post-meta-divider">|</span>
+        <i class="iconfont icon-folder_open_alt"></i>
+        <span class="pc-show">分类于</span>
+        
           
+            <a href="https://blog.memory6181.com/tag/4eOic9FHK">
+              <span>技术</span>
+            </a>
+          
+        
+      </span>
+    
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="iconfont icon-time"></i>
+      <span>4分钟</span>
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="iconfont icon-keyboard"></i>
+      <span class="pc-show">731字数</span>
+    </span>
+  </div>
+</header>
+</div>
+              <div class="post-body next-md-body" id="post_body">
+                <h4 id="段码液晶驱动bl5507">段码液晶驱动BL5507</h4>
+<p>这是在上一家公司做产品的过程中遇到的问题，总共出现两次比较严重的bug<br>
+1、液晶运行一段时间之后出现了部分黑屏的显现，起初怪硬件工程师，后来联系了厂家才了解到这个芯片有一个休眠模式，不知道在什么情况的影响下进入了休眠模式，倒是模块不能输出波形，就有了这样的问题。解决方案是通过每次写入数据时都重新配置一次休眠寄存器，使模块推出休眠模式。<br>
+2、第二次是模块过一段时间就会出现不能入网，频点乱跳的情况，最后追查原因是因为但是从8530芯片移植过来的代码，没有修改IO导致出现了SX1278不能及时复位。</p>
+<h4 id="字符液晶12864">字符液晶12864</h4>
+<p>问题描述：<br>
+手触碰到模块的接口时，模块会出现乱码，放置一段时间也会出现乱码。<br>
+解决思路：起初认为是时许不严格导致的乱码，后来发现是由于PSB引脚没有接地。在手触碰之后模块进入了并口的时许，导致不能正确解析数据。</p>
+<h4 id="附一份12864驱动程序">附一份12864驱动程序</h4>
+<h5 id="发送一个字节">发送一个字节</h5>
+<pre><code class="language-cpp">void LCD_Send( uint8_t  type, uint8_t transdata )
+{
+    uint8_t firstbyte = 0xf8;
+    uint8_t temp;
+    uint8_t i, j = 3;
+    if( type )
+    {
+        firstbyte |= 0x02;
+    }
+    LCD_CS_PORT |= LCD_CS_PIN;
+    LCD_CLK_PORT &amp;= ~LCD_CLK_PIN;
+    while( j &gt; 0 )
+    {
+        if( j == 3 )
+        {
+            temp = firstbyte;
+        }
+        else if( j == 2 )
+        {
+            temp = transdata &amp; 0xf0;
+        }
+        else
+        {
+            temp = ( transdata &lt;&lt; 4 ) &amp; 0xf0;
+        }
+        for( i = 8; i &gt; 0; i-- )
+        {
+            if( temp &amp; 0x80 )
+            {
+                LCD_SDI_PORT |= LCD_SDI_PIN;
+            }
+            else
+            {
+                LCD_SDI_PORT &amp;= ~LCD_SDI_PIN;
+            }
+            LCD_CLK_PORT |= LCD_CLK_PIN;
+            temp &lt;&lt;= 1;
+            LCD_CLK_PORT &amp;= ~LCD_CLK_PIN;
+        }
+        //三个字节之间一定要有足够的延时，否则易出现时序问题
+        delay_Nus( 72 );
+    }
+    LCD_SDI_PORT &amp;= ~LCD_SDI_PIN;
+    LCD_CS_PORT &amp;= ~LCD_CS_PIN;
+}
+</code></pre>
+<h5 id="显示汉子">显示汉子</h5>
+<pre><code class="language-cpp">unsigned char addresses[] = {0x80, 0x90, 0x88, 0x98};
+void LCD12864_Display_Chars( unsigned char x, unsigned char y, unsigned char* dat, unsigned char length )
+{
+    LCD_Send( 0, 0x30 );
+    delay_Nus( 72 );
+    LCD_Send( 0, 0x02 ); /*DDRAM地址归位*/
+    delay_Nus( 72 );
+    LCD_Send( 0, addresses[y - 1] );
+    while( length-- )
+    {
+        LCD_Send( 1, *dat );
+        dat++;
+    }
+}
+</code></pre>
+<h5 id="液晶初始化">液晶初始化</h5>
+<pre><code class="language-cpp">void LCD_Init()
+{
+    // 将全部IO设置为输出
+    LCD_SDI_DIR |= LCD_SDI_PIN;
+    LCD_CLK_DIR |= LCD_CLK_PIN;
+    LCD_CS_DIR |= LCD_CS_PIN;
+    LCD_RST_DIR |= LCD_RST_PIN;
+    LCD_RST_PORT &amp;= ~LCD_RST_PIN;
+    delay_Nus( 100 );
+    LCD_RST_PORT |= LCD_RST_PIN;
+    delay_Nus( 100 );
+    LCD_BK_DIR |= LCD_BK_PIN;
+    LCD_BK_PORT |= LCD_BK_PIN;
+    LCD_POWER_DIR |= LCD_POWER_PIN;
+    LCD_POWER_PORT |= LCD_POWER_PIN;
+    delay_Nms( 100 ); //延时等待液晶完成复位
+    LCD_Send( 0, 0x30 ); /*功能设置:一次送8位数据,基本指令集*/
+    delay_Nus( 72 );
+    LCD_Send( 0, 0x02 ); /*DDRAM地址归位*/
+    delay_Nus( 72 );
+    LCD_Send( 0, 0x0c ); /*显示设定:开显示,不显示光标,不做当前显示位反白闪动*/
+    delay_Nus( 72 );
+    LCD_Send( 0, 0x01 ); /*清屏，将DDRAM的位址计数器调整为“00H”*/
+    delay_Nus( 72 );
+    LCD_Send( 0, 0x06 ); /*功能设置，点设定:显示字符/光标从左到右移位,DDRAM地址加1*/
+    delay_Nus( 72 );
+    LCD_MenuInit( 0 );
+}
+</code></pre>
+<h5 id="格式化变量">格式化变量</h5>
+<pre><code class="language-cpp">#include &lt;stdarg.h&gt;
+int LCD_StrFormat( char* src, char* fmt, ... )
+{
+    char buffer[64 + 1]; // CMD_BUFFER_LEN
+    uint8_t i = 0;
+    va_list arg_ptr;
+    va_start( arg_ptr, fmt );
+    //memset( buffer, 0, 17 );
+    vsnprintf( buffer, 64 + 1, fmt, arg_ptr );
+    //memcpy(src,buffer,);
+    while( i &lt; 64 &amp;&amp; buffer[i] )
+    {
+        src[i] = buffer[i++];
+        //HAL_UART_Transmit(&amp;UART1Handle, (uint8_t*)&amp;buffer[i++], 1, 1);
+        //while (USART1-&gt;SR&amp;(0x40) == 0);
+    }
+    va_end( arg_ptr );
+    return i;
+}
+</code></pre>
+
+              </div>
+              <div class="post-footer">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      Memory的个人博客
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://blog.memory6181.com/post/2019-06-06" title="关于LCD的一些经验">https://blog.memory6181.com/post/2019-06-06</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外,转载请注明出处！
+    </li>
+  </ul>
+  <div class="tags">
+    
+      <a href="https://blog.memory6181.com/tag/4eOic9FHK"># 技术</a>
+    
+  </div>
+  <div class="nav">
+    <div class="nav-prev">
+      
+        <i class="iconfont icon-angle_left"></i>
+        <a class="nav-pc-next" href="https://blog.memory6181.com/post/2019-06-15">Linux 安装CH340驱动</a class="nav-pc-next">
+        <a class="nav-mobile-prev" href="https://blog.memory6181.com/post/2019-06-15">上一篇</a>
+      
+    </div>
+    <div class="nav-next">
+      
+        <a class="nav-pc-next" href="https://blog.memory6181.com/post/guan_yu_LCD_de_yi_xie_jing_yan_zong_jie">关于LCD的一些经验</a>
+        <a class="nav-mobile-next" href="https://blog.memory6181.com/post/guan_yu_LCD_de_yi_xie_jing_yan_zong_jie">下一篇</a>
+        <i class="iconfont icon-angle_right"></i>
+      
+    </div>
+  </div>
+</div>
+              
+            </div>
+            
 <div class="sidebar">
     <div class="sidebar-wrapper" id="sidebar">
       
@@ -414,214 +626,7 @@ window.addEventListener('load', function() {
     }
   });
 </script>
-          <div class="section-box">
-            <div class="section post">
-              <div class="article-box">
-    <header class="post-header">
-  <h1 class="post-title">
-    <a class="post-title-link" href="https://blog.memory6181.com/post/2019-06-06">
-      关于LCD的一些经验
-    </a>
-  </h1>
-  <div class="post-meta">
-    <span class="meta-item">
-      <i class="iconfont icon-calendar_empty"></i>
-      <span class="pc-show">发布于</span>
-      <span>2019-06-06</span>
-    </span>
-    
-      <span class="meta-item">
-        <span class="post-meta-divider">|</span>
-        <i class="iconfont icon-folder_open_alt"></i>
-        <span class="pc-show">分类于</span>
-        
-          
-            <a href="https://blog.memory6181.com/tag/4eOic9FHK">
-              <span>技术</span>
-            </a>
-          
-        
-      </span>
-    
-    <span class="meta-item">
-      <span class="post-meta-divider">|</span>
-      <i class="iconfont icon-time"></i>
-      <span>4分钟</span>
-    </span>
-    <span class="meta-item">
-      <span class="post-meta-divider">|</span>
-      <i class="iconfont icon-keyboard"></i>
-      <span class="pc-show">731字数</span>
-    </span>
-  </div>
-</header>
-</div>
-              <div class="post-body next-md-body" id="post_body">
-                <h4 id="段码液晶驱动bl5507">段码液晶驱动BL5507</h4>
-<p>这是在上一家公司做产品的过程中遇到的问题，总共出现两次比较严重的bug<br>
-1、液晶运行一段时间之后出现了部分黑屏的显现，起初怪硬件工程师，后来联系了厂家才了解到这个芯片有一个休眠模式，不知道在什么情况的影响下进入了休眠模式，倒是模块不能输出波形，就有了这样的问题。解决方案是通过每次写入数据时都重新配置一次休眠寄存器，使模块推出休眠模式。<br>
-2、第二次是模块过一段时间就会出现不能入网，频点乱跳的情况，最后追查原因是因为但是从8530芯片移植过来的代码，没有修改IO导致出现了SX1278不能及时复位。</p>
-<h4 id="字符液晶12864">字符液晶12864</h4>
-<p>问题描述：<br>
-手触碰到模块的接口时，模块会出现乱码，放置一段时间也会出现乱码。<br>
-解决思路：起初认为是时许不严格导致的乱码，后来发现是由于PSB引脚没有接地。在手触碰之后模块进入了并口的时许，导致不能正确解析数据。</p>
-<h4 id="附一份12864驱动程序">附一份12864驱动程序</h4>
-<h5 id="发送一个字节">发送一个字节</h5>
-<pre><code class="language-cpp">void LCD_Send( uint8_t  type, uint8_t transdata )
-{
-    uint8_t firstbyte = 0xf8;
-    uint8_t temp;
-    uint8_t i, j = 3;
-    if( type )
-    {
-        firstbyte |= 0x02;
-    }
-    LCD_CS_PORT |= LCD_CS_PIN;
-    LCD_CLK_PORT &amp;= ~LCD_CLK_PIN;
-    while( j &gt; 0 )
-    {
-        if( j == 3 )
-        {
-            temp = firstbyte;
-        }
-        else if( j == 2 )
-        {
-            temp = transdata &amp; 0xf0;
-        }
-        else
-        {
-            temp = ( transdata &lt;&lt; 4 ) &amp; 0xf0;
-        }
-        for( i = 8; i &gt; 0; i-- )
-        {
-            if( temp &amp; 0x80 )
-            {
-                LCD_SDI_PORT |= LCD_SDI_PIN;
-            }
-            else
-            {
-                LCD_SDI_PORT &amp;= ~LCD_SDI_PIN;
-            }
-            LCD_CLK_PORT |= LCD_CLK_PIN;
-            temp &lt;&lt;= 1;
-            LCD_CLK_PORT &amp;= ~LCD_CLK_PIN;
-        }
-        //三个字节之间一定要有足够的延时，否则易出现时序问题
-        delay_Nus( 72 );
-    }
-    LCD_SDI_PORT &amp;= ~LCD_SDI_PIN;
-    LCD_CS_PORT &amp;= ~LCD_CS_PIN;
-}
-</code></pre>
-<h5 id="显示汉子">显示汉子</h5>
-<pre><code class="language-cpp">unsigned char addresses[] = {0x80, 0x90, 0x88, 0x98};
-void LCD12864_Display_Chars( unsigned char x, unsigned char y, unsigned char* dat, unsigned char length )
-{
-    LCD_Send( 0, 0x30 );
-    delay_Nus( 72 );
-    LCD_Send( 0, 0x02 ); /*DDRAM地址归位*/
-    delay_Nus( 72 );
-    LCD_Send( 0, addresses[y - 1] );
-    while( length-- )
-    {
-        LCD_Send( 1, *dat );
-        dat++;
-    }
-}
-</code></pre>
-<h5 id="液晶初始化">液晶初始化</h5>
-<pre><code class="language-cpp">void LCD_Init()
-{
-    // 将全部IO设置为输出
-    LCD_SDI_DIR |= LCD_SDI_PIN;
-    LCD_CLK_DIR |= LCD_CLK_PIN;
-    LCD_CS_DIR |= LCD_CS_PIN;
-    LCD_RST_DIR |= LCD_RST_PIN;
-    LCD_RST_PORT &amp;= ~LCD_RST_PIN;
-    delay_Nus( 100 );
-    LCD_RST_PORT |= LCD_RST_PIN;
-    delay_Nus( 100 );
-    LCD_BK_DIR |= LCD_BK_PIN;
-    LCD_BK_PORT |= LCD_BK_PIN;
-    LCD_POWER_DIR |= LCD_POWER_PIN;
-    LCD_POWER_PORT |= LCD_POWER_PIN;
-    delay_Nms( 100 ); //延时等待液晶完成复位
-    LCD_Send( 0, 0x30 ); /*功能设置:一次送8位数据,基本指令集*/
-    delay_Nus( 72 );
-    LCD_Send( 0, 0x02 ); /*DDRAM地址归位*/
-    delay_Nus( 72 );
-    LCD_Send( 0, 0x0c ); /*显示设定:开显示,不显示光标,不做当前显示位反白闪动*/
-    delay_Nus( 72 );
-    LCD_Send( 0, 0x01 ); /*清屏，将DDRAM的位址计数器调整为“00H”*/
-    delay_Nus( 72 );
-    LCD_Send( 0, 0x06 ); /*功能设置，点设定:显示字符/光标从左到右移位,DDRAM地址加1*/
-    delay_Nus( 72 );
-    LCD_MenuInit( 0 );
-}
-</code></pre>
-<h5 id="格式化变量">格式化变量</h5>
-<pre><code class="language-cpp">#include &lt;stdarg.h&gt;
-int LCD_StrFormat( char* src, char* fmt, ... )
-{
-    char buffer[64 + 1]; // CMD_BUFFER_LEN
-    uint8_t i = 0;
-    va_list arg_ptr;
-    va_start( arg_ptr, fmt );
-    //memset( buffer, 0, 17 );
-    vsnprintf( buffer, 64 + 1, fmt, arg_ptr );
-    //memcpy(src,buffer,);
-    while( i &lt; 64 &amp;&amp; buffer[i] )
-    {
-        src[i] = buffer[i++];
-        //HAL_UART_Transmit(&amp;UART1Handle, (uint8_t*)&amp;buffer[i++], 1, 1);
-        //while (USART1-&gt;SR&amp;(0x40) == 0);
-    }
-    va_end( arg_ptr );
-    return i;
-}
-</code></pre>
-
-              </div>
-              <div class="post-footer">
-  <ul class="post-copyright">
-    <li class="post-copyright-author">
-      <strong>本文作者：</strong>
-      Memory的个人博客
-    </li>
-    <li class="post-copyright-link">
-      <strong>本文链接：</strong>
-      <a href="https://blog.memory6181.com/post/2019-06-06" title="关于LCD的一些经验">https://blog.memory6181.com/post/2019-06-06</a>
-    </li>
-    <li class="post-copyright-license">
-      <strong>版权声明： </strong>
-      本博客所有文章除特别声明外,转载请注明出处！
-    </li>
-  </ul>
-  <div class="tags">
-    
-      <a href="https://blog.memory6181.com/tag/4eOic9FHK"># 技术</a>
-    
-  </div>
-  <div class="nav">
-    <div class="nav-prev">
-      
-        <i class="iconfont icon-angle_left"></i>
-        <a class="nav-pc-next" href="https://blog.memory6181.com/post/2019-06-15">Linux 安装CH340驱动</a class="nav-pc-next">
-        <a class="nav-mobile-prev" href="https://blog.memory6181.com/post/2019-06-15">上一篇</a>
-      
-    </div>
-    <div class="nav-next">
-      
-        <a class="nav-pc-next" href="https://blog.memory6181.com/post/guan_yu_LCD_de_yi_xie_jing_yan_zong_jie">关于LCD的一些经验</a>
-        <a class="nav-mobile-next" href="https://blog.memory6181.com/post/guan_yu_LCD_de_yi_xie_jing_yan_zong_jie">下一篇</a>
-        <i class="iconfont icon-angle_right"></i>
-      
-    </div>
-  </div>
-</div>
-              
-            </div>
-          </div>
+          <!-- </div> -->
         </div>
       </div>
       <div class="footer-box">

@@ -3,7 +3,7 @@
       <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>Memory的个人博客</title>
-<link rel="shortcut icon" href="https://blog.memory6181.com//favicon.ico?v=1577751239376">
+<link rel="shortcut icon" href="https://blog.memory6181.com//favicon.ico?v=1577755847709">
 <link rel="stylesheet" href="https://blog.memory6181.com//styles/main.css">
 <meta name="description" content="温故而知新" />
 
@@ -18,58 +18,62 @@
     <div class="head-top-line"></div>
     <div class="header-box">
       <header class="header">
-  <div class="blog-header" id="header">
-    <div class="site-meta">
-      <div class="nav-toggle" id="nav_toggle">
-        <div class="toggle-box">
-          <div class="line line-top"></div>
-          <div class="line line-center"></div>
-          <div class="line line-bottom"></div>
+ 
+    <div class="blog-header" id="header">
+      <div class="section-layout-wrapper">
+      <div class="site-meta">
+        <div class="nav-toggle" id="nav_toggle">
+          <div class="toggle-box">
+            <div class="line line-top"></div>
+            <div class="line line-center"></div>
+            <div class="line line-bottom"></div>
+          </div>
         </div>
-      </div>
-      <div class="site-title">
-        <a href="/" class="brand">
-          <span>Memory的个人博客</span>
-        </a>
-      </div>
-      <p class="subtitle"></p>
-      <nav class="site-nav" id="site_nav">
-            
-              <li class="nav-item ">
-                <a href="/">
-                  <i class="iconfont icon-home"></i>首页
-                </a>
-              </li>
-            
-              <li class="nav-item ">
-                <a href="/archives">
-                  <i class="iconfont icon-home"></i>归档
-                </a>
-              </li>
-            
-              <li class="nav-item ">
-                <a href="/tags">
-                  <i class="iconfont icon-home"></i>标签
-                </a>
-              </li>
-            
-              <li class="nav-item ">
-                <a href="http://blog.memory6181.com//post/guan-yu-wo/">
-                  <i class="iconfont icon-home"></i>简历
-                </a>
-              </li>
-            
-              <li class="nav-item ">
-                <a href="http://memory6181.coding.me//post/about/">
-                  <i class="iconfont icon-home"></i>故事
-                </a>
-              </li>
-            
-      </nav>
-
-    </div>
+        <div class="site-title">
+          <a href="/" class="brand">
+            <span>Memory的个人博客</span>
+          </a>
+        </div>
+        <p class="subtitle"></p>
+        <nav class="site-nav" id="site_nav">
+              
+                <li class="nav-item ">
+                  <a href="/">
+                    <i class="iconfont icon-home"></i>首页
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a href="/archives">
+                    <i class="iconfont icon-home"></i>归档
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a href="/tags">
+                    <i class="iconfont icon-home"></i>标签
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a href="http://blog.memory6181.com//post/guan-yu-wo/">
+                    <i class="iconfont icon-home"></i>简历
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a href="http://memory6181.coding.me//post/about/">
+                    <i class="iconfont icon-home"></i>故事
+                  </a>
+                </li>
+              
+        </nav>
   
+      </div>
+    
+    </div>
   </div>
+ 
 </header>
 <script type="text/javascript"> 
  
@@ -89,7 +93,136 @@
     <div class="main-continer">
       <div class="section-layout">
         <div class="section-layout-wrapper">
+         
+          <!-- <div class="section-box"> -->
+            <div class="section post">
+              <div class="article-box">
+    <header class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://blog.memory6181.com/post/2018-08-12">
+      Pi 实现VLC网络视频监控
+    </a>
+  </h1>
+  <div class="post-meta">
+    <span class="meta-item">
+      <i class="iconfont icon-calendar_empty"></i>
+      <span class="pc-show">发布于</span>
+      <span>2018-08-12</span>
+    </span>
+    
+      <span class="meta-item">
+        <span class="post-meta-divider">|</span>
+        <i class="iconfont icon-folder_open_alt"></i>
+        <span class="pc-show">分类于</span>
+        
           
+            <a href="https://blog.memory6181.com/tag/4eOic9FHK">
+              <span>技术</span>
+            </a>
+          
+        
+      </span>
+    
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="iconfont icon-time"></i>
+      <span>2分钟</span>
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="iconfont icon-keyboard"></i>
+      <span class="pc-show">273字数</span>
+    </span>
+  </div>
+</header>
+</div>
+              <div class="post-body next-md-body" id="post_body">
+                <h5 id="安装摄像头">安装摄像头</h5>
+<p>将Pi的原装摄像头安装在pi上面</p>
+<h5 id="ssh连接pi">ssh连接pi</h5>
+<p>通过xshell或者putty等工具连接ssh</p>
+<hr>
+<h5 id="安装vlc">安装VLC</h5>
+<pre><code class="language-shell">$ sudo apt-get update    
+$ sudo apt-get install vlc    
+</code></pre>
+<hr>
+<h5 id="打开摄像头驱动">打开摄像头驱动</h5>
+<p><code>sudo raspi-config</code></p>
+<p>选择</p>
+<pre><code>5 Interfacing Options  Configure connections to peripherals
+</code></pre>
+<p>Enter进入之后</p>
+<pre><code> P1 Camera      Enable/Disable connection to the Raspberry Pi Camera        
+</code></pre>
+<p>Enter -&gt; Enable</p>
+<p>使用下面的指令查看驱动是否打开</p>
+<pre><code>ls -al /dev/ | grep video
+</code></pre>
+<p>如果显示如下就没有问题了</p>
+<pre><code class="language-shell">pi@raspberrypi:~ $ ls -al /dev/ | grep video   
+crw-rw----  1 root video    29,   0 8月  11 20:17 fb0
+crw-rw----  1 root video   245,   0 8月  11 20:17 vchiq
+crw-rw----  1 root video   249,   0 8月  11 20:17 vcio
+crw-rw----  1 root video   246,   0 8月  11 20:17 vcsm
+
+</code></pre>
+<p>可以用下面的命令拍照</p>
+<pre><code>raspistill -o image.jpg
+</code></pre>
+<hr>
+<h5 id="打开vlc视频监控">打开VLC视频监控</h5>
+<pre><code>sudo raspivid -o - -t 0 -w 640 -h 360 -fps 25|cvlc -vvv stream:///dev/stdin --sout '#standard{access=http,mux=ts,dst=:8080}' :demux=h264
+</code></pre>
+<hr>
+<h5 id="在局域网内部的计算机上面安装vlc软件">在局域网内部的计算机上面安装VLC软件</h5>
+<p>媒体-&gt;打开网络流-&gt;输入下面地址，点击播放就可以了。</p>
+<blockquote>
+<p>http://127.0.0.1:8090</p>
+</blockquote>
+<p>注意IP地址是Pi的地址。</p>
+
+              </div>
+              <div class="post-footer">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      Memory的个人博客
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://blog.memory6181.com/post/2018-08-12" title="Pi 实现VLC网络视频监控">https://blog.memory6181.com/post/2018-08-12</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外,转载请注明出处！
+    </li>
+  </ul>
+  <div class="tags">
+    
+      <a href="https://blog.memory6181.com/tag/4eOic9FHK"># 技术</a>
+    
+  </div>
+  <div class="nav">
+    <div class="nav-prev">
+      
+        <i class="iconfont icon-angle_left"></i>
+        <a class="nav-pc-next" href="https://blog.memory6181.com/post/2018-08-17">Ubuntu 安装java 1.8 教程</a class="nav-pc-next">
+        <a class="nav-mobile-prev" href="https://blog.memory6181.com/post/2018-08-17">上一篇</a>
+      
+    </div>
+    <div class="nav-next">
+      
+        <a class="nav-pc-next" href="https://blog.memory6181.com/post/frp_da_jian_nei_wang_chuan_tou">frp 搭建内网穿透</a>
+        <a class="nav-mobile-next" href="https://blog.memory6181.com/post/frp_da_jian_nei_wang_chuan_tou">下一篇</a>
+        <i class="iconfont icon-angle_right"></i>
+      
+    </div>
+  </div>
+</div>
+              
+            </div>
+            
 <div class="sidebar">
     <div class="sidebar-wrapper" id="sidebar">
       
@@ -414,135 +547,7 @@ window.addEventListener('load', function() {
     }
   });
 </script>
-          <div class="section-box">
-            <div class="section post">
-              <div class="article-box">
-    <header class="post-header">
-  <h1 class="post-title">
-    <a class="post-title-link" href="https://blog.memory6181.com/post/2018-08-12">
-      Pi 实现VLC网络视频监控
-    </a>
-  </h1>
-  <div class="post-meta">
-    <span class="meta-item">
-      <i class="iconfont icon-calendar_empty"></i>
-      <span class="pc-show">发布于</span>
-      <span>2018-08-12</span>
-    </span>
-    
-      <span class="meta-item">
-        <span class="post-meta-divider">|</span>
-        <i class="iconfont icon-folder_open_alt"></i>
-        <span class="pc-show">分类于</span>
-        
-          
-            <a href="https://blog.memory6181.com/tag/4eOic9FHK">
-              <span>技术</span>
-            </a>
-          
-        
-      </span>
-    
-    <span class="meta-item">
-      <span class="post-meta-divider">|</span>
-      <i class="iconfont icon-time"></i>
-      <span>2分钟</span>
-    </span>
-    <span class="meta-item">
-      <span class="post-meta-divider">|</span>
-      <i class="iconfont icon-keyboard"></i>
-      <span class="pc-show">273字数</span>
-    </span>
-  </div>
-</header>
-</div>
-              <div class="post-body next-md-body" id="post_body">
-                <h5 id="安装摄像头">安装摄像头</h5>
-<p>将Pi的原装摄像头安装在pi上面</p>
-<h5 id="ssh连接pi">ssh连接pi</h5>
-<p>通过xshell或者putty等工具连接ssh</p>
-<hr>
-<h5 id="安装vlc">安装VLC</h5>
-<pre><code class="language-shell">$ sudo apt-get update    
-$ sudo apt-get install vlc    
-</code></pre>
-<hr>
-<h5 id="打开摄像头驱动">打开摄像头驱动</h5>
-<p><code>sudo raspi-config</code></p>
-<p>选择</p>
-<pre><code>5 Interfacing Options  Configure connections to peripherals
-</code></pre>
-<p>Enter进入之后</p>
-<pre><code> P1 Camera      Enable/Disable connection to the Raspberry Pi Camera        
-</code></pre>
-<p>Enter -&gt; Enable</p>
-<p>使用下面的指令查看驱动是否打开</p>
-<pre><code>ls -al /dev/ | grep video
-</code></pre>
-<p>如果显示如下就没有问题了</p>
-<pre><code class="language-shell">pi@raspberrypi:~ $ ls -al /dev/ | grep video   
-crw-rw----  1 root video    29,   0 8月  11 20:17 fb0
-crw-rw----  1 root video   245,   0 8月  11 20:17 vchiq
-crw-rw----  1 root video   249,   0 8月  11 20:17 vcio
-crw-rw----  1 root video   246,   0 8月  11 20:17 vcsm
-
-</code></pre>
-<p>可以用下面的命令拍照</p>
-<pre><code>raspistill -o image.jpg
-</code></pre>
-<hr>
-<h5 id="打开vlc视频监控">打开VLC视频监控</h5>
-<pre><code>sudo raspivid -o - -t 0 -w 640 -h 360 -fps 25|cvlc -vvv stream:///dev/stdin --sout '#standard{access=http,mux=ts,dst=:8080}' :demux=h264
-</code></pre>
-<hr>
-<h5 id="在局域网内部的计算机上面安装vlc软件">在局域网内部的计算机上面安装VLC软件</h5>
-<p>媒体-&gt;打开网络流-&gt;输入下面地址，点击播放就可以了。</p>
-<blockquote>
-<p>http://127.0.0.1:8090</p>
-</blockquote>
-<p>注意IP地址是Pi的地址。</p>
-
-              </div>
-              <div class="post-footer">
-  <ul class="post-copyright">
-    <li class="post-copyright-author">
-      <strong>本文作者：</strong>
-      Memory的个人博客
-    </li>
-    <li class="post-copyright-link">
-      <strong>本文链接：</strong>
-      <a href="https://blog.memory6181.com/post/2018-08-12" title="Pi 实现VLC网络视频监控">https://blog.memory6181.com/post/2018-08-12</a>
-    </li>
-    <li class="post-copyright-license">
-      <strong>版权声明： </strong>
-      本博客所有文章除特别声明外,转载请注明出处！
-    </li>
-  </ul>
-  <div class="tags">
-    
-      <a href="https://blog.memory6181.com/tag/4eOic9FHK"># 技术</a>
-    
-  </div>
-  <div class="nav">
-    <div class="nav-prev">
-      
-        <i class="iconfont icon-angle_left"></i>
-        <a class="nav-pc-next" href="https://blog.memory6181.com/post/2018-08-17">Ubuntu 安装java 1.8 教程</a class="nav-pc-next">
-        <a class="nav-mobile-prev" href="https://blog.memory6181.com/post/2018-08-17">上一篇</a>
-      
-    </div>
-    <div class="nav-next">
-      
-        <a class="nav-pc-next" href="https://blog.memory6181.com/post/frp_da_jian_nei_wang_chuan_tou">frp 搭建内网穿透</a>
-        <a class="nav-mobile-next" href="https://blog.memory6181.com/post/frp_da_jian_nei_wang_chuan_tou">下一篇</a>
-        <i class="iconfont icon-angle_right"></i>
-      
-    </div>
-  </div>
-</div>
-              
-            </div>
-          </div>
+          <!-- </div> -->
         </div>
       </div>
       <div class="footer-box">
