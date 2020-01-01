@@ -192,7 +192,7 @@ section_1 {
   background: #fff;
   box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.08);
   border-radius: 5px;
-  padding: 20px 10px;
+  padding: 20px 20px;
   box-sizing: border-box;
   margin-bottom: 40px;
 }
@@ -672,6 +672,7 @@ section_1 {
   font-size: 16px;
   height: 20px;
   line-height: 20px;
+  margin-top: 20px;
 }
 .side-item-stat .site-item-stat-name {
   font-size: 13px;
@@ -695,12 +696,14 @@ section_1 {
 }
 .site-author-image {
   display: block;
-  margin: 0 auto;
   padding: 2px;
-  max-width: 120px;
+  margin-top: 15px;
+  margin-left: 0px;
+  max-width: 60px;
   height: auto;
   background-color: #FFF;
   border: 1px solid #eee;
+  border-radius: 30px;
 }
 .site-author-name {
   margin: 0;
@@ -710,11 +713,10 @@ section_1 {
   border-bottom: 1px solid #ddd;
 }
 .site-description {
-  margin-top: 0;
-  text-align: center;
+  margin: 5px auto 5px 5px;
+  text-align: left;
   font-size: 13px;
   color: #999;
-  margin: 0 0 25px 0;
 }
 .sidebar-item-social {
   margin-top: 20px;
@@ -736,6 +738,11 @@ section_1 {
 .social-item a:hover {
   border-radius: 4px;
   background: #eee;
+}
+.site-meta-tags {
+  flex: 1;
+  text-align: left;
+  border-bottom: dashed 1px rgba(34, 34, 34, 0.39);
 }
 @media (max-width: 961px) and (min-width: 768px) {
   .sidebar {
