@@ -190,8 +190,8 @@ section_1 {
 .sidebar-wrapper {
   color: #555;
   background: #fff;
-  box-shadow: initial;
-  border-radius: initial;
+  box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
   padding: 20px 10px;
   box-sizing: border-box;
   margin-bottom: 40px;
@@ -262,7 +262,7 @@ section_1 {
   width: 100%;
   height: 90px;
   background: #fff;
-  box-shadow: initial;
+  box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.08);
   border-radius: initial;
   z-index: 9999;
 }
@@ -450,11 +450,9 @@ section_1 {
 .section {
   width: 940px;
   min-height: 940px;
-  box-shadow: initial;
   border-radius: initial;
-  padding: 0px 40px 40px 40px;
+  padding: 0px 0px 0px 0px;
   box-sizing: border-box;
-  background: #fff;
   margin-left: 20px;
   margin-top: 110px;
 }
@@ -462,7 +460,8 @@ section_1 {
   box-sizing: border-box;
   width: auto;
   min-height: 120px;
-  box-shadow: initial;
+  box-shadow: 4px;
+  box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.08);
   background: #fff;
   overflow: hidden;
   border-radius: 2px;
@@ -471,7 +470,7 @@ section_1 {
   border-color: red;
 }
 .posts-expand {
-  padding-top: 40px;
+  padding-top: 0px;
 }
 @media (max-width: 961px) and (min-width: 768px) {
   .section {
@@ -705,9 +704,10 @@ section_1 {
 }
 .site-author-name {
   margin: 0;
-  text-align: center;
+  text-align: left;
   color: #222;
   font-weight: 600;
+  border-bottom: 1px solid #ddd;
 }
 .site-description {
   margin-top: 0;
