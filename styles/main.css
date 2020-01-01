@@ -116,6 +116,7 @@ h6 {
   font-family: 'Roboto Slab', 'Monda', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 body {
+  cursor: url(https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@2.1.6/images/mouse.cur), auto;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -124,7 +125,7 @@ body {
   font-size: 14px;
   line-height: 2;
   color: #555;
-  background: #f4f6f8;
+  background: #cfcfd1;
   width: 100%;
   overflow-x: hidden;
   background-image: url("../images/back.jpg");
@@ -260,9 +261,9 @@ section_1 {
   overflow: hidden;
   padding: 0;
   width: 100%;
-  height: 90px;
-  background: #fff;
-  box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.08);
+  height: 80px;
+  background: rgba(255, 255, 255, 0.507);
+  box-shadow: 10px 10px 10px 10px rgba(255, 255, 255, 0.48);
   border-radius: initial;
   z-index: 9999;
 }
@@ -465,6 +466,7 @@ section_1 {
   border-radius: initial;
   padding: 0px 0px 0px 0px;
   box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.507);
   margin-left: 20px;
   margin-top: 110px;
 }
@@ -472,11 +474,11 @@ section_1 {
   box-sizing: border-box;
   width: auto;
   min-height: 120px;
-  box-shadow: 4px;
-  box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 5px 0px rgba(250, 249, 249, 0.979);
   background: #fff;
+  color: #080808;
   overflow: hidden;
-  border-radius: 2px;
+  border-radius: 4px;
   padding: 0px 60px 10px 60px;
   margin: 0px 0px 10px 0px;
   border-color: red;
@@ -604,8 +606,6 @@ section_1 {
   padding: 0 20px;
   font-size: 14px;
   color: #fff;
-  background: #222;
-  border: 2px solid #555 !important;
   text-decoration: none;
   border-radius: 0;
   transition-property: background-color;
@@ -809,7 +809,7 @@ section_1 {
 }
 .post-meta {
   margin: 3px 0 20px 0;
-  color: #999;
+  color: black;
   font-family: 'Monda', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 12px;
   text-align: left;
