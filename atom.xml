@@ -2,14 +2,14 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.memory6181.com/</id>
     <title>Memory的个人博客</title>
-    <updated>2019-12-31T06:02:28.670Z</updated>
+    <updated>2020-01-01T00:41:00.027Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.memory6181.com/"/>
     <link rel="self" href="https://blog.memory6181.com/atom.xml"/>
     <subtitle>温故而知新</subtitle>
     <logo>https://blog.memory6181.com/images/avatar.png</logo>
     <icon>https://blog.memory6181.com/favicon.ico</icon>
-    <rights>All rights reserved 2019, Memory的个人博客</rights>
+    <rights>All rights reserved 2020, Memory的个人博客</rights>
     <entry>
         <title type="html"><![CDATA[GIT 提交代码到远程仓库]]></title>
         <id>https://blog.memory6181.com/post/git-ti-jiao-dai-ma-dao-yuan-cheng-cang-ku</id>

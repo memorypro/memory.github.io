@@ -124,7 +124,7 @@ body {
   font-size: 14px;
   line-height: 2;
   color: #555;
-  background: #f5f7f9;
+  background: #f4f6f8;
   width: 100%;
   overflow-x: hidden;
   background-image: url("../images/back.jpg");
@@ -194,7 +194,7 @@ section_1 {
   border-radius: initial;
   padding: 20px 10px;
   box-sizing: border-box;
-  min-height: 992px;
+  margin-bottom: 40px;
 }
 .footer-box {
   position: relative;
@@ -260,6 +260,7 @@ section_1 {
   overflow: hidden;
   padding: 0;
   width: 100%;
+  height: 90px;
   background: #fff;
   box-shadow: initial;
   border-radius: initial;
@@ -279,7 +280,6 @@ section_1 {
   color: #fff;
   display: flex;
   text-align: left;
-  margin: 20px 0px;
 }
 .site-title {
   display: inline-block;
@@ -288,6 +288,7 @@ section_1 {
   font-size: 24px;
   font-weight: normal;
   font-family: 'Rosario', 'Monda', "PingFang SC", "Microsoft YaHei", sans-serif;
+  margin-top: 20px;
 }
 .site-title a:hover {
   color: #000;
@@ -295,11 +296,10 @@ section_1 {
 .brand {
   display: inline-block;
   padding: 0 20px;
-  color: #555;
-  background: #fff;
+  color: #2c2b2b;
   border-bottom: none;
   position: relative;
-  top: -10px;
+  top: 10px;
   opacity: 0;
 }
 .subtitle {
@@ -319,37 +319,37 @@ section_1 {
 }
 .site-nav {
   display: flex;
-  margin-left: 40px;
-  transition: all 0.3s linear;
+  float: left;
+  margin-left: 20px;
+  overflow: hidden;
 }
 .nav-item {
   opacity: 0;
-  font-size: medium;
+  height: 90px;
 }
 .nav-item-active a:after {
   content: " ";
   position: absolute;
   top: 50%;
-  margin-top: -3px;
   right: 15px;
   width: 6px;
-  height: 6px;
   border-radius: 50%;
-  background-color: #bbb;
+  background: #f9f9f9;
   color: rgba(0, 0, 0, 0.98);
 }
 .nav-item a:hover {
   color: #222;
 }
 .nav-item a {
-  display: block;
-  font-size: 13px;
+  font-size: 18px;
+  line-height: inherit;
   position: relative;
   box-sizing: border-box;
-  padding: 5px 20px;
-  text-align: left;
-  line-height: inherit;
+  text-align: center;
   border: none;
+  height: 90px;
+  padding: 0 20px;
+  top: 20px;
 }
 .nav-item-active {
   background: #f9f9f9;
@@ -468,6 +468,7 @@ section_1 {
   border-radius: 2px;
   padding: 0px 60px 10px 60px;
   margin: 0px 0px 10px 0px;
+  border-color: red;
 }
 .posts-expand {
   padding-top: 40px;
