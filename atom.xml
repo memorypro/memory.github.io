@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.memory6181.com/</id>
     <title>Memory的个人博客</title>
-    <updated>2020-01-01T05:01:09.291Z</updated>
+    <updated>2020-01-01T05:20:04.192Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.memory6181.com/"/>
     <link rel="self" href="https://blog.memory6181.com/atom.xml"/>
-    <subtitle>我是一只特立独行的猪🐖</subtitle>
+    <subtitle>我是一只特立独行的老鼠🐀</subtitle>
     <logo>https://blog.memory6181.com/images/avatar.png</logo>
     <icon>https://blog.memory6181.com/favicon.ico</icon>
     <rights>All rights reserved 2020, Memory的个人博客</rights>
