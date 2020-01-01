@@ -3,9 +3,13 @@
       <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>Memory的个人博客</title>
-<link rel="shortcut icon" href="https://blog.memory6181.com//favicon.ico?v=1577845549037">
+<link rel="shortcut icon" href="https://blog.memory6181.com//favicon.ico?v=1577854096515">
+<script src="../../prism.js" ></script>
+<link href="../../prism.css" rel="stylesheet" />
+
 <link rel="stylesheet" href="https://blog.memory6181.com//styles/main.css">
 <meta name="description" content="我是一只特立独行的猪🐖" />
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 
 <link rel="stylesheet" href="/media/fonts/iconfont.css">
 <link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
@@ -141,8 +145,11 @@
     </span>
   </div>
 </header>
-    <!-- <div class="section-items">
-      
+    <div class="post-connect">
+      C# 一些代码小结--UI操作
+使用控件名调用控件
+object obj = this.GetType().GetField(&quot;控件名&quot;,
+                        System.Reflectio...
       
       <div class="post-button text-center">
         <a class="btn" href="https://blog.memory6181.com/post/2019-03-25-1" rel="contents">
@@ -150,8 +157,8 @@
         </a>
       </div>
       
-    </div> -->
-    <!-- <footer class="post-footer">
+    </div> 
+     <!-- <footer class="post-footer">
       <div class="post-eof"></div>
     </footer> -->
   </section>
@@ -195,8 +202,13 @@
     </span>
   </div>
 </header>
-    <!-- <div class="section-items">
-      
+    <div class="post-connect">
+      C# 一些代码小结--使用文件记录日志
+public class FaceLog
+    {
+        public static void AppendInfoLog(string errMsg)
+        {
+       ...
       
       <div class="post-button text-center">
         <a class="btn" href="https://blog.memory6181.com/post/2019-03-25-3" rel="contents">
@@ -204,8 +216,8 @@
         </a>
       </div>
       
-    </div> -->
-    <!-- <footer class="post-footer">
+    </div> 
+     <!-- <footer class="post-footer">
       <div class="post-eof"></div>
     </footer> -->
   </section>
@@ -249,8 +261,14 @@
     </span>
   </div>
 </header>
-    <!-- <div class="section-items">
-      
+    <div class="post-connect">
+      串口解析显示中文
+private String SerialPortReadStr()
+{
+    try
+    {
+        String str = null;
+        int n = serialPort1.Bytes...
       
       <div class="post-button text-center">
         <a class="btn" href="https://blog.memory6181.com/post/2019-03-25-2" rel="contents">
@@ -258,8 +276,8 @@
         </a>
       </div>
       
-    </div> -->
-    <!-- <footer class="post-footer">
+    </div> 
+     <!-- <footer class="post-footer">
       <div class="post-eof"></div>
     </footer> -->
   </section>
@@ -303,8 +321,10 @@
     </span>
   </div>
 </header>
-    <!-- <div class="section-items">
-      
+    <div class="post-connect">
+       if (dataGridView1.Rows.Count == 0)
+ {
+     MessageBox.Show(&quot;No data available!&quot;, &quot;Prompt&quot;, MessageB...
       
       <div class="post-button text-center">
         <a class="btn" href="https://blog.memory6181.com/post/2019-03-25-4" rel="contents">
@@ -312,8 +332,8 @@
         </a>
       </div>
       
-    </div> -->
-    <!-- <footer class="post-footer">
+    </div> 
+     <!-- <footer class="post-footer">
       <div class="post-eof"></div>
     </footer> -->
   </section>
@@ -357,8 +377,11 @@
     </span>
   </div>
 </header>
-    <!-- <div class="section-items">
+    <div class="post-connect">
       
+目的
+
+不管是Keil还是IAR对代码补全，高亮等编辑功能支持的不是很好，虽然现在的Keil 5.25对界面的支持好了很多，但是很多人还是青睐于第三方的编辑器，命令行的编译方式可以让我们在使用第三方编辑器编辑的时候进行代码编译和下载，通常...
       
       <div class="post-button text-center">
         <a class="btn" href="https://blog.memory6181.com/post/2018-08-30" rel="contents">
@@ -366,8 +389,8 @@
         </a>
       </div>
       
-    </div> -->
-    <!-- <footer class="post-footer">
+    </div> 
+     <!-- <footer class="post-footer">
       <div class="post-eof"></div>
     </footer> -->
   </section>
@@ -411,8 +434,8 @@
     </span>
   </div>
 </header>
-    <!-- <div class="section-items">
-      
+    <div class="post-connect">
+      Pugo博客已经搭建了好几个月了吧，给我感受到非常方便的就是，我换了好多VPS，迁移显得非常的方便，但是也有不足的地方，比如发布一篇新的博客，我每次都需要重新进入后台进行新的Post，还需要重新build我的博客，这样才能将博客发布出去，和...
       
       <div class="post-button text-center">
         <a class="btn" href="https://blog.memory6181.com/post/2018-08-25" rel="contents">
@@ -420,8 +443,8 @@
         </a>
       </div>
       
-    </div> -->
-    <!-- <footer class="post-footer">
+    </div> 
+     <!-- <footer class="post-footer">
       <div class="post-eof"></div>
     </footer> -->
   </section>
@@ -465,8 +488,12 @@
     </span>
   </div>
 </header>
-    <!-- <div class="section-items">
-      
+    <div class="post-connect">
+      1、下载java 1.8
+地址：
+​	http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+注意：
+​	Ubuntu :.ta...
       
       <div class="post-button text-center">
         <a class="btn" href="https://blog.memory6181.com/post/2018-08-17" rel="contents">
@@ -474,8 +501,8 @@
         </a>
       </div>
       
-    </div> -->
-    <!-- <footer class="post-footer">
+    </div> 
+     <!-- <footer class="post-footer">
       <div class="post-eof"></div>
     </footer> -->
   </section>

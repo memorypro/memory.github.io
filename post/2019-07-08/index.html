@@ -1,11 +1,18 @@
 <html>
-  <head>
-      <meta charset="UTF-8"/>
+
+<head>
+	<script src="../../prism.js"></script>
+	<link href="../../prism.css" rel="stylesheet" />
+	<meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>Memory的个人博客</title>
-<link rel="shortcut icon" href="https://blog.memory6181.com//favicon.ico?v=1577845549037">
+<link rel="shortcut icon" href="https://blog.memory6181.com//favicon.ico?v=1577854096515">
+<script src="../../prism.js" ></script>
+<link href="../../prism.css" rel="stylesheet" />
+
 <link rel="stylesheet" href="https://blog.memory6181.com//styles/main.css">
 <meta name="description" content="我是一只特立独行的猪🐖" />
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 
 <link rel="stylesheet" href="/media/fonts/iconfont.css">
 <link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
@@ -13,11 +20,13 @@
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script>
-  </head>
-  <body>
-    <div class="head-top-line"></div>
-    <div class="header-box">
-      <header class="header">
+
+</head>
+
+<body>
+	<div class="head-top-line"></div>
+	<div class="header-box">
+		<header class="header">
  
     <div class="blog-header" id="header">
       <div class="section-layout-wrapper">
@@ -94,15 +103,15 @@
 
   navToggle.addEventListener('click',navClick);  
 </script>
-    </div>
-    <div class="main-continer">
-      <div class="section-layout">
-        <div class="section-layout-wrapper">
-         
-          <!-- <div class="section-box"> -->
-            <div class="section post">
-              <section class="section-items">
-                <div class="article-box">
+	</div>
+	<div class="main-continer">
+		<div class="section-layout">
+			<div class="section-layout-wrapper">
+
+				<!-- <div class="section-box"> -->
+				<div class="section post">
+					<section class="section-items">
+						<div class="article-box">
     <header class="post-header">
   <h1 class="post-title">
     <a class="post-title-link" href="https://blog.memory6181.com/post/2019-07-08">
@@ -142,8 +151,8 @@
   </div>
 </header>
 </div>
-              <div class="post-body next-md-body" id="post_body">
-                <h4 id="代码">代码</h4>
+						<div class="post-body" id="post_body">
+							<h4 id="代码">代码</h4>
 <pre><code class="language-cpp">uint16_t bsp_eeprom_write (uint32_t WriteAddr, uint8_t *pBuffer, uint16_t NumToWrite)
 {
 	uint16_t t,err = 0;
@@ -197,8 +206,8 @@ void bsp_eeprom_read (uint16_t ReadAddr, uint8_t *pBuffer, uint16_t NumToRead)
 <p>坑：上面解锁，下面加锁<br>
 正常的操作流程是解锁，写，加锁，流程一定不能错，否则就写不进去，或者死机，我写不进去，查了好久，最后发现上面解锁了，下面也写了一句解锁。</p>
 
-              </div>
-              <div class="post-footer">
+						</div>
+						<div class="post-footer">
   <ul class="post-copyright">
     <li class="post-copyright-author">
       <strong>本文作者：</strong>
@@ -235,11 +244,12 @@ void bsp_eeprom_read (uint16_t ReadAddr, uint8_t *pBuffer, uint16_t NumToRead)
     </div>
   </div>
 </div>
-              
-              </section>
-             
-            </div>
-            <div class="sidebar">
+						
+						<div class="comment"></div>
+					</section>
+
+				</div>
+				<div class="sidebar">
     <div class="sidebar-wrapper">
   <div class="sidebar-item">
     <p class="site-author-name">关于博主</p>
@@ -342,7 +352,7 @@ void bsp_eeprom_read (uint16_t ReadAddr, uint8_t *pBuffer, uint16_t NumToRead)
 </div>
 
 </div>
-            <!-- 
+				<!-- 
 <div class="sidebar">
     <div class="sidebar-wrapper" id="sidebar">
       
@@ -708,10 +718,11 @@ window.addEventListener('load', function() {
     }
   });
 </script> -->
-          <!-- </div> -->
-        </div>
-      </div>
-      <div class="footer-box">
+				<!-- </div> -->
+			</div>
+
+		</div>
+		<div class="footer-box">
   <footer class="footer">
     <div class="copyright">
       © 2019-2020 <i class="iconfont icon-heart"></i> HsxyHao
@@ -772,7 +783,33 @@ window.addEventListener('load', function() {
   // 代码高亮
   hljs.initHighlightingOnLoad();
 </script>
-    </div>
-  </body>
-  <script src="/media/js/motion.js"></script>
+
+	</div>
+	<!--载入js，在</body>之前插入即可-->
+	<!--Leancloud 操作库:-->
+	<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+	<!--Valine 的核心代码库-->
+	<script src="/media/scripts/Valine.min.js"></script>
+
+	<script>
+		
+		var uid = 'GpH0RkcKw0qkhgH6ug4o5FPe-gzGzoHsz' 
+		var ukey = '' 
+		new Valine({
+			// AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
+			av: AV,
+			el: '.comment',
+			lang: 'zh-cn',//设置评论语言
+			emoticon_url: 'https://cloud.panjunwen.com/alu',
+			emoticon_list: ["狂汗.png", "不说话.png", "汗.png", "坐等.png", "献花.png", "不高兴.png", "中刀.png", "害羞.png", "皱眉.png", "小眼睛.png", "暗地观察.png"],
+			//app_id: 'GpH0RkcKw0qkhgH6ug4o5FPe-gzGzoHsz',
+			app_id:uid,
+			app_key: ukey,
+			placeholder: '评论留言'
+		});
+	</script>
+
+</body>
+<script src="/media/js/motion.js"></script>
+
 </html>

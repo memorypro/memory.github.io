@@ -3,9 +3,13 @@
       <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>Memory的个人博客</title>
-<link rel="shortcut icon" href="https://blog.memory6181.com//favicon.ico?v=1577845549037">
+<link rel="shortcut icon" href="https://blog.memory6181.com//favicon.ico?v=1577854096515">
+<script src="../../prism.js" ></script>
+<link href="../../prism.css" rel="stylesheet" />
+
 <link rel="stylesheet" href="https://blog.memory6181.com//styles/main.css">
 <meta name="description" content="我是一只特立独行的猪🐖" />
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 
 <link rel="stylesheet" href="/media/fonts/iconfont.css">
 <link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
@@ -141,8 +145,17 @@
     </span>
   </div>
 </header>
-    <!-- <div class="section-items">
-      
+    <div class="post-connect">
+      安装摄像头
+将Pi的原装摄像头安装在pi上面
+ssh连接pi
+通过xshell或者putty等工具连接ssh
+
+安装VLC
+$ sudo apt-get update    
+$ sudo apt-get install vlc    
+
+...
       
       <div class="post-button text-center">
         <a class="btn" href="https://blog.memory6181.com/post/2018-08-12" rel="contents">
@@ -150,8 +163,8 @@
         </a>
       </div>
       
-    </div> -->
-    <!-- <footer class="post-footer">
+    </div> 
+     <!-- <footer class="post-footer">
       <div class="post-eof"></div>
     </footer> -->
   </section>
@@ -195,8 +208,17 @@
     </span>
   </div>
 </header>
-    <!-- <div class="section-items">
-      
+    <div class="post-connect">
+      1、准备工作
+
+
+一个有公网Ip的VPS或者服务器。
+一个可以正常解析的域名。
+内网服务器，可以直接访问的web服务。
+frp软件包，下载地址：
+https://github.com/fatedier/frp/releases
+
+注意：要根...
       
       <div class="post-button text-center">
         <a class="btn" href="https://blog.memory6181.com/post/frp_da_jian_nei_wang_chuan_tou" rel="contents">
@@ -204,8 +226,8 @@
         </a>
       </div>
       
-    </div> -->
-    <!-- <footer class="post-footer">
+    </div> 
+     <!-- <footer class="post-footer">
       <div class="post-eof"></div>
     </footer> -->
   </section>
@@ -249,8 +271,19 @@
     </span>
   </div>
 </header>
-    <!-- <div class="section-items">
-      
+    <div class="post-connect">
+      工具 ：
+
+
+putty
+F429Discovery 开发板
+Notepad++
+
+注意：不知道为什么 其他的终端工具有问题，推荐 putty 基本没有发现问题
+putty 实时调试
+
+
+使用putty 打开USB 虚拟串口，我们打开可以使...
       
       <div class="post-button text-center">
         <a class="btn" href="https://blog.memory6181.com/post/9f5C0FaPD" rel="contents">
@@ -258,8 +291,8 @@
         </a>
       </div>
       
-    </div> -->
-    <!-- <footer class="post-footer">
+    </div> 
+     <!-- <footer class="post-footer">
       <div class="post-eof"></div>
     </footer> -->
   </section>
@@ -303,8 +336,15 @@
     </span>
   </div>
 </header>
-    <!-- <div class="section-items">
-      
+    <div class="post-connect">
+      1、下载Atom
+
+https://atom.io/
+
+2、安装Atom
+双击自动安装，会默认安装到C盘，无法修改。
+3、安装simplified-chinese-menu  插件
+这是一个可以将软件汉化的插件，可选装，插件的安装方法都一样...
       
       <div class="post-button text-center">
         <a class="btn" href="https://blog.memory6181.com/post/B7I0E9vXn" rel="contents">
@@ -312,8 +352,8 @@
         </a>
       </div>
       
-    </div> -->
-    <!-- <footer class="post-footer">
+    </div> 
+     <!-- <footer class="post-footer">
       <div class="post-eof"></div>
     </footer> -->
   </section>
@@ -357,8 +397,12 @@
     </span>
   </div>
 </header>
-    <!-- <div class="section-items">
-      
+    <div class="post-connect">
+      Pi 在Windows下面使用远程桌面登录
+1、删除系统自带的xrdp
+输入命令sudo apt-get purge xrdp
+pi@raspberrypi:~ $ sudo apt-get purge xrdp
+正在读取软件包列表... ...
       
       <div class="post-button text-center">
         <a class="btn" href="https://blog.memory6181.com/post/OI6LBcsU3" rel="contents">
@@ -366,8 +410,8 @@
         </a>
       </div>
       
-    </div> -->
-    <!-- <footer class="post-footer">
+    </div> 
+     <!-- <footer class="post-footer">
       <div class="post-eof"></div>
     </footer> -->
   </section>
@@ -411,8 +455,13 @@
     </span>
   </div>
 </header>
-    <!-- <div class="section-items">
-      
+    <div class="post-connect">
+      Ubuntu 12.04 Openssh 安装过程
+1、输入 apt-get install openssh-server
+注意
+
+
+出现依赖 需要使用 查看依赖是否需要，如果不需要可以直接删除，sudo apt-get remove XX...
       
       <div class="post-button text-center">
         <a class="btn" href="https://blog.memory6181.com/post/NQqZqG0sm" rel="contents">
@@ -420,8 +469,8 @@
         </a>
       </div>
       
-    </div> -->
-    <!-- <footer class="post-footer">
+    </div> 
+     <!-- <footer class="post-footer">
       <div class="post-eof"></div>
     </footer> -->
   </section>
@@ -465,8 +514,11 @@
     </span>
   </div>
 </header>
-    <!-- <div class="section-items">
-      
+    <div class="post-connect">
+      AT指令概述
+AT指令是应用于终端设备与PC应用之间的连接与通信的指令。AT 即Attention。每个AT命令行中只能包含一条AT指令；对于AT指令的发送，除AT两个字符外，最多可以接收1056个字符的长度。
+AT指令的格式
+命令格式如下...
       
       <div class="post-button text-center">
         <a class="btn" href="https://blog.memory6181.com/post/__XhzOP-y" rel="contents">
@@ -474,8 +526,8 @@
         </a>
       </div>
       
-    </div> -->
-    <!-- <footer class="post-footer">
+    </div> 
+     <!-- <footer class="post-footer">
       <div class="post-eof"></div>
     </footer> -->
   </section>

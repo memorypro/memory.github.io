@@ -1,11 +1,18 @@
 <html>
-  <head>
-      <meta charset="UTF-8"/>
+
+<head>
+	<script src="../../prism.js"></script>
+	<link href="../../prism.css" rel="stylesheet" />
+	<meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>Memory的个人博客</title>
-<link rel="shortcut icon" href="https://blog.memory6181.com//favicon.ico?v=1577845549037">
+<link rel="shortcut icon" href="https://blog.memory6181.com//favicon.ico?v=1577854096515">
+<script src="../../prism.js" ></script>
+<link href="../../prism.css" rel="stylesheet" />
+
 <link rel="stylesheet" href="https://blog.memory6181.com//styles/main.css">
 <meta name="description" content="我是一只特立独行的猪🐖" />
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 
 <link rel="stylesheet" href="/media/fonts/iconfont.css">
 <link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
@@ -13,11 +20,13 @@
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script>
-  </head>
-  <body>
-    <div class="head-top-line"></div>
-    <div class="header-box">
-      <header class="header">
+
+</head>
+
+<body>
+	<div class="head-top-line"></div>
+	<div class="header-box">
+		<header class="header">
  
     <div class="blog-header" id="header">
       <div class="section-layout-wrapper">
@@ -94,15 +103,15 @@
 
   navToggle.addEventListener('click',navClick);  
 </script>
-    </div>
-    <div class="main-continer">
-      <div class="section-layout">
-        <div class="section-layout-wrapper">
-         
-          <!-- <div class="section-box"> -->
-            <div class="section post">
-              <section class="section-items">
-                <div class="article-box">
+	</div>
+	<div class="main-continer">
+		<div class="section-layout">
+			<div class="section-layout-wrapper">
+
+				<!-- <div class="section-box"> -->
+				<div class="section post">
+					<section class="section-items">
+						<div class="article-box">
     <header class="post-header">
   <h1 class="post-title">
     <a class="post-title-link" href="https://blog.memory6181.com/post/LeO2klGZX">
@@ -142,8 +151,8 @@
   </div>
 </header>
 </div>
-              <div class="post-body next-md-body" id="post_body">
-                <h4 id="概述">概述</h4>
+						<div class="post-body" id="post_body">
+							<h4 id="概述">概述</h4>
 <p>回家之后换了一个环境，感觉差距有些明显，虽然已经过了三个月了，但是来写这些感觉也不算是很晚，突然有必要对之前的经历做个简单的总结，基本分为以下几块，一次可能写不完，需要分几步来写，第一想说下自己学到了什么，毕竟算上实习也算是一年多了，不能什么都没学到，应该是需要总结以下的，第二部分想简单说一下自己做过的一些项目吧，做个简单的小节，为以后的学习发展什么的提供一些思路，第三部分想说说经历的那些人，那些事，希望不要被前东家的人看到 ::aru:shy::</p>
 <h4 id="学到的技术细节">学到的技术细节</h4>
 <p>这里主要做总结，具体的细节后面会慢慢写的</p>
@@ -169,8 +178,8 @@
 <h4 id="那些人">那些人</h4>
 <h4 id="那些事">那些事</h4>
 
-              </div>
-              <div class="post-footer">
+						</div>
+						<div class="post-footer">
   <ul class="post-copyright">
     <li class="post-copyright-author">
       <strong>本文作者：</strong>
@@ -207,11 +216,12 @@
     </div>
   </div>
 </div>
-              
-              </section>
-             
-            </div>
-            <div class="sidebar">
+						
+						<div class="comment"></div>
+					</section>
+
+				</div>
+				<div class="sidebar">
     <div class="sidebar-wrapper">
   <div class="sidebar-item">
     <p class="site-author-name">关于博主</p>
@@ -314,7 +324,7 @@
 </div>
 
 </div>
-            <!-- 
+				<!-- 
 <div class="sidebar">
     <div class="sidebar-wrapper" id="sidebar">
       
@@ -684,10 +694,11 @@ window.addEventListener('load', function() {
     }
   });
 </script> -->
-          <!-- </div> -->
-        </div>
-      </div>
-      <div class="footer-box">
+				<!-- </div> -->
+			</div>
+
+		</div>
+		<div class="footer-box">
   <footer class="footer">
     <div class="copyright">
       © 2019-2020 <i class="iconfont icon-heart"></i> HsxyHao
@@ -748,7 +759,33 @@ window.addEventListener('load', function() {
   // 代码高亮
   hljs.initHighlightingOnLoad();
 </script>
-    </div>
-  </body>
-  <script src="/media/js/motion.js"></script>
+
+	</div>
+	<!--载入js，在</body>之前插入即可-->
+	<!--Leancloud 操作库:-->
+	<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+	<!--Valine 的核心代码库-->
+	<script src="/media/scripts/Valine.min.js"></script>
+
+	<script>
+		
+		var uid = 'GpH0RkcKw0qkhgH6ug4o5FPe-gzGzoHsz' 
+		var ukey = '' 
+		new Valine({
+			// AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
+			av: AV,
+			el: '.comment',
+			lang: 'zh-cn',//设置评论语言
+			emoticon_url: 'https://cloud.panjunwen.com/alu',
+			emoticon_list: ["狂汗.png", "不说话.png", "汗.png", "坐等.png", "献花.png", "不高兴.png", "中刀.png", "害羞.png", "皱眉.png", "小眼睛.png", "暗地观察.png"],
+			//app_id: 'GpH0RkcKw0qkhgH6ug4o5FPe-gzGzoHsz',
+			app_id:uid,
+			app_key: ukey,
+			placeholder: '评论留言'
+		});
+	</script>
+
+</body>
+<script src="/media/js/motion.js"></script>
+
 </html>

@@ -1,11 +1,18 @@
 <html>
-  <head>
-      <meta charset="UTF-8"/>
+
+<head>
+	<script src="../../prism.js"></script>
+	<link href="../../prism.css" rel="stylesheet" />
+	<meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>Memory的个人博客</title>
-<link rel="shortcut icon" href="https://blog.memory6181.com//favicon.ico?v=1577845549037">
+<link rel="shortcut icon" href="https://blog.memory6181.com//favicon.ico?v=1577854096515">
+<script src="../../prism.js" ></script>
+<link href="../../prism.css" rel="stylesheet" />
+
 <link rel="stylesheet" href="https://blog.memory6181.com//styles/main.css">
 <meta name="description" content="我是一只特立独行的猪🐖" />
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 
 <link rel="stylesheet" href="/media/fonts/iconfont.css">
 <link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
@@ -13,11 +20,13 @@
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script>
-  </head>
-  <body>
-    <div class="head-top-line"></div>
-    <div class="header-box">
-      <header class="header">
+
+</head>
+
+<body>
+	<div class="head-top-line"></div>
+	<div class="header-box">
+		<header class="header">
  
     <div class="blog-header" id="header">
       <div class="section-layout-wrapper">
@@ -94,15 +103,15 @@
 
   navToggle.addEventListener('click',navClick);  
 </script>
-    </div>
-    <div class="main-continer">
-      <div class="section-layout">
-        <div class="section-layout-wrapper">
-         
-          <!-- <div class="section-box"> -->
-            <div class="section post">
-              <section class="section-items">
-                <div class="article-box">
+	</div>
+	<div class="main-continer">
+		<div class="section-layout">
+			<div class="section-layout-wrapper">
+
+				<!-- <div class="section-box"> -->
+				<div class="section post">
+					<section class="section-items">
+						<div class="article-box">
     <header class="post-header">
   <h1 class="post-title">
     <a class="post-title-link" href="https://blog.memory6181.com/post/3hZf_uYqd">
@@ -142,8 +151,8 @@
   </div>
 </header>
 </div>
-              <div class="post-body next-md-body" id="post_body">
-                <h4 id="概述">概述</h4>
+						<div class="post-body" id="post_body">
+							<h4 id="概述">概述</h4>
 <p>经常会用到通过配置文件，去配置一些参数，java里面本来是有配置文件的，但是导入很麻烦的，自从我用了json之后，从此一切配置文件都见鬼去吧.</p>
 <h4 id="1下载gson解析json文件的jar包">1.下载gson解析json文件的jar包</h4>
 <p>首先我们要导入一个解析json文件的jar包，下载连接如下所示：</p>
@@ -199,8 +208,8 @@
 </code></pre>
 <p>其中inicfg是一个用户定义的要和json文件对应的类，写配置文件最好先按照inicfg类的方式生成类似的json字符串，使用<code>str = gson.toJson(ini)</code> ，记得要对ini初始化才可以，这样我们拷贝打印出来的消息到config.json文件里面,就不会抛出解析失败的异常了</p>
 
-              </div>
-              <div class="post-footer">
+						</div>
+						<div class="post-footer">
   <ul class="post-copyright">
     <li class="post-copyright-author">
       <strong>本文作者：</strong>
@@ -237,11 +246,12 @@
     </div>
   </div>
 </div>
-              
-              </section>
-             
-            </div>
-            <div class="sidebar">
+						
+						<div class="comment"></div>
+					</section>
+
+				</div>
+				<div class="sidebar">
     <div class="sidebar-wrapper">
   <div class="sidebar-item">
     <p class="site-author-name">关于博主</p>
@@ -344,7 +354,7 @@
 </div>
 
 </div>
-            <!-- 
+				<!-- 
 <div class="sidebar">
     <div class="sidebar-wrapper" id="sidebar">
       
@@ -714,10 +724,11 @@ window.addEventListener('load', function() {
     }
   });
 </script> -->
-          <!-- </div> -->
-        </div>
-      </div>
-      <div class="footer-box">
+				<!-- </div> -->
+			</div>
+
+		</div>
+		<div class="footer-box">
   <footer class="footer">
     <div class="copyright">
       © 2019-2020 <i class="iconfont icon-heart"></i> HsxyHao
@@ -778,7 +789,33 @@ window.addEventListener('load', function() {
   // 代码高亮
   hljs.initHighlightingOnLoad();
 </script>
-    </div>
-  </body>
-  <script src="/media/js/motion.js"></script>
+
+	</div>
+	<!--载入js，在</body>之前插入即可-->
+	<!--Leancloud 操作库:-->
+	<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+	<!--Valine 的核心代码库-->
+	<script src="/media/scripts/Valine.min.js"></script>
+
+	<script>
+		
+		var uid = 'GpH0RkcKw0qkhgH6ug4o5FPe-gzGzoHsz' 
+		var ukey = '' 
+		new Valine({
+			// AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
+			av: AV,
+			el: '.comment',
+			lang: 'zh-cn',//设置评论语言
+			emoticon_url: 'https://cloud.panjunwen.com/alu',
+			emoticon_list: ["狂汗.png", "不说话.png", "汗.png", "坐等.png", "献花.png", "不高兴.png", "中刀.png", "害羞.png", "皱眉.png", "小眼睛.png", "暗地观察.png"],
+			//app_id: 'GpH0RkcKw0qkhgH6ug4o5FPe-gzGzoHsz',
+			app_id:uid,
+			app_key: ukey,
+			placeholder: '评论留言'
+		});
+	</script>
+
+</body>
+<script src="/media/js/motion.js"></script>
+
 </html>

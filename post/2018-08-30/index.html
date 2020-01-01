@@ -1,11 +1,18 @@
 <html>
-  <head>
-      <meta charset="UTF-8"/>
+
+<head>
+	<script src="../../prism.js"></script>
+	<link href="../../prism.css" rel="stylesheet" />
+	<meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>Memory的个人博客</title>
-<link rel="shortcut icon" href="https://blog.memory6181.com//favicon.ico?v=1577845549037">
+<link rel="shortcut icon" href="https://blog.memory6181.com//favicon.ico?v=1577854096515">
+<script src="../../prism.js" ></script>
+<link href="../../prism.css" rel="stylesheet" />
+
 <link rel="stylesheet" href="https://blog.memory6181.com//styles/main.css">
 <meta name="description" content="我是一只特立独行的猪🐖" />
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 
 <link rel="stylesheet" href="/media/fonts/iconfont.css">
 <link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
@@ -13,11 +20,13 @@
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script>
-  </head>
-  <body>
-    <div class="head-top-line"></div>
-    <div class="header-box">
-      <header class="header">
+
+</head>
+
+<body>
+	<div class="head-top-line"></div>
+	<div class="header-box">
+		<header class="header">
  
     <div class="blog-header" id="header">
       <div class="section-layout-wrapper">
@@ -94,15 +103,15 @@
 
   navToggle.addEventListener('click',navClick);  
 </script>
-    </div>
-    <div class="main-continer">
-      <div class="section-layout">
-        <div class="section-layout-wrapper">
-         
-          <!-- <div class="section-box"> -->
-            <div class="section post">
-              <section class="section-items">
-                <div class="article-box">
+	</div>
+	<div class="main-continer">
+		<div class="section-layout">
+			<div class="section-layout-wrapper">
+
+				<!-- <div class="section-box"> -->
+				<div class="section post">
+					<section class="section-items">
+						<div class="article-box">
     <header class="post-header">
   <h1 class="post-title">
     <a class="post-title-link" href="https://blog.memory6181.com/post/2018-08-30">
@@ -142,8 +151,8 @@
   </div>
 </header>
 </div>
-              <div class="post-body next-md-body" id="post_body">
-                <hr>
+						<div class="post-body" id="post_body">
+							<hr>
 <h4 id="目的">目的</h4>
 <hr>
 <p>不管是Keil还是IAR对代码补全，高亮等编辑功能支持的不是很好，虽然现在的Keil 5.25对界面的支持好了很多，但是很多人还是青睐于第三方的编辑器，命令行的编译方式可以让我们在使用第三方编辑器编辑的时候进行代码编译和下载，通常我们比较喜欢的编辑器有下面一些，不是很全。</p>
@@ -211,8 +220,8 @@ test.ewp ：工程名，注意是.ewp结尾的。
 <h4 id="使用">使用</h4>
 <p>我们可以在工程所在的路径下面编写<code>bat</code>文件，通过直接运行bat就可以编译和下载了，第三方编辑器通常都可以配置编译选项和调试选项，也可以配置在Tool里面进行编译下载，我比较喜欢使用powershell进行编译和下载。</p>
 
-              </div>
-              <div class="post-footer">
+						</div>
+						<div class="post-footer">
   <ul class="post-copyright">
     <li class="post-copyright-author">
       <strong>本文作者：</strong>
@@ -249,11 +258,12 @@ test.ewp ：工程名，注意是.ewp结尾的。
     </div>
   </div>
 </div>
-              
-              </section>
-             
-            </div>
-            <div class="sidebar">
+						
+						<div class="comment"></div>
+					</section>
+
+				</div>
+				<div class="sidebar">
     <div class="sidebar-wrapper">
   <div class="sidebar-item">
     <p class="site-author-name">关于博主</p>
@@ -356,7 +366,7 @@ test.ewp ：工程名，注意是.ewp结尾的。
 </div>
 
 </div>
-            <!-- 
+				<!-- 
 <div class="sidebar">
     <div class="sidebar-wrapper" id="sidebar">
       
@@ -726,10 +736,11 @@ window.addEventListener('load', function() {
     }
   });
 </script> -->
-          <!-- </div> -->
-        </div>
-      </div>
-      <div class="footer-box">
+				<!-- </div> -->
+			</div>
+
+		</div>
+		<div class="footer-box">
   <footer class="footer">
     <div class="copyright">
       © 2019-2020 <i class="iconfont icon-heart"></i> HsxyHao
@@ -790,7 +801,33 @@ window.addEventListener('load', function() {
   // 代码高亮
   hljs.initHighlightingOnLoad();
 </script>
-    </div>
-  </body>
-  <script src="/media/js/motion.js"></script>
+
+	</div>
+	<!--载入js，在</body>之前插入即可-->
+	<!--Leancloud 操作库:-->
+	<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+	<!--Valine 的核心代码库-->
+	<script src="/media/scripts/Valine.min.js"></script>
+
+	<script>
+		
+		var uid = 'GpH0RkcKw0qkhgH6ug4o5FPe-gzGzoHsz' 
+		var ukey = '' 
+		new Valine({
+			// AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
+			av: AV,
+			el: '.comment',
+			lang: 'zh-cn',//设置评论语言
+			emoticon_url: 'https://cloud.panjunwen.com/alu',
+			emoticon_list: ["狂汗.png", "不说话.png", "汗.png", "坐等.png", "献花.png", "不高兴.png", "中刀.png", "害羞.png", "皱眉.png", "小眼睛.png", "暗地观察.png"],
+			//app_id: 'GpH0RkcKw0qkhgH6ug4o5FPe-gzGzoHsz',
+			app_id:uid,
+			app_key: ukey,
+			placeholder: '评论留言'
+		});
+	</script>
+
+</body>
+<script src="/media/js/motion.js"></script>
+
 </html>

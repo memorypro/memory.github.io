@@ -3,9 +3,13 @@
       <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>Memory的个人博客</title>
-<link rel="shortcut icon" href="https://blog.memory6181.com//favicon.ico?v=1577845549037">
+<link rel="shortcut icon" href="https://blog.memory6181.com//favicon.ico?v=1577854096515">
+<script src="../../prism.js" ></script>
+<link href="../../prism.css" rel="stylesheet" />
+
 <link rel="stylesheet" href="https://blog.memory6181.com//styles/main.css">
 <meta name="description" content="我是一只特立独行的猪🐖" />
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 
 <link rel="stylesheet" href="/media/fonts/iconfont.css">
 <link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
@@ -141,8 +145,15 @@
     </span>
   </div>
 </header>
-    <!-- <div class="section-items">
-      
+    <div class="post-connect">
+      关于博客系统更换到Typecho的说明：
+
+1、想要写更多的生活记录文章，不想要简单的文字。
+2、想要加入相册功能。
+3、静态博客过于单调。
+选择Typecho的原因：
+1、默认支持MARKDOWN可以直接迁移之前的博客内容。
+2、看到了一...
       
       <div class="post-button text-center">
         <a class="btn" href="https://blog.memory6181.com/post/57E1i2a3v" rel="contents">
@@ -150,8 +161,8 @@
         </a>
       </div>
       
-    </div> -->
-    <!-- <footer class="post-footer">
+    </div> 
+     <!-- <footer class="post-footer">
       <div class="post-eof"></div>
     </footer> -->
   </section>
@@ -195,12 +206,11 @@
     </span>
   </div>
 </header>
-    <!-- <div class="section-items">
-      <p>![请输入图片描述][1]</p>
-<h4 id="为什么换了">为什么换了</h4>
-<p>好久没有写点东西了，打开博客一看，给人一种QQ空间的既视感，不能忍受。<br>
-还是喜欢简单一点，也许和每一段时间经历的事有关系，有一段时间喜欢出去骑车，欣赏风景，突然又有一段时间喜欢在家休息，有时候又很喜欢在家安静的写东西，看心情吧，没有什么可以，也没有什么不可以，随心就好。</p>
-
+    <div class="post-connect">
+      
+为什么换了
+好久没有写点东西了，打开博客一看，给人一种QQ空间的既视感，不能忍受。
+还是喜欢简单一点，也许和每一段时间经历的事有关系，有一段时间喜欢出去骑车，欣赏风景，突然又有一段时间喜欢在家休息，有时候又很喜欢在家安静的写东西，看心情吧...
       
       <div class="post-button text-center">
         <a class="btn" href="https://blog.memory6181.com/post/I5Tzn_Qdm" rel="contents">
@@ -208,8 +218,8 @@
         </a>
       </div>
       
-    </div> -->
-    <!-- <footer class="post-footer">
+    </div> 
+     <!-- <footer class="post-footer">
       <div class="post-eof"></div>
     </footer> -->
   </section>
@@ -253,8 +263,12 @@
     </span>
   </div>
 </header>
-    <!-- <div class="section-items">
-      
+    <div class="post-connect">
+      代码
+uint16_t bsp_eeprom_write (uint32_t WriteAddr, uint8_t *pBuffer, uint16_t NumToWrite)
+{
+	uint16_t t,err = 0;
+	assert_...
       
       <div class="post-button text-center">
         <a class="btn" href="https://blog.memory6181.com/post/2019-07-08" rel="contents">
@@ -262,8 +276,8 @@
         </a>
       </div>
       
-    </div> -->
-    <!-- <footer class="post-footer">
+    </div> 
+     <!-- <footer class="post-footer">
       <div class="post-eof"></div>
     </footer> -->
   </section>
@@ -307,8 +321,17 @@
     </span>
   </div>
 </header>
-    <!-- <div class="section-items">
-      
+    <div class="post-connect">
+      修改.pro文件
+添加如下所示代码
+QT       += serialport
+
+编写.h文件
+1、添加头文件
+#include &lt;QtSerialPort&gt;
+
+2、添加串口定义
+QSerialPort *serialPort...
       
       <div class="post-button text-center">
         <a class="btn" href="https://blog.memory6181.com/post/2019-06-19" rel="contents">
@@ -316,8 +339,8 @@
         </a>
       </div>
       
-    </div> -->
-    <!-- <footer class="post-footer">
+    </div> 
+     <!-- <footer class="post-footer">
       <div class="post-eof"></div>
     </footer> -->
   </section>
@@ -361,8 +384,18 @@
     </span>
   </div>
 </header>
-    <!-- <div class="section-items">
-      
+    <div class="post-connect">
+      下载
+
+地址:http://www.wch.cn/downloads/CH341SER_LINUX_ZIP.html
+
+###＃　解压
+unzip CH341SER_LINUX.ZIP
+
+编译
+cd CH341SER_LINUX
+make
+...
       
       <div class="post-button text-center">
         <a class="btn" href="https://blog.memory6181.com/post/2019-06-15" rel="contents">
@@ -370,8 +403,8 @@
         </a>
       </div>
       
-    </div> -->
-    <!-- <footer class="post-footer">
+    </div> 
+     <!-- <footer class="post-footer">
       <div class="post-eof"></div>
     </footer> -->
   </section>
@@ -415,8 +448,10 @@
     </span>
   </div>
 </header>
-    <!-- <div class="section-items">
-      
+    <div class="post-connect">
+      段码液晶驱动BL5507
+这是在上一家公司做产品的过程中遇到的问题，总共出现两次比较严重的bug
+1、液晶运行一段时间之后出现了部分黑屏的显现，起初怪硬件工程师，后来联系了厂家才了解到这个芯片有一个休眠模式，不知道在什么情况的影响下进入了休...
       
       <div class="post-button text-center">
         <a class="btn" href="https://blog.memory6181.com/post/2019-06-06" rel="contents">
@@ -424,8 +459,8 @@
         </a>
       </div>
       
-    </div> -->
-    <!-- <footer class="post-footer">
+    </div> 
+     <!-- <footer class="post-footer">
       <div class="post-eof"></div>
     </footer> -->
   </section>
@@ -469,8 +504,11 @@
     </span>
   </div>
 </header>
-    <!-- <div class="section-items">
-      
+    <div class="post-connect">
+      2014年接触到IT行业
+2015年接触到博客，搭建独立博客，使用emblog，后期由于懒得维护全清空。
+2016年注册博客园 写了几篇文章，也算是一个好的开始。
+2017年中旬，看到一款非常简单的博客“pugo” 于是开始自己的独立博客搭...
       
       <div class="post-button text-center">
         <a class="btn" href="https://blog.memory6181.com/post/i5oghub2h" rel="contents">
@@ -478,8 +516,8 @@
         </a>
       </div>
       
-    </div> -->
-    <!-- <footer class="post-footer">
+    </div> 
+     <!-- <footer class="post-footer">
       <div class="post-eof"></div>
     </footer> -->
   </section>

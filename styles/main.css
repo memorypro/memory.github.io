@@ -740,9 +740,8 @@ section_1 {
   background: #eee;
 }
 .site-meta-tags {
-  flex: 1;
+  flex: 0;
   text-align: left;
-  border-bottom: dashed 1px rgba(34, 34, 34, 0.39);
 }
 @media (max-width: 961px) and (min-width: 768px) {
   .sidebar {
@@ -866,6 +865,11 @@ section_1 {
 .nav-pc-next,
 .nav-pc-prev {
   display: inline-block;
+}
+.post-connect {
+  font-size: 14px;
+  display: contents;
+  font-family: "PingFang SC";
 }
 @media (max-width: 767px) {
   .nav-pc-next,
