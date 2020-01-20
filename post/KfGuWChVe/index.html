@@ -1,0 +1,986 @@
+<html>
+
+<head>
+	<meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>BL55072/BL55075 应用笔记 | Memory的小站</title>
+
+<!-- layui -->
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script src="/media/layui/layui.all.js"></script>
+<link rel="stylesheet" href="/media/layui/css/layui.css">
+
+
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico?v=1579538642693">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="http://localhost:4000/styles/main.css">
+
+<!-- <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script> -->
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
+
+<!-- 引入阿里图标库 -->
+<script src="\media\layui\font\font-blog\iconfont.js"></script>
+<script src="\media\layui\font\font-connect\iconfont.js"></script>
+<script src="\media\layui\font\font-men\iconfont.js"></script>
+
+
+<!-- 引入primjs 代码高亮 -->
+<!-- 支持prism -->
+<script src="../../prism.js" ></script>
+<link href="../../prism.css" rel="stylesheet" />
+<!-- 添加 Vline 评论 -->
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+
+<!-- DEMO JS -->
+<script src="media/scripts/index.js"></script>
+
+<!-- 谷歌统计 -->
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155337428-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'UA-155337428-1');
+  </script>
+  
+  <!-- 百度统计 -->
+  <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?3e11339a177ba7e34848b1f198c46e5c";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+</head>
+
+<body>
+
+	<!-- 百度推送 -->
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+<div class=" me-header-color-style-blue">
+	<!-- 颜色主题样式 -->
+	<div class="header cl-st-head-menue">
+		<div class="me-layui-container">
+			<div class="logo cl-st-head-title">
+				<a href="/" title="Memory"> Memory的小站</a>
+			</div>
+			<i class="layui-icon layui-icon-app mobile-icon"></i>
+			<div class="nav">
+				<ul class="layui-nav cl-st-head-menue me-layui-nav">
+
+					
+						<li class="layui-nav-item cl-st-head-menue">
+							<a href="/" style="text-decoration: none">
+								<svg class="icon">
+									<use xlink:href="#icon-home"></use>
+								</svg>
+								首页
+							</a>
+						</li>
+	
+					
+						<li class="layui-nav-item cl-st-head-menue">
+							<a href="/archives/" style="text-decoration: none">
+								<svg class="icon">
+									<use xlink:href="#icon-localoffer"></use>
+								</svg>
+								归档
+							</a>
+						</li>
+	
+					
+						<li class="layui-nav-item cl-st-head-menue">
+							<a href="/post/guan-yu-wo/" style="text-decoration: none">
+								<svg class="icon">
+									<use xlink:href="#icon-timerauto"></use>
+								</svg>
+								关于我
+							</a>
+						</li>
+	
+					
+						<li class="layui-nav-item cl-st-head-menue">
+							<a href="/" style="text-decoration: none">
+								<svg class="icon">
+									<use xlink:href="#icon-paper"></use>
+								</svg>
+								知识结构
+							</a>
+						</li>
+	
+					
+						<li class="layui-nav-item cl-st-head-menue">
+							<a href="/Navigation/" style="text-decoration: none">
+								<svg class="icon">
+									<use xlink:href="#icon-menu"></use>
+								</svg>
+								导航
+							</a>
+						</li>
+	
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="layui.js"></script>
+<script>
+	//JavaScript代码区域
+	layui.use(['element', 'layer'], function () {
+		var element = layui.element;
+		var layer = layui.layer;
+
+	});
+	$(".mobile-icon").click(function () {
+		$(".nav").toggleClass('layui-show');
+	});
+</script>
+<div class="site-header">
+</div>
+	<div class="main">
+		<div class="layui-row">
+			<div class="layui-col-xs12 layui-col-sm9 layui-col-md9 ">
+				<div class="main-content  me-header-color-style-blue">
+					<div class="layui-carousel me-post-list-carousel" id="test3" lay-filter="test4">
+	<div carousel-item class="me-carousel-item">
+		<div><img src="https://img.memory6181.com/good/1.jpg" width="100%"></div>
+		<div><img src="https://img.memory6181.com/good/2.jpg" width="100%"></div>
+		<div><img src="https://img.memory6181.com/good/3.jpg" width="100%"></div>
+		<div><img src="https://img.memory6181.com/good/4.jpg" width="100%"></div>
+		<div><img src="https://img.memory6181.com/good/5.jpg" width="100%"></div>
+	</div>
+</div>
+
+<!-- <script src="//res.layui.com/layui/dist/layui.js" charset="utf-8"></script>
+注意：如果你直接复制所有代码到本地，上述js路径需要改成你本地的 -->
+<script>
+	layui.use(['carousel', 'form'], function () {
+		var carousel = layui.carousel
+			, form = layui.form;
+
+
+		//设定各种参数
+		var ins3 = carousel.render({
+			elem: '#test3'
+			, width: 'auto'
+			, interval: 5000
+		});
+
+		//事件
+		carousel.on('change(test4)', function (res) {
+			console.log(res)
+		});
+
+		var $ = layui.$, active = {
+			set: function (othis) {
+				var THIS = 'layui-bg-normal'
+					, key = othis.data('key')
+					, options = {};
+
+				othis.css('background-color', '#5FB878').siblings().removeAttr('style');
+				options[key] = othis.data('value');
+				ins3.reload(options);
+			}
+		};
+
+		//监听开关
+		form.on('switch(autoplay)', function () {
+			ins3.reload({
+				autoplay: this.checked
+			});
+		});
+
+		$('.demoSet').on('keyup', function () {
+			var value = this.value
+				, options = {};
+			if (!/^\d+$/.test(value)) return;
+
+			options[this.name] = value;
+			ins3.reload(options);
+		});
+
+		//其它示例
+		$('.demoTest .layui-btn').on('click', function () {
+			var othis = $(this), type = othis.data('type');
+			active[type] ? active[type].call(this, othis) : '';
+		});
+	});
+</script>
+
+					<div class="post-detail">
+						<article class="post">
+							
+							<span class="cl-st-post-tag ">
+								
+								<a class="me-post-list-tag layui-icon layui-icon-note" href="http://localhost:4000/tag/lnIvoi1nL">
+									单片机驱动开发
+								</a>
+								
+							</span>
+							<h2 class="post-title cl-st-post-list-title">
+								BL55072/BL55075 应用笔记
+							</h2>
+							<div class="post-info">
+								<time class="post-time layui-icon layui-icon-date cl-st-text">
+									发布于2020-01-07|
+								</time>
+								<time class="post-time layui-icon layui-icon-time cl-st-text">
+									7分钟|
+								</time>
+								<time class="post-time layui-icon layui-icon-edit cl-st-text">
+									1357字数
+								</time>
+							</div>
+							
+							<div class="post-content">
+								<h3 id="bl55072">BL55072</h3>
+<h4 id="1-特点">1、特点</h4>
+<blockquote>
+<p>液晶驱动输出：Common 输出 4 线，Segment 输出 36 线<br>
+内置显示寄存器 36*4=144bit<br>
+2 线串行接口（SCL,SDA）<br>
+内置震荡电路<br>
+内置液晶驱动电源电路<br>
+1/3 Bias, 1/2 Bias 1/4 Duty<br>
+内置 Buffer AMP<br>
+不需要外部元件<br>
+低功耗设计<br>
+内置上电复位电路<br>
+搭载闪烁功能<br>
+VDD 电压范围 2.5V~5.5V<br>
+高抗 EMC 性能<br>
+TSSOP48 封装</p>
+</blockquote>
+<h4 id="2-管脚编号">2、管脚编号</h4>
+<figure data-type="image" tabindex="1"><img src="https://img.memory6181.com/2020-01/07/20200107113829.png" alt="" loading="lazy"></figure>
+<h4 id="3-功能描述">3、功能描述</h4>
+<p>1、功能电路<br>
+BL55072内部集成了LCD驱动器所必需的所有功能电路。这些电路包括：LCD<br>
+偏置电压发生器、LCD电压选择器、内部时钟(OSC =25.6KHz)、显示寄存器、段<br>
+/背极输出电路、I2C串行接口、上电复位电路和显示控制电路。</p>
+<p>2、显示驱动原理<br>
+BL55072有36个段输出SEG0--SEG35和4个背极输出COM0—COM3,它们和<br>
+LCD直接相连,当少于36个段输出应用时,不用的段可以空出。BL55072采用1/4背<br>
+极输出1/3偏置电压或者1/2偏置电压显示方式。</p>
+<p>3、显示内容和寄存器地址之间的关系可见下表<br>
+<img src="https://img.memory6181.com/2020-01/07/20200107113904.png" alt="" loading="lazy"><br>
+4、I2C 写入数据方式：<br>
+<img src="https://img.memory6181.com/2020-01/07/20200107113927.png" alt="" loading="lazy"><br>
+5、I2C通讯方式<br>
+如图所示：发送第一个起始条件后，紧接着发送BL55072地址<br>
+（01111100），然后发送指令和显示数据，指令字节中的最高位“C”用以标明是否<br>
+是最后一个指令字节，当C=“1”时表示后面的字节仍是指令字节；当C=“0”时则<br>
+表明该字节为最后一个指令字节。最后一个指令字节之后为一系列显示数据字节<br>
+（DISPLAY DATA），这些显示数据存放在显示寄存器中，由数据指针和子地址<br>
+计数器指示的地址上。数据指针和子地址计数器可自动变更，数据直接装载到<br>
+BL55072上，A是每个字节之后的应答位，在主控器发送完最后一个字节后产生<br>
+一个终止条件P。<br>
+<img src="https://img.memory6181.com/2020-01/07/20200107114001.png" alt="" loading="lazy"></p>
+<p>参考代码如下所示：</p>
+<pre><code class="language-cpp">void SEG_IIC_Start()
+{
+	SEG_SDI_1;
+	SEG_CLK_1;
+    delay_ms(1);
+	SEG_SDI_0;	
+    delay_ms(1);	
+	SEG_CLK_0;	
+}
+void SEG_IIC_Stop()
+{
+	SEG_SDI_0;
+	SEG_CLK_0;
+    __nop();  
+	SEG_SDI_1;	
+    delay_ms(1) ;      
+	SEG_CLK_1;	
+}
+
+void SEG_IIC_WriteByte(int8_t input)
+{
+    int8_t temp;
+    for(temp=8;temp!=0;temp--)
+    {
+		if((input&amp;0x80)!=0)
+		{
+			SEG_SDI_1;
+		}
+		else
+		{
+			SEG_SDI_0;
+		}        
+		__nop();;
+		SEG_CLK_1;
+		delay_ms(1);
+		SEG_CLK_0;
+		input=input&lt;&lt;1;
+		__nop();
+    }
+	SEG_SDI_1;	
+	SEG_SDI_IN;
+	SEG_CLK_1;
+    delay_ms(1);
+    SEG_CLK_0;	
+	SEG_SDI_OUT;
+}
+</code></pre>
+<h4 id="4-控制命令">4、控制命令</h4>
+<p>BL55072 共有 6 个控制命令字。命令和数据都是以字节的形式发送到<br>
+BL55072,它们的区别在于传送字节的最高位 C,当 C=1 时表示其后传送的字节仍<br>
+是命令;C=0 表示其后传送的字节是最后一个命令,接下来传送的是一系列数据。<br>
+下面列出了 BL55072 的 6 个命令字:<br>
+<strong>MODE SET</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Bit7</th>
+<th>Bit6</th>
+<th>Bit5</th>
+<th>Bit4</th>
+<th>Bit3</th>
+<th>Bit2</th>
+<th>Bit1</th>
+<th>Bit0</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Value</td>
+<td>C</td>
+<td>1</td>
+<td>0</td>
+<td>#</td>
+<td>display</td>
+<td>bias</td>
+<td>#</td>
+<td>#</td>
+</tr>
+<tr>
+<td>default</td>
+<td>C</td>
+<td>1</td>
+<td>0</td>
+<td>#</td>
+<td>0</td>
+<td>0</td>
+<td>#</td>
+<td>#</td>
+</tr>
+</tbody>
+</table>
+<p>[3] Display on and off<br>
+0 – Display off (default)<br>
+1 – Display on<br>
+[2] Bias control<br>
+0 –1/3 bias (default)<br>
+1 – 1/2 bias<br>
+<strong>ADSET</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Bit7</th>
+<th>Bit6</th>
+<th>Bit5</th>
+<th>Bit4</th>
+<th>Bit3</th>
+<th>Bit2</th>
+<th>Bit1</th>
+<th>Bit0</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Value</td>
+<td>C</td>
+<td>0</td>
+<td>0</td>
+<td>Addr[4:0]</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>default</td>
+<td>C</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>地址寄存器设置，<br>
+该寄存器用于写数据前设置数据的起始地址，或者读数据/command 前设置读取<br>
+数据/command 的地址。<br>
+读写数据地址范围为 000H~011H，写数据时如果初始地址大于 11H，则写入数<br>
+据对应到地址 00H 中。若在写入初始地址后，不断写入数据，当写入数据超过<br>
+36*4 时，数据被重新写入到初始地址中。</p>
+<p><strong>DISCTL</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Bit7</th>
+<th>Bit6</th>
+<th>Bit5</th>
+<th>Bit4</th>
+<th>Bit3</th>
+<th>Bit2</th>
+<th>Bit1</th>
+<th>Bit0</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Value</td>
+<td>C</td>
+<td>0</td>
+<td>1</td>
+<td>FR[1:0]</td>
+<td>FR[1:0]</td>
+<td>P2</td>
+<td>SR[1:0]</td>
+<td>SR[1:0]</td>
+</tr>
+<tr>
+<td>default</td>
+<td>C</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>显示控制<br>
+[4:3]: frame frequency control (FR)<br>
+00 - 80Hz (default)<br>
+01 - 71Hz<br>
+10 - 64Hz<br>
+11 - 50Hz<br>
+[2]: LCD Drive Mode control<br>
+0 – Line inversion mode (default)<br>
+1 – Frame inversion mode<br>
+[1:0]: power save mode control (SR)<br>
+00 – power save mode 1<br>
+01 – power save mode 2<br>
+10 – normal mode (default)<br>
+11 – high power mode</p>
+<p><strong>ICSET</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Bit7</th>
+<th>Bit6</th>
+<th>Bit5</th>
+<th>Bit4</th>
+<th>Bit3</th>
+<th>Bit2</th>
+<th>Bit1</th>
+<th>Bit0</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Value</td>
+<td>C</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>#</td>
+<td>softrst</td>
+<td>oscmode</td>
+</tr>
+<tr>
+<td>Default</td>
+<td>C</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>#</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>芯片设置<br>
+[1]：software reset<br>
+0 – no operation (default)<br>
+1 – software reset<br>
+[0]：oscillator mode control<br>
+0 – inner oscillator (default) : OSCIN pin connected to VSS pin.<br>
+1 – outside oscillator : OSCIN pin connected to outside clock signal（32.768KHz）.</p>
+<p><strong>BLKCTL</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Bit7</th>
+<th>Bit6</th>
+<th>Bit5</th>
+<th>Bit4</th>
+<th>Bit3</th>
+<th>Bit2</th>
+<th>Bit1</th>
+<th>Bit0</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Value</td>
+<td>C</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>#</td>
+<td>softrst</td>
+<td>oscmode</td>
+</tr>
+<tr>
+<td>Default</td>
+<td>C</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>#</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>闪烁控制<br>
+[1:0] blinking control<br>
+00 – blinking off<br>
+01 – 0.25 Hz<br>
+10 – 0.5Hz<br>
+11 – 1 Hz</p>
+<p><strong>APCTL</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Bit7</th>
+<th>Bit6</th>
+<th>Bit5</th>
+<th>Bit4</th>
+<th>Bit3</th>
+<th>Bit2</th>
+<th>Bit1</th>
+<th>Bit0</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Value</td>
+<td>C</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>Apon</td>
+<td>Apoff</td>
+</tr>
+<tr>
+<td>Default</td>
+<td>C</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>全亮全暗控制，该寄存器只有在 display on 时才起作用；<br>
+[1]：all pixel ON control<br>
+0 – normal (default)<br>
+1 – all pixel on<br>
+[0]：all pixel OFF control<br>
+0 – normal (default)<br>
+1 – all pixel off<br>
+当 apon 和 apoff 都为 1 时，则显示全暗，即 apoff 的优先级高于 apon</p>
+<h4 id="5bl55072的典型应用电路">5.BL55072的典型应用电路</h4>
+<figure data-type="image" tabindex="2"><img src="https://img.memory6181.com/2020-01/07/20200107114126.png" alt="" loading="lazy"></figure>
+<h4 id="6-实现代码">6、实现代码</h4>
+<pre><code class="language-cpp">void SEG_Init(void)
+{
+	bsp_gpio_config(SEG_CLK_PORT,SEG_CLK_PIN,GpioWrite);
+	bsp_gpio_config(SEG_SDI_PORT,SEG_SDI_PIN,GpioWrite);
+	SEG_IIC_Start();
+	SEG_IIC_WriteByte(0x7C);
+	SEG_IIC_WriteByte(0xE8); // 退出休眠
+	SEG_IIC_WriteByte(0xC8); // 方式设定C8
+	SEG_IIC_WriteByte(0xF0); // 闪烁控制
+	//SEG_IIC_WriteByte(0xE0); // 器件选择
+	SEG_IIC_WriteByte(0x00); // 数据指针
+	for(int i=0;i&lt;18;i++) 
+	{
+		SEG_IIC_WriteByte(0x00);//
+	}
+	SEG_IIC_Stop();
+}
+
+void SEG_Clear(void)
+{
+	bsp_gpio_config(SEG_CLK_PORT,SEG_CLK_PIN,GpioWrite);
+	bsp_gpio_config(SEG_SDI_PORT,SEG_SDI_PIN,GpioWrite);
+	SEG_IIC_Start();
+	SEG_IIC_WriteByte(0x7C);
+	SEG_IIC_WriteByte(0xE8); // 退出休眠
+	SEG_IIC_WriteByte(0xC8); // 方式设定C8
+	SEG_IIC_WriteByte(0xF0); // 闪烁控制
+	//SEG_IIC_WriteByte(0xE0); // 器件选择
+	SEG_IIC_WriteByte(0x00); // 数据指针
+	for(int i=0;i&lt;18;i++) 
+	{
+		SEG_IIC_WriteByte(0x00);//
+	}
+	SEG_IIC_Stop();
+}
+
+
+// 7C FF C8 EA B6 E8
+void SEG_WriteBuffer(char * buffer)
+{
+	SEG_IIC_Start();
+	SEG_IIC_WriteByte(0x7C);
+	SEG_IIC_WriteByte(0xE8); // 退出休眠
+	SEG_IIC_WriteByte(0xC8); // 方式设定C8
+	SEG_IIC_WriteByte(0xF0); // 闪烁控制
+	//SEG_IIC_WriteByte(0xE0); // 器件选择
+	SEG_IIC_WriteByte(0x00); // 数据指针
+	for(int i=0;i&lt;18;i++) 
+	{
+		SEG_IIC_WriteByte(buffer[i]);//
+	}
+	SEG_IIC_Stop();
+	
+}
+</code></pre>
+
+							</div>
+							<div class="me-vline-box comment"></div>
+						</article>
+					</div>
+
+					<div class="me-post-foot">
+						
+						<div class="prev-post">
+							<div class="prev">上一篇</div>
+							<a href="http://localhost:4000/post/166XzUrcq">
+								<h3 class="post-title">
+									Gridea 主题 Terrible
+								</h3>
+							</a>
+						</div>
+						
+
+						
+						<div class="next-post">
+							<div class="next">下一篇</div>
+							<a href="http://localhost:4000/post/IWBMmZv6C">
+								<h3 class="post-title">
+									Gridea 主题Optional
+								</h3>
+							</a>
+						</div>
+						
+						
+					</div>
+					
+
+
+					
+
+					<div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+</div>
+
+<!-- <script>
+  hljs.initHighlightingOnLoad()
+</script> -->
+
+				</div>
+				
+			</div>
+			<div class="layui-col-xs12 layui-col-sm3 layui-col-md3">
+				<div class=" me-header-color-style-blue">
+	<!-- 颜色主题样式 -->
+	<div class="layui-card me-card">
+		<div class="layui-card-header me-card-header layui-icon layui-icon-username cl-st-card-header-line">关于作者</div>
+
+		<div class="layui-card-body">
+			<div class=" me-sidebar-box sidebar-module ">
+				<!-- <div class="me-sidebar-about"> -->
+				<img class="me-site-author-image " src="http://localhost:4000/images/avatar.png" />
+				<p class="me-site-name">Memory</p>
+				<p class="me-site-description">单片机开发（89C51，AVR，飞思卡尔，NXP，STM32，STM8）物联网（LoRa，NbIot，MQTT，COAP，LWM2M，TCP/IP，Wifi，BLE），物联网，电路设计，嵌入式，C，C++，C#，JAVA，Go，QT</p>
+
+
+				<div class="text-left">
+					<a href="/" rel="contents" style="text-decoration: none">
+						<span class="post-link">了解更多 »</span>
+					</a>
+				</div>
+				<!-- </div> -->
+
+			</div>
+		</div>
+	</div>
+	<!-- <div class="layui-inline me-site-laydate" id="test-n1"></div> -->
+	<div class="layui-card me-card">
+		<div class="layui-card-header me-card-header layui-icon layui-icon-speaker cl-st-card-header-line">公告</div>
+		<div class="layui-card-body">
+			2020年1月18日我将博客迁移到了Gridea。
+		</div>
+	</div>
+	<div class="layui-card me-card">
+		<div class="layui-card-header me-card-header layui-icon layui-icon-dialogue cl-st-card-header-line">闲言碎语</div>
+		<div class="layui-card-body">
+			今天休息了一天，心情还不错
+		</div>
+	</div>
+	<div class="layui-card me-card">
+		<div class="layui-card-header me-card-header layui-icon layui-icon-note cl-st-card-header-line">标签/分类</div>
+		<div class="layui-card-body layui-row">
+			
+			<span class="layui-badge layui-bg-gray"><a href="http://localhost:4000/tag/KmnLPiytL" style="text-decoration: none">
+					Gridea
+				</a></span>
+			
+			<span class="layui-badge layui-bg-gray"><a href="http://localhost:4000/tag/lnIvoi1nL" style="text-decoration: none">
+					单片机驱动开发
+				</a></span>
+			
+			<span class="layui-badge layui-bg-gray"><a href="http://localhost:4000/tag/cJUv3d8uX" style="text-decoration: none">
+					大事记
+				</a></span>
+			
+			<span class="layui-badge layui-bg-gray"><a href="http://localhost:4000/tag/4eOic9FHK" style="text-decoration: none">
+					技术
+				</a></span>
+			
+			<span class="layui-badge layui-bg-gray"><a href="http://localhost:4000/tag/a0I4RKJMQ" style="text-decoration: none">
+					代码片段
+				</a></span>
+			
+			<span class="layui-badge layui-bg-gray"><a href="http://localhost:4000/tag/84zPPkwCw" style="text-decoration: none">
+					生活
+				</a></span>
+			
+		</div>
+	</div>
+	<div class="layui-card me-card">
+		<div class="layui-card-header me-card-header layui-icon layui-icon-user cl-st-card-header-line">友情链接</div>
+		<div class="layui-card-body">
+			
+			<div class="me-friends-list">
+				<a href="http://www.7tec.cn/">
+					<svg class="icon me-friends-photo" ><use xlink:href="#icon-icon-test4"></use></svg>
+					<span class="me-friends-text">7TEC</span>
+				</a>
+				
+			</div>
+			
+			<div class="me-friends-list">
+				<a href="https://www.ihewro.com">
+					<svg class="icon me-friends-photo" ><use xlink:href="#icon-icon-test15"></use></svg>
+					<span class="me-friends-text">友人C</span>
+				</a>
+				
+			</div>
+			
+			<div class="me-friends-list">
+				<a href="https://www.michaelapp.com/">
+					<svg class="icon me-friends-photo" ><use xlink:href="#icon-icon-test14"></use></svg>
+					<span class="me-friends-text">michael pan</span>
+				</a>
+				
+			</div>
+			
+			<div class="me-friends-list">
+				<a href="/">
+					<svg class="icon me-friends-photo" ><use xlink:href="#icon-chakan"></use></svg>
+					<span class="me-friends-text">查看更多</span>
+				</a>
+				
+			</div>
+		</div>
+	</div>
+	<div class="layui-card me-card">
+		<div class="layui-card-header me-card-header layui-icon layui-icon-chart cl-st-card-header-line">站点统计</div>
+		<div class="layui-card-body">
+			<ul class="me-list-columns">
+				<li>标签：6 个</li>
+				<li>文章：48 篇</li>
+				<li>页面：5个</li>
+				<li>评论：3条</li>
+			</ul>
+		</div>
+	</div>
+	<!-- <div class="layui-card me-card">
+		<div class="layui-card-header me-card-header layui-icon layui-icon-at cl-st-card-header-line">联系我</div>
+		<div class="layui-card-body layui-row">
+			<ul class="me-list-columns">
+				<li>
+					<svg class="icon" ><use xlink:href="#icon-renren"></use></svg>
+					<a href="">
+						GitHub
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<svg class="icon" ><use xlink:href="#icon-github"></use></svg>微博
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<svg class="icon" ><use xlink:href="#icon-renren"></use></svg>微博
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img  src="https://img.memory6181.com/blog/ico/cnblog.png" width="20px" height="20px" style="vertical-align: middle;border-radius: 50%; display: inline-block;">
+					</a>
+					<a href="">
+						<span style="display: inline-block; font-size:16px">博客园</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div> -->
+	<div class="layui-card me-card">
+		<div class="layui-card-header me-card-header layui-icon layui-icon-camera cl-st-card-header-line">博客时间轴</div>
+		<div class="layui-card-body layui-row">
+			<ul class="layui-timeline">
+				<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis"></i>
+					<div class="layui-timeline-content layui-text">
+						<h3 class="layui-timeline-title">8月18日</h3>
+						<p>
+							layui 2.0 的一切准备工作似乎都已到位。发布之弦，一触即发。
+							<br>不枉近百个日日夜夜与之为伴。因小而大，因弱而强。
+							<br>无论它能走多远，抑或如何支撑？至少我曾倾注全心，无怨无悔 <i class="layui-icon"></i>
+						</p>
+					</div>
+				</li>
+				<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis"></i>
+					<div class="layui-timeline-content layui-text">
+						<h3 class="layui-timeline-title">8月16日</h3>
+						<p>杜甫的思想核心是儒家的仁政思想，他有<em>“致君尧舜上，再使风俗淳”</em>的宏伟抱负。个人最爱的名篇有：</p>
+						<ul>
+							<li>《登高》</li>
+							<li>《茅屋为秋风所破歌》</li>
+						</ul>
+					</div>
+				</li>
+				<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis"></i>
+					<div class="layui-timeline-content layui-text">
+						<h3 class="layui-timeline-title">8月15日</h3>
+						<p>
+							中国人民抗日战争胜利日
+							<br>常常在想，尽管对这个国家有这样那样的抱怨，但我们的确生在了最好的时代
+							<br>铭记、感恩
+							<br>所有为中华民族浴血奋战的英雄将士
+							<br>永垂不朽
+						</p>
+					</div>
+				</li>
+				<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis"></i>
+					<div class="layui-timeline-content layui-text">
+						<div class="layui-timeline-title">过去</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<script>
+	layui.use('laydate', function () {
+		var laydate = layui.laydate;
+		//直接嵌套显示
+		laydate.render({
+			elem: '#test-n1'
+			, position: 'static'
+			, showBottom: false
+			, theme: '#393D49'
+		});
+
+	});
+</script>
+			</div>
+		</div>
+	</div>
+
+	<div class="main">
+
+	</div>
+</body>
+
+<!--载入js，在</body>之前插入即可-->
+	<!--Leancloud 操作库:-->
+	<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+	<!--Valine 的核心代码库-->
+	<script src="/media/scripts/Valine.min.js"></script>
+	<script>
+
+		var uid = 'GpH0RkcKw0qkhgH6ug4o5FPe-gzGzoHsz'
+		var ukey = 'zdnqvPx9ncVOgwnOBMdAUhcY'
+		new Valine({
+			// AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
+			av: AV,
+			el: '.comment',
+			lang: 'zh-cn',//设置评论语言
+			emoticon_url: 'https://cloud.panjunwen.com/alu',
+			emoticon_list: ["狂汗.png", "不说话.png", "汗.png", "坐等.png", "献花.png", "不高兴.png", "中刀.png", "害羞.png", "皱眉.png",
+				"小眼睛.png",
+				"暗地观察.png"],
+			app_id: uid,
+			app_key: ukey,
+			placeholder: '评论留言'
+		});
+	</script>
+</html>

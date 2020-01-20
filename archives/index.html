@@ -1,856 +1,1121 @@
 <html>
   <head>
-      <meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<title>Memory的个人博客</title>
-<link rel="shortcut icon" href="https://www.memory6181.com//favicon.ico?v=1577867255507">
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Memory的小站</title>
+
+<!-- layui -->
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script src="/media/layui/layui.all.js"></script>
+<link rel="stylesheet" href="/media/layui/css/layui.css">
+
+
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico?v=1579538642693">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="http://localhost:4000/styles/main.css">
+
+<!-- <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script> -->
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
+
+<!-- 引入阿里图标库 -->
+<script src="\media\layui\font\font-blog\iconfont.js"></script>
+<script src="\media\layui\font\font-connect\iconfont.js"></script>
+<script src="\media\layui\font\font-men\iconfont.js"></script>
+
+
+<!-- 引入primjs 代码高亮 -->
+<!-- 支持prism -->
 <script src="../../prism.js" ></script>
 <link href="../../prism.css" rel="stylesheet" />
-<link href="../../snow.css" rel="stylesheet" />
-<link rel="stylesheet" href="https://www.memory6181.com//styles/main.css">
-<meta name="description" content="我是一只特立独行的老鼠🐀" />
+<!-- 添加 Vline 评论 -->
 <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 
-<link rel="stylesheet" href="/media/fonts/iconfont.css">
-<link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<!-- DEMO JS -->
+<script src="media/scripts/index.js"></script>
 
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script>
+<!-- 谷歌统计 -->
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155337428-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'UA-155337428-1');
+  </script>
+  
+  <!-- 百度统计 -->
+  <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?3e11339a177ba7e34848b1f198c46e5c";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
   </head>
   <body>
-    <div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
+    <!-- 百度推送 -->
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
 
-    <div class="head-top-line"></div>
-    <div class="header-box">
-      <header class="header">
-
-	<div class="blog-header" id="header">
-		<div class="section-layout-wrapper">
-			<div class="site-meta">
-				<div class="nav-toggle" id="nav_toggle">
-					<div class="toggle-box">
-						<div class="line line-top"></div>
-						<div class="line line-center"></div>
-						<div class="line line-bottom"></div>
-					</div>
-				</div>
-				<div class="site-title">
-					<a href="/" class="brand">
-						<span>Memory的个人博客</span>
-					</a>
-				</div>
-				<p class="subtitle"></p>
-				<nav class="site-nav" id="site_nav">
-					
-					<li class="nav-item ">
-						<a href="/">
-							<!-- <i class="iconfont icon-home"></i> -->
-							首页
-						</a>
-					</li>
-					
-					<li class="nav-item ">
-						<a href="/archives">
-							<!-- <i class="iconfont icon-home"></i> -->
-							归档
-						</a>
-					</li>
-					
-					<li class="nav-item ">
-						<a href="/tags">
-							<!-- <i class="iconfont icon-home"></i> -->
-							标签
-						</a>
-					</li>
-					
-					<li class="nav-item ">
-						<a href="https://www.memory6181.com/post/guan-yu-wo">
-							<!-- <i class="iconfont icon-home"></i> -->
-							简历
-						</a>
-					</li>
-					
-					<li class="nav-item ">
-						<a href="https://www.memory6181.com/post/about">
-							<!-- <i class="iconfont icon-home"></i> -->
-							故事
-						</a>
-					</li>
-					
-				</nav>
-				<input type="serch" id="serch" placeholder="搜索其实很简单">
+<div class=" me-header-color-style-blue">
+	<!-- 颜色主题样式 -->
+	<div class="header cl-st-head-menue">
+		<div class="me-layui-container">
+			<div class="logo cl-st-head-title">
+				<a href="/" title="Memory"> Memory的小站</a>
 			</div>
+			<i class="layui-icon layui-icon-app mobile-icon"></i>
+			<div class="nav">
+				<ul class="layui-nav cl-st-head-menue me-layui-nav">
 
+					
+						<li class="layui-nav-item cl-st-head-menue">
+							<a href="/" style="text-decoration: none">
+								<svg class="icon">
+									<use xlink:href="#icon-home"></use>
+								</svg>
+								首页
+							</a>
+						</li>
+	
+					
+						<li class="layui-nav-item cl-st-head-menue">
+							<a href="/archives/" style="text-decoration: none">
+								<svg class="icon">
+									<use xlink:href="#icon-localoffer"></use>
+								</svg>
+								归档
+							</a>
+						</li>
+	
+					
+						<li class="layui-nav-item cl-st-head-menue">
+							<a href="/post/guan-yu-wo/" style="text-decoration: none">
+								<svg class="icon">
+									<use xlink:href="#icon-timerauto"></use>
+								</svg>
+								关于我
+							</a>
+						</li>
+	
+					
+						<li class="layui-nav-item cl-st-head-menue">
+							<a href="/" style="text-decoration: none">
+								<svg class="icon">
+									<use xlink:href="#icon-paper"></use>
+								</svg>
+								知识结构
+							</a>
+						</li>
+	
+					
+						<li class="layui-nav-item cl-st-head-menue">
+							<a href="/Navigation/" style="text-decoration: none">
+								<svg class="icon">
+									<use xlink:href="#icon-menu"></use>
+								</svg>
+								导航
+							</a>
+						</li>
+	
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="layui.js"></script>
+<script>
+	//JavaScript代码区域
+	layui.use(['element', 'layer'], function () {
+		var element = layui.element;
+		var layer = layui.layer;
+
+	});
+	$(".mobile-icon").click(function () {
+		$(".nav").toggleClass('layui-show');
+	});
+</script>
+<div class="site-header">
+</div>
+    <div class="main">
+      <div class="layui-row">
+        <div class="layui-col-xs12 layui-col-sm9 layui-col-md9 ">
+          <div class="main-content">
+            <div class="layui-carousel me-post-list-carousel" id="test3" lay-filter="test4">
+	<div carousel-item class="me-carousel-item">
+		<div><img src="https://img.memory6181.com/good/1.jpg" width="100%"></div>
+		<div><img src="https://img.memory6181.com/good/2.jpg" width="100%"></div>
+		<div><img src="https://img.memory6181.com/good/3.jpg" width="100%"></div>
+		<div><img src="https://img.memory6181.com/good/4.jpg" width="100%"></div>
+		<div><img src="https://img.memory6181.com/good/5.jpg" width="100%"></div>
+	</div>
+</div>
+
+<!-- <script src="//res.layui.com/layui/dist/layui.js" charset="utf-8"></script>
+注意：如果你直接复制所有代码到本地，上述js路径需要改成你本地的 -->
+<script>
+	layui.use(['carousel', 'form'], function () {
+		var carousel = layui.carousel
+			, form = layui.form;
+
+
+		//设定各种参数
+		var ins3 = carousel.render({
+			elem: '#test3'
+			, width: 'auto'
+			, interval: 5000
+		});
+
+		//事件
+		carousel.on('change(test4)', function (res) {
+			console.log(res)
+		});
+
+		var $ = layui.$, active = {
+			set: function (othis) {
+				var THIS = 'layui-bg-normal'
+					, key = othis.data('key')
+					, options = {};
+
+				othis.css('background-color', '#5FB878').siblings().removeAttr('style');
+				options[key] = othis.data('value');
+				ins3.reload(options);
+			}
+		};
+
+		//监听开关
+		form.on('switch(autoplay)', function () {
+			ins3.reload({
+				autoplay: this.checked
+			});
+		});
+
+		$('.demoSet').on('keyup', function () {
+			var value = this.value
+				, options = {};
+			if (!/^\d+$/.test(value)) return;
+
+			options[this.name] = value;
+			ins3.reload(options);
+		});
+
+		//其它示例
+		$('.demoTest .layui-btn').on('click', function () {
+			var othis = $(this), type = othis.data('type');
+			active[type] ? active[type].call(this, othis) : '';
+		});
+	});
+</script>
+        
+            
+
+<div class="archives-container me-header-color-style-blue">
+
+	<div class="layui-card me-card">
+		<div class="layui-card-header">归档</div>
+		<div class="layui-card-body">
+			<ul class="layui-timeline">
+				
+				<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis cl-st-text"></i>
+					<div class="layui-timeline-content layui-text me-timeline-year-text">
+						2020
+					</div>
+				</li>
+				
+				
+				<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis cl-st-text"></i>
+					<div class="layui-timeline-content layui-text">
+						<h3 class="layui-timeline-title me-timeline-title">
+							<a href="http://localhost:4000/post/166XzUrcq">
+								<span class="post-title">
+									<small>2020-01-08</small>
+									Gridea 主题 Terrible
+								</span>
+							</a>
+						</h3>
+
+						<p>
+							概述
+程序员造轮子，之前修改了别人的一款主题NexT，但是有一些问题没有得到妥善的解决，比如响应式布局等等，所以自己重新从头开始制作了一款主题Terrible。
+
+Terrible:可怕的，整个主题完整的黑白色，包括头图的选择都是黑白色
+
+...
+						</p>
+					</div>
+				</li>
+				
+				
+				
+				<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis cl-st-text"></i>
+					<div class="layui-timeline-content layui-text">
+						<h3 class="layui-timeline-title me-timeline-title">
+							<a href="http://localhost:4000/post/KfGuWChVe">
+								<span class="post-title">
+									<small>2020-01-07</small>
+									BL55072/BL55075 应用笔记
+								</span>
+							</a>
+						</h3>
+
+						<p>
+							BL55072
+1、特点
+
+液晶驱动输出：Common 输出 4 线，Segment 输出 36 线
+内置显示寄存器 36*4=144bit
+2 线串行接口（SCL,SDA）
+内置震荡电路
+内置液晶驱动电源电路
+1/3 Bias, 1/2 ...
+						</p>
+					</div>
+				</li>
+				
+				
+				
+				<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis cl-st-text"></i>
+					<div class="layui-timeline-content layui-text">
+						<h3 class="layui-timeline-title me-timeline-title">
+							<a href="http://localhost:4000/post/IWBMmZv6C">
+								<span class="post-title">
+									<small>2020-01-01</small>
+									Gridea 主题Optional
+								</span>
+							</a>
+						</h3>
+
+						<p>
+							主题由来
+Optional：随意的，无所谓的
+该主题是从Gridea NexT Theme 主题修改而来，在此感谢Gridea NexT Theme的作者hsxyhao。
+链接：https://github.com/hsxyhao/grid...
+						</p>
+					</div>
+				</li>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis cl-st-text"></i>
+					<div class="layui-timeline-content layui-text me-timeline-year-text">
+						2019
+					</div>
+				</li>
+				
+				
+				
+				
+				
+				
+				
+				
+				<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis cl-st-text"></i>
+					<div class="layui-timeline-content layui-text">
+						<h3 class="layui-timeline-title me-timeline-title">
+							<a href="http://localhost:4000/post/git-ti-jiao-dai-ma-dao-yuan-cheng-cang-ku">
+								<span class="post-title">
+									<small>2019-12-27</small>
+									GIT 提交代码到远程仓库
+								</span>
+							</a>
+						</h3>
+
+						<p>
+							概述
+Git是什么？
+Git是目前世界上最先进的分布式版本控制系统（没有之一）。
+Git有什么特点？简单来说就是：高端大气上档次！
+
+操作流程
+1、初始化本地仓库
+git init
+
+2、克隆远程仓库代码
+git clone https:/...
+						</p>
+					</div>
+				</li>
+				
+				
+				
+				<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis cl-st-text"></i>
+					<div class="layui-timeline-content layui-text">
+						<h3 class="layui-timeline-title me-timeline-title">
+							<a href="http://localhost:4000/post/BHaQIb8de">
+								<span class="post-title">
+									<small>2019-08-08</small>
+									C语言 十六进制字符串和十六进制之间互转（嵌入式编程）
+								</span>
+							</a>
+						</h3>
+
+						<p>
+							type.c
+/*
+ * Module Name:  type.c
+ * Module Date:  2019-7-20
+ * Module Auth:  zhangpeng
+ * Description:  存放一些通用的函数
+ * Ot...
+						</p>
+					</div>
+				</li>
+				
+				
+				
+				<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis cl-st-text"></i>
+					<div class="layui-timeline-content layui-text">
+						<h3 class="layui-timeline-title me-timeline-title">
+							<a href="http://localhost:4000/post/9VjGHAnlG">
+								<span class="post-title">
+									<small>2019-08-07</small>
+									QT 十六进制字符串和十六进制之间互转（ByteArray和HexString）
+								</span>
+							</a>
+						</h3>
+
+						<p>
+							举例说明
+ByteArray {0x01,0x02,0x03,0x04,0x05,0x06}; 
+HexString &quot;01 02 03 04 05 06&quot;
+
+代码
+Convert.cpp
+#include &quot;...
+						</p>
+					</div>
+				</li>
+				
+				
+				
+				<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis cl-st-text"></i>
+					<div class="layui-timeline-content layui-text">
+						<h3 class="layui-timeline-title me-timeline-title">
+							<a href="http://localhost:4000/post/pjXJAiI7q">
+								<span class="post-title">
+									<small>2019-08-02</small>
+									C# 多线程操作
+								</span>
+							</a>
+						</h3>
+
+						<p>
+							
+1 、带参数多线程
+Thread t = new Thread(new ParameterizedThreadStart(ProcessAtCommand));
+t.Start(at);
+private void ProcessAtCom...
+						</p>
+					</div>
+				</li>
+				
+				
+				
+				<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis cl-st-text"></i>
+					<div class="layui-timeline-content layui-text">
+						<h3 class="layui-timeline-title me-timeline-title">
+							<a href="http://localhost:4000/post/2019-08-02">
+								<span class="post-title">
+									<small>2019-08-02</small>
+									GO 一些开源库
+								</span>
+							</a>
+						</h3>
+
+						<p>
+							美图压阵
+
+一个基于控制台的GUI界面，输入文本框和显示界面
+
+Console GUI ：https://www.jianshu.com/p/b9f686f5a317
+
+一个MQTT SDK
+
+MQTT SDK    :https://gi...
+						</p>
+					</div>
+				</li>
+				
+				
+				
+				<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis cl-st-text"></i>
+					<div class="layui-timeline-content layui-text">
+						<h3 class="layui-timeline-title me-timeline-title">
+							<a href="http://localhost:4000/post/2019-08-01">
+								<span class="post-title">
+									<small>2019-08-01</small>
+									MQTT 服务器搭建基于树莓派
+								</span>
+							</a>
+						</h3>
+
+						<p>
+							美图压阵
+
+1、安装必要组件
+
+libssl-dev
+
+pi@raspberrypi:/myserver $ sudo apt-get install libssl-dev
+
+pi@raspberrypi:/myserver $ sudo ...
+						</p>
+					</div>
+				</li>
+				
+				
+				
+				<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis cl-st-text"></i>
+					<div class="layui-timeline-content layui-text">
+						<h3 class="layui-timeline-title me-timeline-title">
+							<a href="http://localhost:4000/post/57E1i2a3v">
+								<span class="post-title">
+									<small>2019-07-26</small>
+									欢迎使用 Typecho
+								</span>
+							</a>
+						</h3>
+
+						<p>
+							关于博客系统更换到Typecho的说明：
+
+1、想要写更多的生活记录文章，不想要简单的文字。
+2、想要加入相册功能。
+3、静态博客过于单调。
+选择Typecho的原因：
+1、默认支持MARKDOWN可以直接迁移之前的博客内容。
+2、看到了一...
+						</p>
+					</div>
+				</li>
+				
+				
+				
+				<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis cl-st-text"></i>
+					<div class="layui-timeline-content layui-text">
+						<h3 class="layui-timeline-title me-timeline-title">
+							<a href="http://localhost:4000/post/I5Tzn_Qdm">
+								<span class="post-title">
+									<small>2019-07-23</small>
+									我又换了博客主题
+								</span>
+							</a>
+						</h3>
+
+						<p>
+							
+为什么换了
+好久没有写点东西了，打开博客一看，给人一种QQ空间的既视感，不能忍受。
+还是喜欢简单一点，也许和每一段时间经历的事有关系，有一段时间喜欢出去骑车，欣赏风景，突然又有一段时间喜欢在家休息，有时候又很喜欢在家安静的写东西，看心情吧...
+						</p>
+					</div>
+				</li>
+				
+				
+				
+				<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis cl-st-text"></i>
+					<div class="layui-timeline-content layui-text">
+						<h3 class="layui-timeline-title me-timeline-title">
+							<a href="http://localhost:4000/post/2019-07-08">
+								<span class="post-title">
+									<small>2019-07-08</small>
+									STM32L073RZ -EEPROM 踩过的一些坑
+								</span>
+							</a>
+						</h3>
+
+						<p>
+							代码
+uint16_t bsp_eeprom_write (uint32_t WriteAddr, uint8_t *pBuffer, uint16_t NumToWrite)
+{
+	uint16_t t,err = 0;
+	assert_...
+						</p>
+					</div>
+				</li>
+				
+				
+				
+				<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis cl-st-text"></i>
+					<div class="layui-timeline-content layui-text">
+						<h3 class="layui-timeline-title me-timeline-title">
+							<a href="http://localhost:4000/post/2019-06-19">
+								<span class="post-title">
+									<small>2019-06-19</small>
+									QT-串口操作
+								</span>
+							</a>
+						</h3>
+
+						<p>
+							修改.pro文件
+添加如下所示代码
+QT       += serialport
+
+编写.h文件
+1、添加头文件
+#include &lt;QtSerialPort&gt;
+
+2、添加串口定义
+QSerialPort *serialPort...
+						</p>
+					</div>
+				</li>
+				
+				
+				
+				<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis cl-st-text"></i>
+					<div class="layui-timeline-content layui-text">
+						<h3 class="layui-timeline-title me-timeline-title">
+							<a href="http://localhost:4000/post/2019-06-15">
+								<span class="post-title">
+									<small>2019-06-15</small>
+									Linux 安装CH340驱动
+								</span>
+							</a>
+						</h3>
+
+						<p>
+							下载
+
+地址:http://www.wch.cn/downloads/CH341SER_LINUX_ZIP.html
+
+###＃　解压
+unzip CH341SER_LINUX.ZIP
+
+编译
+cd CH341SER_LINUX
+make
+...
+						</p>
+					</div>
+				</li>
+				
+				
+				
+				<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis cl-st-text"></i>
+					<div class="layui-timeline-content layui-text">
+						<h3 class="layui-timeline-title me-timeline-title">
+							<a href="http://localhost:4000/post/2019-06-06">
+								<span class="post-title">
+									<small>2019-06-06</small>
+									关于LCD的一些经验
+								</span>
+							</a>
+						</h3>
+
+						<p>
+							段码液晶驱动BL5507
+这是在上一家公司做产品的过程中遇到的问题，总共出现两次比较严重的bug
+1、液晶运行一段时间之后出现了部分黑屏的显现，起初怪硬件工程师，后来联系了厂家才了解到这个芯片有一个休眠模式，不知道在什么情况的影响下进入了休...
+						</p>
+					</div>
+				</li>
+				
+				
+				
+			</ul>
 		</div>
 	</div>
 
-</header>
-<script type="text/javascript">
+	<!-- 
+    <h2 class="year">2020</h2>
+    
+      
+        <article class="post">
+          <a href="http://localhost:4000/post/166XzUrcq">
+            <h2 class="post-title">
+              Gridea 主题 Terrible
+              <small>2020-01-08</small>
+            </h2>
+          </a>
+        </article>
+      
+    
+      
+        <article class="post">
+          <a href="http://localhost:4000/post/KfGuWChVe">
+            <h2 class="post-title">
+              BL55072/BL55075 应用笔记
+              <small>2020-01-07</small>
+            </h2>
+          </a>
+        </article>
+      
+    
+      
+        <article class="post">
+          <a href="http://localhost:4000/post/IWBMmZv6C">
+            <h2 class="post-title">
+              Gridea 主题Optional
+              <small>2020-01-01</small>
+            </h2>
+          </a>
+        </article>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+    <h2 class="year">2019</h2>
+    
+      
+    
+      
+    
+      
+    
+      
+        <article class="post">
+          <a href="http://localhost:4000/post/git-ti-jiao-dai-ma-dao-yuan-cheng-cang-ku">
+            <h2 class="post-title">
+              GIT 提交代码到远程仓库
+              <small>2019-12-27</small>
+            </h2>
+          </a>
+        </article>
+      
+    
+      
+        <article class="post">
+          <a href="http://localhost:4000/post/BHaQIb8de">
+            <h2 class="post-title">
+              C语言 十六进制字符串和十六进制之间互转（嵌入式编程）
+              <small>2019-08-08</small>
+            </h2>
+          </a>
+        </article>
+      
+    
+      
+        <article class="post">
+          <a href="http://localhost:4000/post/9VjGHAnlG">
+            <h2 class="post-title">
+              QT 十六进制字符串和十六进制之间互转（ByteArray和HexString）
+              <small>2019-08-07</small>
+            </h2>
+          </a>
+        </article>
+      
+    
+      
+        <article class="post">
+          <a href="http://localhost:4000/post/pjXJAiI7q">
+            <h2 class="post-title">
+              C# 多线程操作
+              <small>2019-08-02</small>
+            </h2>
+          </a>
+        </article>
+      
+    
+      
+        <article class="post">
+          <a href="http://localhost:4000/post/2019-08-02">
+            <h2 class="post-title">
+              GO 一些开源库
+              <small>2019-08-02</small>
+            </h2>
+          </a>
+        </article>
+      
+    
+      
+        <article class="post">
+          <a href="http://localhost:4000/post/2019-08-01">
+            <h2 class="post-title">
+              MQTT 服务器搭建基于树莓派
+              <small>2019-08-01</small>
+            </h2>
+          </a>
+        </article>
+      
+    
+      
+        <article class="post">
+          <a href="http://localhost:4000/post/57E1i2a3v">
+            <h2 class="post-title">
+              欢迎使用 Typecho
+              <small>2019-07-26</small>
+            </h2>
+          </a>
+        </article>
+      
+    
+      
+        <article class="post">
+          <a href="http://localhost:4000/post/I5Tzn_Qdm">
+            <h2 class="post-title">
+              我又换了博客主题
+              <small>2019-07-23</small>
+            </h2>
+          </a>
+        </article>
+      
+    
+      
+        <article class="post">
+          <a href="http://localhost:4000/post/2019-07-08">
+            <h2 class="post-title">
+              STM32L073RZ -EEPROM 踩过的一些坑
+              <small>2019-07-08</small>
+            </h2>
+          </a>
+        </article>
+      
+    
+      
+        <article class="post">
+          <a href="http://localhost:4000/post/2019-06-19">
+            <h2 class="post-title">
+              QT-串口操作
+              <small>2019-06-19</small>
+            </h2>
+          </a>
+        </article>
+      
+    
+      
+        <article class="post">
+          <a href="http://localhost:4000/post/2019-06-15">
+            <h2 class="post-title">
+              Linux 安装CH340驱动
+              <small>2019-06-15</small>
+            </h2>
+          </a>
+        </article>
+      
+    
+      
+        <article class="post">
+          <a href="http://localhost:4000/post/2019-06-06">
+            <h2 class="post-title">
+              关于LCD的一些经验
+              <small>2019-06-06</small>
+            </h2>
+          </a>
+        </article>
+      
+    
+   -->
+</div>
+        
+            <div class="pagination-container">
+  
+  <div class="prev-page"><svg class="icon"><use xlink:href="#icon-arrowleft"></use></svg>前面没有啦</div>
+  
+  
+    <a href="http://localhost:4000/archives/page/2" class="next-page">下一页 <svg class="icon "><use xlink:href="#icon-arrowright"></use></svg></a>
+    
+</div>
 
-	let showNav = true;
+        
+            <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+</div>
 
-	let navToggle = document.querySelector('#nav_toggle'),
-		siteNav = document.querySelector('#site_nav');
+<!-- <script>
+  hljs.initHighlightingOnLoad()
+</script> -->
 
-	function navClick() {
-		navToggle.classList.toggle('nav-toggle-active');
-		siteNav.classList.toggle('nav-menu-active');
-	}
+          </div>
+  
+        </div>
+        <div class="layui-col-xs12 layui-col-sm3 layui-col-md3">
+          <div class=" me-header-color-style-blue">
+	<!-- 颜色主题样式 -->
+	<div class="layui-card me-card">
+		<div class="layui-card-header me-card-header layui-icon layui-icon-username cl-st-card-header-line">关于作者</div>
 
-	navToggle.addEventListener('click', navClick);  
+		<div class="layui-card-body">
+			<div class=" me-sidebar-box sidebar-module ">
+				<!-- <div class="me-sidebar-about"> -->
+				<img class="me-site-author-image " src="http://localhost:4000/images/avatar.png" />
+				<p class="me-site-name">Memory</p>
+				<p class="me-site-description">单片机开发（89C51，AVR，飞思卡尔，NXP，STM32，STM8）物联网（LoRa，NbIot，MQTT，COAP，LWM2M，TCP/IP，Wifi，BLE），物联网，电路设计，嵌入式，C，C++，C#，JAVA，Go，QT</p>
+
+
+				<div class="text-left">
+					<a href="/" rel="contents" style="text-decoration: none">
+						<span class="post-link">了解更多 »</span>
+					</a>
+				</div>
+				<!-- </div> -->
+
+			</div>
+		</div>
+	</div>
+	<!-- <div class="layui-inline me-site-laydate" id="test-n1"></div> -->
+	<div class="layui-card me-card">
+		<div class="layui-card-header me-card-header layui-icon layui-icon-speaker cl-st-card-header-line">公告</div>
+		<div class="layui-card-body">
+			2020年1月18日我将博客迁移到了Gridea。
+		</div>
+	</div>
+	<div class="layui-card me-card">
+		<div class="layui-card-header me-card-header layui-icon layui-icon-dialogue cl-st-card-header-line">闲言碎语</div>
+		<div class="layui-card-body">
+			今天休息了一天，心情还不错
+		</div>
+	</div>
+	<div class="layui-card me-card">
+		<div class="layui-card-header me-card-header layui-icon layui-icon-note cl-st-card-header-line">标签/分类</div>
+		<div class="layui-card-body layui-row">
+			
+			<span class="layui-badge layui-bg-gray"><a href="http://localhost:4000/tag/KmnLPiytL" style="text-decoration: none">
+					Gridea
+				</a></span>
+			
+			<span class="layui-badge layui-bg-gray"><a href="http://localhost:4000/tag/lnIvoi1nL" style="text-decoration: none">
+					单片机驱动开发
+				</a></span>
+			
+			<span class="layui-badge layui-bg-gray"><a href="http://localhost:4000/tag/cJUv3d8uX" style="text-decoration: none">
+					大事记
+				</a></span>
+			
+			<span class="layui-badge layui-bg-gray"><a href="http://localhost:4000/tag/4eOic9FHK" style="text-decoration: none">
+					技术
+				</a></span>
+			
+			<span class="layui-badge layui-bg-gray"><a href="http://localhost:4000/tag/a0I4RKJMQ" style="text-decoration: none">
+					代码片段
+				</a></span>
+			
+			<span class="layui-badge layui-bg-gray"><a href="http://localhost:4000/tag/84zPPkwCw" style="text-decoration: none">
+					生活
+				</a></span>
+			
+		</div>
+	</div>
+	<div class="layui-card me-card">
+		<div class="layui-card-header me-card-header layui-icon layui-icon-user cl-st-card-header-line">友情链接</div>
+		<div class="layui-card-body">
+			
+			<div class="me-friends-list">
+				<a href="http://www.7tec.cn/">
+					<svg class="icon me-friends-photo" ><use xlink:href="#icon-icon-test4"></use></svg>
+					<span class="me-friends-text">7TEC</span>
+				</a>
+				
+			</div>
+			
+			<div class="me-friends-list">
+				<a href="https://www.ihewro.com">
+					<svg class="icon me-friends-photo" ><use xlink:href="#icon-icon-test15"></use></svg>
+					<span class="me-friends-text">友人C</span>
+				</a>
+				
+			</div>
+			
+			<div class="me-friends-list">
+				<a href="https://www.michaelapp.com/">
+					<svg class="icon me-friends-photo" ><use xlink:href="#icon-icon-test14"></use></svg>
+					<span class="me-friends-text">michael pan</span>
+				</a>
+				
+			</div>
+			
+			<div class="me-friends-list">
+				<a href="/">
+					<svg class="icon me-friends-photo" ><use xlink:href="#icon-chakan"></use></svg>
+					<span class="me-friends-text">查看更多</span>
+				</a>
+				
+			</div>
+		</div>
+	</div>
+	<div class="layui-card me-card">
+		<div class="layui-card-header me-card-header layui-icon layui-icon-chart cl-st-card-header-line">站点统计</div>
+		<div class="layui-card-body">
+			<ul class="me-list-columns">
+				<li>标签：6 个</li>
+				<li>文章：48 篇</li>
+				<li>页面：5个</li>
+				<li>评论：3条</li>
+			</ul>
+		</div>
+	</div>
+	<!-- <div class="layui-card me-card">
+		<div class="layui-card-header me-card-header layui-icon layui-icon-at cl-st-card-header-line">联系我</div>
+		<div class="layui-card-body layui-row">
+			<ul class="me-list-columns">
+				<li>
+					<svg class="icon" ><use xlink:href="#icon-renren"></use></svg>
+					<a href="">
+						GitHub
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<svg class="icon" ><use xlink:href="#icon-github"></use></svg>微博
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<svg class="icon" ><use xlink:href="#icon-renren"></use></svg>微博
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img  src="https://img.memory6181.com/blog/ico/cnblog.png" width="20px" height="20px" style="vertical-align: middle;border-radius: 50%; display: inline-block;">
+					</a>
+					<a href="">
+						<span style="display: inline-block; font-size:16px">博客园</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div> -->
+	<div class="layui-card me-card">
+		<div class="layui-card-header me-card-header layui-icon layui-icon-camera cl-st-card-header-line">博客时间轴</div>
+		<div class="layui-card-body layui-row">
+			<ul class="layui-timeline">
+				<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis"></i>
+					<div class="layui-timeline-content layui-text">
+						<h3 class="layui-timeline-title">8月18日</h3>
+						<p>
+							layui 2.0 的一切准备工作似乎都已到位。发布之弦，一触即发。
+							<br>不枉近百个日日夜夜与之为伴。因小而大，因弱而强。
+							<br>无论它能走多远，抑或如何支撑？至少我曾倾注全心，无怨无悔 <i class="layui-icon"></i>
+						</p>
+					</div>
+				</li>
+				<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis"></i>
+					<div class="layui-timeline-content layui-text">
+						<h3 class="layui-timeline-title">8月16日</h3>
+						<p>杜甫的思想核心是儒家的仁政思想，他有<em>“致君尧舜上，再使风俗淳”</em>的宏伟抱负。个人最爱的名篇有：</p>
+						<ul>
+							<li>《登高》</li>
+							<li>《茅屋为秋风所破歌》</li>
+						</ul>
+					</div>
+				</li>
+				<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis"></i>
+					<div class="layui-timeline-content layui-text">
+						<h3 class="layui-timeline-title">8月15日</h3>
+						<p>
+							中国人民抗日战争胜利日
+							<br>常常在想，尽管对这个国家有这样那样的抱怨，但我们的确生在了最好的时代
+							<br>铭记、感恩
+							<br>所有为中华民族浴血奋战的英雄将士
+							<br>永垂不朽
+						</p>
+					</div>
+				</li>
+				<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis"></i>
+					<div class="layui-timeline-content layui-text">
+						<div class="layui-timeline-title">过去</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<script>
+	layui.use('laydate', function () {
+		var laydate = layui.laydate;
+		//直接嵌套显示
+		laydate.render({
+			elem: '#test-n1'
+			, position: 'static'
+			, showBottom: false
+			, theme: '#393D49'
+		});
+
+	});
 </script>
-    </div>
-    <div class="main-continer">
-      <div class="section-layout">
-        <div class="section-layout-wrapper">
-          
-          <!-- <div class="section-box"> -->
-            <section class="section posts-expand">
-              <section class="section-items">
-                
-<div class="archive-timeline-box">
-  <div class="archive-timeline-title">
-    
-      <h2>非常好！目前共计45篇日志，继续努力！</h2>
-    
-  </div>
-  
-    
-    
-      <div class="node-title">
-        <h2 class="tag-year">2020</h2>
-      </div>    
-      
-    
-    <a href="https://www.memory6181.com/post/IWBMmZv6C">
-      <div class="motion-warpper tag-archive-node">
-        <div class="tag-node">
-          <h1>
-            01-01
-            <small>Gridea 主题Optional</small>
-          </h1>
-        </div>  
-    </div>
-    </a>
-  
-    
-    
-      <div class="node-title">
-        <h2 class="tag-year">2019</h2>
-      </div>    
-      
-    
-    <a href="https://www.memory6181.com/post/git-ti-jiao-dai-ma-dao-yuan-cheng-cang-ku">
-      <div class="motion-warpper tag-archive-node">
-        <div class="tag-node">
-          <h1>
-            12-27
-            <small>GIT 提交代码到远程仓库</small>
-          </h1>
-        </div>  
-    </div>
-    </a>
-  
-    
-    
-    <a href="https://www.memory6181.com/post/BHaQIb8de">
-      <div class="motion-warpper tag-archive-node">
-        <div class="tag-node">
-          <h1>
-            08-08
-            <small>C语言 十六进制字符串和十六进制之间互转（嵌入式编程）</small>
-          </h1>
-        </div>  
-    </div>
-    </a>
-  
-    
-    
-    <a href="https://www.memory6181.com/post/9VjGHAnlG">
-      <div class="motion-warpper tag-archive-node">
-        <div class="tag-node">
-          <h1>
-            08-07
-            <small>QT 十六进制字符串和十六进制之间互转（ByteArray和HexString）</small>
-          </h1>
-        </div>  
-    </div>
-    </a>
-  
-    
-    
-    <a href="https://www.memory6181.com/post/pjXJAiI7q">
-      <div class="motion-warpper tag-archive-node">
-        <div class="tag-node">
-          <h1>
-            08-02
-            <small>C# 多线程操作</small>
-          </h1>
-        </div>  
-    </div>
-    </a>
-  
-    
-    
-    <a href="https://www.memory6181.com/post/2019-08-02">
-      <div class="motion-warpper tag-archive-node">
-        <div class="tag-node">
-          <h1>
-            08-02
-            <small>GO 一些开源库</small>
-          </h1>
-        </div>  
-    </div>
-    </a>
-  
-    
-    
-    <a href="https://www.memory6181.com/post/2019-08-01">
-      <div class="motion-warpper tag-archive-node">
-        <div class="tag-node">
-          <h1>
-            08-01
-            <small>MQTT 服务器搭建基于树莓派</small>
-          </h1>
-        </div>  
-    </div>
-    </a>
-  
-    
-    
-    <a href="https://www.memory6181.com/post/57E1i2a3v">
-      <div class="motion-warpper tag-archive-node">
-        <div class="tag-node">
-          <h1>
-            07-26
-            <small>欢迎使用 Typecho</small>
-          </h1>
-        </div>  
-    </div>
-    </a>
-  
-    
-    
-    <a href="https://www.memory6181.com/post/I5Tzn_Qdm">
-      <div class="motion-warpper tag-archive-node">
-        <div class="tag-node">
-          <h1>
-            07-23
-            <small>我又换了博客主题</small>
-          </h1>
-        </div>  
-    </div>
-    </a>
-  
-    
-    
-    <a href="https://www.memory6181.com/post/2019-07-08">
-      <div class="motion-warpper tag-archive-node">
-        <div class="tag-node">
-          <h1>
-            07-08
-            <small>STM32L073RZ -EEPROM 踩过的一些坑</small>
-          </h1>
-        </div>  
-    </div>
-    </a>
-  
-    
-    
-    <a href="https://www.memory6181.com/post/2019-06-19">
-      <div class="motion-warpper tag-archive-node">
-        <div class="tag-node">
-          <h1>
-            06-19
-            <small>QT-串口操作</small>
-          </h1>
-        </div>  
-    </div>
-    </a>
-  
-    
-    
-    <a href="https://www.memory6181.com/post/2019-06-15">
-      <div class="motion-warpper tag-archive-node">
-        <div class="tag-node">
-          <h1>
-            06-15
-            <small>Linux 安装CH340驱动</small>
-          </h1>
-        </div>  
-    </div>
-    </a>
-  
-    
-    
-    <a href="https://www.memory6181.com/post/2019-06-06">
-      <div class="motion-warpper tag-archive-node">
-        <div class="tag-node">
-          <h1>
-            06-06
-            <small>关于LCD的一些经验</small>
-          </h1>
-        </div>  
-    </div>
-    </a>
-  
-    
-    
-    <a href="https://www.memory6181.com/post/i5oghub2h">
-      <div class="motion-warpper tag-archive-node">
-        <div class="tag-node">
-          <h1>
-            05-28
-            <small>博客大事记</small>
-          </h1>
-        </div>  
-    </div>
-    </a>
-  
-    
-    
-    <a href="https://www.memory6181.com/post/LeO2klGZX">
-      <div class="motion-warpper tag-archive-node">
-        <div class="tag-node">
-          <h1>
-            05-27
-            <small>对上一家公司的一些总结</small>
-          </h1>
-        </div>  
-    </div>
-    </a>
-  
-    
-    
-    <a href="https://www.memory6181.com/post/2019-05-22">
-      <div class="motion-warpper tag-archive-node">
-        <div class="tag-node">
-          <h1>
-            05-22
-            <small>Go-Webview 弃坑Sciter</small>
-          </h1>
-        </div>  
-    </div>
-    </a>
-  
-    
-    
-    <a href="https://www.memory6181.com/post/2019-05-21">
-      <div class="motion-warpper tag-archive-node">
-        <div class="tag-node">
-          <h1>
-            05-21
-            <small>Go-Sciter 入门教程</small>
-          </h1>
-        </div>  
-    </div>
-    </a>
-  
-    
-    
-    <a href="https://www.memory6181.com/post/lcCovwo0k">
-      <div class="motion-warpper tag-archive-node">
-        <div class="tag-node">
-          <h1>
-            05-21
-            <small>2019后半年计划</small>
-          </h1>
-        </div>  
-    </div>
-    </a>
-  
-    
-    
-    <a href="https://www.memory6181.com/post/3iPFt8_rk">
-      <div class="motion-warpper tag-archive-node">
-        <div class="tag-node">
-          <h1>
-            05-19
-            <small>2019年5月19日关于我的一天</small>
-          </h1>
-        </div>  
-    </div>
-    </a>
-  
-    
-    
-    <a href="https://www.memory6181.com/post/2019-05-18">
-      <div class="motion-warpper tag-archive-node">
-        <div class="tag-node">
-          <h1>
-            05-18
-            <small>树莓派安装php和apache</small>
-          </h1>
-        </div>  
-    </div>
-    </a>
-  
-    
-    
-    <a href="https://www.memory6181.com/post/2019-03-25-5">
-      <div class="motion-warpper tag-archive-node">
-        <div class="tag-node">
-          <h1>
-            03-25
-            <small>CSharp 一些代码小结--文件对话框</small>
-          </h1>
-        </div>  
-    </div>
-    </a>
-  
-    
-    
-    <a href="https://www.memory6181.com/post/2019-03-25-1">
-      <div class="motion-warpper tag-archive-node">
-        <div class="tag-node">
-          <h1>
-            03-25
-            <small>CSharp  一些代码小结--UI操作</small>
-          </h1>
-        </div>  
-    </div>
-    </a>
-  
-    
-    
-    <a href="https://www.memory6181.com/post/2019-03-25-3">
-      <div class="motion-warpper tag-archive-node">
-        <div class="tag-node">
-          <h1>
-            03-25
-            <small>C#  一些代码小结--使用文件记录日志</small>
-          </h1>
-        </div>  
-    </div>
-    </a>
-  
-    
-    
-    <a href="https://www.memory6181.com/post/2019-03-25-2">
-      <div class="motion-warpper tag-archive-node">
-        <div class="tag-node">
-          <h1>
-            03-25
-            <small> CSharp  一些代码小结--串口操作</small>
-          </h1>
-        </div>  
-    </div>
-    </a>
-  
-    
-    
-    <a href="https://www.memory6181.com/post/2019-03-25-4">
-      <div class="motion-warpper tag-archive-node">
-        <div class="tag-node">
-          <h1>
-            03-25
-            <small>CSharp 一些代码小结--datGirdView保存到csv文件</small>
-          </h1>
-        </div>  
-    </div>
-    </a>
-  
-</div>
-
-<div class="page">
-  <ul class="pagination-ul">
-    
-    
-      
-        <li class="pagination-li pagination-active">
-            <a href="/archives/page/../">
-              1
-            </a>
-        </li>
-      
-        <li class="pagination-li ">
-            <a href="/archives/page/2">
-              2
-            </a>
-        </li>
-      
-    
-    
-      <li class="pagination-dir">
-        <a href="/archives/page/2">
-          <i class="iconfont icon-angle_right"></i>
-        </a>
-      </li>
-    
-  </ul>
-</div>
-
-              </section>
-            </section>
-            <div class="sidebar">
-    <div class="sidebar-wrapper">
-  <div class="sidebar-item">
-    <p class="site-author-name">关于博主</p>
-    <img class="site-author-image" src="https://www.memory6181.com//images/avatar.png"/>
-    <p class="site-description">Memory</p>
-    <p class="site-description">我是一只特立独行的老鼠🐀</p>
-  </div>
-  <div class="sidebar-item side-item-stat">
-    <div class="sidebar-item-box">
-      <a href="/archives/">
-        <span class="site-item-stat-count">45</span>
-        <span class="site-item-stat-name">日志</span>
-      </a>
-    </div>
-    <div class="sidebar-item-box">
-      <a href="">
-        <span class="site-item-stat-count">5</span>
-        <span class="site-item-stat-name">分类</span>
-      </a>
-    </div>
-    <div class="sidebar-item-box">
-      <a href="/tags/">
-        <span class="site-item-stat-count">5</span>
-        <span class="site-item-stat-name">标签</span>
-      </a>
-    </div>
-  </div>
-  <div class="sidebar-item">
-    <span class="site-item-rss">
-        <i class="iconfont icon-rss"></i>
-        <a href="https://www.memory6181.com//atom.xml" target="_blank">RSS</a>
-    </span>
-  </div>
-  <div class="sidebar-item sidebar-item-social">
-    <div class="social-item">
-      <a href="https://www.github.com/memorypro">
-        <i class="iconfont icon-github"></i> GitHub
-      </a>
-      <a href="">
-        <i class="iconfont icon-twitter"></i> Twitter
-      </a>
-    </div>
-    <div class="social-item">
-      <a href="">
-        <i class="iconfont icon-globe"></i> 豆瓣
-      </a>
-      <a href="">
-        <i class="iconfont icon-globe"></i> 知乎
-      </a>
-    </div>
-  </div>
-</div>
-
-<div class="sidebar-wrapper">
-  <div class="sidebar-item">
-    <p class="site-author-name">文章分类</p>
-  </div>
-  <div>
-    <ul class="site-meta-tags">
-      
-        <li >
-          <a  href="https://www.memory6181.com/tag/cJUv3d8uX">
-            大事记
-          </a>
-        </li>
-
-      
-        <li >
-          <a  href="https://www.memory6181.com/tag/4eOic9FHK">
-            技术
-          </a>
-        </li>
-
-      
-        <li >
-          <a  href="https://www.memory6181.com/tag/a0I4RKJMQ">
-            代码片段
-          </a>
-        </li>
-
-      
-        <li >
-          <a  href="https://www.memory6181.com/tag/84zPPkwCw">
-            生活
-          </a>
-        </li>
-
-      
-        <li >
-          <a  href="https://www.memory6181.com/tag/KmnLPiytL">
-            Gridea
-          </a>
-        </li>
-
-      
-    </ul>
-     
-  </div>
-
-</div>
-
-</div>
-          <!-- </div> -->
         </div>
       </div>
-      <div class="footer-box">
-  <footer class="footer">
-    <div class="copyright">
-      © 2019-2020 <i class="iconfont icon-heart"></i> Memory
     </div>
-    <div class="poweredby">
-      <div class="power-left">Power By<a href="https://github.com/memorypro/"> Memory</a></div>
-      <div>Copy<a href="https://github.com/hsxyhao/gridea-theme-next"> Gridea NexT Theme</a></div>
-      <div>Copy<a href="https://github.com/iissnan/hexo-theme-next"> Hexo Next Theme</a></div>
-    </div>
-  </footer>
-  <div class="back-to-top" id="back_to_top">
-    <i class="iconfont icon-arrow_up"></i>
-    <span class="scrollpercent">
-      <span id="back_to_top_text">100</span>%
-    </span>
-  </div>
-</div>
 
-<script>
-
-  let body = document.body;
-
-  let back2Top = document.querySelector('#back_to_top'),
-  back2TopText = document.querySelector('#back_to_top_text');
-
-  function scrollAnimation(currentY, targetY) {
-   
-    let needScrollTop = targetY - currentY
-    let _currentY = currentY
-    setTimeout(() => {
-      const dist = Math.ceil(needScrollTop / 10)
-      _currentY += dist
-      window.scrollTo(_currentY, currentY)
-      if (needScrollTop > 10 || needScrollTop < -10) {
-        scrollAnimation(_currentY, targetY)
-      } else {
-        window.scrollTo(_currentY, targetY)
-      }
-    }, 1)
-  }
-
-  back2Top.addEventListener("click", function(e) {
-    scrollAnimation(body.scrollTop, 0);
-    e.stopPropagation();
-    return false;
-  });
   
-  window.addEventListener('scroll', function(e) {
-    let percent = body.scrollTop / (body.scrollHeight - body.clientHeight) * 100;
-    if (percent > 1 && !back2Top.classList.contains('back-top-active')) {
-      back2Top.classList.add('back-top-active');
-    }
-    if (percent == 0) {
-      back2Top.classList.remove('back-top-active');
-    }
-    back2TopText.textContent = Math.floor(percent);
-  });
-
-  // 代码高亮
-  hljs.initHighlightingOnLoad();
-</script>
-    </div>
   </body>
-  <script src="/media/js/motion.js"></script>
 </html>

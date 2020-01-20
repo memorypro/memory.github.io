@@ -1,1454 +1,190 @@
 <html>
   <head>
-      <meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<title>Memory的个人博客</title>
-<link rel="shortcut icon" href="https://www.memory6181.com//favicon.ico?v=1577867255507">
+  <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Memory的小站</title>
+
+<!-- layui -->
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script src="/media/layui/layui.all.js"></script>
+<link rel="stylesheet" href="/media/layui/css/layui.css">
+
+
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico?v=1579538642693">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="http://localhost:4000/styles/main.css">
+
+<!-- <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script> -->
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
+
+<!-- 引入阿里图标库 -->
+<script src="\media\layui\font\font-blog\iconfont.js"></script>
+<script src="\media\layui\font\font-connect\iconfont.js"></script>
+<script src="\media\layui\font\font-men\iconfont.js"></script>
+
+
+<!-- 引入primjs 代码高亮 -->
+<!-- 支持prism -->
 <script src="../../prism.js" ></script>
 <link href="../../prism.css" rel="stylesheet" />
-<link href="../../snow.css" rel="stylesheet" />
-<link rel="stylesheet" href="https://www.memory6181.com//styles/main.css">
-<meta name="description" content="我是一只特立独行的老鼠🐀" />
+<!-- 添加 Vline 评论 -->
 <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 
-<link rel="stylesheet" href="/media/fonts/iconfont.css">
-<link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<!-- DEMO JS -->
+<script src="media/scripts/index.js"></script>
 
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script>
+<!-- 谷歌统计 -->
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155337428-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'UA-155337428-1');
+  </script>
+  
+  <!-- 百度统计 -->
+  <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?3e11339a177ba7e34848b1f198c46e5c";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
   </head>
   <body>
-    <div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
-<div class="snow"></div>
+    <div class="main">
+      <div class="main-content">
+        <!-- 百度推送 -->
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
 
-    <div class="head-top-line"></div>
-    <div class="header-box">
-      <header class="header">
-
-	<div class="blog-header" id="header">
-		<div class="section-layout-wrapper">
-			<div class="site-meta">
-				<div class="nav-toggle" id="nav_toggle">
-					<div class="toggle-box">
-						<div class="line line-top"></div>
-						<div class="line line-center"></div>
-						<div class="line line-bottom"></div>
-					</div>
-				</div>
-				<div class="site-title">
-					<a href="/" class="brand">
-						<span>Memory的个人博客</span>
-					</a>
-				</div>
-				<p class="subtitle"></p>
-				<nav class="site-nav" id="site_nav">
-					
-					<li class="nav-item ">
-						<a href="/">
-							<!-- <i class="iconfont icon-home"></i> -->
-							首页
-						</a>
-					</li>
-					
-					<li class="nav-item ">
-						<a href="/archives">
-							<!-- <i class="iconfont icon-home"></i> -->
-							归档
-						</a>
-					</li>
-					
-					<li class="nav-item ">
-						<a href="/tags">
-							<!-- <i class="iconfont icon-home"></i> -->
-							标签
-						</a>
-					</li>
-					
-					<li class="nav-item ">
-						<a href="https://www.memory6181.com/post/guan-yu-wo">
-							<!-- <i class="iconfont icon-home"></i> -->
-							简历
-						</a>
-					</li>
-					
-					<li class="nav-item ">
-						<a href="https://www.memory6181.com/post/about">
-							<!-- <i class="iconfont icon-home"></i> -->
-							故事
-						</a>
-					</li>
-					
-				</nav>
-				<input type="serch" id="serch" placeholder="搜索其实很简单">
+<div class=" me-header-color-style-blue">
+	<!-- 颜色主题样式 -->
+	<div class="header cl-st-head-menue">
+		<div class="me-layui-container">
+			<div class="logo cl-st-head-title">
+				<a href="/" title="Memory"> Memory的小站</a>
 			</div>
+			<i class="layui-icon layui-icon-app mobile-icon"></i>
+			<div class="nav">
+				<ul class="layui-nav cl-st-head-menue me-layui-nav">
 
+					
+						<li class="layui-nav-item cl-st-head-menue">
+							<a href="/" style="text-decoration: none">
+								<svg class="icon">
+									<use xlink:href="#icon-home"></use>
+								</svg>
+								首页
+							</a>
+						</li>
+	
+					
+						<li class="layui-nav-item cl-st-head-menue">
+							<a href="/archives/" style="text-decoration: none">
+								<svg class="icon">
+									<use xlink:href="#icon-localoffer"></use>
+								</svg>
+								归档
+							</a>
+						</li>
+	
+					
+						<li class="layui-nav-item cl-st-head-menue">
+							<a href="/post/guan-yu-wo/" style="text-decoration: none">
+								<svg class="icon">
+									<use xlink:href="#icon-timerauto"></use>
+								</svg>
+								关于我
+							</a>
+						</li>
+	
+					
+						<li class="layui-nav-item cl-st-head-menue">
+							<a href="/" style="text-decoration: none">
+								<svg class="icon">
+									<use xlink:href="#icon-paper"></use>
+								</svg>
+								知识结构
+							</a>
+						</li>
+	
+					
+						<li class="layui-nav-item cl-st-head-menue">
+							<a href="/Navigation/" style="text-decoration: none">
+								<svg class="icon">
+									<use xlink:href="#icon-menu"></use>
+								</svg>
+								导航
+							</a>
+						</li>
+	
+					
+				</ul>
+			</div>
 		</div>
 	</div>
-
-</header>
-<script type="text/javascript">
-
-	let showNav = true;
-
-	let navToggle = document.querySelector('#nav_toggle'),
-		siteNav = document.querySelector('#site_nav');
-
-	function navClick() {
-		navToggle.classList.toggle('nav-toggle-active');
-		siteNav.classList.toggle('nav-menu-active');
-	}
-
-	navToggle.addEventListener('click', navClick);  
-</script>
-    </div>
-    <div class="main-continer">
-      <div class="section-layout">
-        <div class="section-layout-wrapper">
-          
-          <!-- <div class="section-box"> -->
-            <section class="section posts-expand">
-              <section class="section-items">
-                <div class="tags-box">
-  <div class="tag-cloud-title">
-    目前共计 5 个标签
-  </div>
-  <div class="tag-cloud-list" id="tags">
-    
-      
-      
-        
-          
-            
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-            
-      
-        
-          
-            
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-            
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-            
-      
-      <a class="cloud-tag" href="https://www.memory6181.com/tag/cJUv3d8uX" rel="5">大事记</a>
-    
-      
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-            
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-            
-      
-        
-          
-            
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-            
-      
-        
-          
-            
-      
-        
-          
-            
-      
-        
-          
-            
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-            
-      
-        
-          
-            
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-            
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-            
-      
-        
-          
-        
-      
-        
-      
-        
-          
-        
-      
-        
-          
-            
-      
-        
-          
-            
-      
-        
-          
-            
-      
-        
-          
-            
-      
-        
-          
-            
-      
-        
-          
-            
-      
-        
-          
-            
-      
-        
-          
-            
-      
-        
-          
-            
-      
-        
-          
-            
-      
-        
-          
-            
-      
-        
-          
-            
-      
-        
-          
-            
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-            
-      
-        
-          
-        
-      
-      <a class="cloud-tag" href="https://www.memory6181.com/tag/4eOic9FHK" rel="25">技术</a>
-    
-      
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-            
-      
-        
-          
-            
-      
-        
-          
-            
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-            
-      
-        
-          
-            
-      
-        
-          
-            
-      
-        
-          
-        
-      
-        
-          
-            
-      
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-            
-      
-        
-          
-            
-      
-        
-          
-        
-      
-        
-          
-        
-      
-      <a class="cloud-tag" href="https://www.memory6181.com/tag/a0I4RKJMQ" rel="9">代码片段</a>
-    
-      
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-            
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-            
-      
-        
-          
-            
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-      <a class="cloud-tag" href="https://www.memory6181.com/tag/84zPPkwCw" rel="3">生活</a>
-    
-      
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-      
-        
-          
-            
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-      <a class="cloud-tag" href="https://www.memory6181.com/tag/KmnLPiytL" rel="1">Gridea</a>
-    
-  </div>
 </div>
+<script src="layui.js"></script>
 <script>
+	//JavaScript代码区域
+	layui.use(['element', 'layer'], function () {
+		var element = layui.element;
+		var layer = layui.layer;
 
-  let fontStart = 12, fontEnd = 30, colorStart = '#ccc', colorEnd = '#111';
-  let tags = document.querySelector('#tags').children;
-  let counts = [];
-  for(let i = 0; i < tags.length; i++) {
-    counts.push(tags[i].rel);
-  }
-  let lowest = Math.min.apply(null,counts), highest = Math.max.apply(null,counts);;
-  let range = highest - lowest;
-  if (range === 0) {
-    range = 1;
-  }
-  let fontIncr, colorIncr;
-  fontIncr = (fontEnd - fontStart) / range;
-  
-  let sColorArr = toRGB(colorStart), eColorArr = toRGB(colorEnd);
-
-  for(let i = 0; i < tags.length; i++) {
-    let disCount = tags[i].rel - lowest;
-    let fontSize = fontStart + disCount * fontIncr;
-    let style = 'font-size: ' + fontSize + 'px;';
-    let arr = [];
-    for(let c = 0; c < sColorArr.length; c++) {
-      if (disCount === 0) {
-        disCount = 1;
-      }
-      let val = (sColorArr[c] - eColorArr[c]) / range * disCount;
-      if (val >= 255) {
-        val = eColorArr[c];
-      } else if (val <= 0) {
-        val = sColorArr[c];
-      }
-      arr[c] = Math.floor(255 - val);
-    }
-    style += 'color: ' + toHex(arr);
-    tags[i].style = style;
-  }
-
-  function toRGB(code) {
-    if (code.length === 4) {
-      code = code.replace(/(\w)(\w)(\w)/gi, "\$1\$1\$2\$2\$3\$3");
-    }
-    var hex = /(\w{2})(\w{2})(\w{2})/.exec(code);
-    return [parseInt(hex[1], 16), parseInt(hex[2], 16), parseInt(hex[3], 16)];
-  }
-
-  function toHex(ary) {
-    return "#" + ((1 << 24) + (ary[0] << 16) + (ary[1] << 8) + ary[2]).toString(16).slice(1);
-  }
-
+	});
+	$(".mobile-icon").click(function () {
+		$(".nav").toggleClass('layui-show');
+	});
 </script>
-              </section>
-              
-            </section>
-            <div class="sidebar">
-    <div class="sidebar-wrapper">
-  <div class="sidebar-item">
-    <p class="site-author-name">关于博主</p>
-    <img class="site-author-image" src="https://www.memory6181.com//images/avatar.png"/>
-    <p class="site-description">Memory</p>
-    <p class="site-description">我是一只特立独行的老鼠🐀</p>
-  </div>
-  <div class="sidebar-item side-item-stat">
-    <div class="sidebar-item-box">
-      <a href="/archives/">
-        <span class="site-item-stat-count">45</span>
-        <span class="site-item-stat-name">日志</span>
-      </a>
-    </div>
-    <div class="sidebar-item-box">
-      <a href="">
-        <span class="site-item-stat-count">5</span>
-        <span class="site-item-stat-name">分类</span>
-      </a>
-    </div>
-    <div class="sidebar-item-box">
-      <a href="/tags/">
-        <span class="site-item-stat-count">5</span>
-        <span class="site-item-stat-name">标签</span>
-      </a>
-    </div>
-  </div>
-  <div class="sidebar-item">
-    <span class="site-item-rss">
-        <i class="iconfont icon-rss"></i>
-        <a href="https://www.memory6181.com//atom.xml" target="_blank">RSS</a>
-    </span>
-  </div>
-  <div class="sidebar-item sidebar-item-social">
-    <div class="social-item">
-      <a href="https://www.github.com/memorypro">
-        <i class="iconfont icon-github"></i> GitHub
-      </a>
-      <a href="">
-        <i class="iconfont icon-twitter"></i> Twitter
-      </a>
-    </div>
-    <div class="social-item">
-      <a href="">
-        <i class="iconfont icon-globe"></i> 豆瓣
-      </a>
-      <a href="">
-        <i class="iconfont icon-globe"></i> 知乎
-      </a>
-    </div>
-  </div>
+<div class="site-header">
 </div>
 
-<div class="sidebar-wrapper">
-  <div class="sidebar-item">
-    <p class="site-author-name">文章分类</p>
-  </div>
-  <div>
-    <ul class="site-meta-tags">
-      
-        <li >
-          <a  href="https://www.memory6181.com/tag/cJUv3d8uX">
-            大事记
-          </a>
-        </li>
-
-      
-        <li >
-          <a  href="https://www.memory6181.com/tag/4eOic9FHK">
-            技术
-          </a>
-        </li>
-
-      
-        <li >
-          <a  href="https://www.memory6181.com/tag/a0I4RKJMQ">
-            代码片段
-          </a>
-        </li>
-
-      
-        <li >
-          <a  href="https://www.memory6181.com/tag/84zPPkwCw">
-            生活
-          </a>
-        </li>
-
-      
-        <li >
-          <a  href="https://www.memory6181.com/tag/KmnLPiytL">
-            Gridea
-          </a>
-        </li>
-
-      
-    </ul>
-     
-  </div>
-
-</div>
-
-</div>
-          <!-- </div> -->
+        <div class="tags-container">
+          
+            <a class="tag" href="http://localhost:4000/tag/KmnLPiytL">Gridea</a>
+          
+            <a class="tag" href="http://localhost:4000/tag/lnIvoi1nL">单片机驱动开发</a>
+          
+            <a class="tag" href="http://localhost:4000/tag/cJUv3d8uX">大事记</a>
+          
+            <a class="tag" href="http://localhost:4000/tag/4eOic9FHK">技术</a>
+          
+            <a class="tag" href="http://localhost:4000/tag/a0I4RKJMQ">代码片段</a>
+          
+            <a class="tag" href="http://localhost:4000/tag/84zPPkwCw">生活</a>
+          
         </div>
-      </div>
-      <div class="footer-box">
-  <footer class="footer">
-    <div class="copyright">
-      © 2019-2020 <i class="iconfont icon-heart"></i> Memory
-    </div>
-    <div class="poweredby">
-      <div class="power-left">Power By<a href="https://github.com/memorypro/"> Memory</a></div>
-      <div>Copy<a href="https://github.com/hsxyhao/gridea-theme-next"> Gridea NexT Theme</a></div>
-      <div>Copy<a href="https://github.com/iissnan/hexo-theme-next"> Hexo Next Theme</a></div>
-    </div>
-  </footer>
-  <div class="back-to-top" id="back_to_top">
-    <i class="iconfont icon-arrow_up"></i>
-    <span class="scrollpercent">
-      <span id="back_to_top_text">100</span>%
-    </span>
-  </div>
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
 </div>
 
-<script>
+<!-- <script>
+  hljs.initHighlightingOnLoad()
+</script> -->
 
-  let body = document.body;
-
-  let back2Top = document.querySelector('#back_to_top'),
-  back2TopText = document.querySelector('#back_to_top_text');
-
-  function scrollAnimation(currentY, targetY) {
-   
-    let needScrollTop = targetY - currentY
-    let _currentY = currentY
-    setTimeout(() => {
-      const dist = Math.ceil(needScrollTop / 10)
-      _currentY += dist
-      window.scrollTo(_currentY, currentY)
-      if (needScrollTop > 10 || needScrollTop < -10) {
-        scrollAnimation(_currentY, targetY)
-      } else {
-        window.scrollTo(_currentY, targetY)
-      }
-    }, 1)
-  }
-
-  back2Top.addEventListener("click", function(e) {
-    scrollAnimation(body.scrollTop, 0);
-    e.stopPropagation();
-    return false;
-  });
-  
-  window.addEventListener('scroll', function(e) {
-    let percent = body.scrollTop / (body.scrollHeight - body.clientHeight) * 100;
-    if (percent > 1 && !back2Top.classList.contains('back-top-active')) {
-      back2Top.classList.add('back-top-active');
-    }
-    if (percent == 0) {
-      back2Top.classList.remove('back-top-active');
-    }
-    back2TopText.textContent = Math.floor(percent);
-  });
-
-  // 代码高亮
-  hljs.initHighlightingOnLoad();
-</script>
+      </div>
     </div>
   </body>
-  <script src="/media/js/motion.js"></script>
-</html> 
+</html>

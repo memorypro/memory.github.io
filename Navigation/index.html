@@ -1,0 +1,687 @@
+<html>
+
+<head>
+	<meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Memory的小站</title>
+
+<!-- layui -->
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script src="/media/layui/layui.all.js"></script>
+<link rel="stylesheet" href="/media/layui/css/layui.css">
+
+
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico?v=1579538642693">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="http://localhost:4000/styles/main.css">
+
+<!-- <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script> -->
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
+
+<!-- 引入阿里图标库 -->
+<script src="\media\layui\font\font-blog\iconfont.js"></script>
+<script src="\media\layui\font\font-connect\iconfont.js"></script>
+<script src="\media\layui\font\font-men\iconfont.js"></script>
+
+
+<!-- 引入primjs 代码高亮 -->
+<!-- 支持prism -->
+<script src="../../prism.js" ></script>
+<link href="../../prism.css" rel="stylesheet" />
+<!-- 添加 Vline 评论 -->
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+
+<!-- DEMO JS -->
+<script src="media/scripts/index.js"></script>
+
+<!-- 谷歌统计 -->
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155337428-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'UA-155337428-1');
+  </script>
+  
+  <!-- 百度统计 -->
+  <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?3e11339a177ba7e34848b1f198c46e5c";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+</head>
+
+<body>
+
+
+	<!-- 百度推送 -->
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+<div class=" me-header-color-style-blue">
+	<!-- 颜色主题样式 -->
+	<div class="header cl-st-head-menue">
+		<div class="me-layui-container">
+			<div class="logo cl-st-head-title">
+				<a href="/" title="Memory"> Memory的小站</a>
+			</div>
+			<i class="layui-icon layui-icon-app mobile-icon"></i>
+			<div class="nav">
+				<ul class="layui-nav cl-st-head-menue me-layui-nav">
+
+					
+						<li class="layui-nav-item cl-st-head-menue">
+							<a href="/" style="text-decoration: none">
+								<svg class="icon">
+									<use xlink:href="#icon-home"></use>
+								</svg>
+								首页
+							</a>
+						</li>
+	
+					
+						<li class="layui-nav-item cl-st-head-menue">
+							<a href="/archives/" style="text-decoration: none">
+								<svg class="icon">
+									<use xlink:href="#icon-localoffer"></use>
+								</svg>
+								归档
+							</a>
+						</li>
+	
+					
+						<li class="layui-nav-item cl-st-head-menue">
+							<a href="/post/guan-yu-wo/" style="text-decoration: none">
+								<svg class="icon">
+									<use xlink:href="#icon-timerauto"></use>
+								</svg>
+								关于我
+							</a>
+						</li>
+	
+					
+						<li class="layui-nav-item cl-st-head-menue">
+							<a href="/" style="text-decoration: none">
+								<svg class="icon">
+									<use xlink:href="#icon-paper"></use>
+								</svg>
+								知识结构
+							</a>
+						</li>
+	
+					
+						<li class="layui-nav-item cl-st-head-menue">
+							<a href="/Navigation/" style="text-decoration: none">
+								<svg class="icon">
+									<use xlink:href="#icon-menu"></use>
+								</svg>
+								导航
+							</a>
+						</li>
+	
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="layui.js"></script>
+<script>
+	//JavaScript代码区域
+	layui.use(['element', 'layer'], function () {
+		var element = layui.element;
+		var layer = layui.layer;
+
+	});
+	$(".mobile-icon").click(function () {
+		$(".nav").toggleClass('layui-show');
+	});
+</script>
+<div class="site-header">
+</div>
+	<div class="main me-header-color-style-blue">
+		<div class="layui-row">
+			<div class="layui-col-xs12 layui-col-sm9 layui-col-md9 ">
+				<div class="main-content">
+					<div class="layui-carousel me-post-list-carousel" id="test3" lay-filter="test4">
+	<div carousel-item class="me-carousel-item">
+		<div><img src="https://img.memory6181.com/good/1.jpg" width="100%"></div>
+		<div><img src="https://img.memory6181.com/good/2.jpg" width="100%"></div>
+		<div><img src="https://img.memory6181.com/good/3.jpg" width="100%"></div>
+		<div><img src="https://img.memory6181.com/good/4.jpg" width="100%"></div>
+		<div><img src="https://img.memory6181.com/good/5.jpg" width="100%"></div>
+	</div>
+</div>
+
+<!-- <script src="//res.layui.com/layui/dist/layui.js" charset="utf-8"></script>
+注意：如果你直接复制所有代码到本地，上述js路径需要改成你本地的 -->
+<script>
+	layui.use(['carousel', 'form'], function () {
+		var carousel = layui.carousel
+			, form = layui.form;
+
+
+		//设定各种参数
+		var ins3 = carousel.render({
+			elem: '#test3'
+			, width: 'auto'
+			, interval: 5000
+		});
+
+		//事件
+		carousel.on('change(test4)', function (res) {
+			console.log(res)
+		});
+
+		var $ = layui.$, active = {
+			set: function (othis) {
+				var THIS = 'layui-bg-normal'
+					, key = othis.data('key')
+					, options = {};
+
+				othis.css('background-color', '#5FB878').siblings().removeAttr('style');
+				options[key] = othis.data('value');
+				ins3.reload(options);
+			}
+		};
+
+		//监听开关
+		form.on('switch(autoplay)', function () {
+			ins3.reload({
+				autoplay: this.checked
+			});
+		});
+
+		$('.demoSet').on('keyup', function () {
+			var value = this.value
+				, options = {};
+			if (!/^\d+$/.test(value)) return;
+
+			options[this.name] = value;
+			ins3.reload(options);
+		});
+
+		//其它示例
+		$('.demoTest .layui-btn').on('click', function () {
+			var othis = $(this), type = othis.data('type');
+			active[type] ? active[type].call(this, othis) : '';
+		});
+	});
+</script>
+					<div class="layui-card me-nav-card">
+						<div
+							class="layui-card-header me-card-header layui-icon layui-icon-dialogue cl-st-card-header-line">
+							站内导航</div>
+						<div class="layui-card-body layui-row">
+							
+							<div class="me-navi-tags cl-st-me-nav-tags">
+								<a name="sit-link" href="/" title="回到网站首页">
+									<svg class="icon me-tags-icon">
+										<use name='sit-icon' xlink:href="#icon-home"></use>
+									</svg>
+									<span name='sit-title' class="me-tags-title">首页</span>
+								</a>
+
+							</div>
+							
+							<div class="me-navi-tags cl-st-me-nav-tags">
+								<a name="sit-link" href="/archives/" title="归档">
+									<svg class="icon me-tags-icon">
+										<use name='sit-icon' xlink:href="#icon-localoffer"></use>
+									</svg>
+									<span name='sit-title' class="me-tags-title">归档</span>
+								</a>
+
+							</div>
+							
+							<div class="me-navi-tags cl-st-me-nav-tags">
+								<a name="sit-link" href="/post/guan-yu-wo/" title="归档">
+									<svg class="icon me-tags-icon">
+										<use name='sit-icon' xlink:href="#icon-timerauto"></use>
+									</svg>
+									<span name='sit-title' class="me-tags-title">关于我</span>
+								</a>
+
+							</div>
+							
+							<div class="me-navi-tags cl-st-me-nav-tags">
+								<a name="sit-link" href="/post/about/" title="经历">
+									<svg class="icon me-tags-icon">
+										<use name='sit-icon' xlink:href="#icon-schedule"></use>
+									</svg>
+									<span name='sit-title' class="me-tags-title">经历</span>
+								</a>
+
+							</div>
+							
+							<div class="me-navi-tags cl-st-me-nav-tags">
+								<a name="sit-link" href="/" title="知识结构">
+									<svg class="icon me-tags-icon">
+										<use name='sit-icon' xlink:href="#icon-paper"></use>
+									</svg>
+									<span name='sit-title' class="me-tags-title">知识结构</span>
+								</a>
+
+							</div>
+							
+							<div class="me-navi-tags cl-st-me-nav-tags">
+								<a name="sit-link" href="/" title="阅读">
+									<svg class="icon me-tags-icon">
+										<use name='sit-icon' xlink:href="#icon-folder"></use>
+									</svg>
+									<span name='sit-title' class="me-tags-title">阅读</span>
+								</a>
+
+							</div>
+							
+							<div class="me-navi-tags cl-st-me-nav-tags">
+								<a name="sit-link" href="/" title="音乐">
+									<svg class="icon me-tags-icon">
+										<use name='sit-icon' xlink:href="#icon-speechbubble"></use>
+									</svg>
+									<span name='sit-title' class="me-tags-title">音乐</span>
+								</a>
+
+							</div>
+							
+
+						</div>
+					</div>
+					<div class="layui-card me-nav-card">
+						<div
+							class="layui-card-header me-card-header layui-icon layui-icon-dialogue cl-st-card-header-line">
+							友情链接</div>
+						<div class="layui-card-body me-friend-card-body">
+							
+							<div class="me-friend-card-box cl-st-me-nav-tags">
+								<svg class="me-icon icon">
+									<use xlink:href="#icon-icon-test4"></use>
+								</svg>
+								<span class="title">7TEC</span>
+								<a href="http://www.7tec.cn/">
+
+									<span class="address layui-icon layui-icon-link">http://www.7tec.cn/</span>
+								</a>
+								<div class="description">
+									Typecho 博客7TEC主题作者
+								</div>
+							</div>
+							
+							<div class="me-friend-card-box cl-st-me-nav-tags">
+								<svg class="me-icon icon">
+									<use xlink:href="#icon-icon-test15"></use>
+								</svg>
+								<span class="title">友人C</span>
+								<a href="https://www.ihewro.com">
+
+									<span class="address layui-icon layui-icon-link">https://www.ihewro.com</span>
+								</a>
+								<div class="description">
+									Typecho 博客handsome主题作者
+								</div>
+							</div>
+							
+							<div class="me-friend-card-box cl-st-me-nav-tags">
+								<svg class="me-icon icon">
+									<use xlink:href="#icon-icon-test14"></use>
+								</svg>
+								<span class="title">michael pan</span>
+								<a href="https://www.michaelapp.com/">
+
+									<span class="address layui-icon layui-icon-link">https://www.michaelapp.com/</span>
+								</a>
+								<div class="description">
+									My first leader
+								</div>
+							</div>
+							
+						</div>
+					</div>
+
+					<div class="layui-card me-nav-card">
+						<div
+							class="layui-card-header me-card-header layui-icon layui-icon-dialogue cl-st-card-header-line">
+							常用网站</div>
+						<div class="layui-card-body">
+							
+							<div class="me-navi-tags cl-st-me-nav-tags">
+								<a href="http://www.peise.net/tools/web/" title="" target="External">
+									<svg class="icon me-tags-icon">
+										<use xlink:href="#icon-link"></use>
+									</svg>
+									<span class="me-tags-title">网页配色网站</span>
+								</a>
+
+							</div>
+							
+							<div class="me-navi-tags cl-st-me-nav-tags">
+								<a href="https://alldatasheet.com/" title="all data sheet" target="External">
+									<svg class="icon me-tags-icon">
+										<use xlink:href="#icon-link"></use>
+									</svg>
+									<span class="me-tags-title">datasheet</span>
+								</a>
+
+							</div>
+							
+							<div class="me-navi-tags cl-st-me-nav-tags">
+								<a href="https://filebrowser.xyz/" title="一个基于GO的轻量级文件管理系统" target="External">
+									<svg class="icon me-tags-icon">
+										<use xlink:href="#icon-link"></use>
+									</svg>
+									<span class="me-tags-title">File Browser</span>
+								</a>
+
+							</div>
+							
+							<div class="me-navi-tags cl-st-me-nav-tags">
+								<a href="https://www.3dcontentcentral.cn/" title="3D模型下载网站" target="External">
+									<svg class="icon me-tags-icon">
+										<use xlink:href="#icon-link"></use>
+									</svg>
+									<span class="me-tags-title">3D 模型</span>
+								</a>
+
+							</div>
+							
+							<div class="me-navi-tags cl-st-me-nav-tags">
+								<a href="https://developer.aliyun.com/mirror/" title="阿里云系统镜像站 ，里面可以下到Linux 的各种发行版，速度很快" target="External">
+									<svg class="icon me-tags-icon">
+										<use xlink:href="#icon-link"></use>
+									</svg>
+									<span class="me-tags-title">阿里云系统镜像站</span>
+								</a>
+
+							</div>
+							
+							<div class="me-navi-tags cl-st-me-nav-tags">
+								<a href="https://www.layui.com/" title="本站使用的前段框架" target="External">
+									<svg class="icon me-tags-icon">
+										<use xlink:href="#icon-link"></use>
+									</svg>
+									<span class="me-tags-title">Layui</span>
+								</a>
+
+							</div>
+							
+							<div class="me-navi-tags cl-st-me-nav-tags">
+								<a href="https://www.keil.com/dd2/Pack/#/eula-container" title="MDK5的pack下载地址" target="External">
+									<svg class="icon me-tags-icon">
+										<use xlink:href="#icon-link"></use>
+									</svg>
+									<span class="me-tags-title">MDK5 Software Packs</span>
+								</a>
+
+							</div>
+							
+							<div class="me-navi-tags cl-st-me-nav-tags">
+								<a href="http://www.planetb.ca/syntax-highlight-word" title="" target="External">
+									<svg class="icon me-tags-icon">
+										<use xlink:href="#icon-link"></use>
+									</svg>
+									<span class="me-tags-title">Word 文档代码高亮</span>
+								</a>
+
+							</div>
+							
+						</div>
+					</div>
+					<div class="layui-card me-nav-card">
+						<div
+							class="layui-card-header me-card-header layui-icon layui-icon-dialogue cl-st-card-header-line">
+							资料链接</div>
+						<div class="layui-card-body">
+							
+						</div>
+					</div>
+
+
+					<div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+</div>
+
+<!-- <script>
+  hljs.initHighlightingOnLoad()
+</script> -->
+
+				</div>
+			</div>
+			<div class="layui-col-xs12 layui-col-sm3 layui-col-md3">
+				<div class=" me-header-color-style-blue">
+	<!-- 颜色主题样式 -->
+	<div class="layui-card me-card">
+		<div class="layui-card-header me-card-header layui-icon layui-icon-username cl-st-card-header-line">关于作者</div>
+
+		<div class="layui-card-body">
+			<div class=" me-sidebar-box sidebar-module ">
+				<!-- <div class="me-sidebar-about"> -->
+				<img class="me-site-author-image " src="http://localhost:4000/images/avatar.png" />
+				<p class="me-site-name">Memory</p>
+				<p class="me-site-description">单片机开发（89C51，AVR，飞思卡尔，NXP，STM32，STM8）物联网（LoRa，NbIot，MQTT，COAP，LWM2M，TCP/IP，Wifi，BLE），物联网，电路设计，嵌入式，C，C++，C#，JAVA，Go，QT</p>
+
+
+				<div class="text-left">
+					<a href="/" rel="contents" style="text-decoration: none">
+						<span class="post-link">了解更多 »</span>
+					</a>
+				</div>
+				<!-- </div> -->
+
+			</div>
+		</div>
+	</div>
+	<!-- <div class="layui-inline me-site-laydate" id="test-n1"></div> -->
+	<div class="layui-card me-card">
+		<div class="layui-card-header me-card-header layui-icon layui-icon-speaker cl-st-card-header-line">公告</div>
+		<div class="layui-card-body">
+			2020年1月18日我将博客迁移到了Gridea。
+		</div>
+	</div>
+	<div class="layui-card me-card">
+		<div class="layui-card-header me-card-header layui-icon layui-icon-dialogue cl-st-card-header-line">闲言碎语</div>
+		<div class="layui-card-body">
+			今天休息了一天，心情还不错
+		</div>
+	</div>
+	<div class="layui-card me-card">
+		<div class="layui-card-header me-card-header layui-icon layui-icon-note cl-st-card-header-line">标签/分类</div>
+		<div class="layui-card-body layui-row">
+			
+			<span class="layui-badge layui-bg-gray"><a href="http://localhost:4000/tag/KmnLPiytL" style="text-decoration: none">
+					Gridea
+				</a></span>
+			
+			<span class="layui-badge layui-bg-gray"><a href="http://localhost:4000/tag/lnIvoi1nL" style="text-decoration: none">
+					单片机驱动开发
+				</a></span>
+			
+			<span class="layui-badge layui-bg-gray"><a href="http://localhost:4000/tag/cJUv3d8uX" style="text-decoration: none">
+					大事记
+				</a></span>
+			
+			<span class="layui-badge layui-bg-gray"><a href="http://localhost:4000/tag/4eOic9FHK" style="text-decoration: none">
+					技术
+				</a></span>
+			
+			<span class="layui-badge layui-bg-gray"><a href="http://localhost:4000/tag/a0I4RKJMQ" style="text-decoration: none">
+					代码片段
+				</a></span>
+			
+			<span class="layui-badge layui-bg-gray"><a href="http://localhost:4000/tag/84zPPkwCw" style="text-decoration: none">
+					生活
+				</a></span>
+			
+		</div>
+	</div>
+	<div class="layui-card me-card">
+		<div class="layui-card-header me-card-header layui-icon layui-icon-user cl-st-card-header-line">友情链接</div>
+		<div class="layui-card-body">
+			
+			<div class="me-friends-list">
+				<a href="http://www.7tec.cn/">
+					<svg class="icon me-friends-photo" ><use xlink:href="#icon-icon-test4"></use></svg>
+					<span class="me-friends-text">7TEC</span>
+				</a>
+				
+			</div>
+			
+			<div class="me-friends-list">
+				<a href="https://www.ihewro.com">
+					<svg class="icon me-friends-photo" ><use xlink:href="#icon-icon-test15"></use></svg>
+					<span class="me-friends-text">友人C</span>
+				</a>
+				
+			</div>
+			
+			<div class="me-friends-list">
+				<a href="https://www.michaelapp.com/">
+					<svg class="icon me-friends-photo" ><use xlink:href="#icon-icon-test14"></use></svg>
+					<span class="me-friends-text">michael pan</span>
+				</a>
+				
+			</div>
+			
+			<div class="me-friends-list">
+				<a href="/">
+					<svg class="icon me-friends-photo" ><use xlink:href="#icon-chakan"></use></svg>
+					<span class="me-friends-text">查看更多</span>
+				</a>
+				
+			</div>
+		</div>
+	</div>
+	<div class="layui-card me-card">
+		<div class="layui-card-header me-card-header layui-icon layui-icon-chart cl-st-card-header-line">站点统计</div>
+		<div class="layui-card-body">
+			<ul class="me-list-columns">
+				<li>标签：6 个</li>
+				<li>文章：48 篇</li>
+				<li>页面：5个</li>
+				<li>评论：3条</li>
+			</ul>
+		</div>
+	</div>
+	<!-- <div class="layui-card me-card">
+		<div class="layui-card-header me-card-header layui-icon layui-icon-at cl-st-card-header-line">联系我</div>
+		<div class="layui-card-body layui-row">
+			<ul class="me-list-columns">
+				<li>
+					<svg class="icon" ><use xlink:href="#icon-renren"></use></svg>
+					<a href="">
+						GitHub
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<svg class="icon" ><use xlink:href="#icon-github"></use></svg>微博
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<svg class="icon" ><use xlink:href="#icon-renren"></use></svg>微博
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img  src="https://img.memory6181.com/blog/ico/cnblog.png" width="20px" height="20px" style="vertical-align: middle;border-radius: 50%; display: inline-block;">
+					</a>
+					<a href="">
+						<span style="display: inline-block; font-size:16px">博客园</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div> -->
+	<div class="layui-card me-card">
+		<div class="layui-card-header me-card-header layui-icon layui-icon-camera cl-st-card-header-line">博客时间轴</div>
+		<div class="layui-card-body layui-row">
+			<ul class="layui-timeline">
+				<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis"></i>
+					<div class="layui-timeline-content layui-text">
+						<h3 class="layui-timeline-title">8月18日</h3>
+						<p>
+							layui 2.0 的一切准备工作似乎都已到位。发布之弦，一触即发。
+							<br>不枉近百个日日夜夜与之为伴。因小而大，因弱而强。
+							<br>无论它能走多远，抑或如何支撑？至少我曾倾注全心，无怨无悔 <i class="layui-icon"></i>
+						</p>
+					</div>
+				</li>
+				<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis"></i>
+					<div class="layui-timeline-content layui-text">
+						<h3 class="layui-timeline-title">8月16日</h3>
+						<p>杜甫的思想核心是儒家的仁政思想，他有<em>“致君尧舜上，再使风俗淳”</em>的宏伟抱负。个人最爱的名篇有：</p>
+						<ul>
+							<li>《登高》</li>
+							<li>《茅屋为秋风所破歌》</li>
+						</ul>
+					</div>
+				</li>
+				<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis"></i>
+					<div class="layui-timeline-content layui-text">
+						<h3 class="layui-timeline-title">8月15日</h3>
+						<p>
+							中国人民抗日战争胜利日
+							<br>常常在想，尽管对这个国家有这样那样的抱怨，但我们的确生在了最好的时代
+							<br>铭记、感恩
+							<br>所有为中华民族浴血奋战的英雄将士
+							<br>永垂不朽
+						</p>
+					</div>
+				</li>
+				<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis"></i>
+					<div class="layui-timeline-content layui-text">
+						<div class="layui-timeline-title">过去</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<script>
+	layui.use('laydate', function () {
+		var laydate = layui.laydate;
+		//直接嵌套显示
+		laydate.render({
+			elem: '#test-n1'
+			, position: 'static'
+			, showBottom: false
+			, theme: '#393D49'
+		});
+
+	});
+</script>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+
+
+</html>
