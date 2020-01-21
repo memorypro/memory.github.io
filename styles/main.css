@@ -751,6 +751,10 @@ td {
 }
 .me-timeline-year-text {
   font-size: 24px;
+  word-break: break-all;
+}
+.me-timeline-text {
+  word-break: break-all;
 }
 @media (max-width: 600px) {
   .archives-container {
