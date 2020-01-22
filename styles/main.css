@@ -617,25 +617,6 @@ td {
   font-size: 16px;
   letter-spacing: 1.0382;
 }
-.post-detail .post .post-content p code,
-.post-detail .post .post-content li code {
-  padding: 0 3px;
-  margin: 0 2px;
-  background: rgba(195, 195, 195, 0.41);
-  font-size: 0.9em;
-  border-radius: 2px;
-  display: inline-block;
-}
-.post-detail .post .post-content pre {
-  margin-bottom: 24px;
-}
-.post-detail .post .post-content pre code {
-  font-size: 16px;
-  font-family: 'Source Code Pro', Consolas, Menlo, Monaco, 'Courier New', monospace;
-  padding: 1em;
-  border-radius: 5px;
-  line-height: 1.375;
-}
 .post-detail .post .post-content blockquote {
   background: #f3f5f7;
   padding: 16px;
@@ -700,6 +681,8 @@ td {
 .me-vline-box {
   background-color: white;
   margin: 10px;
+  padding: 20px;
+  border-radius: 5px;
 }
 .prev-post {
   padding: 10px 32px;
@@ -790,6 +773,8 @@ td {
   text-align: center;
   padding: 24px;
   color: #868e96;
+  background-color: white;
+  margin-top: 10px;
 }
 .hljs {
   display: block;
@@ -1911,6 +1896,7 @@ td {
 }
 .me-header-color-style-dark .cl-st-post-list-button > a {
   color: #333333;
+  border-color: #333333;
 }
 .me-header-color-style-dark .cl-st-post-list-button > a:hover {
   background-color: #333333;
@@ -1959,6 +1945,7 @@ td {
 }
 .me-header-color-style-green .cl-st-post-list-button > a {
   color: rgba(22, 160, 133);
+  border-color: rgba(22, 160, 133);
 }
 .me-header-color-style-green .cl-st-post-list-button > a:hover {
   background-color: rgba(22, 160, 133);
@@ -2017,6 +2004,7 @@ td {
 }
 .me-header-color-style-pink .cl-st-post-list-button > a {
   color: #F56BB6;
+  border-color: #F56BB6;
 }
 .me-header-color-style-pink .cl-st-post-list-button > a:hover {
   background-color: #F56BB6;

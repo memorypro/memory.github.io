@@ -7,12 +7,12 @@
 
 <!-- layui -->
 <!-- <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script> -->
-<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.0.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
 <script src="/media/layui/layui.all.js"></script>
 <link rel="stylesheet" href="/media/layui/css/layui.css">
 
 
-<link rel="shortcut icon" href="https://memory6181.top//favicon.ico?v=1579609821407">
+<link rel="shortcut icon" href="https://memory6181.top//favicon.ico?v=1579666316901">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://memory6181.top//styles/main.css">
 
@@ -77,7 +77,7 @@ var _hmt = _hmt || [];
 })();
 </script>
 
-<div class=" me-header-color-style-dark">
+<div class=" me-header-color-style-green">
 	<!-- 颜色主题样式 -->
 	<div class="header cl-st-head-menue">
 		<div class="me-layui-container">
@@ -110,16 +110,6 @@ var _hmt = _hmt || [];
 	
 					
 						<li class="layui-nav-item cl-st-head-menue">
-							<a href="/post/guan-yu-wo/" style="text-decoration: none">
-								<svg class="icon">
-									<use xlink:href="#icon-timerauto"></use>
-								</svg>
-								关于我
-							</a>
-						</li>
-	
-					
-						<li class="layui-nav-item cl-st-head-menue">
 							<a href="/" style="text-decoration: none">
 								<svg class="icon">
 									<use xlink:href="#icon-paper"></use>
@@ -130,11 +120,21 @@ var _hmt = _hmt || [];
 	
 					
 						<li class="layui-nav-item cl-st-head-menue">
-							<a href="/Navigation/" style="text-decoration: none">
+							<a href="/Navigation/ " style="text-decoration: none">
 								<svg class="icon">
 									<use xlink:href="#icon-menu"></use>
 								</svg>
 								导航
+							</a>
+						</li>
+	
+					
+						<li class="layui-nav-item cl-st-head-menue">
+							<a href=" /post/guan-yu-wo/" style="text-decoration: none">
+								<svg class="icon">
+									<use xlink:href="#icon-timerauto "></use>
+								</svg>
+								关于我
 							</a>
 						</li>
 	
@@ -234,7 +234,7 @@ var _hmt = _hmt || [];
         
             
 
-<div class="archives-container me-header-color-style-dark">
+<div class="archives-container me-header-color-style-green">
 
 	<div class="layui-card me-card">
 		<div class="layui-card-header">归档</div>
@@ -247,6 +247,58 @@ var _hmt = _hmt || [];
 						2019
 					</div>
 				</li>
+				
+				
+				<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis cl-st-text"></i>
+					<div class="layui-timeline-content layui-text">
+						<h3 class="layui-timeline-title me-timeline-title">
+							<a href="https://memory6181.top/post/2019-06-15">
+								<span class="post-title">
+									<small>2019-06-15</small>
+									Linux 安装CH340驱动
+								</span>
+							</a>
+						</h3>
+
+						<p class="me-timeline-text">
+							下载
+
+地址:http://www.wch.cn/downloads/CH341SER_LINUX_ZIP.html
+
+###＃　解压
+unzip CH341SER_LINUX.ZIP
+
+编译
+cd CH341SER_LINUX
+make
+...
+						</p>
+					</div>
+				</li>
+				
+				
+				
+				<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis cl-st-text"></i>
+					<div class="layui-timeline-content layui-text">
+						<h3 class="layui-timeline-title me-timeline-title">
+							<a href="https://memory6181.top/post/2019-06-06">
+								<span class="post-title">
+									<small>2019-06-06</small>
+									关于LCD的一些经验
+								</span>
+							</a>
+						</h3>
+
+						<p class="me-timeline-text">
+							段码液晶驱动BL5507
+这是在上一家公司做产品的过程中遇到的问题，总共出现两次比较严重的bug
+1、液晶运行一段时间之后出现了部分黑屏的显现，起初怪硬件工程师，后来联系了厂家才了解到这个芯片有一个休眠模式，不知道在什么情况的影响下进入了休...
+						</p>
+					</div>
+				</li>
+				
 				
 				
 				<li class="layui-timeline-item">
@@ -537,16 +589,16 @@ private String SerialPortReadStr()
 				
 				
 				
-				
-				
-				
-				
 				<li class="layui-timeline-item">
 					<i class="layui-icon layui-timeline-axis cl-st-text"></i>
 					<div class="layui-timeline-content layui-text me-timeline-year-text">
 						2018
 					</div>
 				</li>
+				
+				
+				
+				
 				
 				
 				
@@ -600,55 +652,34 @@ Gridea 主页
 				
 				
 				
-				<li class="layui-timeline-item">
-					<i class="layui-icon layui-timeline-axis cl-st-text"></i>
-					<div class="layui-timeline-content layui-text">
-						<h3 class="layui-timeline-title me-timeline-title">
-							<a href="https://memory6181.top/post/2018-08-30">
-								<span class="post-title">
-									<small>2018-08-30</small>
-									ARM 编译工具keil 和 IAR  命令行编译和下载
-								</span>
-							</a>
-						</h3>
-
-						<p class="me-timeline-text">
-							
-目的
-
-不管是Keil还是IAR对代码补全，高亮等编辑功能支持的不是很好，虽然现在的Keil 5.25对界面的支持好了很多，但是很多人还是青睐于第三方的编辑器，命令行的编译方式可以让我们在使用第三方编辑器编辑的时候进行代码编译和下载，通常...
-						</p>
-					</div>
-				</li>
-				
-				
-				
-				<li class="layui-timeline-item">
-					<i class="layui-icon layui-timeline-axis cl-st-text"></i>
-					<div class="layui-timeline-content layui-text">
-						<h3 class="layui-timeline-title me-timeline-title">
-							<a href="https://memory6181.top/post/2018-08-25">
-								<span class="post-title">
-									<small>2018-08-25</small>
-									给pugo博客添加后台管理
-								</span>
-							</a>
-						</h3>
-
-						<p class="me-timeline-text">
-							Pugo博客已经搭建了好几个月了吧，给我感受到非常方便的就是，我换了好多VPS，迁移显得非常的方便，但是也有不足的地方，比如发布一篇新的博客，我每次都需要重新进入后台进行新的Post，还需要重新build我的博客，这样才能将博客发布出去，和...
-						</p>
-					</div>
-				</li>
-				
-				
-				
 			</ul>
 		</div>
 	</div>
 
 	<!-- 
     <h2 class="year">2019</h2>
+    
+      
+        <article class="post">
+          <a href="https://memory6181.top/post/2019-06-15">
+            <h2 class="post-title">
+              Linux 安装CH340驱动
+              <small>2019-06-15</small>
+            </h2>
+          </a>
+        </article>
+      
+    
+      
+        <article class="post">
+          <a href="https://memory6181.top/post/2019-06-06">
+            <h2 class="post-title">
+              关于LCD的一些经验
+              <small>2019-06-06</small>
+            </h2>
+          </a>
+        </article>
+      
     
       
         <article class="post">
@@ -784,12 +815,12 @@ Gridea 主页
     
       
     
-      
-    
-      
-    
   
     <h2 class="year">2018</h2>
+    
+      
+    
+      
     
       
     
@@ -826,28 +857,6 @@ Gridea 主页
         </article>
       
     
-      
-        <article class="post">
-          <a href="https://memory6181.top/post/2018-08-30">
-            <h2 class="post-title">
-              ARM 编译工具keil 和 IAR  命令行编译和下载
-              <small>2018-08-30</small>
-            </h2>
-          </a>
-        </article>
-      
-    
-      
-        <article class="post">
-          <a href="https://memory6181.top/post/2018-08-25">
-            <h2 class="post-title">
-              给pugo博客添加后台管理
-              <small>2018-08-25</small>
-            </h2>
-          </a>
-        </article>
-      
-    
    -->
 </div>
         
@@ -861,19 +870,12 @@ Gridea 主页
 </div>
 
         
-            <div class="site-footer">
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
-</div>
-
-<!-- <script>
-  hljs.initHighlightingOnLoad()
-</script> -->
-
+           
           </div>
   
         </div>
         <div class="layui-col-xs12 layui-col-sm3 layui-col-md3">
-          <div class=" me-header-color-style-dark">
+          <div class=" me-header-color-style-green">
 	<!-- 颜色主题样式 -->
 	<div class="layui-card me-card">
 		<div class="layui-card-header me-card-header layui-icon layui-icon-username cl-st-card-header-line">关于作者</div>
@@ -914,44 +916,32 @@ Gridea 主页
 		<div class="layui-card-body layui-row dict">
 			<p class="pcolor">
 				
-					<!-- <span class="layui-badge layui-bg-gray"> -->
-						<a href="https://memory6181.top/tag/KmnLPiytL" style="text-decoration: none">
-							Gridea
-						</a>
-					<!-- </span> -->
-					
-					<!-- <span class="layui-badge layui-bg-gray"> -->
-						<a href="https://memory6181.top/tag/lnIvoi1nL" style="text-decoration: none">
-							单片机驱动开发
-						</a>
-					<!-- </span> -->
-					
-					<!-- <span class="layui-badge layui-bg-gray"> -->
-						<a href="https://memory6181.top/tag/cJUv3d8uX" style="text-decoration: none">
-							大事记
-						</a>
-					<!-- </span> -->
-					
-					<!-- <span class="layui-badge layui-bg-gray"> -->
-						<a href="https://memory6181.top/tag/4eOic9FHK" style="text-decoration: none">
-							技术
-						</a>
-					<!-- </span> -->
-					
-					<!-- <span class="layui-badge layui-bg-gray"> -->
-						<a href="https://memory6181.top/tag/a0I4RKJMQ" style="text-decoration: none">
-							代码片段
-						</a>
-					<!-- </span> -->
-					
-					<!-- <span class="layui-badge layui-bg-gray"> -->
-						<a href="https://memory6181.top/tag/84zPPkwCw" style="text-decoration: none">
-							生活
-						</a>
-					<!-- </span> -->
-					
+				<a href="https://memory6181.top/tag/KmnLPiytL" style="text-decoration: none">
+					Gridea
+				</a>
+				
+				<a href="https://memory6181.top/tag/lnIvoi1nL" style="text-decoration: none">
+					单片机驱动开发
+				</a>
+				
+				<a href="https://memory6181.top/tag/cJUv3d8uX" style="text-decoration: none">
+					大事记
+				</a>
+				
+				<a href="https://memory6181.top/tag/4eOic9FHK" style="text-decoration: none">
+					技术
+				</a>
+				
+				<a href="https://memory6181.top/tag/a0I4RKJMQ" style="text-decoration: none">
+					代码片段
+				</a>
+				
+				<a href="https://memory6181.top/tag/84zPPkwCw" style="text-decoration: none">
+					生活
+				</a>
+				
 			</p>
-			
+
 		</div>
 	</div>
 	<div class="layui-card me-card">
@@ -960,34 +950,42 @@ Gridea 主页
 			
 			<div class="me-friends-list">
 				<a href="http://www.7tec.cn/">
-					<svg class="icon me-friends-photo" ><use xlink:href="#icon-icon-test4"></use></svg>
+					<svg class="icon me-friends-photo">
+						<use xlink:href="#icon-icon-test4"></use>
+					</svg>
 					<span class="me-friends-text">7TEC</span>
 				</a>
-				
+
 			</div>
 			
 			<div class="me-friends-list">
 				<a href="https://www.ihewro.com">
-					<svg class="icon me-friends-photo" ><use xlink:href="#icon-icon-test15"></use></svg>
+					<svg class="icon me-friends-photo">
+						<use xlink:href="#icon-icon-test15"></use>
+					</svg>
 					<span class="me-friends-text">友人C</span>
 				</a>
-				
+
 			</div>
 			
 			<div class="me-friends-list">
 				<a href="https://www.michaelapp.com/">
-					<svg class="icon me-friends-photo" ><use xlink:href="#icon-icon-test14"></use></svg>
+					<svg class="icon me-friends-photo">
+						<use xlink:href="#icon-icon-test14"></use>
+					</svg>
 					<span class="me-friends-text">michael pan</span>
 				</a>
-				
+
 			</div>
 			
 			<div class="me-friends-list">
 				<a href="/">
-					<svg class="icon me-friends-photo" ><use xlink:href="#icon-chakan"></use></svg>
+					<svg class="icon me-friends-photo">
+						<use xlink:href="#icon-chakan"></use>
+					</svg>
 					<span class="me-friends-text">查看更多</span>
 				</a>
-				
+
 			</div>
 		</div>
 	</div>
@@ -996,7 +994,7 @@ Gridea 主页
 		<div class="layui-card-body">
 			<ul class="me-list-columns">
 				<li>标签：6 个</li>
-				<li>文章：48 篇</li>
+				<li>文章：50 篇</li>
 				<li>页面：5个</li>
 				<li>评论：3条</li>
 			</ul>
@@ -1099,6 +1097,13 @@ Gridea 主页
       </div>
     </div>
 
-  
+    <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> Theme PowerBy <a href="https://memory6181.top">Memory</a> 
+</div>
+
+<!-- <script>
+  hljs.initHighlightingOnLoad()
+</script> -->
+
   </body>
 </html>
