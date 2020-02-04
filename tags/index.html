@@ -5,50 +5,48 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Memory的小站</title>
 
-<!-- layui -->
-<!-- <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script> -->
-<script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
-<script src="/media/layui/layui.all.js"></script>
-<link rel="stylesheet" href="/media/layui/css/layui.css">
+<!-- bootstrap -->
+<link href="/media/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
 
-
-<link rel="shortcut icon" href="https://memory6181.top//favicon.ico?v=1579666316901">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="stylesheet" href="https://memory6181.top//styles/main.css">
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+<script src="/media/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 
 <!-- <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script> -->
 <script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
 
+<link rel="shortcut icon" href="https://memory6181.top//favicon.ico?v=1580810164658">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://memory6181.top//styles/main.css">
+<!-- 时间轴 -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
 
-<!-- 引入阿里图标库 -->
-<script src="\media\layui\font\font-blog\iconfont.js"></script>
-<script src="\media\layui\font\font-connect\iconfont.js"></script>
-<script src="\media\layui\font\font-men\iconfont.js"></script>
-
-
-<!-- 引入primjs 代码高亮 -->
 <!-- 支持prism -->
 <script src="../../prism.js" ></script>
 <link href="../../prism.css" rel="stylesheet" />
-<!-- 添加 Vline 评论 -->
-<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
-
+<!-- <link href="../../style.css" rel="stylesheet" /> -->
+ 
 <!-- DEMO JS -->
 <script src="media/scripts/index.js"></script>
 
+<!-- 添加 Vline 评论 -->
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+
+ <!-- 添加showdown markdown 支持 -->
+<!-- <script src="/media/showdownjs/showdownjs-showdown-3c120ed/src/showdown.js"></script> -->
 <!-- 谷歌统计 -->
 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155337428-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-  
-    gtag('config', 'UA-155337428-1');
-  </script>
-  
-  <!-- 百度统计 -->
-  <script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-155337428-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-155337428-1');
+</script>
+
+<!-- 百度统计 -->
+<script>
 var _hmt = _hmt || [];
 (function() {
   var hm = document.createElement("script");
@@ -58,12 +56,9 @@ var _hmt = _hmt || [];
 })();
 </script>
 
-
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <!-- 百度推送 -->
+    <!-- 百度推送 -->
 <script>
 (function(){
     var bp = document.createElement('script');
@@ -79,114 +74,264 @@ var _hmt = _hmt || [];
 })();
 </script>
 
+<!-- header -->
 <div class=" me-header-color-style-green">
-	<!-- 颜色主题样式 -->
-	<div class="header cl-st-head-menue">
-		<div class="me-layui-container">
-			<div class="logo cl-st-head-title">
-				<a href="/" title="Memory"> Memory的小站</a>
+<nav class="navbar navbar-default" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+				<span class="sr-only">切换导航</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand " href="/">Memory的小站</a>
+		</div>
+		<div class="collapse navbar-collapse" id="example-navbar-collapse">
+			<ul class="nav navbar-nav">
+				
+				
+				<li><a href="/">首页</a></li>
+				
+				
+				
+				<li><a href="/archives">归档</a></li>
+				
+				
+				
+				<li><a href="https://www.memory6181.com/post/guan-yu-wo">关于我</a></li>
+				
+				
+				
+				<li><a href="https://www.memory6181.com/post/about">故事</a></li>
+				
+				
+				
+				<li><a href="/">友情链接</a></li>
+				
+				
+				
+				<li><a href="/">知识结构</a></li>
+				
+				
+				
+				<li><a href="/">音乐</a></li>
+				
+				
+				
+				<li><a href="/">阅读</a></li>
+				
+				
+				
+				<li><a href="/">博客美化</a></li>
+				
+				
+			</ul>
+			<!-- <div class="navinput hidden-xs"> -->
+				<!-- <input type="text" class=" glyphicon glyphicon-search navinput hidden-xs" placeholder="搜索其实很简单"> -->
+			<!-- </div > -->
+		</div>
+		<!-- <form class="navbar-form navbar-left" role="search">
+			<div class="form-group">
+				 
+				 <button type="submit" class="btn btn-default">搜索</button>
 			</div>
-			<i class="layui-icon layui-icon-app mobile-icon"></i>
-			<div class="nav">
-				<ul class="layui-nav cl-st-head-menue me-layui-nav">
+			
+		</form> -->
+	</div>
+</nav>
+</div>
+
+
+
+    <div class="main">
+      <div class="row">
+        <div class="col-sm-8 blog-main">
+          <div class="main-content">
+           
+            <div class="tags-container">
+              <h2>
+                标签
+              </h2> 
+              
+                <a class="tag" href="https://memory6181.top/tag/KmnLPiytL">Gridea</a>
+              
+                <a class="tag" href="https://memory6181.top/tag/lnIvoi1nL">单片机驱动开发</a>
+              
+                <a class="tag" href="https://memory6181.top/tag/cJUv3d8uX">大事记</a>
+              
+                <a class="tag" href="https://memory6181.top/tag/4eOic9FHK">技术</a>
+              
+                <a class="tag" href="https://memory6181.top/tag/a0I4RKJMQ">代码片段</a>
+              
+                <a class="tag" href="https://memory6181.top/tag/84zPPkwCw">生活</a>
+              
+            </div>
+          </div>
+        </div>
+        <div class=" me-header-color-style-green">
+	<div class="col-sm-3 blog-sidebar">
+		<div class="sidebar-module">
+			<div class="me-sidebar-title glyphicon glyphicon-list-user post-text">
+				关于我
+			</div>
+		</div>
+		<div class=" me-sidebar-box sidebar-module ">
+			<div class="me-sidebar-about">
+				<img class="me-site-author-image " src="https://memory6181.top//images/avatar.png" />
+				<p class="me-site-name">Memory</p>
+				<p class="me-site-description">单片机开发（89C51，AVR，飞思卡尔，NXP，STM32，STM8）物联网（LoRa，NbIot，MQTT，COAP，LWM2M，TCP/IP，Wifi，BLE），物联网，电路设计，嵌入式，C，C++，C#，JAVA，Go，QT</p>
+				<div class="post-button text-left">
+					<a href="/" rel="contents" style="text-decoration: none">
+						<span class="post-link">了解更多 »</span>
+					</a>
+				</div>
+			</div>
+			
+		</div>
+		<div class="sidebar-module">
+			<div class="me-sidebar-title glyphicon glyphicon-list-alt post-text">
+				文章分类
+			</div>
+		</div>
+		<div class="me-sidebar-box sidebar-module">
+			<ul>
+				
+				<li class="me-sidebar-list">
+					<a class="me-sidebar-list-a" href="https://memory6181.top/tag/KmnLPiytL" style="text-decoration: none">
+						Gridea
+					</a>
+				</li>
+
+				
+				<li class="me-sidebar-list">
+					<a class="me-sidebar-list-a" href="https://memory6181.top/tag/lnIvoi1nL" style="text-decoration: none">
+						单片机驱动开发
+					</a>
+				</li>
+
+				
+				<li class="me-sidebar-list">
+					<a class="me-sidebar-list-a" href="https://memory6181.top/tag/cJUv3d8uX" style="text-decoration: none">
+						大事记
+					</a>
+				</li>
+
+				
+				<li class="me-sidebar-list">
+					<a class="me-sidebar-list-a" href="https://memory6181.top/tag/4eOic9FHK" style="text-decoration: none">
+						技术
+					</a>
+				</li>
+
+				
+				<li class="me-sidebar-list">
+					<a class="me-sidebar-list-a" href="https://memory6181.top/tag/a0I4RKJMQ" style="text-decoration: none">
+						代码片段
+					</a>
+				</li>
+
+				
+				<li class="me-sidebar-list">
+					<a class="me-sidebar-list-a" href="https://memory6181.top/tag/84zPPkwCw" style="text-decoration: none">
+						生活
+					</a>
+				</li>
+
+				
+			</ul>
+
+			<!-- </div> -->
+		</div>
+		<div class="sidebar-module">
+			<div class="me-sidebar-title glyphicon glyphicon-list-tree-conifer post-text">
+				友情链接
+			</div>
+		</div>
+		<div class="me-sidebar-box sidebar-module">
+			<!-- <p class="me-sidebar-title glyphicon glyphicon-tree-conifer post-text"> 友情链接</p> -->
+			<!-- <hr class="me-sidebar-line"> -->
+			<div>
+				<ul>
+					
+					<li class="me-sidebar-list">
+						<a class="me-sidebar-list-a" href="https://www.michaelapp.com" style="text-decoration: none">
+							michael
+						</a>
+					</li>
 
 					
-						<li class="layui-nav-item cl-st-head-menue">
-							<a href="/" style="text-decoration: none">
-								<svg class="icon">
-									<use xlink:href="#icon-home"></use>
-								</svg>
-								首页
-							</a>
-						</li>
-	
+					<li class="me-sidebar-list">
+						<a class="me-sidebar-list-a" href="http://www.7tec.cn/" style="text-decoration: none">
+							7TEC
+						</a>
+					</li>
+
 					
-						<li class="layui-nav-item cl-st-head-menue">
-							<a href="/archives/" style="text-decoration: none">
-								<svg class="icon">
-									<use xlink:href="#icon-localoffer"></use>
-								</svg>
-								归档
-							</a>
-						</li>
-	
-					
-						<li class="layui-nav-item cl-st-head-menue">
-							<a href="/" style="text-decoration: none">
-								<svg class="icon">
-									<use xlink:href="#icon-paper"></use>
-								</svg>
-								知识结构
-							</a>
-						</li>
-	
-					
-						<li class="layui-nav-item cl-st-head-menue">
-							<a href="/Navigation/ " style="text-decoration: none">
-								<svg class="icon">
-									<use xlink:href="#icon-menu"></use>
-								</svg>
-								导航
-							</a>
-						</li>
-	
-					
-						<li class="layui-nav-item cl-st-head-menue">
-							<a href=" /post/guan-yu-wo/" style="text-decoration: none">
-								<svg class="icon">
-									<use xlink:href="#icon-timerauto "></use>
-								</svg>
-								关于我
-							</a>
-						</li>
-	
-					
+					<li class="me-sidebar-list">
+						<a class="me-sidebar-list-a" href="/" style="text-decoration: none">
+							更多
+						</a>
+					</li>
 				</ul>
 			</div>
 		</div>
+
+		<div class="panel panel-primary">
+			<!-- Default panel contents -->
+			<div class="panel-heading">Panel heading</div>
+			<div class="panel-body">
+			  <p>...</p>
+			</div>
+		  
+			<!-- Table -->
+			<table class="table">
+			  ...
+			</table>
+		</div>
+
+	
+	</div><!-- /.blog-sidebar -->
+</div>
+
+<!-- <div class="sidebar-module">
+	<div class="me-sidebar-title glyphicon glyphicon-list-send post-text">
+		社交
 	</div>
 </div>
-<script src="layui.js"></script>
-<script>
-	//JavaScript代码区域
-	layui.use(['element', 'layer'], function () {
-		var element = layui.element;
-		var layer = layui.layer;
+<div class="me-sidebar-box sidebar-module">
+	<div>
+		<ul>
+			<ul>
+				
+				<li class="me-sidebar-list">
+					<a class="me-sidebar-list-a" href="http://www.cnblogs.com/memorypro/" style="text-decoration: none">
+						博客园
+					</a>
+				</li>
 
-	});
-	$(".mobile-icon").click(function () {
-		$(".nav").toggleClass('layui-show');
-	});
-</script>
-<div class="site-header">
-</div>
+				
+				<li class="me-sidebar-list">
+					<a class="me-sidebar-list-a" href=" https://gitee.com/zyzp/events" style="text-decoration: none">
+						码云
+					</a>
+				</li>
 
-        <div class="tags-container">
-          
-            <a class="tag" href="https://memory6181.top/tag/KmnLPiytL">Gridea</a>
-          
-            <a class="tag" href="https://memory6181.top/tag/lnIvoi1nL">单片机驱动开发</a>
-          
-            <a class="tag" href="https://memory6181.top/tag/cJUv3d8uX">大事记</a>
-          
-            <a class="tag" href="https://memory6181.top/tag/4eOic9FHK">技术</a>
-          
-            <a class="tag" href="https://memory6181.top/tag/a0I4RKJMQ">代码片段</a>
-          
-            <a class="tag" href="https://memory6181.top/tag/84zPPkwCw">生活</a>
-          
-        </div>
+				
+				<li class="me-sidebar-list">
+					<a class="me-sidebar-list-a" href="https://github.com/memorypro" style="text-decoration: none">
+						GITHUB
+					</a>
+				</li>
 
-       
-      </div>
-    </div>
-    <div class="site-footer">
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> Theme PowerBy <a href="https://memory6181.top">Memory</a> 
-</div>
+				
+			</ul>
+		</ul>
 
-<!-- <script>
-  hljs.initHighlightingOnLoad()
-</script> -->
-
+	</div>
+</div> -->
+      </div><!-- /.blog-main -->
   </body>
 </html>
+
+

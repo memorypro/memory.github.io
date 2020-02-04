@@ -6,50 +6,48 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Memory的小站</title>
 
-<!-- layui -->
-<!-- <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script> -->
-<script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
-<script src="/media/layui/layui.all.js"></script>
-<link rel="stylesheet" href="/media/layui/css/layui.css">
+<!-- bootstrap -->
+<link href="/media/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
 
-
-<link rel="shortcut icon" href="https://memory6181.top//favicon.ico?v=1579666316901">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="stylesheet" href="https://memory6181.top//styles/main.css">
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+<script src="/media/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 
 <!-- <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script> -->
 <script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
 
+<link rel="shortcut icon" href="https://memory6181.top//favicon.ico?v=1580810164658">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://memory6181.top//styles/main.css">
+<!-- 时间轴 -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
 
-<!-- 引入阿里图标库 -->
-<script src="\media\layui\font\font-blog\iconfont.js"></script>
-<script src="\media\layui\font\font-connect\iconfont.js"></script>
-<script src="\media\layui\font\font-men\iconfont.js"></script>
-
-
-<!-- 引入primjs 代码高亮 -->
 <!-- 支持prism -->
 <script src="../../prism.js" ></script>
 <link href="../../prism.css" rel="stylesheet" />
-<!-- 添加 Vline 评论 -->
-<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
-
+<!-- <link href="../../style.css" rel="stylesheet" /> -->
+ 
 <!-- DEMO JS -->
 <script src="media/scripts/index.js"></script>
 
+<!-- 添加 Vline 评论 -->
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+
+ <!-- 添加showdown markdown 支持 -->
+<!-- <script src="/media/showdownjs/showdownjs-showdown-3c120ed/src/showdown.js"></script> -->
 <!-- 谷歌统计 -->
 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155337428-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-  
-    gtag('config', 'UA-155337428-1');
-  </script>
-  
-  <!-- 百度统计 -->
-  <script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-155337428-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-155337428-1');
+</script>
+
+<!-- 百度统计 -->
+<script>
 var _hmt = _hmt || [];
 (function() {
   var hm = document.createElement("script");
@@ -60,11 +58,21 @@ var _hmt = _hmt || [];
 </script>
 
 
-	<meta name="baidu-site-verification" content="AMoAmc3eRY" />
 </head>
-
+ 
 <body>
-	<!-- 百度推送 -->
+		<div class="me-top-photo media-hide">
+	<div class=" me-header-color-style-green">
+		<div class="me-top-photo-color" style="height: 372px;">
+			<div class="me-top-text-box">
+				<img class="me-top-sculpture" src="https://memory6181.top//images/avatar.png" />
+				<div class="me-top-title me-top-font-color">Memory的小站</div>
+				<div class="me-top-motto me-top-font-color">世界那么大，我想去看看</div>
+			</div>
+		</div>
+	</div>
+</div>
+		<!-- 百度推送 -->
 <script>
 (function(){
     var bp = document.createElement('script');
@@ -80,432 +88,369 @@ var _hmt = _hmt || [];
 })();
 </script>
 
+<!-- header -->
 <div class=" me-header-color-style-green">
-	<!-- 颜色主题样式 -->
-	<div class="header cl-st-head-menue">
-		<div class="me-layui-container">
-			<div class="logo cl-st-head-title">
-				<a href="/" title="Memory"> Memory的小站</a>
-			</div>
-			<i class="layui-icon layui-icon-app mobile-icon"></i>
-			<div class="nav">
-				<ul class="layui-nav cl-st-head-menue me-layui-nav">
-
-					
-						<li class="layui-nav-item cl-st-head-menue">
-							<a href="/" style="text-decoration: none">
-								<svg class="icon">
-									<use xlink:href="#icon-home"></use>
-								</svg>
-								首页
-							</a>
-						</li>
-	
-					
-						<li class="layui-nav-item cl-st-head-menue">
-							<a href="/archives/" style="text-decoration: none">
-								<svg class="icon">
-									<use xlink:href="#icon-localoffer"></use>
-								</svg>
-								归档
-							</a>
-						</li>
-	
-					
-						<li class="layui-nav-item cl-st-head-menue">
-							<a href="/" style="text-decoration: none">
-								<svg class="icon">
-									<use xlink:href="#icon-paper"></use>
-								</svg>
-								知识结构
-							</a>
-						</li>
-	
-					
-						<li class="layui-nav-item cl-st-head-menue">
-							<a href="/Navigation/ " style="text-decoration: none">
-								<svg class="icon">
-									<use xlink:href="#icon-menu"></use>
-								</svg>
-								导航
-							</a>
-						</li>
-	
-					
-						<li class="layui-nav-item cl-st-head-menue">
-							<a href=" /post/guan-yu-wo/" style="text-decoration: none">
-								<svg class="icon">
-									<use xlink:href="#icon-timerauto "></use>
-								</svg>
-								关于我
-							</a>
-						</li>
-	
-					
-				</ul>
-			</div>
+<nav class="navbar navbar-default" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+				<span class="sr-only">切换导航</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand " href="/">Memory的小站</a>
 		</div>
-	</div>
-</div>
-<script src="layui.js"></script>
-<script>
-	//JavaScript代码区域
-	layui.use(['element', 'layer'], function () {
-		var element = layui.element;
-		var layer = layui.layer;
-
-	});
-	$(".mobile-icon").click(function () {
-		$(".nav").toggleClass('layui-show');
-	});
-</script>
-<div class="site-header">
-</div>
-	<div class="main">
-		<div class="layui-row">
-			<div class="layui-col-xs12 layui-col-sm9 layui-col-md9 ">
-				<div class="main-content">
-					<div class="layui-carousel me-post-list-carousel" id="test3" lay-filter="test4">
-	<div carousel-item class="me-carousel-item">
-		
-		<a href="/tag/lnIvoi1nL/">
-			<div><img src="https://img.memory6181.com/head/MCU.jpg" width="100%" height="100%"></div>
-		</a>	
-		
-		<a href="/post/9f5C0FaPD">
-			<div><img src=" https://img.memory6181.com/head/MicroPython.jpg" width="100%" height="100%"></div>
-		</a>	
-		
-	</div>
-</div>
-
-<!-- <script src="//res.layui.com/layui/dist/layui.js" charset="utf-8"></script>
-注意：如果你直接复制所有代码到本地，上述js路径需要改成你本地的 -->
-<script>
-	layui.use(['carousel', 'form'], function () {
-		var carousel = layui.carousel
-			, form = layui.form;
-
-
-		//设定各种参数
-		var ins3 = carousel.render({
-			elem: '#test3'
-			, width: 'auto'
-			, interval: 5000
-		});
-
-		//事件
-		carousel.on('change(test4)', function (res) {
-			console.log(res)
-		});
-
-		var $ = layui.$, active = {
-			set: function (othis) {
-				var THIS = 'layui-bg-normal'
-					, key = othis.data('key')
-					, options = {};
-
-				othis.css('background-color', '#5FB878').siblings().removeAttr('style');
-				options[key] = othis.data('value');
-				ins3.reload(options);
-			}
-		};
-
-		//监听开关
-		form.on('switch(autoplay)', function () {
-			ins3.reload({
-				autoplay: this.checked
-			});
-		});
-
-		$('.demoSet').on('keyup', function () {
-			var value = this.value
-				, options = {};
-			if (!/^\d+$/.test(value)) return;
-
-			options[this.name] = value;
-			ins3.reload(options);
-		});
-
-		//其它示例
-		$('.demoTest .layui-btn').on('click', function () {
-			var othis = $(this), type = othis.data('type');
-			active[type] ? active[type].call(this, othis) : '';
-		});
-	});
-</script>
-					<div class=" me-header-color-style-green">
-	<!-- 颜色主题样式 -->
-	<!-- 插入滚动图片 -->
-	<div class="post-container">
-		
-		<article class="post ">
+		<div class="collapse navbar-collapse" id="example-navbar-collapse">
+			<ul class="nav navbar-nav">
+				
+				
+				<li><a href="/">首页</a></li>
+				
+				
+				
+				<li><a href="/archives">归档</a></li>
+				
+				
+				
+				<li><a href="https://www.memory6181.com/post/guan-yu-wo">关于我</a></li>
+				
+				
+				
+				<li><a href="https://www.memory6181.com/post/about">故事</a></li>
+				
+				
+				
+				<li><a href="/">友情链接</a></li>
+				
+				
+				
+				<li><a href="/">知识结构</a></li>
+				
+				
+				
+				<li><a href="/">音乐</a></li>
+				
+				
+				
+				<li><a href="/">阅读</a></li>
+				
+				
+				
+				<li><a href="/">博客美化</a></li>
+				
+				
+			</ul>
+			<!-- <div class="navinput hidden-xs"> -->
+				<!-- <input type="text" class=" glyphicon glyphicon-search navinput hidden-xs" placeholder="搜索其实很简单"> -->
+			<!-- </div > -->
+		</div>
+		<!-- <form class="navbar-form navbar-left" role="search">
+			<div class="form-group">
+				 
+				 <button type="submit" class="btn btn-default">搜索</button>
+			</div>
 			
-			<span class="cl-st-post-tag ">
-				
-				<a class="me-post-list-tag layui-icon layui-icon-note" href="https://memory6181.top/tag/4eOic9FHK">
-					技术
-				</a>
-				
-			</span>
-			<div class="me-list-content">
-				<div class="post-title cl-st-post-list-title">
-					<a href="https://memory6181.top/post/2019-03-25-2" style="text-decoration: none">
-						 CSharp  一些代码小结--串口操作
-					</a>
-				</div>
-				<div class="post-abstract">
-					串口解析显示中文
+		</form> -->
+	</div>
+</nav>
+</div>
+
+
+
+		<div class="main">
+			<div class="row">
+
+
+				<div class="col-sm-8 blog-main">
+					<div class="main-content">
+						<div class=" me-header-color-style-green">
+<div class="post-container ">
+	
+	<article class="post">
+		
+			<a class="me-post-list-tag" href="https://memory6181.top/tag/4eOic9FHK" class="post-tag post-link glyphicon glyphicon-link" style="text-decoration: none">
+				技术
+			</a>
+			
+		
+		
+			<a href="https://memory6181.top/post/2019-03-25-2" style="text-decoration: none">
+				<h2 class="post-title post-link"> CSharp  一些代码小结--串口操作</h2>
+			</a>
+		
+		
+		<hr class="me-sidebar-line">
+		<div class="post-abstract">
+				串口解析显示中文
 private String SerialPortReadStr()
 {
     try
     {
         String str = null;
-        int n = serialPort1.Bytes...
-				</div>
-				<div class="me-post-button cl-st-post-list-button" style="float: right;">
-					<a href="https://memory6181.top/post/2019-03-25-2" rel="contents" style="text-decoration:none">
-						<span>阅读全文</span>
-					</a>
-				</div>
-				<div class="post-info media-hide">
-					<time class="post-time layui-icon layui-icon-date cl-st-text">
-						发布于2019-03-25|
-					</time>
-					<time class="post-time layui-icon layui-icon-time cl-st-text">
-						1分钟|
-					</time>
-					<time class="post-time layui-icon layui-icon-edit cl-st-text">
-						164字数
-					</time>
-				</div>
-			</div>
-		</article>
-
+        int n = serialPort1.Bytes...	
+		</div>
+		<hr class="me-sidebar-line">
 		
-		<article class="post ">
+		
+		<div class="post-button" style="float: left;">
+			<a href="https://memory6181.top/post/2019-03-25-2" rel="contents" style="text-decoration:none">
+				<span >阅读全文</span>
+			</a>
+		</div>
+		<div class="post-info" style="float: right;">
+			<time class="post-time glyphicon glyphicon-calendar">
+				发布于2019-03-25 |
+			</time>
 			
-			<span class="cl-st-post-tag ">
-				
-				<a class="me-post-list-tag layui-icon layui-icon-note" href="https://memory6181.top/tag/a0I4RKJMQ">
-					代码片段
-				</a>
-				
-			</span>
-			<div class="me-list-content">
-				<div class="post-title cl-st-post-list-title">
-					<a href="https://memory6181.top/post/2019-03-25-4" style="text-decoration: none">
-						CSharp 一些代码小结--datGirdView保存到csv文件
-					</a>
-				</div>
-				<div class="post-abstract">
-					 if (dataGridView1.Rows.Count == 0)
+			<time class="post-time glyphicon glyphicon-dashboard media-hide">
+				1分钟|
+			</time>
+			<time class="post-time glyphicon glyphicon-pencil media-hide">
+				164字数
+			</time>
+		</div>
+
+	</article>
+
+	
+	<article class="post">
+		
+			<a class="me-post-list-tag" href="https://memory6181.top/tag/a0I4RKJMQ" class="post-tag post-link glyphicon glyphicon-link" style="text-decoration: none">
+				代码片段
+			</a>
+			
+		
+		
+			<a href="https://memory6181.top/post/2019-03-25-4" style="text-decoration: none">
+				<h2 class="post-title post-link">CSharp 一些代码小结--datGirdView保存到csv文件</h2>
+			</a>
+		
+		
+		<hr class="me-sidebar-line">
+		<div class="post-abstract">
+				 if (dataGridView1.Rows.Count == 0)
  {
-     MessageBox.Show(&quot;No data available!&quot;, &quot;Prompt&quot;, MessageB...
-				</div>
-				<div class="me-post-button cl-st-post-list-button" style="float: right;">
-					<a href="https://memory6181.top/post/2019-03-25-4" rel="contents" style="text-decoration:none">
-						<span>阅读全文</span>
-					</a>
-				</div>
-				<div class="post-info media-hide">
-					<time class="post-time layui-icon layui-icon-date cl-st-text">
-						发布于2019-03-25|
-					</time>
-					<time class="post-time layui-icon layui-icon-time cl-st-text">
-						2分钟|
-					</time>
-					<time class="post-time layui-icon layui-icon-edit cl-st-text">
-						248字数
-					</time>
-				</div>
-			</div>
-		</article>
-
+     MessageBox.Show(&quot;No data available!&quot;, &quot;Prompt&quot;, MessageB...	
+		</div>
+		<hr class="me-sidebar-line">
 		
-		<article class="post ">
+		
+		<div class="post-button" style="float: left;">
+			<a href="https://memory6181.top/post/2019-03-25-4" rel="contents" style="text-decoration:none">
+				<span >阅读全文</span>
+			</a>
+		</div>
+		<div class="post-info" style="float: right;">
+			<time class="post-time glyphicon glyphicon-calendar">
+				发布于2019-03-25 |
+			</time>
 			
-			<span class="cl-st-post-tag ">
-				
-				<a class="me-post-list-tag layui-icon layui-icon-note" href="https://memory6181.top/tag/KmnLPiytL">
-					Gridea
-				</a>
-				
-			</span>
-			<div class="me-list-content">
-				<div class="post-title cl-st-post-list-title">
-					<a href="https://memory6181.top/post/hello-gridea" style="text-decoration: none">
-						Hello Gridea
-					</a>
-				</div>
-				<div class="post-abstract">
-					👏  欢迎使用 Gridea ！
+			<time class="post-time glyphicon glyphicon-dashboard media-hide">
+				2分钟|
+			</time>
+			<time class="post-time glyphicon glyphicon-pencil media-hide">
+				248字数
+			</time>
+		</div>
+
+	</article>
+
+	
+	<article class="post">
+		
+			<a class="me-post-list-tag" href="https://memory6181.top/tag/KmnLPiytL" class="post-tag post-link glyphicon glyphicon-link" style="text-decoration: none">
+				Gridea
+			</a>
+			
+		
+		
+			<a href="https://memory6181.top/post/hello-gridea" style="text-decoration: none">
+				<h2 class="post-title post-link">Hello Gridea</h2>
+			</a>
+		
+		
+		<hr class="me-sidebar-line">
+		<div class="post-abstract">
+				👏  欢迎使用 Gridea ！
 ✍️  Gridea 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...
 
 Github
 Gridea 主页
 示例网站
 特性👇
-📝  你可以使用最酷的 Markdo...
-				</div>
-				<div class="me-post-button cl-st-post-list-button" style="float: right;">
-					<a href="https://memory6181.top/post/hello-gridea" rel="contents" style="text-decoration:none">
-						<span>阅读全文</span>
-					</a>
-				</div>
-				<div class="post-info media-hide">
-					<time class="post-time layui-icon layui-icon-date cl-st-text">
-						发布于2018-12-12|
-					</time>
-					<time class="post-time layui-icon layui-icon-time cl-st-text">
-						2分钟|
-					</time>
-					<time class="post-time layui-icon layui-icon-edit cl-st-text">
-						298字数
-					</time>
-				</div>
-			</div>
-		</article>
-
+📝  你可以使用最酷的 Markdo...	
+		</div>
+		<hr class="me-sidebar-line">
 		
-		<article class="post ">
+		
+		<div class="post-button" style="float: left;">
+			<a href="https://memory6181.top/post/hello-gridea" rel="contents" style="text-decoration:none">
+				<span >阅读全文</span>
+			</a>
+		</div>
+		<div class="post-info" style="float: right;">
+			<time class="post-time glyphicon glyphicon-calendar">
+				发布于2018-12-12 |
+			</time>
 			
-			<span class="cl-st-post-tag ">
+			<time class="post-time glyphicon glyphicon-dashboard media-hide">
+				2分钟|
+			</time>
+			<time class="post-time glyphicon glyphicon-pencil media-hide">
+				298字数
+			</time>
+		</div>
+
+	</article>
+
+	
+	<article class="post">
+		
+			<a class="me-post-list-tag" href="https://memory6181.top/tag/4eOic9FHK" class="post-tag post-link glyphicon glyphicon-link" style="text-decoration: none">
+				技术
+			</a>
+			
+		
+		
+			<a href="https://memory6181.top/post/2018-08-30" style="text-decoration: none">
+				<h2 class="post-title post-link">ARM 编译工具keil 和 IAR  命令行编译和下载</h2>
+			</a>
+		
+		
+		<hr class="me-sidebar-line">
+		<div class="post-abstract">
 				
-				<a class="me-post-list-tag layui-icon layui-icon-note" href="https://memory6181.top/tag/4eOic9FHK">
-					技术
-				</a>
-				
-			</span>
-			<div class="me-list-content">
-				<div class="post-title cl-st-post-list-title">
-					<a href="https://memory6181.top/post/2018-08-30" style="text-decoration: none">
-						ARM 编译工具keil 和 IAR  命令行编译和下载
-					</a>
-				</div>
-				<div class="post-abstract">
-					
 目的
 
-不管是Keil还是IAR对代码补全，高亮等编辑功能支持的不是很好，虽然现在的Keil 5.25对界面的支持好了很多，但是很多人还是青睐于第三方的编辑器，命令行的编译方式可以让我们在使用第三方编辑器编辑的时候进行代码编译和下载，通常...
-				</div>
-				<div class="me-post-button cl-st-post-list-button" style="float: right;">
-					<a href="https://memory6181.top/post/2018-08-30" rel="contents" style="text-decoration:none">
-						<span>阅读全文</span>
-					</a>
-				</div>
-				<div class="post-info media-hide">
-					<time class="post-time layui-icon layui-icon-date cl-st-text">
-						发布于2018-08-30|
-					</time>
-					<time class="post-time layui-icon layui-icon-time cl-st-text">
-						4分钟|
-					</time>
-					<time class="post-time layui-icon layui-icon-edit cl-st-text">
-						816字数
-					</time>
-				</div>
-			</div>
-		</article>
-
+不管是Keil还是IAR对代码补全，高亮等编辑功能支持的不是很好，虽然现在的Keil 5.25对界面的支持好了很多，但是很多人还是青睐于第三方的编辑器，命令行的编译方式可以让我们在使用第三方编辑器编辑的时候进行代码编译和下载，通常...	
+		</div>
+		<hr class="me-sidebar-line">
 		
-		<article class="post ">
-			
-			<span class="cl-st-post-tag ">
-				
-				<a class="me-post-list-tag layui-icon layui-icon-note" href="https://memory6181.top/tag/4eOic9FHK">
-					技术
-				</a>
-				
-			</span>
-			<div class="me-list-content">
-				<div class="post-title cl-st-post-list-title">
-					<a href="https://memory6181.top/post/2018-08-25" style="text-decoration: none">
-						给pugo博客添加后台管理
-					</a>
-				</div>
-				<div class="post-abstract">
-					Pugo博客已经搭建了好几个月了吧，给我感受到非常方便的就是，我换了好多VPS，迁移显得非常的方便，但是也有不足的地方，比如发布一篇新的博客，我每次都需要重新进入后台进行新的Post，还需要重新build我的博客，这样才能将博客发布出去，和...
-				</div>
-				<div class="me-post-button cl-st-post-list-button" style="float: right;">
-					<a href="https://memory6181.top/post/2018-08-25" rel="contents" style="text-decoration:none">
-						<span>阅读全文</span>
-					</a>
-				</div>
-				<div class="post-info media-hide">
-					<time class="post-time layui-icon layui-icon-date cl-st-text">
-						发布于2018-08-25|
-					</time>
-					<time class="post-time layui-icon layui-icon-time cl-st-text">
-						5分钟|
-					</time>
-					<time class="post-time layui-icon layui-icon-edit cl-st-text">
-						998字数
-					</time>
-				</div>
-			</div>
-		</article>
-
 		
-		<article class="post ">
+		<div class="post-button" style="float: left;">
+			<a href="https://memory6181.top/post/2018-08-30" rel="contents" style="text-decoration:none">
+				<span >阅读全文</span>
+			</a>
+		</div>
+		<div class="post-info" style="float: right;">
+			<time class="post-time glyphicon glyphicon-calendar">
+				发布于2018-08-30 |
+			</time>
 			
-			<span class="cl-st-post-tag ">
-				
-				<a class="me-post-list-tag layui-icon layui-icon-note" href="https://memory6181.top/tag/4eOic9FHK">
-					技术
-				</a>
-				
-			</span>
-			<div class="me-list-content">
-				<div class="post-title cl-st-post-list-title">
-					<a href="https://memory6181.top/post/2018-08-17" style="text-decoration: none">
-						Ubuntu 安装java 1.8 教程
-					</a>
-				</div>
-				<div class="post-abstract">
-					1、下载java 1.8
+			<time class="post-time glyphicon glyphicon-dashboard media-hide">
+				4分钟|
+			</time>
+			<time class="post-time glyphicon glyphicon-pencil media-hide">
+				816字数
+			</time>
+		</div>
+
+	</article>
+
+	
+	<article class="post">
+		
+			<a class="me-post-list-tag" href="https://memory6181.top/tag/4eOic9FHK" class="post-tag post-link glyphicon glyphicon-link" style="text-decoration: none">
+				技术
+			</a>
+			
+		
+		
+			<a href="https://memory6181.top/post/2018-08-25" style="text-decoration: none">
+				<h2 class="post-title post-link">给pugo博客添加后台管理</h2>
+			</a>
+		
+		
+		<hr class="me-sidebar-line">
+		<div class="post-abstract">
+				Pugo博客已经搭建了好几个月了吧，给我感受到非常方便的就是，我换了好多VPS，迁移显得非常的方便，但是也有不足的地方，比如发布一篇新的博客，我每次都需要重新进入后台进行新的Post，还需要重新build我的博客，这样才能将博客发布出去，和...	
+		</div>
+		<hr class="me-sidebar-line">
+		
+		
+		<div class="post-button" style="float: left;">
+			<a href="https://memory6181.top/post/2018-08-25" rel="contents" style="text-decoration:none">
+				<span >阅读全文</span>
+			</a>
+		</div>
+		<div class="post-info" style="float: right;">
+			<time class="post-time glyphicon glyphicon-calendar">
+				发布于2018-08-25 |
+			</time>
+			
+			<time class="post-time glyphicon glyphicon-dashboard media-hide">
+				5分钟|
+			</time>
+			<time class="post-time glyphicon glyphicon-pencil media-hide">
+				998字数
+			</time>
+		</div>
+
+	</article>
+
+	
+	<article class="post">
+		
+			<a class="me-post-list-tag" href="https://memory6181.top/tag/4eOic9FHK" class="post-tag post-link glyphicon glyphicon-link" style="text-decoration: none">
+				技术
+			</a>
+			
+		
+		
+			<a href="https://memory6181.top/post/2018-08-17" style="text-decoration: none">
+				<h2 class="post-title post-link">Ubuntu 安装java 1.8 教程</h2>
+			</a>
+		
+		
+		<hr class="me-sidebar-line">
+		<div class="post-abstract">
+				1、下载java 1.8
 地址：
 ​	http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 注意：
-​	Ubuntu :.ta...
-				</div>
-				<div class="me-post-button cl-st-post-list-button" style="float: right;">
-					<a href="https://memory6181.top/post/2018-08-17" rel="contents" style="text-decoration:none">
-						<span>阅读全文</span>
-					</a>
-				</div>
-				<div class="post-info media-hide">
-					<time class="post-time layui-icon layui-icon-date cl-st-text">
-						发布于2018-08-17|
-					</time>
-					<time class="post-time layui-icon layui-icon-time cl-st-text">
-						2分钟|
-					</time>
-					<time class="post-time layui-icon layui-icon-edit cl-st-text">
-						391字数
-					</time>
-				</div>
-			</div>
-		</article>
-
+​	Ubuntu :.ta...	
+		</div>
+		<hr class="me-sidebar-line">
 		
-		<article class="post ">
+		
+		<div class="post-button" style="float: left;">
+			<a href="https://memory6181.top/post/2018-08-17" rel="contents" style="text-decoration:none">
+				<span >阅读全文</span>
+			</a>
+		</div>
+		<div class="post-info" style="float: right;">
+			<time class="post-time glyphicon glyphicon-calendar">
+				发布于2018-08-17 |
+			</time>
 			
-			<span class="cl-st-post-tag ">
-				
-				<a class="me-post-list-tag layui-icon layui-icon-note" href="https://memory6181.top/tag/4eOic9FHK">
-					技术
-				</a>
-				
-			</span>
-			<div class="me-list-content">
-				<div class="post-title cl-st-post-list-title">
-					<a href="https://memory6181.top/post/2018-08-12" style="text-decoration: none">
-						Pi 实现VLC网络视频监控
-					</a>
-				</div>
-				<div class="post-abstract">
-					安装摄像头
+			<time class="post-time glyphicon glyphicon-dashboard media-hide">
+				2分钟|
+			</time>
+			<time class="post-time glyphicon glyphicon-pencil media-hide">
+				391字数
+			</time>
+		</div>
+
+	</article>
+
+	
+	<article class="post">
+		
+			<a class="me-post-list-tag" href="https://memory6181.top/tag/4eOic9FHK" class="post-tag post-link glyphicon glyphicon-link" style="text-decoration: none">
+				技术
+			</a>
+			
+		
+		
+			<a href="https://memory6181.top/post/2018-08-12" style="text-decoration: none">
+				<h2 class="post-title post-link">Pi 实现VLC网络视频监控</h2>
+			</a>
+		
+		
+		<hr class="me-sidebar-line">
+		<div class="post-abstract">
+				安装摄像头
 将Pi的原装摄像头安装在pi上面
 ssh连接pi
 通过xshell或者putty等工具连接ssh
@@ -514,45 +459,48 @@ ssh连接pi
 $ sudo apt-get update    
 $ sudo apt-get install vlc    
 
-...
-				</div>
-				<div class="me-post-button cl-st-post-list-button" style="float: right;">
-					<a href="https://memory6181.top/post/2018-08-12" rel="contents" style="text-decoration:none">
-						<span>阅读全文</span>
-					</a>
-				</div>
-				<div class="post-info media-hide">
-					<time class="post-time layui-icon layui-icon-date cl-st-text">
-						发布于2018-08-12|
-					</time>
-					<time class="post-time layui-icon layui-icon-time cl-st-text">
-						2分钟|
-					</time>
-					<time class="post-time layui-icon layui-icon-edit cl-st-text">
-						273字数
-					</time>
-				</div>
-			</div>
-		</article>
-
+...	
+		</div>
+		<hr class="me-sidebar-line">
 		
-		<article class="post ">
+		
+		<div class="post-button" style="float: left;">
+			<a href="https://memory6181.top/post/2018-08-12" rel="contents" style="text-decoration:none">
+				<span >阅读全文</span>
+			</a>
+		</div>
+		<div class="post-info" style="float: right;">
+			<time class="post-time glyphicon glyphicon-calendar">
+				发布于2018-08-12 |
+			</time>
 			
-			<span class="cl-st-post-tag ">
-				
-				<a class="me-post-list-tag layui-icon layui-icon-note" href="https://memory6181.top/tag/4eOic9FHK">
-					技术
-				</a>
-				
-			</span>
-			<div class="me-list-content">
-				<div class="post-title cl-st-post-list-title">
-					<a href="https://memory6181.top/post/frp_da_jian_nei_wang_chuan_tou" style="text-decoration: none">
-						frp 搭建内网穿透
-					</a>
-				</div>
-				<div class="post-abstract">
-					1、准备工作
+			<time class="post-time glyphicon glyphicon-dashboard media-hide">
+				2分钟|
+			</time>
+			<time class="post-time glyphicon glyphicon-pencil media-hide">
+				273字数
+			</time>
+		</div>
+
+	</article>
+
+	
+	<article class="post">
+		
+			<a class="me-post-list-tag" href="https://memory6181.top/tag/4eOic9FHK" class="post-tag post-link glyphicon glyphicon-link" style="text-decoration: none">
+				技术
+			</a>
+			
+		
+		
+			<a href="https://memory6181.top/post/frp_da_jian_nei_wang_chuan_tou" style="text-decoration: none">
+				<h2 class="post-title post-link">frp 搭建内网穿透</h2>
+			</a>
+		
+		
+		<hr class="me-sidebar-line">
+		<div class="post-abstract">
+				1、准备工作
 
 
 一个有公网Ip的VPS或者服务器。
@@ -561,45 +509,48 @@ $ sudo apt-get install vlc
 frp软件包，下载地址：
 https://github.com/fatedier/frp/releases
 
-注意：要根...
-				</div>
-				<div class="me-post-button cl-st-post-list-button" style="float: right;">
-					<a href="https://memory6181.top/post/frp_da_jian_nei_wang_chuan_tou" rel="contents" style="text-decoration:none">
-						<span>阅读全文</span>
-					</a>
-				</div>
-				<div class="post-info media-hide">
-					<time class="post-time layui-icon layui-icon-date cl-st-text">
-						发布于2018-08-12|
-					</time>
-					<time class="post-time layui-icon layui-icon-time cl-st-text">
-						2分钟|
-					</time>
-					<time class="post-time layui-icon layui-icon-edit cl-st-text">
-						461字数
-					</time>
-				</div>
-			</div>
-		</article>
-
+注意：要根...	
+		</div>
+		<hr class="me-sidebar-line">
 		
-		<article class="post ">
+		
+		<div class="post-button" style="float: left;">
+			<a href="https://memory6181.top/post/frp_da_jian_nei_wang_chuan_tou" rel="contents" style="text-decoration:none">
+				<span >阅读全文</span>
+			</a>
+		</div>
+		<div class="post-info" style="float: right;">
+			<time class="post-time glyphicon glyphicon-calendar">
+				发布于2018-08-12 |
+			</time>
 			
-			<span class="cl-st-post-tag ">
-				
-				<a class="me-post-list-tag layui-icon layui-icon-note" href="https://memory6181.top/tag/4eOic9FHK">
-					技术
-				</a>
-				
-			</span>
-			<div class="me-list-content">
-				<div class="post-title cl-st-post-list-title">
-					<a href="https://memory6181.top/post/9f5C0FaPD" style="text-decoration: none">
-						MicroPython （一）点亮我的Led
-					</a>
-				</div>
-				<div class="post-abstract">
-					工具 ：
+			<time class="post-time glyphicon glyphicon-dashboard media-hide">
+				2分钟|
+			</time>
+			<time class="post-time glyphicon glyphicon-pencil media-hide">
+				461字数
+			</time>
+		</div>
+
+	</article>
+
+	
+	<article class="post">
+		
+			<a class="me-post-list-tag" href="https://memory6181.top/tag/4eOic9FHK" class="post-tag post-link glyphicon glyphicon-link" style="text-decoration: none">
+				技术
+			</a>
+			
+		
+		
+			<a href="https://memory6181.top/post/9f5C0FaPD" style="text-decoration: none">
+				<h2 class="post-title post-link">MicroPython （一）点亮我的Led</h2>
+			</a>
+		
+		
+		<hr class="me-sidebar-line">
+		<div class="post-abstract">
+				工具 ：
 
 
 putty
@@ -610,277 +561,230 @@ Notepad++
 putty 实时调试
 
 
-使用putty 打开USB 虚拟串口，我们打开可以使...
-				</div>
-				<div class="me-post-button cl-st-post-list-button" style="float: right;">
-					<a href="https://memory6181.top/post/9f5C0FaPD" rel="contents" style="text-decoration:none">
-						<span>阅读全文</span>
-					</a>
-				</div>
-				<div class="post-info media-hide">
-					<time class="post-time layui-icon layui-icon-date cl-st-text">
-						发布于2018-08-11|
-					</time>
-					<time class="post-time layui-icon layui-icon-time cl-st-text">
-						4分钟|
-					</time>
-					<time class="post-time layui-icon layui-icon-edit cl-st-text">
-						559字数
-					</time>
-				</div>
-			</div>
-		</article>
-
+使用putty 打开USB 虚拟串口，我们打开可以使...	
+		</div>
+		<hr class="me-sidebar-line">
 		
-		<!-- </div> -->
-		<!-- </div> -->
-	</div>
+		
+		<div class="post-button" style="float: left;">
+			<a href="https://memory6181.top/post/9f5C0FaPD" rel="contents" style="text-decoration:none">
+				<span >阅读全文</span>
+			</a>
+		</div>
+		<div class="post-info" style="float: right;">
+			<time class="post-time glyphicon glyphicon-calendar">
+				发布于2018-08-11 |
+			</time>
+			
+			<time class="post-time glyphicon glyphicon-dashboard media-hide">
+				4分钟|
+			</time>
+			<time class="post-time glyphicon glyphicon-pencil media-hide">
+				559字数
+			</time>
+		</div>
+
+	</article>
+
+	
+</div>
 </div>
 
-					<div class="pagination-container">
+<!-- <script>
+	var imgs = document.getElementsByClassName('myClass1');
+
+	for (var i = 0; i < imgs.length; i++) {
+		var num = Math.floor(Math.random() * 33 + 1);
+		imgs[i].src = 'https://img.memory6181.com/random/' + num + '.jpeg';
+		imgs[i].alt = imgs[i].src;
+	}
+</script> -->
+						<div class=" me-header-color-style-green">
+<div class="pagination-container">
   
-    <a href="https://memory6181.top/page/3/" class="prev-page"><svg class="icon"><use xlink:href="#icon-arrowleft"></use></svg>上一页</a>
-  
-  
-    <a href="https://memory6181.top/page/5/" class="next-page">下一页 <svg class="icon "><use xlink:href="#icon-arrowright"></use></svg></a>
+    <a href="https://memory6181.top/page/3/" class=" post-link prev-page glyphicon glyphicon-circle-arrow-left">上一页</a>
     
+  
+    <a href="https://memory6181.top/page/5/" class=" post-link next-page 	glyphicon glyphicon-circle-arrow-right">下一页</a>
+  
+</div>
 </div>
 
-
-					
+					</div>
 				</div>
-
-			</div>
-			<div class="layui-col-xs12 layui-col-sm3 layui-col-md3">
 				<div class=" me-header-color-style-green">
-	<!-- 颜色主题样式 -->
-	<div class="layui-card me-card">
-		<div class="layui-card-header me-card-header layui-icon layui-icon-username cl-st-card-header-line">关于作者</div>
-
-		<div class="layui-card-body">
-			<div class=" me-sidebar-box sidebar-module ">
-				<!-- <div class="me-sidebar-about"> -->
+	<div class="col-sm-3 blog-sidebar">
+		<div class="sidebar-module">
+			<div class="me-sidebar-title glyphicon glyphicon-list-user post-text">
+				关于我
+			</div>
+		</div>
+		<div class=" me-sidebar-box sidebar-module ">
+			<div class="me-sidebar-about">
 				<img class="me-site-author-image " src="https://memory6181.top//images/avatar.png" />
 				<p class="me-site-name">Memory</p>
 				<p class="me-site-description">单片机开发（89C51，AVR，飞思卡尔，NXP，STM32，STM8）物联网（LoRa，NbIot，MQTT，COAP，LWM2M，TCP/IP，Wifi，BLE），物联网，电路设计，嵌入式，C，C++，C#，JAVA，Go，QT</p>
-
-
-				<div class="text-left">
+				<div class="post-button text-left">
 					<a href="/" rel="contents" style="text-decoration: none">
 						<span class="post-link">了解更多 »</span>
 					</a>
 				</div>
-				<!-- </div> -->
-
-			</div>
-		</div>
-	</div>
-	<!-- <div class="layui-inline me-site-laydate" id="test-n1"></div> -->
-	<div class="layui-card me-card">
-		<div class="layui-card-header me-card-header layui-icon layui-icon-speaker cl-st-card-header-line">公告</div>
-		<div class="layui-card-body">
-			2020年1月18日我将博客迁移到了Gridea。
-		</div>
-	</div>
-	<div class="layui-card me-card">
-		<div class="layui-card-header me-card-header layui-icon layui-icon-dialogue cl-st-card-header-line">闲言碎语</div>
-		<div class="layui-card-body">
-			今天休息了一天，心情还不错
-		</div>
-	</div>
-	<div class="layui-card me-card">
-		<div class="layui-card-header me-card-header layui-icon layui-icon-note cl-st-card-header-line">标签/分类</div>
-		<div class="layui-card-body layui-row dict">
-			<p class="pcolor">
-				
-				<a href="https://memory6181.top/tag/KmnLPiytL" style="text-decoration: none">
-					Gridea
-				</a>
-				
-				<a href="https://memory6181.top/tag/lnIvoi1nL" style="text-decoration: none">
-					单片机驱动开发
-				</a>
-				
-				<a href="https://memory6181.top/tag/cJUv3d8uX" style="text-decoration: none">
-					大事记
-				</a>
-				
-				<a href="https://memory6181.top/tag/4eOic9FHK" style="text-decoration: none">
-					技术
-				</a>
-				
-				<a href="https://memory6181.top/tag/a0I4RKJMQ" style="text-decoration: none">
-					代码片段
-				</a>
-				
-				<a href="https://memory6181.top/tag/84zPPkwCw" style="text-decoration: none">
-					生活
-				</a>
-				
-			</p>
-
-		</div>
-	</div>
-	<div class="layui-card me-card">
-		<div class="layui-card-header me-card-header layui-icon layui-icon-user cl-st-card-header-line">友情链接</div>
-		<div class="layui-card-body">
-			
-			<div class="me-friends-list">
-				<a href="http://www.7tec.cn/">
-					<svg class="icon me-friends-photo">
-						<use xlink:href="#icon-icon-test4"></use>
-					</svg>
-					<span class="me-friends-text">7TEC</span>
-				</a>
-
 			</div>
 			
-			<div class="me-friends-list">
-				<a href="https://www.ihewro.com">
-					<svg class="icon me-friends-photo">
-						<use xlink:href="#icon-icon-test15"></use>
-					</svg>
-					<span class="me-friends-text">友人C</span>
-				</a>
-
-			</div>
-			
-			<div class="me-friends-list">
-				<a href="https://www.michaelapp.com/">
-					<svg class="icon me-friends-photo">
-						<use xlink:href="#icon-icon-test14"></use>
-					</svg>
-					<span class="me-friends-text">michael pan</span>
-				</a>
-
-			</div>
-			
-			<div class="me-friends-list">
-				<a href="/">
-					<svg class="icon me-friends-photo">
-						<use xlink:href="#icon-chakan"></use>
-					</svg>
-					<span class="me-friends-text">查看更多</span>
-				</a>
-
+		</div>
+		<div class="sidebar-module">
+			<div class="me-sidebar-title glyphicon glyphicon-list-alt post-text">
+				文章分类
 			</div>
 		</div>
-	</div>
-	<div class="layui-card me-card">
-		<div class="layui-card-header me-card-header layui-icon layui-icon-chart cl-st-card-header-line">站点统计</div>
-		<div class="layui-card-body">
-			<ul class="me-list-columns">
-				<li>标签：6 个</li>
-				<li>文章：50 篇</li>
-				<li>页面：5个</li>
-				<li>评论：3条</li>
+		<div class="me-sidebar-box sidebar-module">
+			<ul>
+				
+				<li class="me-sidebar-list">
+					<a class="me-sidebar-list-a" href="https://memory6181.top/tag/KmnLPiytL" style="text-decoration: none">
+						Gridea
+					</a>
+				</li>
+
+				
+				<li class="me-sidebar-list">
+					<a class="me-sidebar-list-a" href="https://memory6181.top/tag/lnIvoi1nL" style="text-decoration: none">
+						单片机驱动开发
+					</a>
+				</li>
+
+				
+				<li class="me-sidebar-list">
+					<a class="me-sidebar-list-a" href="https://memory6181.top/tag/cJUv3d8uX" style="text-decoration: none">
+						大事记
+					</a>
+				</li>
+
+				
+				<li class="me-sidebar-list">
+					<a class="me-sidebar-list-a" href="https://memory6181.top/tag/4eOic9FHK" style="text-decoration: none">
+						技术
+					</a>
+				</li>
+
+				
+				<li class="me-sidebar-list">
+					<a class="me-sidebar-list-a" href="https://memory6181.top/tag/a0I4RKJMQ" style="text-decoration: none">
+						代码片段
+					</a>
+				</li>
+
+				
+				<li class="me-sidebar-list">
+					<a class="me-sidebar-list-a" href="https://memory6181.top/tag/84zPPkwCw" style="text-decoration: none">
+						生活
+					</a>
+				</li>
+
+				
 			</ul>
+
+			<!-- </div> -->
 		</div>
-	</div>
-	<!-- <div class="layui-card me-card">
-		<div class="layui-card-header me-card-header layui-icon layui-icon-at cl-st-card-header-line">联系我</div>
-		<div class="layui-card-body layui-row">
-			<ul class="me-list-columns">
-				<li>
-					<svg class="icon" ><use xlink:href="#icon-renren"></use></svg>
-					<a href="">
-						GitHub
-					</a>
-				</li>
-				<li>
-					<a href="">
-						<svg class="icon" ><use xlink:href="#icon-github"></use></svg>微博
-					</a>
-				</li>
-				<li>
-					<a href="">
-						<svg class="icon" ><use xlink:href="#icon-renren"></use></svg>微博
-					</a>
-				</li>
-				<li>
-					<a href="">
-						<img  src="https://img.memory6181.com/blog/ico/cnblog.png" width="20px" height="20px" style="vertical-align: middle;border-radius: 50%; display: inline-block;">
-					</a>
-					<a href="">
-						<span style="display: inline-block; font-size:16px">博客园</span>
-					</a>
-				</li>
-			</ul>
+		<div class="sidebar-module">
+			<div class="me-sidebar-title glyphicon glyphicon-list-tree-conifer post-text">
+				友情链接
+			</div>
 		</div>
-	</div> -->
-	<div class="layui-card me-card">
-		<div class="layui-card-header me-card-header layui-icon layui-icon-camera cl-st-card-header-line">博客时间轴</div>
-		<div class="layui-card-body layui-row">
-			<ul class="layui-timeline">
-				<li class="layui-timeline-item">
-					<i class="layui-icon layui-timeline-axis"></i>
-					<div class="layui-timeline-content layui-text">
-						<h3 class="layui-timeline-title">8月18日</h3>
-						<p>
-							layui 2.0 的一切准备工作似乎都已到位。发布之弦，一触即发。
-							<br>不枉近百个日日夜夜与之为伴。因小而大，因弱而强。
-							<br>无论它能走多远，抑或如何支撑？至少我曾倾注全心，无怨无悔 <i class="layui-icon"></i>
-						</p>
-					</div>
-				</li>
-				<li class="layui-timeline-item">
-					<i class="layui-icon layui-timeline-axis"></i>
-					<div class="layui-timeline-content layui-text">
-						<h3 class="layui-timeline-title">8月16日</h3>
-						<p>杜甫的思想核心是儒家的仁政思想，他有<em>“致君尧舜上，再使风俗淳”</em>的宏伟抱负。个人最爱的名篇有：</p>
-						<ul>
-							<li>《登高》</li>
-							<li>《茅屋为秋风所破歌》</li>
-						</ul>
-					</div>
-				</li>
-				<li class="layui-timeline-item">
-					<i class="layui-icon layui-timeline-axis"></i>
-					<div class="layui-timeline-content layui-text">
-						<h3 class="layui-timeline-title">8月15日</h3>
-						<p>
-							中国人民抗日战争胜利日
-							<br>常常在想，尽管对这个国家有这样那样的抱怨，但我们的确生在了最好的时代
-							<br>铭记、感恩
-							<br>所有为中华民族浴血奋战的英雄将士
-							<br>永垂不朽
-						</p>
-					</div>
-				</li>
-				<li class="layui-timeline-item">
-					<i class="layui-icon layui-timeline-axis"></i>
-					<div class="layui-timeline-content layui-text">
-						<div class="layui-timeline-title">过去</div>
-					</div>
-				</li>
-			</ul>
+		<div class="me-sidebar-box sidebar-module">
+			<!-- <p class="me-sidebar-title glyphicon glyphicon-tree-conifer post-text"> 友情链接</p> -->
+			<!-- <hr class="me-sidebar-line"> -->
+			<div>
+				<ul>
+					
+					<li class="me-sidebar-list">
+						<a class="me-sidebar-list-a" href="https://www.michaelapp.com" style="text-decoration: none">
+							michael
+						</a>
+					</li>
+
+					
+					<li class="me-sidebar-list">
+						<a class="me-sidebar-list-a" href="http://www.7tec.cn/" style="text-decoration: none">
+							7TEC
+						</a>
+					</li>
+
+					
+					<li class="me-sidebar-list">
+						<a class="me-sidebar-list-a" href="/" style="text-decoration: none">
+							更多
+						</a>
+					</li>
+				</ul>
+			</div>
 		</div>
+
+		<div class="panel panel-primary">
+			<!-- Default panel contents -->
+			<div class="panel-heading">Panel heading</div>
+			<div class="panel-body">
+			  <p>...</p>
+			</div>
+		  
+			<!-- Table -->
+			<table class="table">
+			  ...
+			</table>
+		</div>
+
+	
+	</div><!-- /.blog-sidebar -->
+</div>
+
+<!-- <div class="sidebar-module">
+	<div class="me-sidebar-title glyphicon glyphicon-list-send post-text">
+		社交
 	</div>
 </div>
-<script>
-	layui.use('laydate', function () {
-		var laydate = layui.laydate;
-		//直接嵌套显示
-		laydate.render({
-			elem: '#test-n1'
-			, position: 'static'
-			, showBottom: false
-			, theme: '#393D49'
-		});
+<div class="me-sidebar-box sidebar-module">
+	<div>
+		<ul>
+			<ul>
+				
+				<li class="me-sidebar-list">
+					<a class="me-sidebar-list-a" href="http://www.cnblogs.com/memorypro/" style="text-decoration: none">
+						博客园
+					</a>
+				</li>
 
-	});
-</script>
-			</div>
-		</div>
+				
+				<li class="me-sidebar-list">
+					<a class="me-sidebar-list-a" href=" https://gitee.com/zyzp/events" style="text-decoration: none">
+						码云
+					</a>
+				</li>
+
+				
+				<li class="me-sidebar-list">
+					<a class="me-sidebar-list-a" href="https://github.com/memorypro" style="text-decoration: none">
+						GITHUB
+					</a>
+				</li>
+
+				
+			</ul>
+		</ul>
+
 	</div>
-	<div class="site-footer">
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> Theme PowerBy <a href="https://memory6181.top">Memory</a> 
+</div> -->
+			</div><!-- /.blog-main -->
+
+		</div>
+		<div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
 </div>
 
 <!-- <script>
   hljs.initHighlightingOnLoad()
 </script> -->
 
+	
 </body>
 
 </html>
